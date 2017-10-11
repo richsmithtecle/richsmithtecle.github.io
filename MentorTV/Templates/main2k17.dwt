@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- TemplateBeginEditable name="doctitle" -->
+  <title>Mentor TV &bull; Audio &bull; Video &bull; Furniture Store in Mentor, Ohio</title>
+  <!-- TemplateEndEditable -->
+  <!-- TemplateBeginEditable name="Page Description" -->
+  <meta name="Description" content="Visit Mentor TV for quality audio, video and furniture at discount prices. Our store now features an expanded selection of furniture including TV stands, TV consoles, entertainment centers and home theater furniture. Featuring Sony and Samsung TV's. Home audio from Bose, Definitive Technology, Denon, Klipsch, Sonos and more! 7516 Mentor Ave | Mentor, OH 44060 | Phone: (440) 942-4132"/>
+  <!-- TemplateEndEditable -->
+  <!-- TemplateBeginEditable name="CSS and Style Sheets" -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/styles-main-2k17.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+  <!-- TemplateEndEditable -->
+  <!-- TemplateBeginEditable name="head" -->
+  <!-- TemplateEndEditable -->
+  <!-- TemplateParam name="class" type="text" value="container" -->
+</head>
+	<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+  <div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="../index.html"><img style="display:inline-block" src="../media/MTV_logo_eagle_no_text.png">Mentor TV</a>
+  </div>
+  
+  
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav">
+  <li><a href="../pages/whatsnew.html">What's New?</a></li>
+  <li><a href="../pages/WeeklyAd1.html">Weekly Ad</a></li>
+  <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+  <li><a href="../pages/AudioMain.html">Audio</a></li>
+  <li><a href="../pages/VideoMain.html">Video</a></li>
+  <li><a href="../furniture.html">Furniture</a></li>
+  </ul>
+  </li>
+  <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+  <li><a href="../professional-flat-panel-tv-wall-mounting.html">Flat-Panel TV Installation</a></li>
+  <li><a href="../home-theater-installation.html">Home Theater Installation</a></li>
+  <li><a href="../professional-home-network-installation.html">Home Network Installation</a></li>
+  <li><a href="../professional-outdoor-speaker-installation.html">Outdoor Speaker Installation</a></li>
+  <li><a href="../service.html">Service Department</a></li>
+  </ul>
+  </li>
+  <li><a href="../pages/AboutMentorTV.html">About Us</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+  <li><a href="mailto: sales@mentortv.com">Contact Us</a></li>
+  </ul>
+  </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- TemplateBeginEditable name="Main Content Area" -->
+<div class="container"></div>
+<!-- TemplateEndEditable -->
+<!-- footer -->
+<div class="container-fluid">
+  <div class="row">
+		<div class="col-xs-12 footer">
+			<div class="col-sm-3 col-xs-6">
+				<p class="h5 text-left">Mentor TV <br>7516 Mentor Ave <br>Mentor, Ohio 44060 <br>Phone (440) 942-4132</p>
+		  </div>
+			<div class="col-sm-3 col-xs-6">
+				<p class="h5 text-left">Store Hours:<br>Monday thru Saturday<br>9am to 6pm<br>Closed Sunday</p>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<p class="h5 text-left">VISIT OUR OTHER WEBSITE<br><a href="http://www.mentorfurniture.com">mentorfurniture.com</a></p>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<p class="h5 text-left">Mentor TV. All Rights Reserved. Proudly Serving Northeast Ohio.</p>
+			</div>
+		</div>
+	</div>
+
+</div><!-- End of Footer Container -->      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-22951000-1', 'auto'); ga('send', 'pageview');</script>
+    <!-- TemplateBeginEditable name="Scripts" -->
+    <div>
+      <!-- Add any additional scripts here -->
+    </div>
+    <!-- TemplateEndEditable -->
+	</body>
+</html>

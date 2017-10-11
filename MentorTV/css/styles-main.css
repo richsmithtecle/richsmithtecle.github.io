@@ -1,0 +1,164 @@
+@charset "UTF-8"
+*, *:after, *:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+body{margin:0;padding:0;text-align:center;color:#000;font-family:Arial, Helvetica, sans-serif;font-size:100%;background-color:#000;}
+.oneColElsCtrHdr #container{
+	width:900px;
+	text-align:left;
+	margin:10px auto 0px auto;
+}
+#overview{background-color:#FFF;margin:0px;padding:0px;}
+.oneColElsCtrHdr #header{background-color:#000;width:900px;}
+.oneColElsCtrHdr #header h1{margin:0px;padding:0px;}
+.oneColElsCtrHdr #mainContent{width:900px;height:auto;margin:0px;padding:0px;}
+h4{font-size:1em;line-height:1.25em;text-align:justify;font-weight:normal;margin:0px;padding:10px 15px 0px 15px;}
+#mainnav{background-color:#000;text-align:right;padding:0px;width:900px;}
+#mainnav li{font-size:.8em;color:#FFF;text-decoration:none;display:inline;margin-right:15px;-webkit-text-size-adjust:none;}
+#mainnav li a{text-decoration:none;color:#FFF;}
+#mainnav li a:hover{text-decoration:underline;}
+#mainnav li:last-of-type{margin-right:5px;}
+#product-wrapper{-webkit-text-size-adjust:none;margin:0px;background-color:#FFF;padding:0px 0px 40px 0px;}
+#product-wrapper h3{font-size:1.25em;color:#000;font-weight:bold;}
+#product-wrapper p{font-size:0.8em;color:#000;text-align:justify;}
+#product-wrapper a{text-decoration:none;font-weight:bold;}
+#product-wrapper a:hover{text-decoration:none;}
+.descright{margin:0px;clear:both;padding:30px 0px;}
+.descright h3{float:inherit;clear:right;margin:0px;padding:35px 30px 10px 30px;}
+.descright p{line-height:1.25em;float:inherit;margin:0px 30px;}
+.descright img{float:left;padding:15px 30px;}
+.descleft{margin:0px;clear:both;background-color:#FFF;padding:30px 0px;}
+.descleft h3{width:400px;margin-left:30px;padding-top:45px;float:inherit;}
+.descleft p{width:400px;line-height:1.25em;float:inherit;padding-left:30px;}
+.descleft img{float:right;clear:none;margin:0px 30px;}
+.descctr{float:left;width:298px;height:auto;}
+.descctr h3{text-align:center;display:inherit;margin:0px;clear:both;padding:0px 15px 5px 15px;width:270px;font-size:1em;font-weight:bold;line-height:1.25em;}
+.descctr h4{text-align:center;display:inherit;margin:0px;clear:both;padding:0px 15px 5px 15px;width:270px;font-size:.85em;font-weight:bold;line-height:1.25em;}
+.descctr p{text-align:justify;display:inherit;clear:both;width:250px;margin:0px;padding:0px 25px;line-height:1.25em;}
+.descctr img{text-align:justify;display:inherit;clear:both;width:250px;margin:0px;padding:0px 25px 5px 25px;line-height:1.25em;}
+.descctr ul{width:250px;list-style-type:disc;list-style-position:outside;line-height:1.25em;}
+.descctr li{width:250px;font-size:.8em;}
+#product-wrapper .descctr h3{text-align:center;display:inherit;margin:0px;clear:both;padding:5px 15px;width:270px;font-size:1em;font-weight:bold;line-height:1.25em;}
+#samsung-smart{padding-bottom:40px;}
+#mfrwrapper{height:50px;clear:both;padding:10px 0px;}
+.mfrbox{height:50px;width:127px;float:left;background-color:#000;border-right-width:1px;border-right-style:solid;border-right-color:#FFF;background-image:url(../media/Footer-black-top.jpg);background-repeat:repeat-x;background-position:top;}
+a.mfrbox:hover{background-color:#666;}
+#mfrlogo1{background-image:url(../media/small_logo_white_bose.png);background-repeat:no-repeat;background-position:center;padding-left:3px;border-left-width:1px;border-left-style:solid;border-left-color:#FFF;}
+#mfrlogo2{background-image:url(../media/small_logo_white_denon.png);background-repeat:no-repeat;background-position:center;}
+#mfrlogo3{background-image:url(../media/small_logo_white_klipsch.png);background-repeat:no-repeat;background-position:center;}
+#mfrlogo4{background-image:url(../media/small_logo_white_definitive_technology.png);background-repeat:no-repeat;background-position:center;}
+#mfrlogo5{background-image:url(../media/small_logo_white_sonos.png);background-repeat:no-repeat;background-position:center;}
+#mfrlogo6{background-image:url(../media/small_logo_white_sony.png);background-repeat:no-repeat;background-position:center;}
+#mfrlogo7{background-image:url(../media/small_logo_white_zvox.png);background-repeat:no-repeat;background-position:center;}
+#sonyretailernetwork p{padding-bottom:40px;}
+#map{margin:10px auto 10px auto;}
+.descright.mfrlogo{background-repeat:no-repeat;float:none;text-decoration:none;padding:0px;margin:20px 0px 0px 0px;}
+.descright.mfrlogo img{background-repeat:no-repeat;margin:0px;padding:0px;float:right;}
+.mfrlogo{margin:0px;padding:0px;}
+#footer{background-color:#C00;clear:both;padding-top:0;position:fixed;left:0px;bottom:0px;width:100%;background-image:url(../media/Footer-top.jpg);background-repeat:repeat-x;background-position:top;}
+* html #footer{position:absolute;top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight:document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop:document.body.scrollTop))+'px');}
+#footer p{margin:0;font-family:Arial, Helvetica, sans-serif;font-size:0.75em;font-style:normal;font-weight:normal;color:#FFF;text-align:center;padding-top:6px;padding-bottom:4px;}
+#footer p a{text-decoration:none;color:#FFF;}
+#footer p a:hover{color:#FFF;text-decoration:underline;}
+#notes{font-family:Arial, Helvetica, sans-serif;font-size:0.75em;font-style:italic;padding-right:40px;padding-bottom:40px;padding-left:40px;}
+.mobile{display:none;}
+.center-text{text-align:center;}
+.center-text p{text-align:center;}
+.center-text a{text-align:center;}
+.whymentortv{width:45%;float:left;padding:0px 20px;margin:0px auto;}
+.whymentortv h4{margin:5px 0px 0px 0px;padding:0px;font-weight:bold;}
+.whymentortv p{line-height:1.25em;margin:5px 0px 20px 0px;}
+#installgallery{min-height:550px;}
+.no-left-gutter {
+	margin-left: -30px;
+}
+#feature1,
+#feature2,
+#feature3 {padding-top:40px;}
+#furnitureshowcase{width:100%;text-align:center;margin:0px auto 0px auto;}
+#sonosdesc{float:left;width:350px;padding-right:10px;margin-left:30px;}
+#sonosdesc h3{padding-top:40px;}
+#sonosdesc p{padding-right:20px;}
+#sonosdemo{
+	margin-left:30px;
+	float:left;
+	clear:right;
+	padding-bottom:20px;
+	background-image: url(../media/sonos_system_demo_2014_poster_480x270.jpg);
+	background-repeat: no-repeat;
+}
+
+@media only screen
+and (min-device-width:768px)
+and (max-device-width:1024px){#footer{background-color:#C00;clear:both;padding-top:0;position:inherit;left:0px;bottom:0px;width:100%;background-image:url(../media/Footer-top.jpg);background-repeat:repeat-x;background-position:top;}
+#footer p{margin:0;font-family:Arial, Helvetica, sans-serif;font-size:0.75em;font-style:normal;font-weight:normal;color:#FFF;text-align:center;padding-top:6px;padding-bottom:6px;}
+#footer p a{text-decoration:none;color:#FFF;}
+#footer p a:hover{color:#FFF;text-decoration:underline;}
+.mobile{display:none;}
+}
+@media only screen
+and (min-device-width:320px)
+and (max-device-width:480px){.mobile{display:block;}
+.no-mobile{display:none;}
+body,
+.oneColElsCtrHdr #container,
+.oneColElsCtrHdr,
+#container,
+#mainContent,
+.mainContent,
+.col-1-3,
+.callout-banner,
+.descctr h3,
+.descctr h4,
+.descctr p,
+.descctr ul,
+.hero{width:100%;margin:0px;padding:0px;}
+.hero img{width:100%;height:auto;}
+#product-wrapper{width:100%;margin:0px;background-color:#FFF;padding:0px;}
+#product-wrapper h3{font-size:1.1em;color:#000;font-weight:bold;}
+#product-wrapper p{font-size:1em;color:#000;text-align:justify;}
+.descleft{float:none;clear:both;margin:0px;padding:30px 0px;}
+.descleft h3{width:100%;margin:0px;padding:20px 0px;float:none;clear:both;text-align:center;}
+.descleft p{width:85%;line-height:1.25em;clear:both;float:none;margin:0px auto;padding:0px;text-align:center;}
+.descleft img{clear:none;float:none;margin:0px auto 0px auto;padding:15px 0px;height:auto;}
+.descctr ul{clear:both;float:none;width:100%;list-style-type:disc;list-style-position:outsude;line-height:1.25em;}
+.descctr li{width:80%;margin: 0px auto 0px auto;}
+.descctr,
+.descright{width:100%;margin:0px;clear:both;float:none;padding:30px 0px;}
+.descctr h3,
+.descctr h4,
+.descright h3{clear:both;float:none;margin:0px;padding:10px 0px;text-align:center;}
+.descctr p,
+.descright p{line-height:1.25em;clear:both;float:none;padding:0px;}
+.descctr img,
+.descright img{clear:both;float:none;padding:15px 0px;margin:0px auto 0px auto;height:auto;}
+#product-wrapper .descctr h3{width:100%;padding:10px 0px;}
+#product-wrapper .descctr p{width:90%;padding:10px 0px;margin:0px auto 0px auto;}
+.callout-banner{margin:10px 0px;padding:0px;}
+.mfrwrapper{width:100%;min-height:100px;clear:both;padding:10px 0px;background-color:#FFF;}
+#mfrlogo1,
+.mfrbox{border:none;padding:0px;}
+.mfrbox{width:115px;margin:10px 5px;background-image:none;border-radius:10px;}
+#sonyretailernetwork p{font-size:.75em;padding-bottom:40px;}
+#sonyretailernetwork.descright img{display:block;clear:both;float:none;width:auto;margin:auto;}#map{width:320px;margin:10px auto 10px auto;}
+.whymentortv{width:90%;clear:both;float:none;padding:0px;margin:0px auto;}
+.whymentortv h4{font-size:.9em;margin:0px;padding:0px;font-weight:bold;text-align:center;}
+.whymentortv p{font-size:.8em;line-height:1.25em;margin:5px 0px 30px 0px;}
+.whymentortv p:last-of-type{padding-bottom:25px;}
+#installgallery{min-height:550px;width:320px;}
+.descright.mfrlogo{clear:both;float:none;display:block;text-decoration:none;padding:0px;margin:10px auto;}
+.mfrlogo{margin:0px;padding:0px;width:100px;}
+.no-left-gutter {
+	margin-left: 0px;
+}
+#loaded {
+	padding-bottom: 0px;
+}
+#nav2{width:100%;margin:0px auto 0px auto;padding-top:0px;background-color:#000;}
+#mainnav2{text-align:center;padding:10px 0px;margin:0px;width:100%;}
+#mainnav2 li{width:100%;font-size:.9em;color:#FFF;background-color:#333;text-decoration:none;display:block;margin-top:5px;padding:10px 0px;border-bottom:thin solid #FFF;border-top:thin solid #FFF;}
+#mainnav2 li a{text-decoration:none;color:#FFF;}
+a[href^="tel:"]:before{content:"\260E";display:inline;margin-right:0.5em;}
+#footer-mobile{margin-top:5px;clear:both;padding-top:0;margin:0px 10px;}
+#footer-mobile p{font-size:.9em;line-height:1.25em;text-align:center;margin:5px 0px;color:#FFF;}
+#footer-mobile p a{text-decoration:none;color:#FFF;}
+#footer-mobile .disclaimer{margin:10px 0px;padding-bottom:40px;font-size:.65em;text-align:justify;}
+}
