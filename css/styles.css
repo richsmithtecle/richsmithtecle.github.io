@@ -1,0 +1,51 @@
+/*body {
+	margin-top: 50px;
+}*/
+
+
+
+
+.index-hero {
+    background-image: url(../media/index-hero-image4-1200x500.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 350px;
+  }
+.index-hero h1 {
+    padding-top: 20%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+            0px 8px 13px rgba(0,0,0,0.1),
+            0px 18px 23px rgba(0,0,0,0.1);
+  }
+.index-hero h4 {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                    0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+}
+.portfolio-buttons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+.websites {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  /* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+.index-hero {
+    background-image: url(../media/index-hero-image4-1200x500.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 550px;
+  }
+.index-hero h3 {
+    padding-top: 10%;
+  }
+
+
+
+
