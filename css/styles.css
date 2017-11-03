@@ -33,6 +33,15 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.site-link,
+.site-link a,
+.site-link a:hover,
+.site-link a:visited {
+    text-decoration: none;
+    color:black;
+        
+        
   /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 .index-hero {
@@ -45,12 +54,7 @@
 .index-hero h3 {
     padding-top: 10%;
   }
-.site-link,
-.site-link a,
-.site-link a:hover,
-.site-link a:visited {
-    text-decoration: none;
-    color:black
+
 
  
 
