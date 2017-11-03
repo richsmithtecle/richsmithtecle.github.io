@@ -45,6 +45,14 @@
 .index-hero h3 {
     padding-top: 10%;
   }
+.site-link,
+.site-link a,
+.site-link a:hover,
+.site-link a:visited {
+    text-decoration: none;
+    color:black
+
+ 
 
 
 
