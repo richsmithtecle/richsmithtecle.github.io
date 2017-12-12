@@ -40,11 +40,7 @@
 .site-link a:visited {
     text-decoration: none;
     color:black;
-<<<<<<< HEAD
 }        
-=======
-    }    
->>>>>>> 35e3f15b657fedbd87d5a9051ed00e88d8211729
         
   /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
