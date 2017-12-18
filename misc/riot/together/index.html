@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="home.tag" type="riot/tag"></script>
+    <script src="login.tag" type="riot/tag"></script>
+    <script src="register.tag" type="riot/tag"></script>
+    <script src="//cdn.jsdelivr.net/riot/2.5/riot+compiler.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- branding -->
+
+    </header>
+    <nav>
+        
+    </nav>
+
+    <div id="main">
+
+    </div>
+
+    <footer>
+        <!-- sitemap -->
+    </footer>
+
+    <script type="text/javascript">
+        riot.mount('*'); //mount all of the tag files from up in the script references
+
+        riot.route.start(true);
+        riot.route.base('#');
+
+        riot.route('/', function () {
+            riot.mount('#main', 'home');
+        });
+
+        riot.route('/login', function () {
+            riot.mount('#main', 'login');
+        });
+
+        riot.route('/register', function () {
+            riot.mount('#main', 'register')
+        });
+    </script>
+
+</body>
+</html>
