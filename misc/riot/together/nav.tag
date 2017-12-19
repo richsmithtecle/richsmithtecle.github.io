@@ -1,10 +1,11 @@
 <nav>
     <ul>
-        <li><a href="#">Link1</a></li>
-        <li>Link2</li>
-        <li>Link3</li>
-        <li>Link4</li>
-        <li>Link5</li>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/login">Login</a></li>
+        <li><a href="#/register">Register</a></li>
+        <li><a href="#/products">Products</a></li>
+        <li><a href="#">Link5</a></li>
+        <li><a href="#">Link6</a></li>
     </ul>
 
     <style>
@@ -16,13 +17,20 @@
             padding: 10px;
             color: whitesmoke;
             background-color: slategrey;
+            text-align: center;
         }
 
         li {
             flex-grow: 1;
         }
-        li a {
+        li a,
+        li a:visited {
+            flex-grow: 1;
             text-decoration: none;
+            color: whitesmoke;
+        }
+        li a:hover {
+            text-decoration: underline;
         }
 
     </style>

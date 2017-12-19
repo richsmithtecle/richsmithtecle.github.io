@@ -10,6 +10,7 @@
     <script src="login.tag" type="riot/tag"></script>
     <script src="register.tag" type="riot/tag"></script>
     <script src="nav.tag" type="riot/tag"></script>
+    <script src="products.tag" type="riot/tag"></script>
     <script src="//cdn.jsdelivr.net/riot/2.5/riot+compiler.min.js"></script>
 
 </head>
@@ -47,6 +48,9 @@
 
         riot.route('/register', function () {
             riot.mount('#main', 'register')
+        });
+        riot.route('/products', function () {
+            riot.mount('#main', 'products')
         });
     </script>
 
