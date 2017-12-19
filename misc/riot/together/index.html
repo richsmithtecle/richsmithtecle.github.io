@@ -49,8 +49,11 @@
         riot.route('/register', function () {
             riot.mount('#main', 'register')
         });
-        riot.route('/products', function () {
-            riot.mount('#main', 'products')
+        riot.route('/audio', function () {
+            riot.mount('#main', 'products', {category: 'audio'})
+        });
+        riot.route('/tvs', function () {
+            riot.mount('#main', 'products',{category: 'tv'})
         });
     </script>
 
