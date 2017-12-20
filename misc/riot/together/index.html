@@ -52,8 +52,13 @@
         riot.route('/audio', function () {
             riot.mount('#main', 'products', {category: 'audio'})
         });
+
         riot.route('/tvs', function () {
             riot.mount('#main', 'products',{category: 'tv'})
+        });
+
+        riot.route('/detail', function () {
+            riot.mount('#main', 'detail')
         });
     </script>
 

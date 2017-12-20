@@ -5,7 +5,7 @@
         <li><a href="#/register">Register</a></li>
         <li><a href="#/tvs">TVs</a></li>
         <li><a href="#/audio">Audio</a></li>
-        <li><a href="#">Link6</a></li>
+        <li><a href="#/detail">Details</a></li>
     </ul>
 
     <style>
