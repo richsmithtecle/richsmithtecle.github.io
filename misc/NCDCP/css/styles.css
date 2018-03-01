@@ -1,0 +1,165 @@
+body {
+			/*font-family: 'Open Sans', sans-serif;*/
+			/*font-family: 'Roboto', sans-serif;*/
+			background-color: #eee;
+		}
+		.index-hero {
+			/*background-image: url(../assets/payne-and-payne-bathroom-2.jpg);*/
+			background-image: url(../assets/AdobeStock_111788606_Preview.jpeg);
+			background-size: cover;
+			background-position: center;
+			color: white;
+			height: 75vh;
+			padding-top: 15%;
+			padding-bottom: 25%;
+		}
+
+		.index-hero h1,
+		.index-hero h2 {
+    		text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                    	0px 8px 13px rgba(0,0,0,0.1),
+                    	0px 18px 23px rgba(0,0,0,0.1);
+		}
+
+		#about {
+			background-color: white;
+			padding-top: 50px;
+			padding-bottom: 25px;
+		}
+
+		#about img {
+			width: 75%;
+			height: auto;
+		}
+
+		#specialties {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		#specialties img {
+			width: 75%;
+			height: auto;
+			border: 2px solid white;
+		}
+
+		#specialties h2 {
+			padding: 10px 0px 50px 0px;
+		}
+
+		.specialty {
+			margin-bottom: 40px;
+		}
+
+		#contact {
+			min-height: 50px;
+			padding: 20px;
+			margin: 20px;
+		}
+
+		
+
+       /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      	.index-hero {
+        	/*background-image: url(assets/payne-and-payne-bathroom-2.jpg);*/
+			background-image: url(../assets/AdobeStock_111788606_Preview.jpeg);
+			background-size: cover;
+			background-position: bottom;
+			color: white;
+			height: 75vh;
+			padding-top: 25%;
+			padding-bottom: 10%;
+      	}
+
+		#specialties {
+			margin-top: 50px;
+			margin-bottom: 75px;
+		}
+
+		#specialties img {
+			width: 85%;
+			height: auto;
+		}
+
+		#specialties h2 {
+			padding: 0px 0px 30px 0px;
+			margin-top: 0px;
+		}
+
+		.specialty {
+			margin-bottom: 0px;
+		}
+
+		#about {
+			background-color: white;
+			padding-top: 50px;
+			padding-bottom: 25px;
+		}
+
+		#about img {
+			width: 35%;
+			height: auto;
+		}
+
+		#about p {
+			padding: 0px 20px;
+		}
+
+
+		/* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    	
+    	#about img {
+			width: 75%;
+			height: auto;
+			padding-top: 15%;
+		}
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    	.index-hero {
+        	/*background-image: url(assets/payne-and-payne-bathroom-2.jpg);*/
+			background-image: url(../assets/AdobeStock_111788606_Preview.jpeg);
+			background-size: cover;
+			background-position: bottom;
+			color: white;
+			height: 90vh;
+			padding-top: 15%;
+			padding-bottom: 20%;
+      	}
+
+		#specialties {
+			margin-top: 50px;
+			margin-bottom: 75px;
+		}
+
+      	#specialties img {
+			width: 85%;
+			height: auto;
+		}
+
+		#specialties h2 {
+			padding: 10px 0px 50px 0px;
+		}
+
+		#about {
+			padding-top: 50px;
+			padding-bottom: 25px;
+		}
+
+		#about img {
+			width: 65%;
+			height: auto;
+			padding-top: 15px;
+		}
+
+		#about p {
+			padding-left: 25px;
+			padding-right: 0px;
+		}
+
+    }
+}
