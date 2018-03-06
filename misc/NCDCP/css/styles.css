@@ -51,11 +51,48 @@ body {
 			margin-bottom: 40px;
 		}
 
-		#contact {
-			min-height: 50px;
-			padding: 20px;
-			margin: 20px;
+		#social-media {
+			padding: 75px 0px;
 		}
+
+		.social-posts {
+			box-shadow: 1px 1px 1px 1px #dadada;
+		}
+
+		.social-posts h5, h6 {
+			margin: 0px;
+			padding: 0px;
+		}
+		.social-header {
+			padding-left: 0px;
+			margin-bottom: 20px;
+		}
+
+		#contact {
+			background: white;
+		}
+
+		/*#contact {
+			color: white;
+			background: #484848;
+			padding: 20px;
+		}*/
+
+		#contact p {
+			padding-bottom: 20px;
+		}
+		#contact i {
+			padding: 20px 0px 10px;
+		}
+
+		.social {
+			background-color: none;
+		}
+
+		.social i {
+			padding: 40px 20px;
+		}
+
 
 		
 
@@ -106,6 +143,20 @@ body {
 			padding: 0px 20px;
 		}
 
+		.social-posts {
+			min-height: 490px;
+		}
+
+		.social-message {
+			min-height: 60px;
+		}
+
+		#contact {
+			
+			min-height: 50px;
+			padding: 20px 100px;
+		}
+
 
 		/* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
@@ -114,6 +165,10 @@ body {
 			width: 75%;
 			height: auto;
 			padding-top: 15%;
+		}
+
+		.social-posts {
+			min-height: 525px;
 		}
 
     }
