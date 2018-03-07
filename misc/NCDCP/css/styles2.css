@@ -9,7 +9,7 @@ body {
 			background-image: url(../assets/payne-and-payne-bathroom-3.jpg);
 			background-size: cover;
 			background-position: top;
-			color: white;
+			color: black;
 			height: 70vh;
 			box-shadow: 1px 1px 1px 1px #dadada;
 		}
@@ -19,6 +19,20 @@ body {
     		text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                     	0px 8px 13px rgba(0,0,0,0.1),
                     	0px 18px 23px rgba(0,0,0,0.1);
+		}
+
+		#specialties {
+			margin-top: 50px;
+			margin-bottom: 75px;
+		}
+
+		.specialty {
+			box-shadow: 1px 1px 1px 1px #dadada;
+
+		}
+		.specialty img {
+			width: 100%;
+			height: auto;
 		}
 
 		#about {
@@ -32,16 +46,6 @@ body {
 		#about img {
 			width: 75%;
 			height: auto;
-		}
-
-		#specialties {
-			margin-top: 50px;
-			margin-bottom: 75px;
-		}
-
-		.specialty {
-			box-shadow: 1px 1px 1px 1px #dadada;
-
 		}
 
 		#social-media {
@@ -158,20 +162,6 @@ body {
 			padding-bottom: 20%;
       	}
 
-		/*#specialties {
-			margin-top: 50px;
-			margin-bottom: 75px;
-		}
-
-      	#specialties img {
-			width: 85%;
-			height: auto;
-		}
-
-		#specialties h2 {
-			padding: 10px 0px 50px 0px;
-		}
-*/
 		#about {
 			padding-top: 50px;
 			padding-bottom: 25px;
