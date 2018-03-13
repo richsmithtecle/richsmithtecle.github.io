@@ -80,6 +80,8 @@ body {
 	margin-top: 50px;
 	margin-bottom: 100px;
 	padding: 50px;
+	color: white;
+	background-color: green;
 }
 
 .service {
@@ -89,41 +91,15 @@ body {
 
 .service a> * {
 	padding-bottom: 10px;
+	color: white;
 }
 .service a:hover{
 	text-decoration: none;
 }
 .service a:visited{
-	color: black;
-}
-.service h4 {
-	color: black;
-}
-.service:hover {
-	text-decoration: none;
-}
-.service:visted {
-	text-decoration: none;
-}
-.service i {
-	color: #85BB65 !important;
-}
-
-.index-about {
-	background: #85BB65;
 	color: white;
 }
-.index-about img {
-	width: 100%;
-	height: auto;
-}
-.index-about h3 {
-	margin-top: 50px;
-}
-.index-about p {
-	text-align: justify;
-	margin-right: 30px;
-}
+
 
 #contact {
 	color: white;
