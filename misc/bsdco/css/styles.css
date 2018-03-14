@@ -34,10 +34,10 @@ body {
 	background-size: cover;
 	background-position: top;
 	color: white;
-	height: 90vh;
+	height: 85vh;
 }
 .home-hero h2 {
-	padding-top: 15%;
+	padding-top: 35%;
 	padding-left: 15px;
 	font-size: 2.75em;
 }
@@ -71,9 +71,225 @@ body {
 	padding-top: 10px;
 }
 
-.choose {
-	padding-top: 50px;
-	padding-bottom: 0px;
+#services {
+	margin-top: 25px;
+}
+
+.service {
+	padding: 25px;
+}
+.service h2 {
+	margin-bottom: 30px;
+}
+
+.service a> * {
+	padding-bottom: 10px;
+}
+.service a:hover{
+	text-decoration: none;
+}
+.service a:visited{
+	color: black;
+}
+.service h4 {
+	color: black;
+}
+.service:hover {
+	text-decoration: none;
+}
+.service:visted {
+	text-decoration: none;
+}
+.service i {
+	color: #85BB65 !important;
+}
+
+.index-about {
+	background: #85BB65;
+	color: white;
+	margin-top: 50px;
+	padding: 20px 10px;
+}
+.index-about img {
+	width: 100%;
+	height: auto;
+}
+.index-about h3 {
+	margin-top: 50px;
+}
+.index-about p {
+	text-align: justify;
+}
+
+.leadership {
+	margin-top: 50px;
+}
+.leadership h6 {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.leader {
+	padding: 30px 20px;
+}
+.leader a {
+	color: black;
+}
+.leader a:visited {
+	color: black;
+}
+
+.plan {
+	margin-top: 50px;
+}
+
+.plan-quote {
+	padding: 20px;
+	background: #85BB65;
+	color: white;
+}
+.plan-quote p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+#contact {
+	color: white;
+	background: black;
+	margin-top: 75px;
+}
+
+#contact p {
+	padding-bottom: 20px;
+}
+#contact i {
+	padding: 20px 0px 10px;
+}
+
+.social {
+	background-color: none;
+}
+
+.social i {
+	padding: 40px 20px;
+}
+
+/* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+.home-hero h2 {
+	padding-top: 35%;
+	padding-left: 25px;
+	font-size: 2.75em;
+	/*width: 65vw;*/
+}
+.home-hero h3 {
+	margin: 0px;
+	padding-left: 25px;
+}
+
+.index-about img {
+	width: 50%;
+	height: auto;
+	margin: 0px auto;
+}
+.index-about h3 {
+	margin-top: 50px;
+}
+.index-about p {
+	text-align: justify;
+	/*width: 80vw;*/
+	margin: 10px auto;
+
+}
+
+.plan {
+	margin-top: 75px;
+	background-image: url("../assets/AdobeStock_75514351_Preview.jpeg");
+	background-size: cover;
+}
+
+
+    
+
+/* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    	body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.home-hero {
+	background: 
+		linear-gradient(
+			to right,
+	      rgba(109, 125, 141, 0.9),
+	      rgba(109, 125, 141, 0.8),
+	      rgba(109, 125, 141, 0.7),
+	      rgba(109, 125, 141, 0.4),
+	      rgba(109, 125, 141, 0.3),
+	      rgba(109, 125, 141, 0.1),
+	      rgba(109, 125, 141, 0.0),
+	      rgba(109, 125, 141, 0.0),
+	      rgba(109, 125, 141, 0.0)
+	    ),
+
+		linear-gradient(
+			
+	      rgba(109, 125, 141, 0.5),
+	      rgba(109, 125, 141, 0.2),
+	      rgba(109, 125, 141, 0.1),
+	      rgba(109, 125, 141, 0.1),
+	      rgba(109, 125, 141, 0.1),
+	      rgba(109, 125, 141, 0.1),
+	      rgba(109, 125, 141, 0.0),
+	      rgba(109, 125, 141, 0.0), 
+	      rgba(84, 107, 134, 0.0)
+	    ),
+		url("../assets/AdobeStock_137284090_Preview_4.jpg");
+	/*background-image: url("../assets/homepage-banner-022.jpg");*/
+	background-size: cover;
+	background-position: top;
+	color: white;
+	height: 90vh;
+}
+.home-hero h2 {
+	padding-top: 15%;
+	padding-left: 15px;
+	font-size: 2.75em;
+}
+.home-hero h3 {
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: white;
+	text-decoration: underline;
+}
+.navbar-default {
+	background: none;
+	border: none;
+}
+.navbar-default .navbar-brand {
+	color: white;
+}
+.navbar-default .navbar-brand:hover {
+	color: white;
+}
+.navbar-default .navbar-brand:visted {
+	color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+.jumbotron {
+	padding-top: 10px;
 }
 
 #services {
@@ -125,10 +341,47 @@ body {
 	margin-right: 30px;
 }
 
+.leadership {
+	margin-top: 75px;
+}
+.leadership h6 {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.leader {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.leader a {
+	color: black;
+}
+.leader a:visited {
+	color: black;
+}
+
+.plan {
+	margin-top: 75px;
+	background-image: url("../assets/AdobeStock_75514351_Preview.jpeg");
+	background-size: cover;
+	background-position: 250px;
+}
+
+.plan-quote {
+	padding: 20px;
+	background: #85BB65;
+	color: white;
+}
+.plan-quote p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
 #contact {
 	color: white;
 	background: black;
-	margin-top: 50px;
+	margin-top: 75px;
 }
 
 #contact p {
@@ -145,4 +398,6 @@ body {
 .social i {
 	padding: 40px 20px;
 }
+
+   }
 
