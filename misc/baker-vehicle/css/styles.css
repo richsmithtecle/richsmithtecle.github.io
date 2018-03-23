@@ -1,0 +1,139 @@
+/*Baker Blue = rgb(0,99,189*/)
+
+body {
+
+}
+
+.baker-blue {
+	color: rgb(0,99,189);
+}
+
+.navbar-brand img {
+	height: 25px;
+	width: auto;
+}
+
+.index-hero {
+	height: 90vh;
+	background-image: url(../assets/baker-facebook-cover.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+.index-hero h1 {
+	margin-top: 15%;
+}
+
+.index-products {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.index-product {
+	margin: 10px 0px;
+	border: .5px solid #dadada;
+	border-radius: 5px;
+	min-height: 300px;
+	box-shadow: 1px 1px 1px 1px #dadada;
+}
+.index-product h4 {
+	padding: 25% 10%;
+	color: white;
+}
+
+.index-golf {
+	background-image: url(../assets/baker-ventrac-golf-contour-mower-MJ840-WoosterCC-1258.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.index-pro-turf {
+	background-image: url(../assets/baker-pro-turf-ASVScoutPicture.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.index-industrial {
+	background-image: url(../assets/baker-commercial-titanxd_vehicledetailpage_gallery1_500x350.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.index-snow-removal {
+	background-image: url(../assets/baker-snow-ventrac-SSV_0871.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.index-rough {
+	background-image: url(../assets/baker-rough-kioto-RX7320-01.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.index-green {
+	background-image: url(../assets/baker-green-cushman-haulerpro_vehicledetailpage_gallery3_500x350.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.index-about {
+	color: white;
+	background-color: rgb(0,99,189);
+	padding: 10px 0px;
+	margin-bottom: 50px;
+}
+.index-about img {
+	width: 100%;
+	height: auto;
+}
+.index-about p {
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 50px;
+}
+.index-about p:first-of-type {
+	padding-top: 30px;
+}
+.index-about a {
+	text-decoration: none;
+	color: white;
+}
+.index-about a:hover {
+	text-decoration: underline;
+	color: white;
+}
+.index-about a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+#contact {
+	color: white;
+	background: black;
+	margin-top: 75px;
+}
+
+#contact p {
+	padding-bottom: 20px;
+}
+#contact i {
+	padding: 20px 0px 10px;
+}
+
+.social {
+	background-color: none;
+}
+
+.social i {
+	padding: 40px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
