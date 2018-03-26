@@ -27,57 +27,7 @@ body {
     
 }
 
-/*********************************
-	Home Page Product Callouts
-*********************************/
 
-.index-products {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.index-product {
-	margin: 10px 0px;
-	border: .5px solid #dadada;
-	border-radius: 5px;
-	min-height: 150px;
-	box-shadow: 1px 1px 1px 1px #dadada;
-}
-.index-product h4 {
-	padding: 25% 10%;
-	color: white;
-}
-
-.index-golf {
-	background-image: url(../assets/baker-ventrac-golf-contour-mower-MJ840-WoosterCC-1258.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.index-pro-turf {
-	background-image: url(../assets/baker-pro-turf-ASVScoutPicture.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.index-industrial {
-	background-image: url(../assets/baker-commercial-titanxd_vehicledetailpage_gallery1_500x350.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.index-snow-removal {
-	background-image: url(../assets/baker-snow-ventrac-SSV_0871.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.index-rough {
-	background-image: url(../assets/baker-rough-kioto-RX7320-01.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.index-green {
-	background-image: url(../assets/baker-green-cushman-haulerpro_vehicledetailpage_gallery3_500x350.jpg);
-	background-size: cover;
-	background-position: center;
-}
 
 /*********************************
 	Start Home Page "About Us"
