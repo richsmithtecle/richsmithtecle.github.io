@@ -22,9 +22,8 @@ body {
 
 .index-hero h1 {
 	margin-top: 10%;
-	color: black;
     text-shadow: 2px 2px 4px #000000;
-    
+
 }
 
 /*********************************
@@ -46,6 +45,8 @@ body {
 .index-product h4 {
 	padding: 25% 10%;
 	color: white;
+    text-shadow: 2px 2px 4px #000000;
+
 }
 
 .index-golf {
