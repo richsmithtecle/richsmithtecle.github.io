@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	padding-top: 50px;
 
 }
 
@@ -12,21 +13,160 @@ body {
 	width: auto;
 }
 
-.index-hero {
+
+.index-item {
 	height: 80vh;
-	background-image: url(../assets/baker-facebook-cover.jpg);
+	background-color: lightgrey;
+	margin-bottom: 75px;
+}
+.carousel-caption {
+    width:95%;
+    height:40%;
+    left:0 !important;
+}
+.carousel-caption h1 {
+  text-align:center;
+  margin-left:15px;
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  text-align:center;
+  margin-left:15px;
+}
+
+.carousel-baker {
+	background:  
+		linear-gradient(
+			to top,
+	      rgba(0,99,189, 0.9),
+	      rgba(0,99,189, 0.8),
+	      rgba(0,99,189, 0.7),
+	      rgba(0,99,189, 0.4),
+	      rgba(0,99,189, 0.1),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0)
+	    ),
+		url(../assets/baker-facebook-cover-370x600.jpg);
+	background-size: cover;
+	background-position: top;
+}
+.carousel-golf {
+	background:  
+		linear-gradient(
+			to top,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
+	    ),
+		url(../assets/baker-golf-hustlerturf-370x600.jpg);
+	background-size: cover;
+	background-position: top;
+}
+.carousel-pro-turf {
+	background:  
+		linear-gradient(
+			to top,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
+	    ),
+		url(../assets/baker-proturf-smithco-homepage-2-370x600.jpg);
+	background-size: cover;
+	background-position: top;
+}
+.carousel-commercial {
+	background:  
+		linear-gradient(
+			to top,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
+	    ),
+		url(../assets/baker-commercial-titanxd_vehicledetailpage_gallery1_370x600.jpg);
 	background-size: cover;
 	background-position: right;
-	color: white;
+}
+.carousel-snow-removal {
+	background:  
+		linear-gradient(
+			to top,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
+	    ),
+		url(../assets/baker-snow-12_ventrac_december_wallpaper_2017_370x600.jpg);
+	background-size: cover;
+	background-position: right;
 }
 
-.index-hero h1 {
-	margin-top: 10%;
-	color: black;
-    text-shadow: 2px 2px 4px #000000;
-    
+.carousel-rough-terrain {
+	background:  
+		linear-gradient(
+			to top,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
+	    ),
+		url(../assets/baker-rough-textron-atv_alterratbx700_marquee_370x600.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
+.carousel-green {
+	background:  
+		linear-gradient(
+			to top,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
+	    ),
+		url(../assets/baker-green-cushman-haulerpro_vehicledetailpage_gallery3_370x600.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.index-depts {
+	margin-bottom: 50px;
+}
 
 
 /*********************************
@@ -45,8 +185,8 @@ body {
 }
 .index-about p {
 	text-align: justify;
-	padding-left: 30px;
-	padding-right: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .index-about p:first-of-type {
 	padding-top: 30px;
@@ -65,10 +205,6 @@ body {
 }
 
 
-
-.index-depts {
-	margin-bottom: 30px;
-}
 
 /*********************************
 			Footer
@@ -101,149 +237,90 @@ body {
 /***************************************************/
 @media only screen and (min-width : 576px) {
 
-.index-hero {
-	height: 90vh;
-	background-image: url(../assets/baker-facebook-cover.jpg);
+
+.index-item {
+	height: 80vh;
+	background-color: lightgrey;
+	margin-bottom: 75px;
+}
+.carousel-caption {
+    width:90%;
+    height:50%;
+    left:0 !important;
+}
+.carousel-caption h1 {
+  text-align:left;
+  margin-left:15px;
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  text-align:left;
+  margin-left:15px;
+}
+
+.carousel-baker {
+	background:  
+		linear-gradient(
+			to right,
+	      rgba(0,99,189, 0.9),
+	      rgba(0,99,189, 0.8),
+	      rgba(0,99,189, 0.7),
+	      rgba(0,99,189, 0.4),
+	      rgba(0,99,189, 0.1),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0)
+	    ),
+		url(../assets/baker-facebook-cover.jpg);
 	background-size: cover;
-	background-position: center;
-	color: white;
-	box-shadow: 0px 2px 5px #dadada;
+	background-position: bottom;
 }
-
-.index-hero h1 {
-	margin-top: 15%;
-	color: white;
-}
-
-/*********************************
-	Home Page Product Callouts
-*********************************/
-
-.index-products {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.index-product {
-	margin: 10px 0px;
-	border: .5px solid #dadada;
-	border-radius: 5px;
-	min-height: 300px;
-	box-shadow: 0px 2px 5px #dadada;/*
-    position: relative;
-    top: 0;
-    transition: all .1s ease-in;*/
-}/*
-.index-product:hover {
-	top: -2px;
-    box-shadow: 2px 4px 5px #dadada;
-}*/
-
-.index-product h4 {
-	padding: 25% 10%;
-	color: white;
-    position: relative;
-    top: 0;
-    transition: all .1s ease-in;
-    text-shadow: 2px 2px 4px #000000;
-}
-.index-product h4:hover {
-	top: -5px;
-    text-shadow: 2px 2px 8px #000000;
-}
-
-.index-golf {
-	background-image: url(../assets/baker-ventrac-golf-contour-mower-MJ840-WoosterCC-1258.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.index-pro-turf {
-	background-image: url(../assets/baker-pro-turf-ASVScoutPicture.jpg);
+.carousel-golf {
+	background:  
+		linear-gradient(
+			to right,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
+	    ),
+		url(../assets/baker-golf-hustlerturf-1600x600v2.jpg);
 	background-size: cover;
 	background-position: center;
 }
-.index-industrial {
-	background-image: url(../assets/baker-commercial-titanxd_vehicledetailpage_gallery1_500x350.jpg);
+.carousel-pro-turf {
+	background-image: url(../assets/baker-proturf-smithco-homepage-2-1600x600.jpg);
 	background-size: cover;
 	background-position: center;
 }
-.index-snow-removal {
-	background-image: url(../assets/baker-snow-ventrac-SSV_0871.jpg);
+.carousel-commercial {
+	background-image: url(../assets/baker-commercial-titanxd_vehicledetailpage_gallery1_1600x600.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: right;
 }
-.index-rough {
-	background-image: url(../assets/baker-rough-kioto-RX7320-01.jpg);
+.carousel-snow-removal {
+	background-image: url(../assets/baker-snow-12_ventrac_december_wallpaper_2017_1600x600.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: right;
 }
-.index-green {
-	background-image: url(../assets/baker-green-cushman-haulerpro_vehicledetailpage_gallery3_500x350.jpg);
+
+.carousel-rough-terrain {
+	background-image: url(../assets/baker-rough-textron-atv_alterratbx700_marquee_1600x600.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: right;
 }
 
-/*********************************
-		Home Page "About Us"
-*********************************/
-
-.index-about {
-	color: white;
-	background-color: rgb(0,99,189);
-	padding: 10px 0px;
-	margin-bottom: 50px;
+.carousel-green {
+	background-image: url(../assets/baker-green-cushman-haulerpro_vehicledetailpage_gallery3_1600x600.jpg);
+	background-size: cover;
+	background-position: right;
 }
-.index-about img {
-	width: 100%;
-	height: auto;
-}
-.index-about p {
-	text-align: justify;
-	padding-left: 30px;
-	padding-right: 50px;
-}
-.index-about p:first-of-type {
-	padding-top: 30px;
-}
-.index-about a {
-	text-decoration: none;
-	color: white;
-}
-.index-about a:hover {
-	text-decoration: underline;
-	color: white;
-}
-.index-about a:visited {
-	text-decoration: none;
-	color: white;
-}
-
-/*********************************
-			Footer
-*********************************/
-
-#contact {
-	color: white;
-	background: black;
-	margin-top: 75px;
-}
-
-#contact p {
-	padding-bottom: 20px;
-}
-#contact i {
-	padding: 20px 0px 10px;
-}
-
-.social {
-	background-color: none;
-}
-
-.social i {
-	padding: 40px 20px;
-}
-
-	}
 
 /***************************************************/
 /* Small Devices, Tablets */
@@ -264,6 +341,107 @@ body {
 /* Large Devices, Wide Screens */
 /***************************************************/
 @media only screen and (min-width : 1200px) {
+
+.index-item {
+	height: 80vh;
+	background-color: lightgrey;
+	margin-bottom: 75px;
+}
+.carousel-caption {
+    width:50%;
+    height:60%;
+    left:0 !important;
+}
+.carousel-caption h1 {
+  text-align:left;
+  margin-left:30px;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  text-align:left;
+  margin-left:30px;
+}
+
+.carousel-baker {
+	background:  
+		linear-gradient(
+			to right,
+	      rgba(0,99,189, 0.9),
+	      rgba(0,99,189, 0.8),
+	      rgba(0,99,189, 0.7),
+	      rgba(0,99,189, 0.4),
+	      rgba(0,99,189, 0.1),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0),
+	      rgba(0,99,189, 0.0)
+	    ),
+		url(../assets/baker-facebook-cover.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.carousel-golf {
+	background:  
+		linear-gradient(
+			to right,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
+	    ),
+		url(../assets/baker-golf-hustlerturf-1600x600v2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.carousel-pro-turf {
+	background-image: url(../assets/baker-proturf-smithco-homepage-2-1600x600.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.carousel-commercial {
+	background-image: url(../assets/baker-commercial-titanxd_vehicledetailpage_gallery1_1600x600.jpg);
+	background-size: cover;
+	background-position: right;
+}
+.carousel-snow-removal {
+	background-image: url(../assets/baker-snow-12_ventrac_december_wallpaper_2017_1600x600.jpg);
+	background-size: cover;
+	background-position: right;
+}
+
+.carousel-rough-terrain {
+	background-image: url(../assets/baker-rough-textron-atv_alterratbx700_marquee_1600x600.jpg);
+	background-size: cover;
+	background-position: right;
+}
+
+.carousel-green {
+	background-image: url(../assets/baker-green-cushman-haulerpro_vehicledetailpage_gallery3_1600x600.jpg);
+	background-size: cover;
+	background-position: right;
+}
+
+
+.index-about p {
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 50px;
+}
+
+
+	}
+
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+
 
 	}
 }
