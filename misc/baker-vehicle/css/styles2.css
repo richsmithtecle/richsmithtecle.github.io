@@ -273,20 +273,20 @@ body {
 .carousel-baker {
 	background:  
 		linear-gradient(
-			to right,
-	      rgba(0,99,189, 0.9),
-	      rgba(0,99,189, 0.8),
-	      rgba(0,99,189, 0.7),
-	      rgba(0,99,189, 0.4),
-	      rgba(0,99,189, 0.1),
-	      rgba(0,99,189, 0.0),
-	      rgba(0,99,189, 0.0),
-	      rgba(0,99,189, 0.0),
-	      rgba(0,99,189, 0.0)
+			to top,
+	      rgba(0,0,0, 0.9),
+	      rgba(0,0,0, 0.8),
+	      rgba(0,0,0, 0.7),
+	      rgba(0,0,0, 0.4),
+	      rgba(0,0,0, 0.3),
+	      rgba(0,0,0, 0.1),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0),
+	      rgba(0,0,0, 0.0)
 	    ),
-		url(../assets/baker-facebook-cover.jpg);
+		url(../assets/baker-facebook-cover-370x600.jpg);
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 }
 .carousel-golf {
 	background:  
@@ -384,7 +384,7 @@ body {
 	    ),
 		url(../assets/baker-facebook-cover-768x1024.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 }
 .carousel-golf {
 	background:  
