@@ -16,7 +16,6 @@ body {
 
 .index-item {
 	height: 80vh;
-	background-color: lightgrey;
 	margin-bottom: 75px;
 }
 .carousel-caption {
@@ -81,6 +80,7 @@ body {
 		url(../assets/baker-golf-hustlerturf-370x600.jpg);
 	background-size: cover;
 	background-position: top;
+	background-repeat: no-repeat;
 }
 .carousel-pro-turf {
 	background:  
