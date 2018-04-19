@@ -1,0 +1,42 @@
+body {
+	/*dark background with laptop*/
+	background-image: url(../img/pexels-photo-218863.jpeg);
+
+	/*light background with laptop*/
+	background-image: url(../img/pexels-photo-238118.jpeg);
+
+	/*desk with person at top background*/
+	background-image: url(../img/wai-overhead-cropped-1920x1200.jpg);
+
+	/*desk with person at bottom background*/
+	background-image: url(../img/wai-overhead-cropped-1920x1200v2.jpg);
+
+	/*wooden desk with laptop background*/
+	background-image: url(../img/pexels-photo-96858.jpeg);
+
+	/*wooden desk with laptop & Coffee background*/
+	background-image: url(../img/pexels-photo-459562.jpeg);
+
+
+
+	background-size: cover;
+	background-position: bottom;
+	height: 100vh;
+	width: 100vw;
+}
+
+.hero-logo {
+	margin-left: 50px;
+	margin-bottom: 90px;
+	width: 500px;
+	height: auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: lightgrey;
+    text-align: center;
+}
