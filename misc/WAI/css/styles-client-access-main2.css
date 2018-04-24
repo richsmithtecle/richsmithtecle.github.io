@@ -1,0 +1,165 @@
+/*WAI colors from main website:
+"background orange" = #be7533*/
+
+/*Colors from adacom logo project c. 2010*/
+
+/*Primary Colors*/
+/*blue  color="#1e4973"*/
+/*black color="#000000"*/
+/*grey	color="#999999"*/
+
+/*Secondary Colors*/
+/*orange/brown 	color="#e5a812"*/
+/*green			color="#546670"*/
+
+/*Fonts*/
+/*font-family: 'Permanent Marker', cursive;*/
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+
+
+.hero-logo {
+	margin: 25px 25px 0;/*
+	width: 300px;
+	height: auto;*/
+}
+
+.login-area {
+	margin-top: 325px;
+}
+.main-hero {
+/*wooden desk with laptop background*/
+	background-image: url(../img/pexels-photo-96858.jpeg);
+	background-size: cover;
+	background-position: top;
+	height: 500px;
+	width: auto;
+	color: white;
+	margin-top: -100px;
+	box-shadow: 0px 1px 2px 1px #999999;
+}
+
+.main-hero h2 {
+	padding-top: 150px;
+}
+
+.client-features {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.feature {
+	display: table; /*used to align the child element vertical center*/
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	line-height: 24px;
+	height: 250px;
+	width: 250px;
+	text-align: center;
+	border-radius: 100%;
+	margin: 10px auto;
+	/*background: #1e4973;*/ 	/*wai blue*/
+	/*background: #dd5638;*/	/*orange*/
+	background: #be7533;	/*website orange*/
+	/*background: #e5a812;*/	/*wai orange*/
+	/*background: #546670;*/	/*wai green / taupe*/
+}
+.feature .feature-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.note {
+	padding-top: 50px;
+}
+
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg) center center repeat fixed;
+	background-size: cover;
+	height: 400px;
+	padding: 75px 0;
+}*/
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+}
+
+.small-bites {
+	margin: 75px 0;
+}
+
+.bite {
+	margin-bottom: 50px;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.footer {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;/*
+    color: lightgrey;*/
+    text-align: center;
+}
+/*
+.client-features {
+	margin-top: 350px;
+}*/
+
+/* .navbar-default {
+      background-color:transparent !important;
+      border-color:transparent;
+      background-image:none;
+      box-shadow:none;  
+ }
+*/
+
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+
+.hero-logo {
+	margin: 50px 50px 0;
+}
+
+.main-hero {
+/*wooden desk with laptop background*/
+	height: 700px;
+}
+
+.client-features {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+}
+
+
+
+
+
+
+
