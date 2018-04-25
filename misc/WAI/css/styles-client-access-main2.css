@@ -208,8 +208,8 @@ a.navbar-brand {
 
 
 .client-features {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 .feature {
 	display: table; /*used to align the child element vertical center*/
@@ -307,6 +307,7 @@ a.navbar-brand {
 }
 
 
+
 #brain-bites {
 	background: url(../img/background-beverage-breakfast-414645.jpg);
 	height: 400px;
@@ -350,7 +351,7 @@ a.navbar-brand {
 }
 
 .client-features {
-	margin-top: 150px;
+	margin-top: 75px;
 	margin-bottom: 150px;
 }
 
