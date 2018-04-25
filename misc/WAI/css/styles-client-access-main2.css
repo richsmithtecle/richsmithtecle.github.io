@@ -82,26 +82,24 @@ a.navbar-brand {
 
 #brain-bites {
 	background: url(../img/background-beverage-breakfast-414645.jpg);
-	height: 400px;
-	background-attachment: fixed;
+	height: 275px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #brain-bites .brain-bites-text {
-	margin-top: 125px;
+	margin-top: 105px;
 	color: black;
 }
 #brain-bites .brain-bites-text h1 {
 	font-family: 'Permanent Marker', cursive;
-	font-size: 4em;
 	color: black;
 }
 #brain-bites .brain-bites-text p {
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
-	font-size: 2em;
+	padding-right: 125px;
 }
 
 .small-bites {
@@ -111,6 +109,12 @@ a.navbar-brand {
 .bite {
 	margin-bottom: 50px;
 	font-family: 'Roboto', sans-serif;
+}
+
+footer {
+	color: white;
+	background: #be7533;	/*website orange*/
+	padding: 20px 0 10px;
 }
 
 
@@ -169,6 +173,30 @@ a.navbar-brand {
 
 .note {
 	padding-top: 50px;
+}
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	padding-right: 0px;
 }
 
 }
@@ -233,6 +261,31 @@ a.navbar-brand {
 	padding-top: 300px;
 }
 
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	padding-right: 0px;
+}
+
 
 }
 
@@ -253,6 +306,31 @@ a.navbar-brand {
 	padding-top: 200px;
 }
 
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+}
+
 }
 
 /***************************************************/
@@ -267,9 +345,17 @@ a.navbar-brand {
 	height: 700px;
 }
 
+.main-hero h2 {
+	font-size: 3.5em;
+}
+
 .client-features {
 	margin-top: 150px;
 	margin-bottom: 150px;
+}
+
+#brain-bites {
+	height: 500px;
 }
 
 }
