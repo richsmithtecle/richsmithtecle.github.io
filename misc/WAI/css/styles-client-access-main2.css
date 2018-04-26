@@ -122,8 +122,11 @@ footer {
 /***************************************************/
 /* Small Devices, Tablets */
 /***************************************************/
-@media only screen and (min-width : 576px) {
-	
+@media only screen and (min-width : 425px) {
+
+	#brain-bites {
+		background-size: cover;
+	}	
 
 }
 
@@ -220,11 +223,7 @@ a.navbar-brand {
 	text-align: center;
 	border-radius: 100%;
 	margin: 10px auto;
-	/*background: #1e4973;*/ 	/*wai blue*/
-	/*background: #dd5638;*/	/*orange*/
 	background: #be7533;	/*website orange*/
-	/*background: #e5a812;*/	/*wai orange*/
-	/*background: #546670;*/	/*wai green / taupe*/
 }
 .feature .feature-content {
 	display: table-cell;
@@ -240,6 +239,43 @@ a.navbar-brand {
 	padding-top: 50px;
 }
 
+
+}
+
+/***************************************************/
+/* 9.7-inch iPads * Landscape */
+/***************************************************/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	padding-right: 0px;
+}
 
 }
 
@@ -289,6 +325,49 @@ a.navbar-brand {
 
 }
 
+
+/***************************************************/
+/* 10.5-inch iPad Pro - Landscape */
+
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/***************************************************/
+
+
+@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	padding-right: 0px;
+}
+
+}
+
+
 /***************************************************/
 /* Large Devices, Desktops */
 /***************************************************/
@@ -330,6 +409,28 @@ a.navbar-brand {
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
 	font-size: 2em;
+}
+
+}
+
+/***************************************************/
+/* 12.9-inch iPad Pro - Landscape */
+
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/***************************************************/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 }
