@@ -333,10 +333,8 @@ a.navbar-brand {
 
 
 @media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 1112px) 
+  and (max-width: 1112px) {
 
   	#brain-bites {
 	background: url(../img/background-beverage-breakfast-414645.jpg);
@@ -418,10 +416,9 @@ a.navbar-brand {
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 /***************************************************/
 @media only screen 
-  and (min-device-width: 1366px) 
-  and (max-device-width: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 1366px) 
+  and (max-width: 1366px) 
+  and (orientation: landscape) {
 
   	#brain-bites {
 	background: url(../img/background-beverage-breakfast-414645.jpg);
