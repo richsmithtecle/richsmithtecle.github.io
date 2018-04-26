@@ -124,6 +124,13 @@ footer {
 /***************************************************/
 @media only screen and (min-width : 576px) {
 
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 275px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 		
 
 }
@@ -244,7 +251,7 @@ a.navbar-brand {
 /* 9.7-inch iPads * Landscape */
 /***************************************************/
 
-@media only screen 
+/*@media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (orientation: landscape) 
@@ -275,7 +282,7 @@ a.navbar-brand {
 	padding-right: 0px;
 }
 
-}
+}*/
 
 
 /***************************************************/
@@ -331,7 +338,7 @@ a.navbar-brand {
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 /***************************************************/
 
-
+/*
 @media only screen 
   and (min-width: 1112px) 
   and (max-width: 1112px) {
@@ -361,7 +368,7 @@ a.navbar-brand {
 	padding-right: 0px;
 }
 
-}
+}*/
 
 
 /***************************************************/
@@ -415,7 +422,7 @@ a.navbar-brand {
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 /***************************************************/
-@media only screen 
+/*@media only screen 
   and (min-width: 1366px) 
   and (max-width: 1366px) 
   and (orientation: landscape) {
@@ -428,7 +435,7 @@ a.navbar-brand {
     background-size: cover;
 }
 
-}
+}*/
 
 /***************************************************/
 /* X-Large Devices, Wide Screens */
