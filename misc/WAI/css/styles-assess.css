@@ -16,23 +16,22 @@ body {
 
 	/*wooden desk with laptop & Coffee background*/
 	background-image: url(../img/pexels-photo-459562.jpeg);
-
-
-
 	background-size: cover;
 	background-position: bottom;
+	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100vw;
 }
 
 .hero-logo {
-	margin: 15px 25px 0;/*
+	margin: 15px 25px 0;
+	/*
 	width: 300px;
 	height: auto;*/
 }
 
 .login-area {
-	margin-top: 425px;
+	margin-top: 325px;
 }
 
 .footer {
@@ -43,3 +42,87 @@ body {
     color: lightgrey;
     text-align: center;
 }
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+
+	.login-area {
+		margin-top: 425px;
+	}
+
+}
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+
+	.login-area {
+		margin-top: 500px;
+	}
+
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+
+	.login-area {
+		margin-top: 425px;
+	}
+
+}
+
+/***************************************************/
+/* Large Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 1024px) {
+
+
+
+}
+
+
+
+/***************************************************/
+/* Large Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+
+
+	.login-area {
+		margin-top: 700px;
+	}
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
