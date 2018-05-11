@@ -7,13 +7,88 @@
 	padding: 0;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
-
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+body {
+	font-family: 'Roboto', sans-serif;
+	display: grid;
+	grid-template-columns: 50px 1fr 50px;
+	grid-template-rows: auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	grid-template-areas:
+		"nav nav nav"
+		"hero hero hero"
+		". services ."
+		"about about about"
+		". leadership ."
+		"planning planning planning"
+		"footer footer footer";
+}
+
+
+nav {
+	grid-area: nav;
+	background-color: red;
+}
+
+#hero {
+	grid-area: hero;
+	background: url("../assets/AdobeStock_137284090_Preview_4.jpg");
+	background-size: cover;
+	background-position: top;
+	color: white;
+	height: 90vh;
+}
+.hero-text {
+	justify-self: center;
+}
+.hero-text h1 {
+	text-transform: uppercase;
+}
+.hero-text h4 {
+	text-transform: capitalize;
+}
+
+#services {
+	grid-area: services;
+	background-color: green;
+	display: grid;
+	grid-template-rows: auto;
+	/*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 20px;
+}
+#services h1 {
+	text-align: center;
+}
+.service {
+	justify-self: center;
+}
+#about {
+	grid-area: about;
+	background-color: yellow;
+}
+#leadership {
+	grid-area: leadership;
+	background-color: purple;
+}
+#planning {
+	grid-area: planning;
+	background-color: pink;
+}
+footer {
+	grid-area: footer;
+	background-color: magenta
+}
+
+
+
+
+
+
+
