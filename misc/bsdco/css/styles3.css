@@ -19,7 +19,7 @@ body {
 	grid-template-columns: 50px 1fr 50px;
 	grid-template-rows: auto;
 	grid-column-gap: 20px;
-	grid-row-gap: 20px;
+	grid-row-gap: 50px;
 	grid-template-areas:
 		"nav nav nav"
 		"hero hero hero"
@@ -43,48 +43,166 @@ nav {
 	background-position: top;
 	color: white;
 	height: 90vh;
+	display: grid;
+	grid-template-column: 1fr;
+	grid-template-areas:
+		"hero-text";
 }
 .hero-text {
-	justify-self: center;
+	grid-area: hero-text;
+	align-self: center;
+	padding-left: 20px;
 }
 .hero-text h1 {
 	text-transform: uppercase;
 }
-.hero-text h4 {
+.hero-text h3 {
 	text-transform: capitalize;
 }
 
 #services {
 	grid-area: services;
-	background-color: green;
-	display: grid;
 	grid-template-rows: auto;
-	/*grid-template-columns: 1fr 1fr 1fr 1fr;*/
 	grid-template-columns: repeat(4, 1fr);
-	grid-column-gap: 20px;
+	grid-column-gap: 25px;
+	display: grid;
 }
 #services h1 {
 	text-align: center;
 }
 .service {
-	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
+.service i {
+	color: green;
+}
+
 #about {
 	grid-area: about;
-	background-color: yellow;
+	color: white;
+	background-color: green;
+	grid-template-columns: minmax(200px, 1fr) 1.5fr;
+	grid-column-gap: 20px;
+	display: grid;
+	grid-template-areas:
+		"about-us about-us";
+	align-items: center;
 }
+.about-us img {
+	display: block;
+	width: 100%;
+}
+.about-us {
+	text-align: center;
+	padding: 20px 10px;
+}
+.about-us h2,
+.about-us p {
+	padding: 0 20px 20px 0;
+}
+.about-us h2 {
+	text-transform: uppercase;;
+}
+.about-us button {
+	border: 1px solid whitesmoke;
+	border-radius: 5px;
+	background-color: #FFF;
+}
+.about-us a,
+.about-us a:visited
+.about-us a:hover {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: 1rem;
+}
+.about-us a:hover {
+	background-color: lightgrey;
+}
+
 #leadership {
 	grid-area: leadership;
-	background-color: purple;
+	/*grid-template-rows: auto;*/
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 50px;
+	grid-template-areas:
+		"leader leader leader";
+	align-items: center;
+	display: grid;
 }
+
+.leader i {
+	color: green;
+}
+
 #planning {
 	grid-area: planning;
-	background-color: pink;
+	color: white;
+	background-color: green;
+	grid-template-columns: 1fr minmax(200px, 1fr);
+	grid-column-gap: 20px;
+	grid-template-areas:
+		"plan plan";
+	align-items: center;
+	display: grid;
 }
+.plan img {
+	display: block;
+	width: 100%;
+}
+
+
+
+
 footer {
 	grid-area: footer;
-	background-color: magenta
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	/*grid-template-columns: repeat(3, 1fr);*/
+	/*grid-gap: 20px 20px;*/
+	grid-template-areas:
+		"contact"
+		"social-media";
 }
+	#contact {
+		grid-area: contact;
+		color: white;
+		background-color: #000;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 20px;
+		grid-template-areas:
+			"contact-info contact-info contact-info";
+
+		display: grid;
+		justify-items: center;
+		align-items: center;
+	}
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: flex-start;
+	}
+	.contact-info > * {
+		margin: 10px auto;
+	}
+
+	#social-media {
+		grid-area: social-media;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"social";
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.social {
+		margin: 20px;
+	}
+
+
 
 
 
