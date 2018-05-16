@@ -27,12 +27,6 @@ function hasTeen(a, b, c) {
 
     let answer;
 
-    // if (((a || b || c) > 12) && ((a || b || c) < 20)) {
-    //     answer = true;
-    // } else {
-    //     answer = false;
-    // }
-
     if (a > 12 && a < 20) {
         answer = true;
     } else if (b > 12 && b < 20) {
@@ -48,7 +42,7 @@ function hasTeen(a, b, c) {
 }
 
 /**
- * 
+ * 3. Returns "true" if two given numbers have the same last digit
  * @param {Number} x first given number 
  * @param {Number} y second given number 
  */
@@ -86,14 +80,13 @@ function seeColor(givenColor) {
 }
 
 /**
- * 
- * @param {String} givenWord Returns middle 3 chars from a string
+ * 5. Returns the middle three characters from a string of odd length.
+ * @param {String} givenWord is the string given to test against.
  */
 function middleThree(givenWord) {
 
     let answer;
 
-    //find the start position in the array / string for our three letters
     let startIndex = (givenWord.length / 2) - 1;
 
     answer = givenWord.substr(startIndex, 3);
@@ -101,7 +94,7 @@ function middleThree(givenWord) {
 }
 
 /**
- * Returns true if first two and last chars of a string are the same. 
+ * 6. Returns true if first two and last chars of a string are the same. 
  * @param {String} givenString the string to check
  */
 function frontAgain(givenString) {
@@ -111,7 +104,6 @@ function frontAgain(givenString) {
     let word = Array.from(givenString);
 
     if (word[0] == word[word.length - 2] && word[1] == word[word.length - 1]) {
-        // if ((word[0] && word[1]) == (word[word.length - 1] && word[word.length - 2])) {
         answer = true;
     } else {
         answer = false;
@@ -120,7 +112,11 @@ function frontAgain(givenString) {
     return answer;
 }
 
-
+/**
+ *7. Function that given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if weare on vacation, displays the weeday name, and the time in the form of "7:00" indicating when the alarm clock should ring. Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00". Unless we are on vacation -- then on weekdays it should be 10:00" and weekends it should be "off"."
+ * @param {Number} day 
+ * @param {Boolean} vac 
+ */
 function alarmClock(day, vac) {
 
     let answer;
@@ -168,41 +164,51 @@ function alarmClock(day, vac) {
     return answer;
 }
 
+
+/**
+ *8. A function that given an array of ints of even length, returns a new array length 2 containing the middle two elements from the original array. If the original array length is not even, or at least 2 elements in length, return an empty array.
+ * @param { Number*} givenArray 
+ */
 function makeMiddle(givenArray) {
     let answer;
 
-
-    //Odd length or less than 2
     if (givenArray.length < 2 || givenArray.length % 2 == 1) {
         answer = [];
     } else {
         let startIndex = (givenArray.length / 2) - 1;
         answer = [givenArray[startIndex], givenArray[startIndex + 1]];
     }
-    //Even length array && greater length 2
-
-    return answer;
-}
-
-function oddOnly(nums) {
-
-    let answer;
-
-    let newArray = [];
-
-    for (let i = 0; i < nums.length - 1; i++) {
-        if (nums[i] % 2 == 1) {
-            // answer = newArray.push(i);
-            newArray[newArray.length] = nums[i];
-        } else {
-            answer = [];
-        }
-    }
 
     return answer;
 }
 
 
+
+/**
+ * 9. Removes even numbers from an array and returns only the odd numbers.
+ * Uses JavaScript ".filter" function
+ * https://codeburst.io/learn-understand-javascripts-filter-function-bde87bce206
+ * 
+ * MDN .filter reference article https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+ * @param {Number*} arr 
+ */
+function oddOnly(arr) {
+
+    let odd = arr.filter(val => {
+        return val % 2 === 1;
+    });
+
+    return odd;
+}
+
+
+
+
+/**
+ * 11. Squirrel Cigar Party
+ * @param {Number*} numCigars 
+ * @param {Boolean} isWeekend 
+ */
 function cigarParty(numCigars, isWeekend) {
     let answer;
 
@@ -215,8 +221,10 @@ function cigarParty(numCigars, isWeekend) {
     return answer;
 }
 
-
-
+/**
+ * 12. FizzBuzz
+ * @param {Number*} num 
+ */
 function fizzBuzz(num) {
     let answer;
 
@@ -229,8 +237,5 @@ function fizzBuzz(num) {
     } else {
         answer = num;
     }
-
-
-
     return answer;
 }
