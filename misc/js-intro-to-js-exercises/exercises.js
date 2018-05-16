@@ -8,7 +8,7 @@ function sumDouble(x, y) {
 
     let answer;
 
-    if (x === y) { 
+    if (x === y) {
         answer = (x + y) * 2;
     } else {
         answer = x + y;
@@ -47,59 +47,71 @@ function hasTeen(a, b, c) {
     return answer;
 }
 
+/**
+ * 
+ * @param {Number} x first given number 
+ * @param {Number} y second given number 
+ */
+function lastDigit(x, y) {
+    let answer;
+    if (x % 10 === y % 10) {
+        answer = true;
+    } else {
+        answer = false;
+    }
 
-
+    return answer;
+}
 
 
 /**
- * Returns "red" or "blue" if a given string starts with that color, and returns and empty string "" if it starts with anything else
+ * 4. Returns "red" or "blue" if a given string starts with that color, and returns and empty string "" if it starts with anything else
  * @param {String} givenColor is the string given to test against
  */
-
 function seeColor(givenColor) {
 
-let answer;
+    let answer;
 
-let color = Array.from(givenColor)
+    let color = Array.from(givenColor)
 
-if ((color[0] == "b") && (color[1] == "l") && (color[2] == "u") && (color[3] == "e")) {
-    answer = "blue";
-} else if ((color[0] == "r") && (color[1] == "e") && (color[2] == "d")) {
-    answer = "red";
-} else {
-    answer = ""
+    if ((color[0] == "b") && (color[1] == "l") && (color[2] == "u") && (color[3] == "e")) {
+        answer = "blue";
+    } else if ((color[0] == "r") && (color[1] == "e") && (color[2] == "d")) {
+        answer = "red";
+    } else {
+        answer = ""
+    }
+
+    return answer;
 }
 
-return answer;
+/**
+ * 
+ * @param {String} givenWord Returns middle 3 chars from a string
+ */
+function middleThree(givenWord) {
+
+    let answer;
+
+    //find the start position in the array / string for our three letters
+    let startIndex = (givenWord.length / 2) - 1;
+
+    answer = givenWord.substr(startIndex, 3);
+    return answer;
 }
 
-
-// function middleThree(givenWord) {
-
-//     let answer;
-
-//     //find the start position in the array / string for our three letters
-//     let arrayStart = (givenWord.length / 2) -1;
-
-//     //strings are an array of chars. Do I need to convert it to an array anyway?
-
-//     //loop thru the array 3 times at our middle position
-
-//     for (let i = 0; i < 3; i++ ) {
-
-//     }
-
-//     return answer;
-// }
-
-
+/**
+ * Returns true if first two and last chars of a string are the same. 
+ * @param {String} givenString the string to check
+ */
 function frontAgain(givenString) {
 
     let answer;
 
     let word = Array.from(givenString);
 
-    if ((word[0] && word[1]) == (word[word.length-1] && word[word.length-2])) {
+    if (word[0] == word[word.length - 2] && word[1] == word[word.length - 1]) {
+        // if ((word[0] && word[1]) == (word[word.length - 1] && word[word.length - 2])) {
         answer = true;
     } else {
         answer = false;
@@ -113,6 +125,16 @@ function alarmClock(day, vac) {
 
     let answer;
 
+
+    // const daysOfTheWeek = {
+    //     0: 'Sunday',
+    //     1: 'Monday',
+    //     2: 'Tuesday'
+    // };
+
+    //const daysOfTheWeek = ['Sunday', 'Monday', ...];
+
+
     if (day === 0 && vac === false) {
         answer = "Sunday 10:00";
     } else if (day === 0 && vac === true) {
@@ -124,7 +146,7 @@ function alarmClock(day, vac) {
     } else if (day === 2 && vac === false) {
         answer = "Tuesday 7:00";
     } else if (day === 2 && vac === true) {
-        answer = "Tuesday 10:00"; 
+        answer = "Tuesday 10:00";
     } else if (day === 3 && vac === false) {
         answer = "Wednesday 7:00";
     } else if (day === 3 && vac === true) {
@@ -140,8 +162,24 @@ function alarmClock(day, vac) {
     } else if (day === 6 && vac === false) {
         answer = "Saturday 10:00";
     } else if (day === 6 && vac === true) {
-        answer = "Saturday off";  
+        answer = "Saturday off";
     }
+
+    return answer;
+}
+
+function makeMiddle(givenArray) {
+    let answer;
+
+
+    //Odd length or less than 2
+    if (givenArray.length < 2 || givenArray.length % 2 == 1) {
+        answer = [];
+    } else {
+        let startIndex = (givenArray.length / 2) - 1;
+        answer = [givenArray[startIndex], givenArray[startIndex + 1]];
+    }
+    //Even length array && greater length 2
 
     return answer;
 }
@@ -152,8 +190,8 @@ function oddOnly(nums) {
 
     let newArray = [];
 
-    for(let i = 0; i < nums.length-1; i++) {
-        if(nums[i] % 2 == 1) {
+    for (let i = 0; i < nums.length - 1; i++) {
+        if (nums[i] % 2 == 1) {
             // answer = newArray.push(i);
             newArray[newArray.length] = nums[i];
         } else {
