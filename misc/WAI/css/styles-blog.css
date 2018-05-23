@@ -47,7 +47,6 @@ header {
 	display: flex;
 	align-items: center;
 	color: #FFF;
-	background-color: red;
 }
 
 .container {
@@ -85,7 +84,6 @@ header {
 }
 .header-content h1 {
 	font-size: 3rem;
-	/*margin-top: -50px;*/
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	line-height: 1rem;
@@ -99,16 +97,13 @@ header {
 
 .posts {
 	grid-area: posts;
-	/*color: blue;*/
 }
 
 .history {
 	grid-area: history;
-	/*color: green;*/
 	padding-left: 10px;
 }
 main {
-	/*background-color: whitesmoke;*/
 	grid-area: main;
 
 	display: grid;
