@@ -1,0 +1,70 @@
+body {
+    margin: 50;
+    padding: 50;
+}
+
+.wrapper {
+    padding: 50px;
+    display: grid;
+    grid-template-rows: [main-top] 25vh 25vh 25vh [header-bottom] auto [footer-start] auto [main-bottom];
+    grid-template-columns: [main-start] 25px 150px 1fr 25px [main-end];
+    
+    grid-template-areas:
+        "header header header header"
+        "header header header header"       
+        ". main main ."        
+        ". main main ."
+        "footer footer footer footer";
+}
+header {
+    grid-area: main-top / main-start / header-bottom / main-end;
+    background-color: rgb(71, 252, 252);
+    /* height: 60vh; */
+}
+.feature {
+    /* grid-area: header; */
+    width: 100%;
+    height: auto;
+    /* background-repeat: no-repeat; */
+}
+
+.feature img {
+    grid-area: header;
+    background-color: red;
+    width: 100vw;
+    height: 75vh;
+    background-image: url(../assets/incredibles-2-background.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.feature-poster {
+    grid-area: 1/1/1/1;
+    background-color: blue;
+}
+.feature-poster img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+}
+
+.feature-details {
+    grid-area: main;
+    background-color: green;
+}
+
+.footer {
+    /* grid-area: footer; */
+    grid-column-start: main-start;
+    grid-column-end: main-end;
+    grid-row-start: footer-start;
+    grid-row-end: main-end;
+    background: red;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
