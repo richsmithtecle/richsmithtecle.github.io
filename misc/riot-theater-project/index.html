@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+
 </head>
 
 <body>
@@ -53,6 +54,12 @@
                 <h4>Jurassic World : Fallen Kingdom</h4>
             </li>
         </ul>
+        <ul>
+            <li each={film in films}>
+                <img src={poster} alt="{name}">
+                <h4>{name}</h4>
+            </li>
+        </ul>
 
         
     </section>
@@ -60,6 +67,26 @@
     <footer class="footer">
         <h3>Some really important stuff will go here!</h3>
     </footer>
-</body>
 
+<script src="theater.js"></script>
+<!-- <script>
+
+    films = [
+        { name: 'Avengers : Infinity War', poster: 'assets/avengers-infinity-war-logo-poster-500w.jpg' },
+        { name: 'Deadpool 2', poster: 'assets/deadpool-2-poster-500w.jpg' },
+        { name: 'Solo : A Star Wars', poster: 'assets/solo-poster-500w.jpg' },
+        { name: 'Incredibles 2', poster: 'assets/incredibles -2-poster-lg-v2.jpg' },
+        { name: 'Jurassic World : Fallen Kingdom', poster: 'assets/jurassic-world-fallen-kingdom-poster-v2-500w.jpg' }
+    ];
+
+    console.log(films);
+    console.log(`${films.map(film => film.name)}`);
+
+
+
+
+
+</script> -->
+</body>
+</html>
 
