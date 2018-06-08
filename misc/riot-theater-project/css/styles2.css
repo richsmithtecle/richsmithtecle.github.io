@@ -1,156 +1,38 @@
-body {
+/* Sitewide CSS Goes Here */
+:root {
+    /* "red theme" */
+    --theme-background: rgba(168, 9, 9, 1);
+    --theme-background-transparent: rgba(168, 9, 9, .75);
+
+    /* blue theme */
+    /* --theme-background: rgb(17, 17, 226);
+    --theme-background-transparent: rgba(17, 17, 226, 0.80); */
+
+    /* dark blue theme */
+    /* --theme-background: rgba(11, 11, 126, 1);
+    --theme-background-transparent: rgba(11, 11, 126, .75); */
+
+}
+ body {
     /* margin: 50px; */
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
-.wrapper {
-    display: grid;
-    grid-template-columns: 50px 1fr 6fr 50px;
-    grid-template-rows: auto;
-    grid-gap: 20px;
 
-}
 
 .nav {
-    grid-column: 1 / -1;
+    /* grid-column: 1 / -1;
     grid-row: 1 /2;
-    text-align: center;
+    text-align: center; */
     color: white;
-    background: rgb(168, 9, 9);
-}
-
-.index-hero {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 100vw;
-    color: white;
-    background: 
-        linear-gradient(
-            rgba(168, 9, 9, .75),
-            rgba(168, 9, 9, .75)
-        ),
-        url(../assets/popcorn-background.jpeg);
-    background-size: cover;
-}
-.index-hero h1 {
-    text-align: center;
-    margin: auto;
-    font-size: 3rem;
-}
-
-.now-showing {
-    margin-bottom: 5rem;
-}
-.now-showing h2 {
-    width: 100%;
-    color: white;
-    background: rgb(168, 9, 9);
-    text-align: center;
-    margin: 0;
-    padding: 1rem 0;
-    text-transform: uppercase;
-}
-
-.now-showing ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
-    grid-gap: 20px;
-    padding: 0;
-    margin: 20px;
-}
-.now-showing li {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 5px;
-    background: black;
-    color: white;
-}
-.now-showing a,
-.now-showing a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-.now-showing img {
-    display: block;
-    width: 100%;
-}
-
-.feature-image {
-    grid-column: 1 / -1;
-    grid-row: 1 / 1;
-    background: red;
-    height: 70vh;
-}
-.feature-image img {
-    object-fit: cover;
-    max-height: 100%;
-    width: 100%;
-    display: block;
-}
-
-.feature-poster {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-.feature-poster img {
-    display: block;
-    width: 100%;
-}
-
-.feature-details {
-    grid-column: 3/4;
-    grid-row: 3 / 4;
-    align-self: center;
-    /* background: green; */
+    background: var(--theme-background);
+    min-height: 20px;
 }
 
 
 
-.showtimes {
-    grid-column: 2 / 4;;
-    grid-row: 4/5;
-}
-.showtimes h3 {
-    text-align: center;
-}
-
-.showtimes ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0px;
-    padding: 0px;
-}
-
-.showtimes li {
-    flex-grow: 1;
-    list-style: none;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 5px;
-    align-self: center;
-    margin: 20px;
-    padding: 15px;
-    color: white;
-    background: rgb(168, 9, 9);
-    /* background: rgb(51, 107, 211); */
-    font-size: 1.15rem;
-    letter-spacing: .15rem;
-
-
-}
-.showtimes a {
-    text-decoration: none;
-    color: white;
-}
 
 .screen {
     color: white;
@@ -187,11 +69,4 @@ body {
 
 .seats li.reserved {
     background: grey;
-}
-
-.footer {
-    background: rgb(168, 9, 9);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
 }
