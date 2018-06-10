@@ -1,12 +1,25 @@
 <top-nav>
     <div class="nav">
-        <h3><i class="fas fa-film fa-2x"></i> Riot Theater</h3>
-        
+        <ul>
+            <li><i class="fas fa-film fa-2x"></i></li>
+            <li>Riot Theater</li>
+            <li>Now Showing</li>
+            <li>Movie Detail</li>
+            
+        </ul>
     </div>
 
 <style>
-    .nav {
-        padding: .25rem;
+    .nav ul {
+        margin:0;
+        padding: .5rem 2rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .nav li {
+        list-style-type: none;
+        margin: 0 10px;
     }
 </style>
 

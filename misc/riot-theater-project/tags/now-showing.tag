@@ -37,6 +37,7 @@
             grid-gap: 20px;
             padding: 0;
             margin: 20px;
+            justify-content: space-between;
         }
     
         .now-showing li {
