@@ -6,6 +6,7 @@
             <li>Now Showing</li>
             <li>Movie Detail</li>
             
+            
         </ul>
     </div>
 
@@ -14,7 +15,7 @@
         margin:0;
         padding: .5rem 2rem;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
     }
     .nav li {
