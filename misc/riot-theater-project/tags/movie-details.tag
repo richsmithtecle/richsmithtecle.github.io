@@ -1,5 +1,5 @@
 <movie-details>
-
+    <!-- navigation only included to mark beginning of new tag areas - remove -->
     <script>riot.mount('top-nav')</script>
     <nav>
         <top-nav></top-nav>
