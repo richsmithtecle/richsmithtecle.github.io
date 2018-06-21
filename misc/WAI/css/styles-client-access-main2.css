@@ -30,6 +30,12 @@ a.navbar-brand {
 	padding-top: 8px;
 }
 
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:focus {
+	color: white;
+}
+
+
 .main-hero {
 /*wooden desk with laptop background*/
 	background-image: url(../img/pexels-photo-96858.jpeg);
@@ -116,6 +122,59 @@ footer {
 	background: #be7533;	/*website orange*/
 	padding: 20px 0 10px;
 }
+
+/* Create Codes Page */
+.sub-hero {
+	/*wooden desk with laptop background*/
+		background-image: url(../img/pexels-photo-96858.jpeg);
+		background-size: cover;
+		background-position: top;
+		height: 200px;
+		width: auto;
+		color: white;
+		margin-top: -70px;
+		box-shadow: 0px 1px 2px 1px #999999;
+	}
+	
+	.sub-hero h2 {
+		padding-top: 70px;
+	}
+	.create-codes {
+		height: 70vh;
+		margin: 20px;
+	}
+	.hints {
+		text-align: center;
+		border-left: 1px solid black;
+		padding: 50px;
+	}
+
+	/* Create Codes Version 2 */
+.sub-hero-2 {
+	/*wooden desk with laptop background*/
+		background-image: url(../img/pexels-photo-96858.jpeg);
+		background-size: cover;
+		background-position: top;
+		height: 130px;
+		width: auto;
+		color: white;
+		margin-top: -70px;
+		box-shadow: 0px 1px 2px 1px #999999;
+	}
+	
+	
+	.create-codes-2 {
+		height: 75vh;
+		
+	}
+	.create-codes-2 h2 {
+		padding: 0 0 50px 0;
+	}
+	.hints-2 {
+		text-align: center;
+		border-left: 1px solid black;
+		padding: 50px;
+	}
 
 
 
