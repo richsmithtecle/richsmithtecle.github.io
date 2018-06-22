@@ -17,7 +17,10 @@
 /*font-family: 'Roboto', sans-serif;*/
 /*font-family: 'Open Sans', sans-serif;*/
 
-
+body {
+	background: #be74330c;
+	
+}
 .navbar {
 	margin-bottom: 0px;
 }
@@ -31,8 +34,9 @@ a.navbar-brand {
 }
 
 .navbar-transparent .navbar-nav > li > a:hover,
-.navbar-transparent .navbar-nav > li > a:focus {
-	color: white;
+.navbar-transparent .navbar-nav > li > a:focus { 
+	color: white !important;
+	text-decoration: underline;
 }
 
 
@@ -165,6 +169,8 @@ footer {
 	
 	.create-codes-2 {
 		height: 75vh;
+		
+		
 		
 	}
 	.create-codes-2 h2 {
