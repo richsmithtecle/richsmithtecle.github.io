@@ -43,6 +43,40 @@ body {
     text-align: center;
 }
 
+
+.test-card {
+	color: white;
+	margin: 5vh 0;
+}
+
+.test-card a,
+.test-card a:hover {
+	text-decoration: none;
+}
+.test-card h5,
+.test-card p {
+	color: white;
+	text-align: center;
+}
+.test-card h5 {
+	background-color: black;
+	padding: 15px;
+	margin: 0px;
+}
+.test-card p {
+	padding: 15px;
+	margin: 0px;
+}
+.card {
+	border: 2px solid black;
+	margin: 0px;
+	padding: 0px;background-color: #894e13;
+	border-radius: 5px;
+}
+
+
+
+
 /***************************************************/
 /* Small Devices, Tablets */
 /***************************************************/
@@ -72,6 +106,9 @@ body {
 
 	.login-area {
 		margin-top: 425px;
+	}
+	.test-selection-main {
+		margin-top: 30vh;
 	}
 
 }
@@ -106,8 +143,6 @@ body {
 
 }
 
-
-}
 
 
 
