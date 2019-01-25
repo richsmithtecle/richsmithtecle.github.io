@@ -97,7 +97,7 @@
                         <div id="resilience"></div>
                     </div>
                     <div class="col-xs-6 col-sm-2 gauge">
-                        <div id="initiative"></div>
+                        <div id="intentional"></div>
                     </div>
                     <div class="col-xs-6 col-sm-2 gauge">
                         <div id="selfStarting"></div>
@@ -257,7 +257,7 @@
                             <div class="panel-heading">
                                 <h3 class="panel-title text-center">After You Interview</h3>
                             </div>
-                            <div class="panel-body">In order to make a final decision on a candidate, consider what you learned from the assessment and the follow-up interview, along with other factors like experience, education, references, etc. Match what you have learned to what is important in the job and make a decision that you could explain in an objective manner. Be ready to answer this question: Why is this person a good fit for the job?<br><br>If you hire this person, be sure to come back to this assessment afterwards to think about what the individual needs to do in order grow professionally and be suc- cessful as a Field Engineer. Use this information as a management tool and as the start of their individual development plan that you put together as their manager.</div>
+                            <div class="panel-body">In order to make a final decision on a candidate, consider what you learned from the assessment and the follow-up interview, along with other factors like experience, education, references, etc. Match what you have learned to what is important in the job and make a decision that you could explain in an objective manner. Be ready to answer this question: Why is this person a good fit for the job?<br><br>If you hire this person, be sure to come back to this assessment afterwards to think about what the individual needs to do in order grow professionally and be successful as a Field Engineer. Use this information as a management tool and as the start of their individual development plan that you put together as their manager.</div>
                     </div>
                 </div>
             
@@ -305,12 +305,12 @@
                     shadowVerticalOffset: 10,
                     //levelColors: ["#346ac1", "#346ac1", "#346ac1"]
                 });
-            var initiative = new JustGage({
-              id: "initiative",
+            var intentional = new JustGage({
+              id: "intentional",
               value: 57,
               min: 0,
               max: 100,
-              title: "Initiative",
+              title: "Intentional",
                     shadowOpacity: 1,
                     shadowSize: 7,
                     shadowVerticalOffset: 10
@@ -327,7 +327,7 @@
             });
             var engaging = new JustGage({
               id: "engaging",
-              value: 67,
+              value: 98,
               min: 0,
               max: 100,
               title: "Engaging",
@@ -337,15 +337,16 @@
             });
             
             // Sales Interest (scale by itself)
+            // Removed "Sales Interest" title - felt redundant
             var salesInterest = new JustGage({
               id: "salesInterest",
               value: 67,
               min: 0,
               max: 100,
-              title: "Sales Interest",
-                    shadowOpacity: 1,
-                    shadowSize: 7,
-                    shadowVerticalOffset: 10
+            //   title: "Sales Interest",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
             });
 
             // Sales Derailers:
