@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ARISE Field Engineering Report | Watterson & Associates</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <style>
+
+            /* Swagelok colors from main website */
+            /* Blue color="#004d9e" */
+            /* Blue color="rgb(0,77,158)" */
+
+            /*WAI colors from main website:
+            "background orange" = #be7533*/
+            
+            /*Colors from adacom logo project c. 2010*/
+            
+            /*Primary Colors*/
+            /*blue  color="#1e4973"*/
+            /*black color="#000000"*/
+            /*grey	color="#999999"*/
+            
+            /*Secondary Colors*/
+            /*orange/brown 	color="#e5a812"*/
+            /*green			color="#546670"*/
+            
+            /*Fonts*/
+            /*font-family: 'Permanent Marker', cursive;*/
+            /*font-family: 'Roboto', sans-serif;*/
+            /*font-family: 'Open Sans', sans-serif;*/
+            /* .gauge {
+                
+                border: 1px solid red;
+            } */
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            .report-hero {
+                /* background-color: #004d9e; */
+                color: white;
+                min-height: 85vh;
+                background:
+                    linear-gradient(
+                        rgba(0, 77, 158, 0.80),
+                        rgba(0, 77, 158, 0.80)
+                    ),
+                    url(img/customSolutions.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                 
+            }
+            
+            .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            .results {
+                text-align: justify;
+            }
+            .overview {
+                min-height: 55vh;
+                border-bottom: 1px solid grey;
+            }
+            .salesinterest {
+                min-height: 35vh;
+                margin: 10vh auto;
+                border-bottom: 1px solid grey;
+            }
+            .salesderailers,
+            .technicalderailers {
+                min-height: 55vh;
+                margin: 10vh auto;
+                border-bottom: 1px solid grey;
+            }
+            .overview p,
+            .salesderailers p,
+            .technicalderailers p {
+                padding-bottom: 5vh;
+            }
+            .interview {
+                margin-bottom: 5vh;
+            }
+            .interview h4 {
+                padding-bottom: 10px;
+            }
+            .interview blockquote,
+            .interview h5,
+            .interview p {
+                margin-left: 5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron report-hero">
+            <div class="container center">
+                <!-- <h1 class="text-center">ARISE<br>Field Engineer Report<br><small>John Sample 01-Feb-2019</small> </h1> -->
+                <h1 class="text-center">ARISE<br>Field Engineer Report</h1>
+                
+            </div>
+        </div>
+        <div class="container-fluid overview">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center">John Sample : Overview</h3>
+                    <p class="lead results">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum pariatur corporis quia consequatur exercitationem a quos obcaecati excepturi iusto, beatae ipsam aliquam, quis sit labore repellat nobis sapiente tempora temporibus natus dolore quam. Fugit animi quasi commodi quae molestiae debitis cum, architecto facilis ducimus repudiandae quos omnis dicta sint illo accusamus velit possimus soluta consequatur! Qui voluptatibus corrupti quod veniam, minus aspernatur consequatur ut ipsum eaque quidem accusantium, rem optio quisquam amet fugit nostrum iste laborum sint dolores obcaecati facere est pariatur? Perferendis saepe nulla totam ratione ipsam, nisi quasi voluptas vel consequuntur cupiditate illum quibusdam quam, aut in necessitatibus.</p>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-xs-0 col-sm-1"></div>
+                    <div class="col-xs-6 col-sm-2 gauge">
+                        <div id="agility"></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 gauge">
+                        <div id="resilience"></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 gauge">
+                        <div id="intentional"></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 gauge">
+                        <div id="selfStarting"></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 gauge">
+                        <div id="engaging"></div>
+                    </div>        
+                </div>
+                
+        </div>
+
+        <div class="container salesinterest">
+            <div class="row text-center">
+                <h3 class="text-center">Sales Interest</h3>
+                <div class="col-sm-3">
+                    <div id="salesInterest" class="gauge"></div>
+                </div>
+                <div class="col-sm-9">
+                    <p class="lead results">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti iure porro minima incidunt fuga ut perspiciatis eligendi obcaecati, officia quos distinctio temporibus magni sint labore molestiae, maiores nulla laudantium! Voluptatibus ut voluptatem odio velit enim tempore animi soluta, quibusdam, numquam nam natus, quam ipsum corporis perferendis ab amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container salesderailers">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center">Sales Derailers</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, illo provident ratione quod nemo praesentium aliquam quas. Enim adipisci molestias labore totam veritatis doloremque in laborum reiciendis blanditiis? Praesentium, id dolorem! Aliquam pariatur accusantium voluptates a saepe exercitationem ab. Obcaecati tempore ex, itaque facilis hic voluptate delectus qui doloribus saepe!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div id="pessimism" class="gauge"></div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div id="overprep" class="gauge"></div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div id="critical" class="gauge"></div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div id="expert" class="gauge"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container technicalderailers">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center">Technical Derailers</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, illo provident ratione quod nemo praesentium aliquam quas. Enim adipisci molestias labore totam veritatis doloremque in laborum reiciendis blanditiis? Praesentium, id dolorem! Aliquam pariatur accusantium voluptates a saepe exercitationem ab. Obcaecati tempore ex, itaque facilis hic voluptate delectus qui doloribus saepe!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div id="cognitiveVerbal" class="gauge"></div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div id="cognitiveMath" class="gauge"></div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div id="techSpeak" class="gauge"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTERVIEW GUIDE SECTION -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="text-center">Interview Guide</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center">SUGGESTED INTERVIEW QUESTIONS FOR JOHN SAMPLE</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio fugiat odio aliquam velit perspiciatis, voluptatem iusto nemo laboriosam maiores, laborum, earum nihil totam quasi.</p>
+                </div>
+                <div class="col-sm-10 interview">
+                    <h4 class="text-uppercase">Agility Questions</h4>
+                    <blockquote><em>Tell me about a time when you had to “switch gears” quickly at work with little notice. What happened?<br>What do you to keep yourself interested and engaged with those parts of your job that are more routine or boring? Examples?</em>
+                    </blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for how he effective he has been in anticipating what needs to be done next or what kinds of things could impact the work that he is doing.</p>
+                    <p>Listen for an attitude of fun and creativity as he talks about his work.</p>
+                </div>
+                <div class="col-sm-12 interview">
+                    <h4 class="text-uppercase">Resilient Questions</h4>
+                    <blockquote><em>What techniques do you use to keep yourself from being stressed when you’re behind at work or a deadline is looming in the near future?</em></blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for his awareness of how he elevates and uses his nervous energy in a persistent way.</p>
+                    <blockquote><em>Being typically relaxed and patient can help and it can hinder. How do you balance this phenomena?</em></blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for answers of how he effectively regulates his energy.</p>
+                </div>
+                <div class="col-sm-12 interview">
+                    <h4 class="text-uppercase">Intentional Questions</h4>
+                    <blockquote><em>Can you provide an example of when it made sense to work around a company policy? What was the outcome?</em></blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for rigidity / flexibility and if he is able to see past the rules to the spirit behind them.</p>
+                    <blockquote><em>On a day-to-day basis how do you keep track of the details of your job?</em></blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for clear strategies that he has had success with.</p>
+                </div>
+                <div class="col-sm-12 interview">
+                    <h4 class="text-uppercase">Self-Starting Questions</h4>
+                    <blockquote><em>Can sometimes having a high drive for change, adventure, and variety be a drawback? If so where have you seen this?</em></blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for a good balance of explanation and discovery with the discipline to stick to commitments at hand.</p>
+                    <blockquote><em>Describe a time that you stuck with a difficult situation even though you had a good opportunity to do something else?</em></blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for examples of perseverance and the satisfaction that comes from finishing something difficult.</p>
+                </div>
+                <div class="col-sm-12 interview">
+                    <h4 class="text-uppercase">Engaging Questions</h4>
+                    <blockquote><em>What are the disadvantages to being a warm and friendly person in the work that you do?</em></blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for examples that demonstrate good insight into himself and the way that he interacts with others.</p>
+                    <blockquote><em>Can you describe any situation where being socially bold can be a disadvantage?</em></blockquote>
+                    <h5 class="text-uppercase">Listen For:</h5>
+                    <p>Listen for an understanding of the importance of being able to vary aspects of one’s personality in order to better fit into a given social situation.</p>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <!-- OVERVIEW SECTION -->
+            <div id="overview" class="jumbotron">
+                <div class="container">
+                    <h1 class="text-center">Overview</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">Before You Interview</h3>
+                            </div>
+                            <div class="panel-body">Review the next page that will tell you how well your candidate fits with the
+                                five ARISE characteristics that help predict success in Field Engineers:</p>
+                                <p><strong>A</strong>gility</p>
+                                <p><strong>R</strong>esilience</p>
+                                <p><strong>I</strong>ntentional</p>
+                                <p><strong>S</strong>elf-starting</p>
+                                <p><strong>E</strong>ngaging</p>
+                                <p>Note where your candidate stands on these characteristics and then look to the following pagesfor suggested follow-up interview questions. Keep in mind that, in general, while it is better
+                                    to be higher than lower on these dimensions, sometimes a candidate can have “too much of a good
+                                    thing.” Don’t be afraid to supplement the questions provided with some of your own.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-2"></div> -->
+                    <div class="col-sm-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">After You Interview</h3>
+                            </div>
+                            <div class="panel-body">In order to make a final decision on a candidate, consider what you learned from the assessment and the follow-up interview, along with other factors like experience, education, references, etc. Match what you have learned to what is important in the job and make a decision that you could explain in an objective manner. Be ready to answer this question: Why is this person a good fit for the job?<br><br>If you hire this person, be sure to come back to this assessment afterwards to think about what the individual needs to do in order grow professionally and be successful as a Field Engineer. Use this information as a management tool and as the start of their individual development plan that you put together as their manager.</div>
+                    </div>
+                </div>
+            
+                </div>
+            </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- JustGage PlugIn -->
+        <script src="js/justgage.js"></script>
+        <script src="js/raphael-2.1.4.min.js"></script>
+        <script>
+            var agility = new JustGage({
+                    id: "agility",
+                    value: 68,
+                    min: 0,
+                    max: 100,
+                    title: "Agility",
+                    shadowOpacity: 1,
+                    shadowSize: 7,
+                    shadowVerticalOffset: 10,
+                    // gauge colors
+                    // WAI Blue
+                    //levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+
+                    //Random Blue1
+                    // levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+
+                    //WAI Orange / Brown
+                    // levelColors: ["#e5a812", "#e5a812", "#e5a812"]
+
+                    //WAI Website Background Orange
+                    // levelColors: ["#be7533", "#be7533", "#be7533"]
+                });
+            var resilience = new JustGage({
+                    id: "resilience",
+                    value: 98,
+                    min: 0,
+                    max: 100,
+                    title: "Resilience",
+                    shadowOpacity: 1,
+                    shadowSize: 7,
+                    shadowVerticalOffset: 10,
+                    //levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+                });
+            var intentional = new JustGage({
+              id: "intentional",
+              value: 57,
+              min: 0,
+              max: 100,
+              title: "Intentional",
+                    shadowOpacity: 1,
+                    shadowSize: 7,
+                    shadowVerticalOffset: 10
+            });
+            var selfStarting = new JustGage({
+              id: "selfStarting",
+              value: 63,
+              min: 0,
+              max: 100,
+              title: "Self-Starting",
+                    shadowOpacity: 1,
+                    shadowSize: 7,
+                    shadowVerticalOffset: 10
+            });
+            var engaging = new JustGage({
+              id: "engaging",
+              value: 98,
+              min: 0,
+              max: 100,
+              title: "Engaging",
+                    shadowOpacity: 1,
+                    shadowSize: 7,
+                    shadowVerticalOffset: 10
+            });
+            
+            // Sales Interest (scale by itself)
+            // Removed "Sales Interest" title - felt redundant
+            var salesInterest = new JustGage({
+              id: "salesInterest",
+              value: 67,
+              min: 0,
+              max: 100,
+            //   title: "Sales Interest",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
+            // Sales Derailers:
+            // 1. Pessimism
+            // 2. Overprep
+            // 3. Critical
+            // 4. Expert
+            var pessimism = new JustGage({
+                id: "pessimism",
+                value: 82,
+                min: 0,
+                max: 100,
+                title: "Pessimism",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var overprep = new JustGage({
+                id: "overprep",
+                value: 76,
+                min: 0,
+                max: 100,
+                title: "Overprep",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var critical = new JustGage({
+                id: "critical",
+                value: 49,
+                min: 0,
+                max: 100,
+                title: "Critical",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var expert = new JustGage({
+                id: "expert",
+                value: 67,
+                min: 0,
+                max: 100,
+                title: "Expert",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
+            // Technical Derailers:
+            // 1. Cognitive - Verbal
+            // 2. Cognitive - Math
+            // 3. Tech Speak
+            var cognitiveVerbal = new JustGage({
+                id: "cognitiveVerbal",
+                value: 90,
+                min: 0,
+                max: 100,
+                title: "Cognitive Verbal",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var cognitiveMath = new JustGage({
+                id: "cognitiveMath",
+                value: 66,
+                min: 0,
+                max: 100,
+                title: "Cognitive Math",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var techSpeak = new JustGage({
+                id: "techSpeak",
+                value: 84,
+                min: 0,
+                max: 100,
+                title: "Tech Speak",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
+            // All scales are 0 to 100.
+
+            // var f = new JustGage({
+            //     id: "g12",
+            //     value: getRandomInt(0, 100),
+            //     min: 0,
+            //     max: 100,
+            //     title: "Custom Shadow",
+            //     label: "",
+            //     shadowOpacity: 1,
+            //     shadowSize: 0,
+            //     shadowVerticalOffset: 10
+            // });
+          </script>
+    </body>
+</html>
