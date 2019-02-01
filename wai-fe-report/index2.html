@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ARISE Field Engineering Report | Watterson & Associates</title>
+        <title>ARISE Field Engineer Report | Watterson & Associates</title>
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -68,7 +68,7 @@
             .center {
                 margin: 0;
                 position: absolute;
-                top: 50%;
+                top: 40%;
                 width: 100%;
             }
             .results {
@@ -94,6 +94,22 @@
             .technicalderailers p {
                 padding-bottom: 5vh;
             }
+            .interview-hero {
+                /* background-color: #004d9e; */
+                color: white;
+                min-height: 45vh;
+                background:
+                    linear-gradient(
+                        rgba(0, 77, 158, 0.80),
+                        rgba(0, 77, 158, 0.80)
+                    ),
+                    url(img/pexels-photo-218863.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+                position: relative;
+                 
+            }
             .interview {
                 margin-bottom: 5vh;
             }
@@ -104,6 +120,14 @@
             .interview h5,
             .interview p {
                 margin-left: 5rem;
+            }
+            .footer {
+                color: white;
+                background-color: rgba(0, 77, 158, 0.80);
+            }
+            .footer p {
+                padding: 0px;
+                margin: 2.5vh auto;
             }
 
             /***************************************************/
@@ -239,9 +263,9 @@
             </div>
         </div>
 
-        <!-- INTERVIEW GUIDE SECTION -->
-        <div class="jumbotron">
-            <div class="container">
+        <!-- INTERVIEW GUIDE -->
+        <div class="jumbotron interview-hero">
+            <div class="container center">
                 <h1 class="text-center">Interview Guide</h1>
             </div>
         </div>
@@ -300,7 +324,7 @@
             </div>
         </div>
 
-        <!-- OVERVIEW SECTION -->
+        <!-- OVERVIEW -->
             <div id="overview" class="jumbotron">
                 <div class="container">
                     <h1 class="text-center">Overview</h1>
@@ -313,14 +337,13 @@
                             <div class="panel-heading">
                                 <h3 class="panel-title text-center">Before You Interview</h3>
                             </div>
-                            <div class="panel-body">Review the next page that will tell you how well your candidate fits with the
-                                five ARISE characteristics that help predict success in Field Engineers:</p>
+                            <div class="panel-body">The preceding sections tell you how well your candidate fits with the five ARISE characteristics that help predict success in Field Engineers:</p>
                                 <p><strong>A</strong>gility</p>
                                 <p><strong>R</strong>esilience</p>
                                 <p><strong>I</strong>ntentional</p>
                                 <p><strong>S</strong>elf-starting</p>
                                 <p><strong>E</strong>ngaging</p>
-                                <p>Note where your candidate stands on these characteristics and then look to the following pagesfor suggested follow-up interview questions. Keep in mind that, in general, while it is better
+                                <p>Note where your candidate stands on these characteristics and then look to the following pages for suggested follow-up interview questions. Keep in mind that, in general, while it is better
                                     to be higher than lower on these dimensions, sometimes a candidate can have “too much of a good
                                     thing.” Don’t be afraid to supplement the questions provided with some of your own.
                             </div>
@@ -338,6 +361,14 @@
             
                 </div>
             </div>
+
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class=" text-center">Watterson &amp; Associates, Inc.</p>
+                </div>
+            </div>
+        </div>
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -378,7 +409,7 @@
                     shadowOpacity: 1,
                     shadowSize: 7,
                     shadowVerticalOffset: 10,
-                    //levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+                    //levelColors: ["#004d9e", "#004d9e", "#004d9e"]
                 });
             var intentional = new JustGage({
               id: "intentional",
