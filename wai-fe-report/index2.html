@@ -69,9 +69,7 @@
                 margin: 0;
                 position: absolute;
                 top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+                width: 100%;
             }
             .results {
                 text-align: justify;
@@ -107,6 +105,47 @@
             .interview p {
                 margin-left: 5rem;
             }
+
+            /***************************************************/
+            /* Small Devices, Tablets */
+            /***************************************************/
+            @media only screen and (min-width : 576px) {
+                .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+                
+
+            /***************************************************/
+            /* Small Devices, Tablets */
+            /***************************************************/
+            @media only screen and (min-width : 768px) {
+                
+            }
+
+            /***************************************************/
+            /* Medium Devices, Desktops */
+            /***************************************************/
+            @media only screen and (min-width : 992px) {
+                
+            }
+
+            /***************************************************/
+            /* Large Devices, Wide Screens */
+            /***************************************************/
+            @media only screen and (min-width : 1200px) {
+                
+            }
+            /***************************************************/
+            /* X-Large Devices, Wide Screens */
+            /***************************************************/
+            @media only screen and (min-width : 1900px) {
+                
+            }
         </style>
     </head>
     <body>
@@ -138,7 +177,7 @@
                     <div class="col-xs-6 col-sm-2 gauge">
                         <div id="selfStarting"></div>
                     </div>
-                    <div class="col-xs-6 col-sm-2 gauge">
+                    <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 gauge">
                         <div id="engaging"></div>
                     </div>        
                 </div>
@@ -194,7 +233,7 @@
                 <div class="col-xs-6 col-sm-3">
                     <div id="cognitiveMath" class="gauge"></div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
+                <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0">
                     <div id="techSpeak" class="gauge"></div>
                 </div>
             </div>
