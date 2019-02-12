@@ -218,7 +218,7 @@ footer {
 /***************************************************/
 @media only screen and (min-width : 768px) {
 a.navbar-brand {
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 .main-hero {	
@@ -364,9 +364,11 @@ a.navbar-brand {
 /* Large Devices, Desktops */
 /***************************************************/
 @media only screen and (min-width : 1024px) {
-
+a.navbar-brand {
+	padding-top: 10px;
+}
 .navbar-brand img {
-	width: 300px;
+	width: 125px;
 }
 
 .main-hero {	
@@ -448,9 +450,11 @@ a.navbar-brand {
 /* Large Devices, Desktops */
 /***************************************************/
 @media only screen and (min-width : 1200px) {
-
+a.navbar-brand {
+	padding-top: 10px;
+}
 .navbar-brand img {
-	width: 300px;
+	width: 125px;
 }
 
 .main-hero {	
