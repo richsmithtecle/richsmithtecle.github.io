@@ -18,6 +18,9 @@
         <![endif]-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <style>
+            :root {
+                --swagelok-blue: rgba(0, 77, 158, 1) 
+            }
             body {
                 font-family: 'Roboto', sans-serif;
             }
@@ -42,6 +45,47 @@
                 top: 40%;
                 width: 100%;
             }
+
+            #arise,
+            #alignment,
+            #derailers,
+            #technical {
+                border: 3px solid var(--swagelok-blue);
+                border-radius: 10px;
+                margin: 10vh auto; 
+            }
+
+            .dimension {
+                margin: 10vh auto;
+                border-bottom: 1px solid black;
+            }
+            .dimension:last-of-type {
+                border-bottom: none;
+            }
+            .dimension__definition {
+                text-align: justify;
+                padding-right: 5vw;
+            }
+            .dimension__global-statement {
+                text-align: justify;
+                padding: 2vh 5vw;
+            }
+
+            #interview__hero-image {
+                color: white;
+                min-height: 45vh;
+                background:
+                    linear-gradient(
+                        rgba(0, 77, 158, 0.80),
+                        rgba(0, 77, 158, 0.80)
+                    ),
+                    url(img/pexels-photo-218863.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+                position: relative;
+            }
+            
 
             /***************************************************/
             /* Small Devices, Tablets */
@@ -93,70 +137,159 @@
             </div>
         </div>
 
-        <div class="container">
+        <!--  /***************************************************/ -->
+        <!--  /* ARISE DIMENSIONS */ -->
+        <!--  /***************************************************/ -->
 
-            <div class="row">
-                <div class="col-sm-3 gauge">
+        <div id="arise" class="container">
+
+            <div class="dimension row">
+                <div class="dimension__gauge col-sm-3">
                     <div id="agility"></div>
                 </div>
-                <div class="col-sm-9">
-                    <p>Static Definition Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat repellendus ut odio amet doloremque ipsum officiis. Placeat perspiciatis quibusdam itaque aperiam totam maiores, ratione temporibus fugiat neque magnam officiis sint fuga ex repellat ipsum et, repellendus deserunt iste tenetur minus optio cupiditate obcaecati. Maiores fugit, at eum asperiores id aut.</p>
+                <div class="dimension__definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, similique quo! Voluptas minus ratione quis cum possimus necessitatibus dolor libero, excepturi perspiciatis accusantium dolores praesentium eveniet magnam doloribus repellat hic atque amet maiores. Eum dolorem sunt hic quis illum saepe, provident modi facilis, temporibus repellendus doloremque similique inventore est. Debitis?</p>
                 </div>
-                <div id="global" class="col-sm-12">
-                    <p>Dynamic Global Statement Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum nobis quae modi quaerat neque quisquam odio sunt itaque fugit ut delectus ipsum numquam cum asperiores voluptatum, dolore illo laudantium! Dolorum non excepturi recusandae corporis. Eligendi harum odit neque delectus expedita minima, est doloribus ipsa sapiente voluptates, quibusdam quas natus.</p>
+                <div class="dimension__global-statement col-sm-12">
+                    <p>Dimension Global Statement (Dynamic) Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit soluta voluptates molestiae nulla possimus, officiis reiciendis doloribus qui pariatur officia magnam dolorum quam voluptate debitis! Necessitatibus ipsam soluta expedita nemo dolor temporibus harum, quis odio dolorem aspernatur amet aliquid. Repellendus expedita quos labore quia hic molestiae odit esse quibusdam dolorum.</p>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-3 gauge">
+            <div class="dimension row">
+                <div class="dimension__gauge col-sm-3">
                     <div id="resilience"></div>
                 </div>
-                <div class="col-sm-9">
-                    <p>Static Definition Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ea, dolores amet vitae blanditiis maxime assumenda vero maiores quo excepturi accusamus! Nesciunt, ducimus eaque? Sint autem quae ex nisi nulla asperiores quod? Officiis consequuntur commodi incidunt rem quae temporibus vel deserunt nihil magnam, architecto odio veniam? Facilis delectus earum nobis.</p>
+                <div class="dimension__definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, a necessitatibus beatae voluptas minus aliquam corrupti. Dolorum, placeat, quidem sit harum assumenda pariatur corrupti voluptas odio aut eius fugit cum dolores ut impedit maiores nemo beatae earum consequuntur sint animi voluptatum nisi distinctio atque. Hic ab debitis natus cupiditate doloremque.</p>
                 </div>
-                <div id="global" class="col-sm-12">
-                    <p>Dynamic Global Statement Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quisquam at porro architecto debitis cupiditate hic amet, ea quod est corporis dignissimos! Explicabo excepturi sequi corrupti ipsam autem reprehenderit! Deleniti enim expedita vel soluta ratione, a minus suscipit, ipsam inventore rerum qui. Velit at deserunt incidunt architecto in molestiae corrupti.</p>
+                <div class="dimension__global-statement col-sm-12">
+                    <p>Dimension Global Statement (Dynamic) Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum blanditiis consequatur esse deleniti placeat beatae maxime, nemo libero possimus provident nesciunt nobis labore quis. Explicabo laborum maxime, alias dolor nemo temporibus dolorum in! Temporibus eveniet laudantium quasi minima id molestias, doloremque dolores nesciunt voluptate. Aspernatur quaerat unde voluptatibus voluptas fuga!</p>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-3 gauge">
+            <div class="dimension row">
+                <div class="dimension__gauge col-sm-3">
                     <div id="intentional"></div>
                 </div>
-                <div class="col-sm-9">
-                    <p>Static Definition Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi consequuntur ducimus quaerat, animi eius dolor nobis eaque excepturi nisi quod perferendis sunt deleniti architecto adipisci incidunt! Aspernatur totam vitae quis saepe corrupti quae non fugit nisi excepturi quasi. Provident modi recusandae dolor tempora rerum quae aliquid, tenetur voluptates laborum? Quo?</p>
+                <div class="dimension__definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro veniam quisquam voluptates ab sit suscipit commodi praesentium qui perferendis eveniet dignissimos molestias amet blanditiis non reprehenderit similique ipsa ea minus exercitationem corporis quasi maiores nostrum, officia reiciendis. Rerum aut natus animi asperiores tenetur quibusdam, debitis nostrum porro eligendi nesciunt ea.</p>
                 </div>
-                <div id="global" class="col-sm-12">
-                    <p>Dynamic Global Statement Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim beatae repellendus ipsum ad vel, cupiditate perferendis assumenda nesciunt repudiandae pariatur corrupti quo earum tempora ullam. Labore sequi dolorem libero est deleniti qui temporibus obcaecati harum nulla corporis voluptates vitae, unde eius a fugit, consectetur neque consequatur! Sequi voluptas sapiente repellat!</p>
+                <div class="dimension__global-statement col-sm-12">
+                    <p>Dimension Global Statement (Dynamic) Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestiae sunt itaque veniam iure quaerat, commodi aliquam officia alias architecto, nam molestias ipsam nulla distinctio voluptatem dolorem ipsa ut tempore possimus. Quisquam minus fugit voluptatem ullam, sint at quae a numquam cupiditate alias asperiores quos consectetur dolor reprehenderit incidunt perspiciatis.</p>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-3 gauge">
+            <div class="dimension row">
+                <div class="dimension__gauge col-sm-3">
                     <div id="selfStarting"></div>
                 </div>
-                <div class="col-sm-9">
-                    <p>Static Definition Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste voluptatum est minus cupiditate deleniti illo quos voluptatem voluptates explicabo nam culpa repudiandae quidem, similique ipsa reprehenderit aperiam incidunt ad quasi, tenetur excepturi minima enim voluptate nemo. Sit, quam magni deserunt eius, voluptate inventore ipsa corrupti repudiandae vero ipsam iusto repellendus.</p>
+                <div class="dimension__definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad aut nobis totam numquam illo recusandae. Illo consectetur molestias architecto harum voluptatum consequuntur aut, veritatis quis, officiis possimus, sed rem magnam sint. Odio ut, expedita, unde maxime illo accusantium nisi provident, porro veniam doloribus soluta dicta atque incidunt minima voluptate facere.</p>
                 </div>
-                <div id="global" class="col-sm-12">
-                    <p>Dynamic Global Statement Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nulla similique nobis doloremque rerum. Laudantium, voluptates fugit quae animi maiores magnam. Molestias excepturi dicta facere earum reiciendis consequuntur molestiae id! Deserunt nobis fugiat pariatur tempore voluptas, earum tenetur! Asperiores iste labore, quos numquam quisquam perspiciatis rerum tenetur at blanditiis expedita.</p>
+                <div class="dimension__global-statement col-sm-12">
+                    <p>Dimension Global Statement (Dynamic) Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam numquam explicabo quisquam et at iste minima veniam, voluptate praesentium ullam tenetur culpa nisi repellendus doloremque amet reprehenderit assumenda accusantium omnis exercitationem quis temporibus similique? Maiores incidunt iste mollitia accusamus, sed molestiae nobis, distinctio omnis recusandae corporis necessitatibus consequuntur voluptates minima.</p>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-3 gauge">
+            <div class="dimension row">
+                <div class="dimension__gauge col-sm-3">
                     <div id="engaging"></div>
                 </div>
-                <div class="col-sm-9">
-                    <p>Static Definition Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda vitae praesentium dolorum ducimus commodi eaque illo perferendis itaque nemo placeat quia ab dolorem nostrum laboriosam, debitis asperiores dolores? Laudantium aspernatur exercitationem amet accusamus placeat voluptatem consequuntur ipsa, veniam corporis necessitatibus molestias aut veritatis optio labore ullam atque, ipsam ab doloremque.</p>
+                <div class="dimension__definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet neque repellat dolor cum, dolorum animi ipsam magnam minima reprehenderit illum, voluptatibus dolores a, distinctio perferendis architecto voluptatum eveniet facere odio. Optio, excepturi cumque consequatur aspernatur, culpa est soluta alias beatae praesentium deserunt nobis dolores eaque harum officia! Libero, sequi obcaecati?</p>
                 </div>
-                <div id="global" class="col-sm-12">
-                    <p>Dynamic Global Statement Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corrupti cumque ut est ipsum error consequuntur expedita vero asperiores, dignissimos inventore, unde eveniet minus iusto! In architecto laboriosam est dicta cupiditate fuga illo, nisi debitis eligendi fugiat, culpa a, recusandae dolorum eius iste accusantium! Expedita molestias iusto at reiciendis totam.</p>
+                <div class="dimension__global-statement col-sm-12">
+                    <p>Dimension Global Statement (Dynamic) Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in asperiores aut odio suscipit reprehenderit, magni, ducimus nobis tempore eaque accusamus praesentium qui voluptas explicabo debitis! Quam commodi distinctio assumenda cum pariatur debitis optio harum ipsa dignissimos aut reiciendis, ab ipsum, ex iste corrupti quis atque amet veniam itaque! Animi!</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+
+        <div id="alignment" class="container">
+            <h3 class="text-center">Field Engineer Role Alignment</h3>
+            <div class="dimension row">
+                <div class="dimension__guage col-sm-3">
+                    <div id="roleAlignment"></div>
+                </div>
+                <div class="dimension-definition col-sm-9">
+                    <p>Field Engineering Role Alignment - Static Text Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores enim, in obcaecati mollitia eligendi aperiam. Architecto alias accusamus, asperiores harum totam distinctio fugit, perspiciatis voluptas id temporibus tempore maxime? Assumenda veniam hic cumque maxime, laborum aliquid impedit fuga iure veritatis explicabo sit dolores dolorem, accusamus molestias, labore eveniet tempora?</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="derailers" class="container">
+            <h3 class="text-center">Sales Derailers</h3>
+            <div class="dimension row">
+                <div class="dimension-definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti atque saepe culpa ipsum beatae facilis, officia distinctio? Officia magni impedit nihil excepturi labore atque pariatur, quia ab quidem repellat aliquam natus tempora distinctio dolore temporibus cumque vero nostrum dolores aspernatur mollitia officiis. Nostrum praesentium ab obcaecati, odio accusantium reprehenderit?</p>
+                </div>
+                <div class="dimension__gauge col-sm-3">
+                    <div id="pessimism"></div>
+                </div>
+            </div>
+            <div class="dimension row">
+                <div class="dimension-definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis commodi earum quia neque fugiat quis corporis tempora sit fugit omnis adipisci rerum impedit dolorum odit at repudiandae, itaque nostrum perferendis? Fugit placeat nostrum perspiciatis obcaecati quibusdam nisi similique id, velit libero quidem unde harum animi, ullam voluptatum architecto autem pariatur?</p>
+                </div>
+                <div class="dimension__gauge col-sm-3">
+                    <div id="overprep"></div>
+                </div>
+            </div>
+            <div class="dimension row">
+                <div class="dimension-definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium corporis sunt assumenda dolor ullam dolorem, possimus inventore qui, sit illum ea exercitationem debitis saepe labore. Incidunt illum sapiente nisi esse est sed sequi ipsa atque doloremque dicta, deserunt id itaque recusandae cum adipisci eaque eligendi rerum cumque. Architecto, molestiae facilis.</p>
+                </div>
+                <div class="dimension__gauge col-sm-3">
+                    <div id="critical"></div>
+                </div>
+            </div>
+            <div class="dimension row">
+                <div class="dimension-definition col-sm-9">
+                    <p>Dimension Definition (Static) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt alias in sunt nulla dolores eos libero illo dignissimos nam doloribus iure minima recusandae molestias aspernatur iste perferendis quisquam enim, expedita sapiente. Saepe possimus dolor, rem, consequatur rerum sequi, deserunt accusantium blanditiis nisi fugiat distinctio repellendus sed? Laudantium, eligendi voluptate?</p>
+                </div>
+                <div class="dimension__gauge col-sm-3">
+                    <div id="expert"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="technical" class="container">
+            <h3 class="text-center">Technical Competence</h3>
+            <div class="dimension row">
+                <div class="dimension__gauge col-sm-3">
+                    <div id="cognitiveVerbal"></div>
+                </div>
+                <div class="dimension__definition">
+                    <p>STATIC DEFINITION OR DYNAMIC GLOBAL STATEMENT? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere beatae culpa. Quo, omnis! Temporibus, excepturi dolorum possimus eveniet velit ipsa molestias vel quod dolorem delectus vero ad porro libero iure. Sint commodi totam a? Vitae, est! Est, placeat quidem?</p>
+                </div>
+            </div>
+            <div class="dimension row">
+                <div class="dimension__gauge col-sm-3">
+                    <div id="cognitiveMath"></div>
+                </div>
+                <div class="dimension__definition">
+                    <p>STATIC DEFINITION OR DYNAMIC GLOBAL STATEMENT? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab magni beatae quidem accusantium culpa odit! Porro aut voluptas atque doloribus voluptate, numquam provident ipsam cum. Ratione qui laborum ad rem expedita atque dolorem officiis sunt, officia sed, sit est.</p>
                 </div>
             </div>
         </div>
 
 
+        <!-- INTERVIEW GUIDE -->
+
+        <div id="interview__hero-image" class="jumbotron">
+            <div class="container">
+                <h1 class="text-center">Interview Guide</h1>
+            </div>
+        </div>
+
+
+
+        
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -289,6 +422,18 @@
                 shadowSize: 7,
                 shadowVerticalOffset: 10
             });
+
+            // Role Alignemnt
+            var roleAlignment = new JustGage({
+                id: "roleAlignment",
+                value: 80,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
 
             // Technical Derailers:
             // 1. Cognitive - Verbal
