@@ -1,0 +1,144 @@
+
+:root {
+    --swagelok-blue: rgba(0, 77, 158, 1) 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.report-hero {
+    /* background-color: #004d9e; */
+    color: white;
+    min-height: 85vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        ),
+        url(/img/customSolutions.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+#arise,
+#alignment,
+#derailers,
+#technical,
+#interview {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 80vh;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+.dimension {
+    flex: 0 0 85%;
+    padding: 1vw;
+    margin: 5vh 2.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    scroll-snap-align: center;
+}
+.dimension:first-of-type {
+    margin-left:10vw;
+}
+.dimension:last-of-type {
+    margin-right: 2.5vw;
+    border-right: 1px solid red;
+}
+
+/* #arise,
+#alignment,
+#derailers,
+#technical,
+#interview {
+    border: 3px solid var(--swagelok-blue);
+    border-radius: 10px;
+    margin: 10vh auto; 
+} */
+
+/* .dimension, */
+.interview__dimension {
+    margin: 10vh auto;
+    border-bottom: 1px solid black;
+}
+/* .dimension:last-of-type, */
+.interview__dimension:last-of-type {
+    border-bottom: none;
+}
+.dimension__definition {
+    text-align: justify;
+    padding: 2.5vw;
+}
+.dimension__global-statement {
+    text-align: justify;
+    padding: 2.5vw;
+}
+
+#interview__hero-image {
+    color: white;
+    min-height: 45vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        ),
+        url(img/pexels-photo-218863.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+.interview__questions ul {
+    list-style: none;
+    margin-bottom: 3vh;
+}
+
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+    .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+    
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+    
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+    
+}
+
+/***************************************************/
+/* Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+    
+}
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+    
+}
