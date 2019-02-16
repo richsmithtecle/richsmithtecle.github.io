@@ -39,15 +39,16 @@ body {
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
 }
-.dimension {
-    flex: 0 0 85%;
+.dimension,
+.interview__dimension {
+    flex: 0 0 80%;
     padding: 1vw;
     margin: 5vh 2.5vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     scroll-snap-align: center;
 }
 .dimension:first-of-type {
-    margin-left:10vw;
+    margin-left:7.5vw;
 }
 .dimension:last-of-type {
     margin-right: 2.5vw;
@@ -65,10 +66,10 @@ body {
 } */
 
 /* .dimension, */
-.interview__dimension {
+/* .interview__dimension {
     margin: 10vh auto;
     border-bottom: 1px solid black;
-}
+} */
 /* .dimension:last-of-type, */
 .interview__dimension:last-of-type {
     border-bottom: none;
@@ -134,11 +135,26 @@ body {
 /* Large Devices, Wide Screens */
 /***************************************************/
 @media only screen and (min-width : 1200px) {
-    
+    .dimension,
+.interview__dimension {
+    flex: 0 0 40%;
+    padding: 1vw;
+    margin: 5vh 2.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    scroll-snap-align: center;
+}
 }
 /***************************************************/
 /* X-Large Devices, Wide Screens */
 /***************************************************/
 @media only screen and (min-width : 1900px) {
-    
+    .dimension,
+    .interview__dimension {
+    flex: 0 0 40%;
+    padding: 1vw;
+    margin: 5vh 2.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    scroll-snap-align: center;
+}
+}
 }
