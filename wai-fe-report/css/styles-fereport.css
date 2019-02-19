@@ -34,7 +34,7 @@ body {
 #interview {
     display: flex;
     flex-wrap: nowrap;
-    height: 80vh;
+    height: auto;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
@@ -137,7 +137,7 @@ body {
 @media only screen and (min-width : 1200px) {
 
     #arise,
-    #alignment,
+    /* #alignment, */
     #derailers,
     #technical,
     #interview {
@@ -157,6 +157,20 @@ body {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         scroll-snap-align: center;
     }
+    #alignment .dimension {
+        display: flex;
+        flex-wrap: nowrap;
+        background: blue;
+        min-width: 90vw;
+    }
+    #alignment .dimension .dimension__gauge {
+        flex-grow: 3;
+        border: 1px solid red;
+    }
+    #alignment .dimension .dimension__definition {
+        flex-grow: 1;
+    }
+
     /* .dimension:first-of-type {
         margin-left: 5vw;
     }
