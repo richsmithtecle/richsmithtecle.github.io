@@ -30,8 +30,7 @@ body {
 #arise,
 #alignment,
 #derailers,
-#technical,
-#interview {
+#technical {
     display: flex;
     flex-wrap: nowrap;
     height: auto;
@@ -39,14 +38,14 @@ body {
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
 }
-.dimension,
-.interview__dimension {
+.dimension {
     flex: 0 0 80%;
     padding: 1vw;
     margin: 5vh 2.5vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     scroll-snap-align: center;
 }
+.interview__questions:first-of-type,
 .dimension:first-of-type {
     margin-left:7.5vw;
 }
@@ -98,6 +97,44 @@ body {
     background-position: top;
     position: relative;
 }
+
+#interview {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y mandatory;
+    /* margin-right: 5vw; */
+}
+
+.interview__dimension {
+    flex: 0 0 auto;
+    padding: 1vw;
+    /* margin: 5vh 2.5vw; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    scroll-snap-align: center;
+    display: flex;
+    /* border: 1px solid blue; */
+    overflow-x: auto;
+}
+.interview__questions {
+    flex: 0 0 80%;
+    padding: 1vw;
+    margin: 5vh 2.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* scroll-snap-align: center; */
+
+    display: flex;
+    flex-direction: column;
+}
+.interview__title,
+.interview__extreme-kickouts,
+.interview__question,
+.interview__listen-for {
+    text-align: justify;
+    padding: 2.5vw;
+}
 .interview__title {
     text-align: center;
 }
@@ -143,17 +180,6 @@ body {
     #technical {
         display: flex;
         flex-wrap: nowrap;
-        /* height: 85vh; */
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x mandatory;
-        margin-right: 5vw;
-    }
-    
-    #interview {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scroll-snap-type: x mandatory;
@@ -166,26 +192,38 @@ body {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         scroll-snap-align: center;
     }
+    #interview {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        margin-right: 5vw;
+    }
+    
     .interview__dimension {
         flex: 0 0 auto;
         padding: 1vw;
-        margin: 5vh 2.5vw;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* margin: 5vh 2.5vw; */
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
         scroll-snap-align: center;
         display: flex;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         overflow-x: auto;
     }
     .interview__questions {
-        flex: 0 0 25%;
+        flex: 0 0 30%;
         padding: 1vw;
-        margin: 5vh 2.5vw;
+        margin: 2.5vh 2.5vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         scroll-snap-align: center;
 
         display: flex;
         flex-direction: column;
-    /* }
+    }
+    
+        /*
     #alignment .dimension {
         display: flex;
         flex-wrap: nowrap;
@@ -222,5 +260,6 @@ body {
 /***************************************************/
 @media only screen and (min-width : 1900px) {
     
+    }
 }
-}
+
