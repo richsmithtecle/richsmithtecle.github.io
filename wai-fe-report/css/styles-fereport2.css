@@ -1,0 +1,149 @@
+
+:root {
+    --swagelok-blue: rgba(0, 77, 158, 1) 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.report-hero {
+    /* background-color: #004d9e; */
+    color: white;
+    min-height: 85vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        ),
+        url(/img/customSolutions.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5vh;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.summary__title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: var(--swagelok-blue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 1vh;
+    margin-bottom: 5vh;
+}
+.summary__gauge {
+    flex: 0 0 20%;
+    padding: 1vw;
+    margin: 2vw 2.5vh;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#arise {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 5vh;
+    border: 1px solid red;
+}
+.dimension__group {
+    border: 1px dashed green;
+    margin: 2.5vh;
+}
+.dimension {
+    border: 1px solid grey;
+    margin: 2.5vh;
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+    
+    display: flex;
+    align-items: center;
+}
+.dimension__gauge {
+    flex: 1 1 auto;
+    padding: 1vh;
+    border: 1px dotted black;
+}
+.dimension__definition {
+    flex: 2 2 auto;
+    background: grey;
+    padding: 2.5vw;
+}
+.dimension__global-statement {
+    flex: 3 3 auto;
+    background: lightblue;
+    padding: 2.5vw;
+}
+
+
+.interview__group {
+    border: 1px dotted purple;
+    margin: 2.5vh;
+    display: flex;
+    flex-direction: column;
+}
+.interview__dimension {
+    text-align: center;
+    padding: 2vh 15vw;
+}
+
+
+
+
+
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+    
+}
+    
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+    
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+    
+}
+
+/***************************************************/
+/* Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+
+    
+    
+}
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+    
+}
+
+
+
+
