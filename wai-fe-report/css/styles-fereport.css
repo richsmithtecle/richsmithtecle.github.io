@@ -14,7 +14,7 @@ body {
             rgba(0, 77, 158, 0.80),
             rgba(0, 77, 158, 0.80)
         ),
-        url(/img/customSolutions.gif);
+        url(../img/customSolutions.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -91,7 +91,7 @@ body {
             rgba(0, 77, 158, 0.80),
             rgba(0, 77, 158, 0.80)
         ),
-        url(img/pexels-photo-218863.jpeg);
+        url(../img/pexels-photo-218863.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
