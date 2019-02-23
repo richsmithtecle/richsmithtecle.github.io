@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 5vh;
+    margin: 5vh 2.5vw;
     height: auto;
     border: 1px solid black;
     border-radius: 10px;
@@ -48,9 +48,9 @@ body {
     margin-bottom: 5vh;
 }
 .summary__gauge {
-    flex: 0 0 20%;
+    flex: 0 0 40%;
     padding: 1vw;
-    margin: 2vw 2.5vh;
+    margin: 2vw 2vh;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -58,12 +58,12 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 5vh;
+    margin: 2.5vw;
     border: 1px solid red;
 }
 .dimension__group {
     border: 1px dashed green;
-    margin: 2.5vh;
+    margin: 0vh;
 }
 .dimension {
     border: 1px solid grey;
@@ -72,6 +72,7 @@ body {
     flex-wrap: nowrap;
     
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .dimension__gauge {
@@ -101,6 +102,36 @@ body {
     text-align: center;
     padding: 2vh 15vw;
 }
+.interview__questions--wrapper {
+    background: yellowgreen;
+    display: flex;
+    flex-wrap: wrap;
+}
+.interview__questions {
+    flex: 1 1 auto;
+    height: auto;
+    padding: 2vw;
+    margin: 2vw;
+    background: lightgray;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.interview__question,
+.interview__listen-for {
+    flex: 1;
+    text-align: justify;
+}
+.interview__question {
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+.interview__questions__number {
+    text-align: center;
+}
+
+
 
 
 
@@ -111,7 +142,70 @@ body {
 /* Small Devices, Tablets */
 /***************************************************/
 @media only screen and (min-width : 576px) {
+    #summary {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 5vh;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .summary__gauge {
+        flex: 0 0 20%;
+        padding: 1vw;
+        margin: 2vw 2.5vh;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+    .dimension {
+        border: 1px solid grey;
+        margin: 2.5vh;
+        flex: 0 0 auto;
+        flex-wrap: nowrap;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #arise {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 5vh;
+        border: 1px solid red;
+    }
+    .dimension__group {
+        border: 1px dashed green;
+        margin: 2.5vh;
+    }
+
+    #arise {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 5vw;
+        border: 1px solid red;
+    }
+    .dimension__group {
+        border: 1px dashed green;
+        margin: 2.5vh;
+    }
+
+    .interview__questions {
+        flex: 1 1 25vw;
+        height: 35vh;
+        padding: 1vw;
+        margin: 1vw;
+        background: lightgray;
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+    }
     
+
+    
+       
 }
     
 
