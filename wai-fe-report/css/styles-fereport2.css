@@ -21,11 +21,7 @@ body {
             rgba(0, 77, 158, 0.80),
             rgba(0, 77, 158, 0.80)
         ),
-<<<<<<< HEAD
         url(../img/customSolutions.gif);
-=======
-        url(img/customSolutions.gif);
->>>>>>> 7a122b495c268e30155341e2d1aef4eda27894bb
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
