@@ -1,0 +1,304 @@
+
+:root {
+    --swagelok-blue: rgba(0, 77, 158, 1) 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.report-hero {
+    /* background-color: #004d9e; */
+    color: white;
+    min-height: 85vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        ),
+        url(../img/customSolutions.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#summary {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5vh 2.5vw;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.summary__title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: var(--swagelok-blue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 1vh;
+    margin-bottom: 5vh;
+}
+.summary__gauge {
+    height: 10vh;
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0 0 0 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+.summary__gauge__title {
+    flex: 2;
+    order: 1;
+    text-align: left;
+    padding: 0px;
+    margin: 0;
+    color: black;
+    background: none;
+    box-shadow: none;
+    border-radius: 5px 5px 0px 0px;
+}
+#summary__agility,
+#summary__resilience,
+#summary__intentional,
+#summary__selfStarting,
+#summary__engaging,
+#summary__roleAlignment,
+#summary__pessimism,
+#summary__overprep,
+#summary__critical,
+#summary__expert,
+#summary__cognitiveVerbal,
+#summary__cognitiveMath {
+    height: 10vh;
+    width: 20vw;;
+    flex: 1;
+}
+#arise {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 2.5vw;
+    border: 1px solid red;
+}
+.dimension__group {
+    border: 1px dashed green;
+    margin: 0vh;
+}
+.dimension {
+    border: 1px solid grey;
+    margin: 2.5vh;
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dimension__gauge {
+    flex: 1 1 auto;
+    padding: 1vh;
+    border: 1px dotted black;
+}
+.dimension__definition {
+    flex: 2 2 auto;
+    background: grey;
+    padding: 2.5vw;
+}
+.dimension__global-statement {
+    flex: 3 3 auto;
+    background: lightblue;
+    padding: 2.5vw;
+}
+
+
+.interview__group {
+    border: 1px dotted purple;
+    margin: 2.5vh;
+    display: flex;
+    flex-direction: column;
+}
+.interview__dimension {
+    text-align: center;
+    padding: 2vh 15vw;
+}
+.interview__questions--wrapper {
+    background: yellowgreen;
+    display: flex;
+    flex-wrap: wrap;
+}
+.interview__questions {
+    flex: 1 1 auto;
+    height: auto;
+    padding: 2vw;
+    margin: 2vw;
+    background: lightgray;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.interview__question,
+.interview__listen-for {
+    flex: 1;
+    text-align: justify;
+}
+.interview__question {
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+.interview__questions__number {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+    #summary {
+        flex-direction: row;
+        margin: 5vh;
+    }
+    
+    .summary__gauge {
+        height: auto;
+        flex: 0 0 20%;
+        /* padding: 1vw; */
+        margin: 2vw 2.5vh;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .summary__gauge__title {
+        flex: 0 0 auto;
+        order: 0;
+        width: 100%;
+        text-align: center;
+        padding: 2.5px 0px;
+        margin: 0;
+        color: white;
+        background: var(--swagelok-blue);
+        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px 5px 0px 0px;
+    }
+    #summary__agility,
+    #summary__resilience,
+    #summary__intentional,
+    #summary__selfStarting,
+    #summary__engaging,
+    #summary__roleAlignment,
+    #summary__pessimism,
+    #summary__overprep,
+    #summary__critical,
+    #summary__expert,
+    #summary__cognitiveVerbal,
+    #summary__cognitiveMath {
+        height: auto;
+        width: auto;
+        flex: 0 0 auto;
+    }
+    .dimension {
+        border: 1px solid grey;
+        margin: 2.5vh;
+        flex: 0 0 auto;
+        flex-wrap: nowrap;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #arise {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 5vh;
+        border: 1px solid red;
+    }
+    .dimension__group {
+        border: 1px dashed green;
+        margin: 2.5vh;
+    }
+
+    #arise {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 5vw;
+        border: 1px solid red;
+    }
+    .dimension__group {
+        border: 1px dashed green;
+        margin: 2.5vh;
+    }
+
+    .interview__questions {
+        flex: 1 1 25vw;
+        height: 35vh;
+        padding: 1vw;
+        margin: 1vw;
+        background: lightgray;
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    
+       
+}
+    
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+    
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+    
+}
+
+/***************************************************/
+/* Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+
+    
+    
+}
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+    
+}
+
+
+
+
