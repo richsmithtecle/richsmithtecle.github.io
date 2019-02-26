@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARISE Field Engineering Report | Watterson &amp; Associates</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-fereport4.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WAI</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#summary">PROFILE SUMMARY</a></li>
+              <li><a href="#dimension__agility">AGILITY</a></li>
+              <li><a href="#dimension__resilience">RESILIENCE</a></li>
+              <li><a href="#dimension__intentional">INTENTIONAL</a></li>
+              <li><a href="#dimension__self-starting">SELF-STARTING</a></li>
+              <li><a href="#dimension__engaging">ENGAGING</a></li>
+              <li><a href="#dimension__sales-derailers">SALES DERAILERS</a></li>
+              <li><a href="#dimension__engaging">ROLE ALIGNMENT</a></li>
+              <li><a href="#dimension__engaging">TECHNICAL COMPETENCE</a></li>
+              <li><a href="#">ABOUT</a></li>
+              
+              
+            </ul>
+           
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    <div class="jumbotron report-hero">
+        <div class="container center">
+            <!-- <h1 class="text-center">ARISE<br>Field Engineer Report<br><small>John Sample 01-Feb-2019</small> </h1> -->
+            <h1 class="text-center">ARISE<br>Field Engineer Report<br><small>John Sample February 28, 2019</small></h1>
+        </div>
+    </div>
+
+    <div id="report__container" class="container-fluid">
+
+        <!-- SUMMARY REPORT -->
+        <div id="summary" class="container">
+            <div class="row">
+                <div class="summary__title">
+                    <h3>Profile Summary</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Agility</h5>
+                        <div id="summary__agility"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Resilience</h5>
+                        <div id="summary__resilience"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Intentional</h5>
+                        <div id="summary__intentional"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Self-Starting</h5>
+                        <div id="summary__selfStarting"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Engaging</h5>
+                        <div id="summary__engaging"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Role Alignment</h5>
+                        <div id="summary__roleAlignment"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Pessimism</h5>
+                        <div id="summary__pessimism"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Overprep</h5>
+                        <div id="summary__overprep"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Critcal</h5>
+                        <div id="summary__critical"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Expert</h5>
+                        <div id="summary__expert"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Cognitive Verbal</h5>
+                        <div id="summary__cognitiveVerbal"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Cognitve Math</h5>
+                        <div id="summary__cognitiveMath"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARISE DIMENSIONS -->
+        <div id="dimension__agility" class="container dimension__container">
+            <div class="row">
+                <!-- DIMENSION AREA -->
+                <div class="col-md-3">
+                    <div class="dimension">
+                        <div id="agility" class="dimension__gauge"></div>
+                        <div class="dimension__definition">
+                            <p>The quality that allows a person to respond quickly to change and be adaptable, flexible
+                                and balanced. Continuously learns and quickly applies it constructively moving forward.
+                            </p>
+                        </div>
+                        <div class="dimension__global-statement">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum dolorem corrupti
+                                distinctio, non animi amet, voluptatibus praesentium hic quia autem dolor inventore
+                                explicabo facere libero itaque deleniti quaerat facilis.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- INTERVIEW AREA -->
+                <div class="col-md-9">
+                    <div class="interview">
+                        <h4 class="interview--title">Agility Interview Questions</h4>
+                    </div>
+                    <!-- KICKOUT 1 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Agility Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                            <!-- QUESTION & LISTEN FOR 1 -->
+                            <div class="interview__qa">
+                                <div class="interview__question">
+                                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt repudiandae error, quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                                </div>
+                                <div class="interview__listen-for">
+                                    <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                        debitis
+                                        perferendis hic repellat,
+                                        reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                        nam ab
+                                        ipsam!</p>
+                                </div>
+                            </div>
+                            <!-- QUESTION & LISTEN FOR 2 -->
+                            <div class="interview__qa">
+                                <div class="interview__question">
+                                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur voluptatibus
+                                        soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                                </div>
+                                <div class="interview__listen-for">
+                                    <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Nesciunt
+                                        molestias ut consectetur
+                                        nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                        Inventore quos labore enim?
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- QUESTION & LISTEN FOR 3 -->
+                            <div class="interview__qa">
+                                <div class="interview__question">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit, exercitationem minus
+                                        natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor placeat.
+                                        Similique, quas quisquam"</p>
+                                </div>
+                                <div class="interview__listen-for">
+                                    <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Perspiciatis, provident eaque dolore
+                                        sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                        explicabo.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- KICKOUT 2 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Agility Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- KICKOUT 3 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Agility Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit, exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 4 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit, exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div> <!-- END INTERVIEW AREA -->
+            </div> <!--END ROW -->
+        </div> <!-- END DIMENSION__AGILITY -->
+
+        <div id="dimension__resilience" class="container dimension__container">
+            <div class="row">
+                <!-- DIMENSION AREA -->
+                <div class="col-md-3">
+                    <div class="dimension">
+                        <div id="resilience" class="dimension__gauge"></div>
+                        <div class="dimension__definition">
+                            <p>The response to stress and change that is characterized by exhibiting a sense of control, a
+                                commitment to keep moving toward the goal, and a thirst for being challenged.
+                            </p>
+                        </div>
+                        <div class="dimension__global-statement">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum dolorem corrupti
+                                distinctio, non animi amet, voluptatibus praesentium hic quia autem dolor inventore
+                                explicabo facere libero itaque deleniti quaerat facilis.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- INTERVIEW AREA -->
+                <div class="col-md-9">
+                    <div class="interview">
+                        <h4 class="interview--title">Resilience Interview Questions</h4>
+                    </div>
+                    <!-- KICKOUT 1 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Resilience Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error, quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi
+                                    quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- KICKOUT 2 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Resilience Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- KICKOUT 3 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Resilience Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 4 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- END INTERVIEW AREA -->
+            </div>
+            <!--END ROW -->
+        </div> <!-- END DIMENSION__RESILIENCE -->
+    
+        <div id="dimension__intentional" class="container dimension__container">
+            <div class="row">
+                <!-- DIMENSION AREA -->
+                <div class="col-md-3">
+                    <div class="dimension">
+                        <div id="intentional" class="dimension__gauge"></div>
+                        <div class="dimension__definition">
+                            <p>The drive, conviction and focus required of a person to successfully meet a given goal, often in the face of resistance, distraction and disagreement.
+                            </p>
+                        </div>
+                        <div class="dimension__global-statement">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum dolorem corrupti
+                                distinctio, non animi amet, voluptatibus praesentium hic quia autem dolor inventore
+                                explicabo facere libero itaque deleniti quaerat facilis.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- INTERVIEW AREA -->
+                <div class="col-md-9">
+                    <div class="interview">
+                        <h4 class="interview--title">Intentional Interview Questions</h4>
+                    </div>
+                    <!-- KICKOUT 1 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Intentional Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error, quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi
+                                    quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- KICKOUT 2 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Intentional Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- KICKOUT 3 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Intentional Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 4 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- END INTERVIEW AREA -->
+            </div>
+            <!--END ROW -->
+        </div> <!-- END DIMENSION__INTENTIONAL -->
+
+        <div id="dimension__self-starting" class="container dimension__container">
+            <div class="row">
+                <!-- DIMENSION AREA -->
+                <div class="col-md-3">
+                    <div class="dimension">
+                        <div id="selfStarting" class="dimension__gauge"></div>
+                        <div class="dimension__definition">
+                            <p>The personal motivation to plan, initiate and complete a task or meet a goal without needing
+                                much—if any—external direction.
+                            </p>
+                        </div>
+                        <div class="dimension__global-statement">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum dolorem corrupti
+                                distinctio, non animi amet, voluptatibus praesentium hic quia autem dolor inventore
+                                explicabo facere libero itaque deleniti quaerat facilis.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- INTERVIEW AREA -->
+                <div class="col-md-9">
+                    <div class="interview">
+                        <h4 class="interview--title">Self-Starting Interview Questions</h4>
+                    </div>
+                    <!-- KICKOUT 1 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Self-Starting Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error, quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi
+                                    quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- KICKOUT 2 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Self-Starting Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- KICKOUT 3 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Self-Starting Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 4 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- END INTERVIEW AREA -->
+            </div>
+            <!--END ROW -->
+        </div> <!-- END DIMENSION__SELF-STARTING -->
+        
+        <div id="dimension__engaging" class="container dimension__container">
+            <div class="row">
+                <!-- DIMENSION AREA -->
+                <div class="col-md-3">
+                    <div class="dimension">
+                        <div id="engaging" class="dimension__gauge"></div>
+                        <div class="dimension__definition">
+                            <p>The personal motivation to plan, initiate and complete a task or meet a goal without needing
+                                much—if any—external direction.
+                            </p>
+                        </div>
+                        <div class="dimension__global-statement">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum dolorem corrupti
+                                distinctio, non animi amet, voluptatibus praesentium hic quia autem dolor inventore
+                                explicabo facere libero itaque deleniti quaerat facilis.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- INTERVIEW AREA -->
+                <div class="col-md-9">
+                    <div class="interview">
+                        <h4 class="interview--title">Engaging Interview Questions</h4>
+                    </div>
+                    <!-- KICKOUT 1 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Engaging Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error, quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi
+                                    quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- KICKOUT 2 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Engaging Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- KICKOUT 3 -->
+                    <div class="interview__kickout">
+                        <!-- KICKOUT STATEMENT -->
+                        <div class="interview__kickout--statement">
+                            <h5>Engaging Kickout Statement Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae alias quod quo quasi ducimus facere vitae voluptates est dignissimos dolore.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptate. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis?</h5>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 1 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam iusto sed nesciunt
+                                    repudiandae error,
+                                    quia voluptate molestias, eos aliquam quibusdam officia deleniti nisi quod fugit"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                                    debitis
+                                    perferendis hic repellat,
+                                    reprehenderit voluptate veritatis corporis excepturi quasi natus quidem nihil
+                                    nam ab
+                                    ipsam!</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 2 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maiores tempora ex tenetur
+                                    voluptatibus
+                                    soluta, aliquam deleniti voluptatum eius cumque?"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt
+                                    molestias ut consectetur
+                                    nisi iure obcaecati reiciendis molestiae impedit, expedita beatae quaerat!
+                                    Inventore quos labore enim?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 3 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                        <!-- QUESTION & LISTEN FOR 4 -->
+                        <div class="interview__qa">
+                            <div class="interview__question">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure reprehenderit,
+                                    exercitationem
+                                    minus
+                                    natus itaque facere nostrum cupiditate eaque labore porro corporis repellendus illo id dolor
+                                    placeat.
+                                    Similique, quas quisquam"</p>
+                            </div>
+                            <div class="interview__listen-for">
+                                <p>Listen For: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, provident eaque dolore
+                                    sequi soluta tenetur earum error odit beatae dolores nemo! Ipsum sint maxime
+                                    explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- END INTERVIEW AREA -->
+            </div>
+            <!--END ROW -->
+        </div> <!-- END DIMENSION__ENGAGING -->
+        
+        <div id="dimension__sales-derailers" class="container dimension__static-container">
+            <div class="row">
+                <h4 class="dimension__static-container--title">Sales Derailers</h4>
+                <div class="col-md-3">
+                    <div id="pessimism"></div>
+                    <div class="dimension__definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis provident sapiente quis quibusdam quam nisi laboriosam maiores, aut sequi!</div>
+                </div>
+                <div class="col-md-3">
+                    <div id="overprep"></div>
+                    <div class="dimension__definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto quaerat necessitatibus placeat autem, dolorum similique ipsam porro assumenda eveniet ut tempore!</div>
+                </div>
+                <div class="col-md-3">
+                    <div id="critical"></div>
+                    <div class="dimension__definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus quibusdam quos suscipit, recusandae accusamus.</div>
+                </div>
+                <div class="col-md-3">
+                    <div id="expert"></div>
+                    <div class="dimension__definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit in ullam mollitia odio excepturi consectetur, rerum doloremque illo, voluptate quia, animi non aperiam provident.</div>
+                </div>
+            </div>
+        </div> <!--END SALES DERAILERS-->
+
+
+        <div id="dimension__role-and-technical" class="container dimension__static-container">
+                <div class="row">
+                    <h4 class="dimension__static-container--title">Role Alignment &amp; Technical Competence</h4>
+                    <div class="col-md-3">
+                        <div id="roleAlignment"></div>
+                        <div class="dimension__definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis provident sapiente quis quibusdam quam nisi laboriosam maiores, aut sequi!</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="cognitiveVerbal"></div>
+                        <div class="dimension__definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto quaerat necessitatibus placeat autem, dolorum similique ipsam porro assumenda eveniet ut tempore!</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="cognitiveMath"></div>
+                        <div class="dimension__definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus quibusdam quos suscipit, recusandae accusamus.</div>
+                    </div>
+                </div>
+            </div> <!--TECHNICAL COMPETENCE & ROLE ALIGNMENT-->
+    
+    </div> <!--END REPORT CONTAINER -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JustGage PlugIn -->
+        <!-- // gauge colors
+        // WAI Blue
+        //levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+
+        //Random Blue1
+        // levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+
+        //WAI Orange / Brown
+        // levelColors: ["#e5a812", "#e5a812", "#e5a812"]
+
+        //WAI Website Background Orange
+        // levelColors: ["#be7533", "#be7533", "#be7533"] -->
+        <script src="js/justgage.js"></script>
+        <script src="js/raphael-2.1.4.min.js"></script>
+        <script>
+            var agility = new JustGage({
+                id: "agility",
+                value: 68,
+                min: 0,
+                max: 100,
+                title: "Agility",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+            });
+            var summaryAgility = new JustGage({
+                id: "summary__agility",
+                value: 68,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+            });
+            var resilience = new JustGage({
+                id: "resilience",
+                value: 98,
+                min: 0,
+                max: 100,
+                title: "Resilience",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                //levelColors: ["#004d9e", "#004d9e", "#004d9e"]
+            });
+            var summaryResilience = new JustGage({
+                id: "summary__resilience",
+                value: 98,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                //levelColors: ["#004d9e", "#004d9e", "#004d9e"]
+            });
+            var intentional = new JustGage({
+                id: "intentional",
+                value: 57,
+                min: 0,
+                max: 100,
+                title: "Intentional",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryIntentional = new JustGage({
+                id: "summary__intentional",
+                value: 57,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var selfStarting = new JustGage({
+                id: "selfStarting",
+                value: 63,
+                min: 0,
+                max: 100,
+                title: "Self-Starting",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summarySelfStarting = new JustGage({
+                id: "summary__selfStarting",
+                value: 63,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var engaging = new JustGage({
+                id: "engaging",
+                value: 98,
+                min: 0,
+                max: 100,
+                title: "Engaging",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryEngaging = new JustGage({
+                id: "summary__engaging",
+                value: 98,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
+            // Sales Interest (scale by itself)
+            // Removed "Sales Interest" title - felt redundant
+            var salesInterest = new JustGage({
+                id: "salesInterest",
+                value: 67,
+                min: 0,
+                max: 100,
+                //   title: "Sales Interest",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summarySalesInterest = new JustGage({
+                id: "summary__salesInterest",
+                value: 67,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
+            // Sales Derailers:
+            // 1. Pessimism
+            // 2. Overprep
+            // 3. Critical
+            // 4. Expert
+            var pessimism = new JustGage({
+                id: "pessimism",
+                value: 82,
+                min: 0,
+                max: 100,
+                title: "Pessimism",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryPessimism = new JustGage({
+                id: "summary__pessimism",
+                value: 82,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var overprep = new JustGage({
+                id: "overprep",
+                value: 76,
+                min: 0,
+                max: 100,
+                title: "Overprep",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryOverprep = new JustGage({
+                id: "summary__overprep",
+                value: 76,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var critical = new JustGage({
+                id: "critical",
+                value: 49,
+                min: 0,
+                max: 100,
+                title: "Critical",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryCritical = new JustGage({
+                id: "summary__critical",
+                value: 49,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var expert = new JustGage({
+                id: "expert",
+                value: 67,
+                min: 0,
+                max: 100,
+                title: "Expert",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryExpert = new JustGage({
+                id: "summary__expert",
+                value: 67,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
+            // Role Alignemnt
+            var roleAlignment = new JustGage({
+                id: "roleAlignment",
+                value: 80,
+                min: 0,
+                max: 100,
+                title: "Role Alignment",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryRoleAlignment = new JustGage({
+                id: "summary__roleAlignment",
+                value: 80,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
+
+            // Technical Derailers:
+            // 1. Cognitive - Verbal
+            // 2. Cognitive - Math
+            // 3. Tech Speak
+            var cognitiveVerbal = new JustGage({
+                id: "cognitiveVerbal",
+                value: 90,
+                min: 0,
+                max: 100,
+                title: "Cognitive Verbal",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryCognitiveVerbal = new JustGage({
+                id: "summary__cognitiveVerbal",
+                value: 90,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var cognitiveMath = new JustGage({
+                id: "cognitiveMath",
+                value: 66,
+                min: 0,
+                max: 100,
+                title: "Cognitive Math",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryCognitiveMath = new JustGage({
+                id: "summary__cognitiveMath",
+                value: 66,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var techSpeak = new JustGage({
+                id: "techSpeak",
+                value: 84,
+                min: 0,
+                max: 100,
+                title: "Tech Speak",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+            var summaryTechSpeak = new JustGage({
+                id: "summary__techSpeak",
+                value: 84,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10
+            });
+
+            // All scales are 0 to 100.
+
+            // var f = new JustGage({
+            //     id: "g12",
+            //     value: getRandomInt(0, 100),
+            //     min: 0,
+            //     max: 100,
+            //     title: "Custom Shadow",
+            //     label: "",
+            //     shadowOpacity: 1,
+            //     shadowSize: 0,
+            //     shadowVerticalOffset: 10
+            // });
+        </script>
+</body>
+
+</html>

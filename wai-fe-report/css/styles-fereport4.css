@@ -1,0 +1,154 @@
+
+:root {
+    --swagelok-blue: rgba(0, 77, 158, 1) 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.report-hero {
+    /* background-color: #004d9e; */
+    color: white;
+    min-height: 85vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        ),
+        url(../img/customSolutions.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#summary {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+.summary__title {
+    padding: 10px 0px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+    background: var(--swagelok-blue);
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+.summary__gauge {
+    margin: 10px 5px 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    
+}
+.summary__gauge--title {
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+    text-align: center;
+    background: var(--swagelok-blue);
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dimension__container {
+    min-height: 75vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5vh auto;
+}
+.dimension__static-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5vh auto;
+    padding-bottom: 20px;
+}
+.dimension__static-container--title {
+    text-align: center;
+    background: var(--swagelok-blue);
+    color: white;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    border-radius: 5px 5px 0 0;
+}
+.dimension__definition {
+    text-align: justify;
+}
+.dimension__global-statement {
+    text-align: justify;
+}
+
+.interview {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.interview__kickout {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1vw;
+    margin-bottom: 2.5vh;
+    text-align: justify;
+}
+.interview__kickout--statement {
+    text-align: justify;
+}
+.interview__qa {
+    padding: 1vw;
+    margin: 1vw;
+    background: whitesmoke;
+}
+.interview__question {
+    font-style: italic;
+}
+.interview__listen-for {
+    padding-left: 10px;
+}
+
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+    
+}
+    
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+    
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+    
+}
+
+/***************************************************/
+/* Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+
+    
+    
+}
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+    
+}
+
+
+
+
