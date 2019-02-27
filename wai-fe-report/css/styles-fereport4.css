@@ -57,12 +57,16 @@ body {
     border-top-right-radius: 5px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
+#dimension__agility {
+    margin-top: 50px;
+}
 
 .dimension__container {
     min-height: 75vh;
     border: 1px solid black;
     border-radius: 5px;
     margin: 5vh auto;
+    /* padding-top: 70px; */
 }
 .dimension__static-container {
     border: 1px solid black;
@@ -70,6 +74,7 @@ body {
     margin: 5vh auto;
     padding-bottom: 20px;
 }
+.dimension__container--title,
 .dimension__static-container--title {
     text-align: center;
     background: var(--swagelok-blue);
