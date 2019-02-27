@@ -1050,6 +1050,7 @@
         <!-- // gauge colors
         // WAI Blue
         //levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+        //WAI Green = #92b642
 
         //Random Blue1
         // levelColors: ["#346ac1", "#346ac1", "#346ac1"]
@@ -1064,43 +1065,49 @@
         <script>
             var agility = new JustGage({
                 id: "agility",
-                value: 68,
+                value: 72,
                 min: 0,
                 max: 100,
                 title: "Agility",
                 shadowOpacity: 1,
                 shadowSize: 7,
                 shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryAgility = new JustGage({
                 id: "summary__agility",
-                value: 68,
+                value: 72,
                 min: 0,
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
                 shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var resilience = new JustGage({
                 id: "resilience",
-                value: 98,
+                value: 32,
                 min: 0,
                 max: 100,
                 title: "Resilience",
                 shadowOpacity: 1,
                 shadowSize: 7,
                 shadowVerticalOffset: 10,
-                //levelColors: ["#004d9e", "#004d9e", "#004d9e"]
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryResilience = new JustGage({
                 id: "summary__resilience",
-                value: 98,
+                value: 32,
                 min: 0,
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
                 shadowVerticalOffset: 10,
-                //levelColors: ["#004d9e", "#004d9e", "#004d9e"]
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var intentional = new JustGage({
                 id: "intentional",
@@ -1110,16 +1117,21 @@
                 title: "Intentional",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryIntentional = new JustGage({
                 id: "summary__intentional",
-                value: 57,
+                value: 37,
                 min: 0,
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+
             });
             var selfStarting = new JustGage({
                 id: "selfStarting",
@@ -1129,7 +1141,9 @@
                 title: "Self-Starting",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summarySelfStarting = new JustGage({
                 id: "summary__selfStarting",
@@ -1138,7 +1152,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var engaging = new JustGage({
                 id: "engaging",
@@ -1148,7 +1164,9 @@
                 title: "Engaging",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryEngaging = new JustGage({
                 id: "summary__engaging",
@@ -1157,7 +1175,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
 
             // Sales Interest (scale by itself)
@@ -1170,7 +1190,9 @@
                 //   title: "Sales Interest",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summarySalesInterest = new JustGage({
                 id: "summary__salesInterest",
@@ -1179,7 +1201,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
 
             // Sales Derailers:
@@ -1195,7 +1219,9 @@
                 title: "Pessimism",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryPessimism = new JustGage({
                 id: "summary__pessimism",
@@ -1204,7 +1230,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var overprep = new JustGage({
                 id: "overprep",
@@ -1214,7 +1242,9 @@
                 title: "Overprep",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryOverprep = new JustGage({
                 id: "summary__overprep",
@@ -1223,7 +1253,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var critical = new JustGage({
                 id: "critical",
@@ -1233,7 +1265,9 @@
                 title: "Critical",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryCritical = new JustGage({
                 id: "summary__critical",
@@ -1242,7 +1276,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var expert = new JustGage({
                 id: "expert",
@@ -1252,7 +1288,9 @@
                 title: "Expert",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryExpert = new JustGage({
                 id: "summary__expert",
@@ -1261,7 +1299,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
 
             // Role Alignemnt
@@ -1273,7 +1313,9 @@
                 title: "Role Alignment",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryRoleAlignment = new JustGage({
                 id: "summary__roleAlignment",
@@ -1282,7 +1324,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
 
 
@@ -1298,7 +1342,9 @@
                 title: "Cognitive Verbal",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryCognitiveVerbal = new JustGage({
                 id: "summary__cognitiveVerbal",
@@ -1307,7 +1353,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var cognitiveMath = new JustGage({
                 id: "cognitiveMath",
@@ -1317,7 +1365,9 @@
                 title: "Cognitive Math",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryCognitiveMath = new JustGage({
                 id: "summary__cognitiveMath",
@@ -1326,7 +1376,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var techSpeak = new JustGage({
                 id: "techSpeak",
@@ -1336,7 +1388,9 @@
                 title: "Tech Speak",
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
             var summaryTechSpeak = new JustGage({
                 id: "summary__techSpeak",
@@ -1345,7 +1399,9 @@
                 max: 100,
                 shadowOpacity: 1,
                 shadowSize: 7,
-                shadowVerticalOffset: 10
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
             });
 
             // All scales are 0 to 100.
