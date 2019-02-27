@@ -119,6 +119,13 @@ body {
 .interview__listen-for {
     padding-left: 10px;
 }
+.panel-primary>.panel-heading {
+    background: var(--swagelok-blue);
+    border-color: var(--swagelok-blue);
+}
+.interview-panels {
+    padding-bottom: 25px;
+}
 
 
 /***************************************************/
