@@ -6,7 +6,6 @@ body {
     font-family: 'Roboto', sans-serif;
     padding-top: 50px;
 }
-
 .center {
     margin: 0;
     position: absolute;
@@ -27,6 +26,9 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+}
+.report-hero span {
+    color: white;
 }
 #summary {
     border: 1px solid black;
@@ -57,9 +59,9 @@ body {
     border-top-right-radius: 5px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
-#dimension__agility {
+/* #dimension__agility {
     margin-top: 50px;
-}
+} */
 
 .dimension__container {
     min-height: 75vh;
@@ -68,6 +70,8 @@ body {
     margin: 5vh auto;
     /* padding-top: 70px; */
 }
+
+
 .dimension__static-container {
     border: 1px solid black;
     border-radius: 5px;
