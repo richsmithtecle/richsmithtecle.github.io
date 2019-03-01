@@ -104,6 +104,54 @@ body {
 .interview-panels {
     padding-bottom: 25px;
 }
+#instructions__hero {
+    color: white;
+    min-height: 25vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        ),
+        url(../img/TubeFittingInstallTrainBanner3.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+.instructions__overview {
+    margin-bottom: 10vh;
+}
+.instructions {
+    text-align: justify;
+}
+.intro {
+    text-align: center;    
+}
+.instructions__before,
+.instructions__after {
+    border: 1px solid var(--swagelok-blue);
+    border-radius: 5px;
+}
+.instructions__before p,
+.instructions__after p {
+    margin: 20px;
+}
+.instructions__title {
+    text-align: center;
+    background: var(--swagelok-blue);
+    color: white;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    border-radius: 5px 5px 0 0;
+}
+
+.big-five {
+    list-style-type: none;
+}
+.big-five span {
+    font-weight: bolder;
+}
+
 
 
 
