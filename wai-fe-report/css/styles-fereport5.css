@@ -1,0 +1,200 @@
+
+:root {
+    --swagelok-blue: rgba(0, 77, 158, 1) 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+}
+.dimension__container--title {
+    grid-area: title;
+    max-height: 3em;
+    text-align: center;
+    background: var(--swagelok-blue);
+    color: white;
+    margin-bottom: 5vh;
+}
+.dimension__overview {
+    grid-area: dimension-sidebar;
+}
+.interview__wrapper {
+    grid-area: dimension-interview-area;
+    border-radius: 5px;
+    margin: 10px;
+}
+.dimension__container {
+    align-content: start;
+    min-height: auto;
+    margin: 10px;
+    border: 1px solid var(--swagelok-blue);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-template-areas:
+        "title"
+        "dimension-sidebar"
+        "dimension-interview-area";
+}
+.dimension__definition,
+.dimension__global-statement {
+    margin: 10px;
+    text-align: justify;
+}
+
+.interview__group {
+    border: 1px solid var(--swagelok-blue);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.interview__group-title {
+    color: white;
+    background: var(--swagelok-blue);
+    text-align: center;
+}
+.interview__group-title h4 {
+    padding: 10px;
+    margin: 0px;
+}
+.interview__extreme {
+    margin: 10px;
+}
+.interview__qal-wrapper {
+    margin: 10px;
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+
+}
+.dimension__static-container-title {
+    grid-area: title;
+    text-align: center;
+    color: white;
+    background: var(--swagelok-blue);
+}
+.dimension__static-container {
+    margin: 10px;
+    border: 1px solid var(--swagelok-blue);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    grid-template-areas:
+        "title"
+        "derailer"
+        "derailer"
+        "derailer"
+        "derailer";
+}
+
+
+
+
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+    .dimension__container {
+        min-height: 75vh;
+        margin: 5vh 5vw;
+        border: 1px solid var(--swagelok-blue);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 2;
+        grid-template-areas:
+            "title title"
+            "dimension-sidebar dimension-interview-area";
+    }
+
+    .dimension__definition,
+    .dimension__global-statement {
+        margin: 10px 25px;
+        text-align: justify;
+    }
+    .interview__group {
+        border: 1px solid var(--swagelok-blue);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+    .interview__qal-wrapper {
+        margin: 20px;
+        padding: 10px;
+        background: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+    .dimension__static-container {
+        margin: 5vh 5vw;
+        border: 1px solid var(--swagelok-blue);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas:
+            "title title title title"
+            "derailer derailer derailer derailer";
+    }
+    
+
+    
+}
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+    
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+    
+}
+
+/***************************************************/
+/* Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+
+    
+    
+}
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+    
+}
+
+@media print {
+    .dimension__container,
+    .dimension__static-container,
+    #instructions__hero {
+        page-break-before: always;
+    }
+    .dimension__static-container {
+        margin: 10px;
+        border: 1px solid var(--swagelok-blue);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas:
+            "title title title title"
+            "derailer derailer derailer derailer";
+    }
+    .gauge {
+        width: 200px;
+        height: 160px;
+    }
+    
+}
+
+

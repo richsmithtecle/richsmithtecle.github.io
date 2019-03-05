@@ -223,6 +223,12 @@ body {
     
 }
 
-
+@media print {
+    .dimension__container,
+    .dimension__static-container,
+    #instructions__hero {
+        page-break-before: always;
+    }
+}
 
 
