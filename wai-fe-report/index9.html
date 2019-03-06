@@ -56,97 +56,843 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-      <div id="dimension__agility" class="dimension__container">
-          <div class="dimension__container--title"><h4>Agility Results : Chris Sample</h4></div>
-          <div class="dimension__overview">
-              <div id="agility" class="dimension__gauge"></div>
-              <div class="dimension__definition">
-                  <p>Dimension Definition : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consequuntur sunt quisquam, at dolore repellendus repudiandae quae illum magnam veniam.</p>
-              </div>
-              <div class="dimension__global-statement">
-                  <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
-              </div>
-          </div>
-          <div class="interview__wrapper">
-              <div class="interview__group">
-                  <div class="interview__group-title">
-                      <h4>Agility Interview Questions 1</h4>
-                  </div>
-                  <div class="interview__extreme">
-                      <p>Extereme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed autem fugit, voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit minima similique. A, optio ex.</p>
-                  </div>
-                  <div class="interview__qal-wrapper">
-                      <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
-                      <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus ipsam suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
-                  </div>
+        <!--HERO BANNER-->
+        <div class="jumbotron report-hero">
+                <div class="container center">
+                    <h1 class="text-center">ARISE<br>Field Engineer Report<br><small><span>John Sample February 28, 2019</span></small></h1>
+                </div>
+        </div>
 
-                  <div class="interview__qal-wrapper">
-                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
-                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus ipsam suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
-                </div>
+        <!--SUMMARY REPORT SECTION-->
+        <div id="summary">
+        
+            <div class="summary__title">
+                <h3>Profile Summary : John Sample</h3>
+            </div>
 
-                <div class="interview__qal-wrapper">
-                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
-                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus ipsam suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+            <div class="summary__gauges">
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Agility</h5>
+                    <div id="summary__agility"></div>
                 </div>
-              </div>
-              <div class="interview__group">
-                <div class="interview__group-title">
-                    <h4>Agility Interview Questions 2</h4>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Resilience</h5>
+                    <div id="summary__resilience"></div>
                 </div>
-                <div class="interview__extreme">
-                    <p>Extereme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed autem fugit, voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit minima similique. A, optio ex.</p>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Intentional</h5>
+                    <div id="summary__intentional"></div>
                 </div>
-                <div class="interview__qal-wrapper">
-                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
-                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus ipsam suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Self-Starting</h5>
+                    <div id="summary__selfStarting"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Engaging</h5>
+                    <div id="summary__engaging"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Role Alignment</h5>
+                    <div id="summary__roleAlignment"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Pessimism</h5>
+                    <div id="summary__pessimism"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Overprep</h5>
+                    <div id="summary__overprep"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Critcal</h5>
+                    <div id="summary__critical"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Expert</h5>
+                    <div id="summary__expert"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Cognitive Verbal</h5>
+                    <div id="summary__cognitiveVerbal"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Cognitve Math</h5>
+                    <div id="summary__cognitiveMath"></div>
                 </div>
             </div>
-            <div class="interview__group">
-                <div class="interview__group-title">
-                    <h4>Agility Interview Questions 3</h4>
+
+        </div>
+
+
+        <!--AGILITY SECTION-->
+        <div id="dimension__agility" class="dimension__container">
+            <div class="dimension__container--title"><h4>Agility Results : Chris Sample</h4></div>
+            <div class="dimension__overview">
+                <div id="agility" class="dimension__gauge"></div>
+                <div class="dimension__definition">
+                    <p>Dimension Definition : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consequuntur sunt quisquam, at dolore repellendus repudiandae quae illum magnam veniam.</p>
                 </div>
-                <div class="interview__extreme">
-                    <p>Extereme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed autem fugit, voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit minima similique. A, optio ex.</p>
-                </div>
-                <div class="interview__qal-wrapper">
-                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
-                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus ipsam suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                <div class="dimension__global-statement">
+                    <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
                 </div>
             </div>
-          </div>
-      </div>
+            <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('AgilityExtreme1')" class="interview__group__button interview__group-title">
+                            <h4>Agility Interview Questions 1</h4>
+                        </button>
+                        <div id="AgilityExtreme1" class="interview__group interview-hide interview-show">
+                    
+                            <div class="interview__extreme">
+                                <p>Extereme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div id="dimension__derailers" class="dimension__static-container">
-          <div class="dimension__static-container-title">
-              <h4>Derailers : Chris Sample</h4>
-          </div>
-          <div class="derailer">
-              <div id="pessimism" class="gauge"></div>
-              <div class="dimension__definition">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sunt, dicta iusto incidunt illum esse beatae commodi. Voluptatum maxime mollitia quas, et sunt sint modi.</p>
-              </div>
-          </div>
-          <div class="derailer">
-              <div id="overprep" class="gauge"></div>
-              <div class="dimension__definition">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam nemo obcaecati id tempore quasi provident consequuntur, quia laudantium eos perspiciatis, ullam minima nobis commodi ipsum?</p>
-              </div>
-          </div>
-          <div class="derailer">
-              <div id="critical" class="gauge"></div>
-              <div class="dimension__definition">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, atque omnis nostrum possimus doloribus veritatis veniam ab enim praesentium maxime asperiores tenetur ducimus? Nam, consequuntur?</p>
-              </div>
-          </div>
-          <div class="derailer">
-              <div id="expert" class="gauge"></div>
-              <div class="dimension__definition">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ad provident nulla, fugiat quidem commodi nihil itaque maiores, quas deleniti error laudantium repellendus ipsum nostrum.</p>
-              </div>
-          </div>
-      </div>
+                    <div class="accordion__wrapper">
+                            <button onclick="interviewAccordion('AgilityExtreme2')" class="interview__group__button interview__group-title">
+                                <h4>Agility Interview Questions 2</h4>
+                            </button>
+                            <div id="AgilityExtreme2" class="interview__group interview-hide interview-show">
+                        
+                                <div class="interview__extreme">
+                                    <p>Extereme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed
+                                        autem fugit,
+                                        voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit minima
+                                        similique.
+                                        A, optio ex.</p>
+                                </div>
+                                <div class="interview__qal-wrapper">
+                                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        vitae
+                                        voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Soluta
+                                        eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                        ipsam
+                                        suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                                </div>
+                                <div class="interview__qal-wrapper">
+                                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        vitae
+                                        voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Soluta
+                                        eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                        ipsam
+                                        suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                                </div>
+                                <div class="interview__qal-wrapper">
+                                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        vitae
+                                        voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Soluta
+                                        eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                        ipsam
+                                        suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                                </div>
+                            </div>
+                        </div>
 
+                    <div class="accordion__wrapper">
+                            <button onclick="interviewAccordion('AgilityExtreme3')" class="interview__group__button interview__group-title">
+                                <h4>Agility Interview Questions 3</h4>
+                            </button>
+                            <div id="AgilityExtreme3" class="interview__group interview-hide interview-show">
+                        
+                                <div class="interview__extreme">
+                                    <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed
+                                        autem fugit,
+                                        voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit minima
+                                        similique.
+                                        A, optio ex.</p>
+                                </div>
+                                <div class="interview__qal-wrapper">
+                                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        vitae
+                                        voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Soluta
+                                        eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                        ipsam
+                                        suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                                </div>
+                                <div class="interview__qal-wrapper">
+                                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        vitae
+                                        voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Soluta
+                                        eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                        ipsam
+                                        suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                                </div>
+                                <div class="interview__qal-wrapper">
+                                    <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        vitae
+                                        voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                    <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Soluta
+                                        eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia, repellendus
+                                        ipsam
+                                        suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <!--RESILIENCE SECTION-->
+        <div id="dimension__resilience" class="dimension__container">
+            <div class="dimension__container--title">
+                <h4>Resilience Results : Chris Sample</h4>
+            </div>
+            <div class="dimension__overview">
+                <div id="resilience" class="dimension__gauge"></div>
+                <div class="dimension__definition">
+                    <p>Dimension Definition : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consequuntur sunt
+                        quisquam, at dolore repellendus repudiandae quae illum magnam veniam.</p>
+                </div>
+                <div class="dimension__global-statement">
+                    <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi
+                        omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque
+                        vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                </div>
+            </div>
+            <div class="interview__wrapper">
+                <div class="accordion__wrapper">
+                    <button onclick="interviewAccordion('ResilienceExtreme1')"
+                        class="interview__group__button interview__group-title">
+                        <h4>Resilience Interview Questions 1</h4>
+                    </button>
+                    <div id="ResilienceExtreme1" class="interview__group interview-hide interview-show">
+        
+                        <div class="interview__extreme">
+                            <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                sed
+                                autem fugit,
+                                voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                minima
+                                similique.
+                                A, optio ex.</p>
+                        </div>
+                        <div class="interview__qal-wrapper">
+                            <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Adipisci
+                                vitae
+                                voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                            <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Soluta
+                                eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                repellendus
+                                ipsam
+                                suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                            </p>
+                        </div>
+                        <div class="interview__qal-wrapper">
+                            <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Adipisci
+                                vitae
+                                voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                            <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Soluta
+                                eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                repellendus
+                                ipsam
+                                suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="accordion__wrapper">
+                    <button onclick="interviewAccordion('ResilienceExtreme2')"
+                        class="interview__group__button interview__group-title">
+                        <h4>Resilience Interview Questions 2</h4>
+                    </button>
+                    <div id="ResilienceExtreme2" class="interview__group interview-hide interview-show">
+        
+                        <div class="interview__extreme">
+                            <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                sed
+                                autem fugit,
+                                voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                minima
+                                similique.
+                                A, optio ex.</p>
+                        </div>
+                        <div class="interview__qal-wrapper">
+                            <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Adipisci
+                                vitae
+                                voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                            <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Soluta
+                                eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                repellendus
+                                ipsam
+                                suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                            </p>
+                        </div>
+                        <div class="interview__qal-wrapper">
+                            <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Adipisci
+                                vitae
+                                voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                            <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Soluta
+                                eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                repellendus
+                                ipsam
+                                suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                            </p>
+                        </div>
+                        <div class="interview__qal-wrapper">
+                            <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Adipisci
+                                vitae
+                                voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                            <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Soluta
+                                eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                repellendus
+                                ipsam
+                                suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <!--INTENTIONAL SECTION-->
+        <div id="dimension__intentional" class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Intentional Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="intentional" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>Dimension Definition : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consequuntur sunt
+                            quisquam, at dolore repellendus repudiandae quae illum magnam veniam.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi
+                            omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque
+                            vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('IntentionalExtreme1')"
+                            class="interview__group__button interview__group-title">
+                            <h4>Intentional Interview Questions 1</h4>
+                        </button>
+                        <div id="IntentionalExtreme1" class="interview__group interview-hide interview-show">
+            
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('IntentionalExtreme2')"
+                            class="interview__group__button interview__group-title">
+                            <h4>Intentional Interview Questions 2</h4>
+                        </button>
+                        <div id="IntentionalExtreme2" class="interview__group interview-hide interview-show">
+            
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+        </div>
+        <!--SELF-STARTING SECTION-->
+        <div id="dimension__self-starting" class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Self-Starting Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="selfStarting" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>Dimension Definition : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consequuntur sunt
+                            quisquam, at dolore repellendus repudiandae quae illum magnam veniam.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi
+                            omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque
+                            vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('Self-startingExtreme1')"
+                            class="interview__group__button interview__group-title">
+                            <h4>Self-starting Interview Questions 1</h4>
+                        </button>
+                        <div id="Self-startingExtreme1" class="interview__group interview-hide interview-show">
+            
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('Self-startingExtreme2')"
+                            class="interview__group__button interview__group-title">
+                            <h4>Self-starting Interview Questions 2</h4>
+                        </button>
+                        <div id="Self-startingExtreme2" class="interview__group interview-hide interview-show">
+            
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+        </div>
+        <!--ENGAGING SECTION-->
+        <div id="dimension__engaging" class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Engaging Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="engaging" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>Dimension Definition : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consequuntur sunt
+                            quisquam, at dolore repellendus repudiandae quae illum magnam veniam.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi
+                            omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque
+                            vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('EngagingExtreme1')"
+                            class="interview__group__button interview__group-title">
+                            <h4>Engaging Interview Questions 1</h4>
+                        </button>
+                        <div id="EngagingExtreme1" class="interview__group interview-hide interview-show">
+            
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('EngagingExtreme2')"
+                            class="interview__group__button interview__group-title">
+                            <h4>Engaging Interview Questions 2</h4>
+                        </button>
+                        <div id="EngagingExtreme2" class="interview__group interview-hide interview-show">
+            
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+        </div>
+
+        <!--DERAILERS SECTION-->
+        <div id="dimension__derailers" class="dimension__static-container">
+            <div class="dimension__static-container-title">
+                <h4>Derailers : Chris Sample</h4>
+            </div>
+            <div class="derailer">
+                <div id="pessimism" class="gauge"></div>
+                <div class="dimension__definition">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sunt, dicta iusto incidunt illum esse beatae commodi. Voluptatum maxime mollitia quas, et sunt sint modi.</p>
+                </div>
+            </div>
+            <div class="derailer">
+                <div id="overprep" class="gauge"></div>
+                <div class="dimension__definition">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam nemo obcaecati id tempore quasi provident consequuntur, quia laudantium eos perspiciatis, ullam minima nobis commodi ipsum?</p>
+                </div>
+            </div>
+            <div class="derailer">
+                <div id="critical" class="gauge"></div>
+                <div class="dimension__definition">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, atque omnis nostrum possimus doloribus veritatis veniam ab enim praesentium maxime asperiores tenetur ducimus? Nam, consequuntur?</p>
+                </div>
+            </div>
+            <div class="derailer">
+                <div id="expert" class="gauge"></div>
+                <div class="dimension__definition">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ad provident nulla, fugiat quidem commodi nihil itaque maiores, quas deleniti error laudantium repellendus ipsum nostrum.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--ROLE ALIGNMENT & TECHNICAL COMPETENCE SECTION-->
+        <div id="dimension__role-and-technical" class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Role Alignment &amp; Technical Competence : Chris Sample</h4>
+                </div>
+                <div class="derailer">
+                    <div id="roleAlignment" class="gauge"></div>
+                    <div class="dimension__definition">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sunt, dicta iusto incidunt illum esse beatae commodi. Voluptatum maxime mollitia quas, et sunt sint modi.</p>
+                    </div>
+                </div>
+                <div class="derailer">
+                    <div id="cognitiveVerbal" class="gauge"></div>
+                    <div class="dimension__definition">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam nemo obcaecati id tempore quasi provident consequuntur, quia laudantium eos perspiciatis, ullam minima nobis commodi ipsum?</p>
+                    </div>
+                </div>
+                <div class="derailer">
+                    <div id="cognitiveMath" class="gauge"></div>
+                    <div class="dimension__definition">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, atque omnis nostrum possimus doloribus veritatis veniam ab enim praesentium maxime asperiores tenetur ducimus? Nam, consequuntur?</p>
+                    </div>
+                </div>
+        </div>
+
+        <!--INSTRUCTIONS HERO IMAGE-->
+        <div id="instructions__hero" class="jumbotron">
+            <div class="container">
+                <h1 class="instructions__hero__title">Interpreting The Results</h1>
+            </div>
+        </div>
+        <!--INSTRUCTIONS-->
+        <div class="instructions__overview">
+            <div class="instructions">
+                <p class="intro">All information in this report is confidential and should be treated responsibly.</p>
+                <p>This report is based on computerized comparisons between individual responses and the field engineering norm on the
+                    Watterson Personality Inventory. It is prone to various sources of error and should be interpreted with
+                    caution. This report is intended to assist in the interview process, not to substitute for it or for other
+                    data. The candidate's scores for each scale are discussed on individual pages</p>
+            </div>
+            
+            <div class="instructions__before">
+                <h4 class="instructions__title">BEFORE YOU INTERVIEW</h4>
+                <P>This report will tell you how well your candidate fits with the five ARISE characteristics that help
+                    predict success in Field Engineers:</P>
+                <ul class="big-five">
+                    <li><span>A</span>gility</li>
+                    <li><span>R</span>esilient</li>
+                    <li><span>I</span>ntentional</li>
+                    <li><span>S</span>elf-Starting</li>
+                    <li><span>E</span>ngaging</li>
+                </ul>
+                <p>Note where your candidate stands on these characteristics and then consider the suggested follow-up
+                    interview questions and accompanying “listen for” statements. Keep in mind that (with the exception of
+                    the derailers) while it is better to be higher than lower on these dimensions, sometimes a candidate can
+                    have “too much of a good thing.” Don’t be afraid to supplement the questions provided with some of your
+                    own.</p>
+            </div>
+        
+            <div class="instructions__after">
+                <h4 class="instructions__title">AFTER YOU INTERVIEW</h4>
+                <p>In order to make a final decision on a candidate, consider what you learned from this report and the
+                    follow-up interview, along with other factors like experience, education, references, etc. Match what
+                    you have learned to what is important in the job and then make a hiring decision that you can explain in
+                    an objective manner. Be ready to answer this question: Why is this person a good fit - or not - for the
+                    job?</p>
+                <p>If you hire this person, be sure to come back to this assessment afterwards to think about what the
+                    individual needs to do in order grow professionally and be successful as a Field Engineer. Use this
+                    information as a management tool and as the start of their individual development plan that you put
+                    together as their manager.</p>
+            </div>
+            
+        </div>
    
 
 
@@ -176,6 +922,16 @@
 
         //WAI Website Background Orange
         // levelColors: ["#be7533", "#be7533", "#be7533"] -->
+        <script>
+        function interviewAccordion(id) {
+            let x = document.getElementById(id);
+            if (x.className.indexOf("interview-show") == -1) {
+                x.className += " interview-show";
+            } else {
+                x.className = x.className.replace(" interview-show", "");
+            }
+        }
+        </script>
         <script src="js/justgage.js"></script>
         <script src="js/raphael-2.1.4.min.js"></script>
         <script>

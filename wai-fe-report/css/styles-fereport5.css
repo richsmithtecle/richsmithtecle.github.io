@@ -6,6 +6,33 @@ body {
     font-family: 'Roboto', sans-serif;
     padding-top: 50px;
 }
+
+.report-hero {
+    /* background-color: #004d9e; */
+    color: white;
+    min-height: 85vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        ),
+        url(../img/customSolutions.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.report-hero span {
+    color: white;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
 .dimension__container--title {
     grid-area: title;
     max-height: 3em;
@@ -42,7 +69,7 @@ body {
     text-align: justify;
 }
 
-.interview__group {
+.accordian__wrapper {
     border: 1px solid var(--swagelok-blue);
     border-radius: 5px;
     margin-bottom: 5px;
@@ -66,7 +93,20 @@ body {
     background: whitesmoke;
     border-radius: 5px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.interview__group__button {
+    width: 100%;
+    border: none;
+}
+.interview__group__button:focus {
+    outline: none;
+}
 
+.interview-hide {
+    display:none!important;
+}
+.interview-show {
+    display:block!important;
 }
 .dimension__static-container-title {
     grid-area: title;
@@ -88,6 +128,101 @@ body {
         "derailer"
         "derailer";
 }
+
+
+#instructions__hero {
+    color: white;
+    min-height: 25vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        ),
+        url(../img/TubeFittingInstallTrainBanner3.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+.instructions__overview {
+    margin-bottom: 10vh;
+}
+.instructions {
+    text-align: justify;
+}
+.intro {
+    text-align: center;    
+}
+.instructions__before,
+.instructions__after {
+    border: 1px solid var(--swagelok-blue);
+    border-radius: 5px;
+}
+.instructions__before p,
+.instructions__after p {
+    margin: 20px;
+}
+.instructions__title {
+    text-align: center;
+    background: var(--swagelok-blue);
+    color: white;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    border-radius: 5px 5px 0 0;
+}
+
+.instructions {
+    grid-area: title;
+}
+.instructions__before {
+    grid-area: before-interview;
+}
+.instructions__overview {
+    margin: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-template-areas:
+        "title"
+        "before-interview"
+        "after-interview";
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.big-five {
+    list-style-type: none;
+}
+.big-five span {
+    font-weight: bolder;
+}
+#summary {
+    margin: 5vh 5vw;
+}
+.summary__title {
+    background: var(--swagelok-blue);
+    color: white;
+    text-align: center;
+    /* grid-area: title; */
+}
+.summary__gauge {
+    max-width: 250px;
+    /* justify-self: center; */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.summary__gauge--title {
+    text-align: center;
+}
+.summary__gauges {
+    border: 1px dashed green;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 20px;
+    align-items: center;
+    place-items: center;
+}
+
 
 
 
@@ -116,7 +251,7 @@ body {
         margin: 10px 25px;
         text-align: justify;
     }
-    .interview__group {
+    .accordion__wrapper {
         border: 1px solid var(--swagelok-blue);
         border-radius: 5px;
         margin-bottom: 10px;
@@ -139,6 +274,26 @@ body {
         grid-template-areas:
             "title title title title"
             "derailer derailer derailer derailer";
+    }
+    .instructions {
+        grid-area: title;
+    }
+    .instructions__before {
+        grid-area: before-interview;
+    }
+    .instructions__after {
+        grid-area: after-interview;
+    }
+    .instructions__overview {
+        margin: 5vh 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas:
+            "title title"
+            "before-interview after-interview";
+        grid-gap: 20px;
+        gap: 20px;
     }
     
 
@@ -193,6 +348,29 @@ body {
     .gauge {
         width: 200px;
         height: 160px;
+    }
+    #instructions__hero {
+        display: none;
+    }
+    .instructions {
+        grid-area: title;
+    }
+    .instructions__before {
+        grid-area: before-interview;
+    }
+    .instructions__after {
+        grid-area: after-interview;
+    }
+    .instructions__overview {
+        margin: 5vh 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas:
+            "title title"
+            "before-interview after-interview";
+        grid-gap: 20px;
+        gap: 20px;
     }
     
 }
