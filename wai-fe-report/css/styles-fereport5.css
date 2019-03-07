@@ -197,7 +197,7 @@ body {
     font-weight: bolder;
 }
 #summary {
-    margin: 5vh 5vw;
+    margin: 10px;
 }
 .summary__title {
     background: var(--swagelok-blue);
@@ -216,9 +216,11 @@ body {
 .summary__gauges {
     border: 1px dashed green;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    /* grid-auto-rows: 1fr; */
+    grid-gap: 10px;
+    gap: 10px;
     align-items: center;
     place-items: center;
 }
@@ -275,6 +277,19 @@ body {
             "title title title title"
             "derailer derailer derailer derailer";
     }
+
+    .summary__gauges {
+        border: 1px dashed green;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: repeat(4, auto); */
+        grid-auto-rows: 1fr;
+        grid-gap: 20px;
+        gap: 20px;
+        align-items: center;
+        place-items: center;
+    }
+
     .instructions {
         grid-area: title;
     }
@@ -313,12 +328,13 @@ body {
     
 }
 
+
+
 /***************************************************/
 /* Large Devices, Wide Screens */
 /***************************************************/
 @media only screen and (min-width : 1200px) {
 
-    
     
 }
 /***************************************************/
