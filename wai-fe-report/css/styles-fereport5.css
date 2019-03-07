@@ -69,7 +69,7 @@ body {
     text-align: justify;
 }
 
-.accordian__wrapper {
+.accordion__wrapper {
     border: 1px solid var(--swagelok-blue);
     border-radius: 5px;
     margin-bottom: 5px;
@@ -144,23 +144,11 @@ body {
     background-position: right;
     position: relative;
 }
-.instructions__overview {
-    margin-bottom: 10vh;
-}
+
+
 .instructions {
     text-align: justify;
-}
-.intro {
-    text-align: center;    
-}
-.instructions__before,
-.instructions__after {
-    border: 1px solid var(--swagelok-blue);
-    border-radius: 5px;
-}
-.instructions__before p,
-.instructions__after p {
-    margin: 20px;
+    grid-area: title;
 }
 .instructions__title {
     text-align: center;
@@ -169,14 +157,25 @@ body {
     padding: 10px 0px 10px 0px;
     margin: 0px;
     border-radius: 5px 5px 0 0;
-}
-
-.instructions {
-    grid-area: title;
+}.intro {
+    text-align: center;
 }
 .instructions__before {
+    border: 1px solid var(--swagelok-blue);
+    border-radius: 5px;
     grid-area: before-interview;
 }
+
+.instructions__after {
+    border: 1px solid var(--swagelok-blue);
+    border-radius: 5px;
+    grid-area: after-interview;
+}
+.instructions__before p,
+.instructions__after p {
+    margin: 20px;
+}
+
 .instructions__overview {
     margin: 5vh 5vw;
     display: grid;
@@ -197,32 +196,8 @@ body {
     font-weight: bolder;
 }
 #summary {
-    margin: 10px;
-}
-.summary__title {
-    background: var(--swagelok-blue);
-    color: white;
-    text-align: center;
-    /* grid-area: title; */
-}
-.summary__gauge {
-    max-width: 250px;
-    /* justify-self: center; */
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-}
-.summary__gauge--title {
-    text-align: center;
-}
-.summary__gauges {
-    border: 1px dashed green;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    /* grid-auto-rows: 1fr; */
-    grid-gap: 10px;
-    gap: 10px;
-    align-items: center;
-    place-items: center;
+    display: none;
+    
 }
 
 
@@ -278,27 +253,48 @@ body {
             "derailer derailer derailer derailer";
     }
 
+    #summary {
+        display: block;
+        border: 1px solid var(--swagelok-blue);
+        border-radius: 5px;
+        margin: 5vh 5vw;
+        padding-bottom: 20px;
+    }
+    .summary__title {
+        padding: 10px 0px;
+        margin: 0px 0px 20px 0px;
+        text-align: center;
+        background: var(--swagelok-blue);
+        color: white;
+        border-radius: 5px 5px 0px 0px;
+    }
     .summary__gauges {
-        border: 1px dashed green;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         /* grid-template-rows: repeat(4, auto); */
         grid-auto-rows: 1fr;
         grid-gap: 20px;
         gap: 20px;
+        justify-content: space-evenly;
         align-items: center;
         place-items: center;
     }
+    .summary__gauge {
+        max-width: 250px;
+        /* justify-self: center; */
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    }
+    .summary__gauge--title {
+        padding: 10px 0px 10px 0px;
+        margin: 0;
+        text-align: center;
+        background: var(--swagelok-blue);
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    }
 
-    .instructions {
-        grid-area: title;
-    }
-    .instructions__before {
-        grid-area: before-interview;
-    }
-    .instructions__after {
-        grid-area: after-interview;
-    }
     .instructions__overview {
         margin: 5vh 5vw;
         display: grid;
@@ -344,26 +340,81 @@ body {
     
 }
 
+/***************************************************/
+/* Print */
+/***************************************************/
 @media print {
+    
     .dimension__container,
     .dimension__static-container,
+    #summary,
     #instructions__hero {
+        min-height: auto;
         page-break-before: always;
+    }
+    
+
+    .accordion__wrapper {
+        display: table;
+        page-break-inside: avoid;
     }
     .dimension__static-container {
         margin: 10px;
         border: 1px solid var(--swagelok-blue);
         border-radius: 5px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, auto);
         grid-template-rows: 2;
         grid-template-areas:
             "title title title title"
             "derailer derailer derailer derailer";
     }
     .gauge {
-        width: 200px;
-        height: 160px;
+        max-width: 250px;
+    }
+
+    #summary {
+        display: block;
+        border: 1px solid var(--swagelok-blue);
+        border-radius: 5px;
+        margin: 10px;
+        padding-bottom: 20px;
+    }
+
+    .summary__title {
+        padding: 10px 0px;
+        margin: 0px 0px 20px 0px;
+        text-align: center;
+        background: var(--swagelok-blue);
+        color: white;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .summary__gauges {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: repeat(4, auto); */
+        grid-auto-rows: 1fr;
+        grid-gap: 20px;
+        gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        place-items: center;
+    }
+    .summary__gauge {
+        max-width: 250px;
+        /* justify-self: center; */
+        border: 1px solid black;
+        
+    }
+    .summary__gauge--title {
+        padding: 10px 0px 10px 0px;
+        margin: 0;
+        text-align: center;
+        background: var(--swagelok-blue);
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
     #instructions__hero {
         display: none;
