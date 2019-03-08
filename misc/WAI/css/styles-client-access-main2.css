@@ -175,7 +175,7 @@ footer {
 	
 	
 	.create-codes-2 {
-		height: 75vh;
+		min-height: 75vh;
 		
 		
 		
@@ -189,7 +189,9 @@ footer {
 		padding: 50px;
 	}
 
-
+	.codes__form {
+		margin-bottom: 2vh;
+	}
 
 /***************************************************/
 /* Small Devices, Tablets */
