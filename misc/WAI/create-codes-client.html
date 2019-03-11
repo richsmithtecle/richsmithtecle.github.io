@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Watterson &amp; Associates | Client Access Main</title>
+    <title>Create Codes (Client) | Watterson &amp; Associates</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -69,93 +69,85 @@
             <h2 class="text-center">Create codes for Tech Elevator</h2>
         </div>
         <div class="col-sm-8">
-          <!--SELECT REPORT TO RUN-->
-          <div class="row codes__form">
-            <div class="col-sm-4">
-              <label for="selectReport">Select Report To Run: </label>
+        <!--START HORIZONTAL FORM-->
+        <form action="" class="form-horizontal codes__form">
+           
+            <!--SELECT REPORT TO RUN-->
+            <div class="form-group">
+                <label for="selectReport" class="col-sm-4 control-label">Select Report</label>
+                <div class="col-sm-8">
+                    <select name="selectReport" id="selectReport" class="form-control">
+                        <option value="battery1">Report Option 1</option>
+                        <option value="battery2">Report Option 2</option>
+                        <option value="battery3">Report Option 3</option>
+                        <option value="battery4">Report Option 4</option>
+                        <option value="battery5">Report Option 5</option>
+                    </select>
+                </div>
             </div>
-            <div class="col-sm-8">
-              <select name="selectReport" id="selectReport">
-                <option value="test1">Report Option 1</option>
-                <option value="test2">Report Option 2</option>
-                <option value="test3">Report Option 3</option>
-                <option value="test4">Report Option 4</option>
-                <option value="test5">Report Option 5</option>
-              </select>
+            <!--OPTIONAL REFERENCE INFO-->
+            <div class="form-group">
+                <label for="codeReference" class="col-sm-4 control-label">Position or Group Reference:</label>
+                <div class="col-sm-8">
+                    <textarea name="codeReference" id="codeReference" class="form-control" rows="1" placeholder="Optional"></textarea>
+                </div>
             </div>
-          </div>
-
-          <!--SELECT QUANTITY-->
-          <div class="row codes__form">
-            <div class="col-sm-4">
-              <label for="codeQuantity">Number of codes to create: </label>
+            <!--SELECT QUANTITY-->
+            <div class="form-group">
+                <label for="codeQuantity" class="col-sm-4 control-label">Number of codes to create:</label>
+                <div class="col-sm-4">
+                    <input type="number" name="codeQuantity" id="codeQuantity" class="form-control" rows="1" placeholder="50 Code Maximum"></input>
+                </div>
             </div>
-            <div class="col-sm-8">
-              <form>
-                <input type="text" size="4" name="codeQuantity"></form>
+            <!--SUBMIT-->
+            <div class="form-group">
+                <div class="col-sm-offset-4">
+                <div class="col-sm-8">
+                    <button input type="submit" class="btn btn-success btn-md">Create Codes</button> </div>
+                </div>
             </div>
-          </div>
-          
-          <!--OPTIONAL REFERENCE INFO-->
-          <div class="row codes__form">
-            <div class="col-sm-4">
-              <label for="codeReference">Position or Group Reference: </label>
-            </div>
-            <div class="col-sm-8">
-              <form>
-                <input type="text" name="codeReference"></form>
-            </div>
-          </div>
-          
-          <!--OPTIONAL RECIPIENT INFO-->
-          <div class="row codes__form">
-            <div class="col-sm-4">
-              <label for="codeRecipients">Additional Email Recipient: </label>
-            </div>
-            <div class="col-sm-8">
-              <form>
-                <input type="text" name="codeRecipients"></form>
-            </div>
-          </div>
-
-          <!--SUBMIT-->
-          <div class="row codes__form">
-            <div class="col-sm-3">
-              <input type="submit" value="Create Codes">
-            </div>
-          </div>
+        </form><!--END HORIZONTAL FORM-->
+            
+            
+            
+            
+            
+            
             <hr>
-            <h4>Still need to add:</h4>
-            <ul>
-                <li>Add Email Recipient</li>
-                <li>Additional Emails</li>
-            </ul>
-
-            <hr>
-            <ul>
-                    <li>Download .csv file</li>
+            <!--Send to new page / view or just add to bottom?-->
+            <!--CONFIRMATION & CODES-->
+                <div class="col-sm-12 codes__form">
+                    <p>XX "Watterson Personality Inventory with Problem Solving (Report=Full WPI)" login(s) have been created for Client Name. An email has been sent to your email address with the login(s). You can also:</p>
+                    <br>
+                    <p>{if just one code}</p>
+                    <a href="http://assess.wattersonassociates.com/">ClientName-123456 </a><button class="btn btn-default btn-sm" type="submit">Copy Link</button>
+                    <hr>
+                    <p>{if more than one code, give .csv option}</p>
                     
-                </ul>
-                <ul class="demo"><p>Watterson Personality Inventory with Problem Solving logins for Tech Elevator(Report=Full WPI)</p>
-                    <li><a href="http://assess.wattersonassociates.com/">TechElevator-123456</a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
-                    <li><a href="http://assess.wattersonassociates.com/">TechElevator-123457</a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
-                    <li><a href="http://assess.wattersonassociates.com/">TechElevator-123458</a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
-                    <li><a href="http://assess.wattersonassociates.com/">TechElevator-123459</a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
-                    <li><a href="http://assess.wattersonassociates.com/">TechElevator-123460</a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
-                </ul>
-                <p>An email has also been sent to your email address with the logins.</p>
-        </div>
-
+                    <a href="#">Download code(s) as .csv file</a>
+                    <br><br>
+                    <p>{if qty 5 or less codes - also offer following option:}</p>
+                    <ul class="codes__form">
+                        <li>Code 1 : <a href="http://assess.wattersonassociates.com/">ClientName-123456 </a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
+                        <li>Code 2 : <a href="http://assess.wattersonassociates.com/">ClientName-123457 </a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
+                        <li>Code 3 : <a href="http://assess.wattersonassociates.com/">ClientName-123458 </a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
+                        <li>Code 4 : <a href="http://assess.wattersonassociates.com/">ClientName-123459 </a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
+                        <li>Code 5 : <a href="http://assess.wattersonassociates.com/">ClientName-123460 </a><button class="btn btn-default btn-sm" type="submit">Copy Link</button></li>
+                    </ul>
+                </div>
+            
+            
         
+        
+        
+        
+    </div><!--END COL-SM-8 CODES CONTAINER-->
                 
                 
             
             <div class="col-sm-4 hints-2">
                 <h4>Helpful Hints:</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum similique explicabo. Adipisci quod
-                    dolore sapiente beatae. Aliquam fugit, vero esse repellat cum corrupti nihil iusto minus suscipit expedita.
-                    Iure nesciunt dolores tempore provident? Ab velit alias repellat quasi necessitatibus deserunt dolore,
-                    molestiae nihil rerum quibusdam ex non sunt officia?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque vitae ab sapiente. Officia totam tenetur necessitatibus illum architecto facilis quos dolor modi laborum quisquam deserunt quidem dolore voluptatem, magnam facere, ab neque. Quisquam, hic ut esse dolore temporibus placeat voluptatum dignissimos tempora repellendus. Magnam, tempora quae nulla ut itaque unde?</p>
             </div>
         
     </div>
