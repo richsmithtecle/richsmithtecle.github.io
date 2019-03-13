@@ -213,9 +213,15 @@ footer {
 	.report__choice {
 		border: 1px solid black;
 		border-radius: 5px;
-		padding: 5px;
-		margin: 10px;
+		padding: 15px;
+		margin: 15px auto;
 	}
+
+	i {
+		margin-top: 10px;
+	}
+	
+	
 
 /***************************************************/
 /* Small Devices, Tablets */
