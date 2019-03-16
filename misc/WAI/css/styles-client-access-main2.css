@@ -230,6 +230,9 @@ footer {
 	.panel-default>.panel-heading {
 		background-color: #fff;
 	}
+	.panel-title {
+		font-size: 14px;
+	}
 	
 	
 
