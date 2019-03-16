@@ -224,8 +224,11 @@ footer {
 		margin: 10px 0px;
 	}
 
-	i {
+	/* i {
 		margin-top: 10px;
+	} */
+	.panel-default>.panel-heading {
+		background-color: #fff;
 	}
 	
 	
