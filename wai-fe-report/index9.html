@@ -814,7 +814,7 @@
         </div>
 
         <!--DERAILERS SECTION-->
-        <div id="dimension__derailers" class="dimension__static-container">
+        <!-- <div id="dimension__derailers" class="dimension__static-container">
             <div class="dimension__static-container-title">
                 <h4>Derailers : Chris Sample</h4>
             </div>
@@ -843,6 +843,42 @@
             <div class="derailer">
                 <div id="expert" class="gauge"></div>
                 <div class="dimension__definition">
+                    <p>This scale measures the sense of importance one gains when being relied upon for a particular knowledge, skill and experience. Many Field Engineers are viewed as a local subject matter expert and are relied upon for the technical skillset and access to a broader community that can provide sound insight in helping solve substantial customer challenges.</p>
+                    <p>Higher scores tend to relish the prominence that goes along with being relied upon in a technical setting. Their sense of importance is reinforced by their engineering acumen. If this is not accompanied by good humility and awareness to place team accomplishment over individual accolades, they can be ineffective. If taken to an extreme, their craving for recognition and the need to chase a particular trophy can outweigh the necessity to honor existing systems and teamwork. <br>Lower scores tend to not seek the limelight and are more comfortable promoting team over self accomplishment. They can enjoy working collaboratively and may over defer to others when showing stronger personal conviction could be necessary. In particular, a certain level of ego and confidence is typically required to comfortably step in as an expert. If underdone, the Field Engineer can fail to speak with conviction and authority in key situations.</p>
+                </div>
+            </div>
+        </div> -->
+        
+        <!--DERAILERS SECTION 2-->
+        <div id="dimension__derailers2" class="dimension__static-container2">
+            <div class="dimension__static-container-title2">
+                <h4>Derailers : Chris Sample</h4>
+            </div>
+            <div class="derailer2">
+                <div id="pessimism" class="gauge2"></div>
+                <div class="dimension__definition2">
+                    <p>This scale measures the degree to which a Field Engineer may react to change, surprise or ideas that are not part of an original plan. This could accompany cynicism and a reluctance to embrace change and an unwillingness to explore possibilities limiting customer conversation and restricting willingness to extend collaboration efforts.</p>
+                    <p>Higher scores have a pronounced reflex to respond to  change, surprise and exploration in a negative way. Those higher on this scale can find it challenging to trust themselves and others when veering off of a pre-determined script when exploring ideas in the office and in front of customers.<br>Lower scores tend to embrace change, surprise and exploratory conversation in a trusting, flexible manner. Higher scorers typically trust themselves and peers when plans change and things become ambiguous.</p>
+                    
+                </div>
+            </div>
+            <div class="derailer2">
+                <div id="overprep" class="gauge2"></div>
+                <div class="dimension__definition2">
+                    <p>This scale measures the degree of preparation one prefers when engaging in various types of Field Engineering work. Some preparation is necessary to research customers, anticipate objections, and resourcefully challenge assumptions. However, too much preparation can restrict the flexibility to initiate dialogue and experiment with various technical solutions.</p>
+                    <p>Higher scores often find it necessary to thoroughly prepare ahead of time. They often gain confidence in their preparation and find it difficult in placing practical limits on having enough data before initiating action. In conversation, they can revert to over-talking and sharing too much of the intricacies of an engineering solution, restricting their customer focus to solving a broader need. <br>Lower scores tend to be more fluid and dynamic in their preparation ahead of various customer engagements and engineering projects. They will not tend to become flustered when faced with ambiguity, interruptions and customer questions.</p>
+                </div>
+            </div>
+            <div class="derailer2">
+                <div id="critical" class="gauge2"></div>
+                <div class="dimension__definition2">
+                    <p>This scale measures the degree of criticality expressed. Being particular and finicky about certain details often accompanies progressiveness and high standards -aspects that many successful Field Engineers possess. However, the limits of being too critical can undermine collaboration and teamwork necessary to meet challenging customer requests.</p>
+                    <p>Higher scores often are rather progressive and energized by exploring new and unchartered territory. Often accompanying their thirst for newness is a highly refined level of detail. Some can describe high scorers as picky, finicky and difficult to please. <br>Lower scores can be more forgiving with some of the details not being perfect. They can be more fluid and okay when working collaboratively with peers within the distributorship as their standards will tend to not be overly inflated.</p>
+                </div>
+            </div>
+            <div class="derailer2">
+                <div id="expert" class="gauge2"></div>
+                <div class="dimension__definition2">
                     <p>This scale measures the sense of importance one gains when being relied upon for a particular knowledge, skill and experience. Many Field Engineers are viewed as a local subject matter expert and are relied upon for the technical skillset and access to a broader community that can provide sound insight in helping solve substantial customer challenges.</p>
                     <p>Higher scores tend to relish the prominence that goes along with being relied upon in a technical setting. Their sense of importance is reinforced by their engineering acumen. If this is not accompanied by good humility and awareness to place team accomplishment over individual accolades, they can be ineffective. If taken to an extreme, their craving for recognition and the need to chase a particular trophy can outweigh the necessity to honor existing systems and teamwork. <br>Lower scores tend to not seek the limelight and are more comfortable promoting team over self accomplishment. They can enjoy working collaboratively and may over defer to others when showing stronger personal conviction could be necessary. In particular, a certain level of ego and confidence is typically required to comfortably step in as an expert. If underdone, the Field Engineer can fail to speak with conviction and authority in key situations.</p>
                 </div>
@@ -1090,9 +1126,9 @@
             // 4. Expert
             var pessimism = new JustGage({
                 id: "pessimism",
-                value: 82,
-                min: 0,
-                max: 100,
+                value: 2,
+                min: 1,
+                max: 3,
                 title: "Pessimism",
                 shadowOpacity: 1,
                 shadowSize: 7,
@@ -1102,9 +1138,9 @@
             });
             var summaryPessimism = new JustGage({
                 id: "summary__pessimism",
-                value: 82,
-                min: 0,
-                max: 100,
+                value: 2,
+                min: 1,
+                max: 3,
                 shadowOpacity: 1,
                 shadowSize: 7,
                 shadowVerticalOffset: 10,

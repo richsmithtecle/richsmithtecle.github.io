@@ -91,7 +91,8 @@ body {
 .interview__extreme {
     margin: 10px;
 }
-.interview__qal-wrapper {
+.interview__qal-wrapper,
+.dimension__definition2 :last-of-type {
     margin: 10px;
     padding: 10px;
     background: whitesmoke;
@@ -132,6 +133,43 @@ body {
         "derailer"
         "derailer";
 }
+
+/* Derailers - Horizontal Layout */
+    .dimension__static-container-title2 {
+        grid-area: title;
+        text-align: center;
+        color: white;
+        background: var(--swagelok-blue);
+    }
+    .dimension__static-container2 {
+        margin: 10px;
+        border: 1px solid var(--swagelok-blue);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+        grid-template-areas:
+            "title"
+            "derailer"
+            "derailer"
+            "derailer"
+            "derailer";
+    }
+    .gauge2 {
+        grid-area: static-gauge;
+    }
+    .dimension__definition2 {
+        grid-area: definition;
+    }
+    .derailer2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "static-gauge"
+            "definition";
+    }
+
 
 
 #instructions__hero {
@@ -309,6 +347,51 @@ body {
             "before-interview after-interview";
         grid-gap: 20px;
         gap: 20px;
+    }
+
+    /* Derailers - Horizontal Layout */
+    .dimension__static-container-title2 {
+        grid-area: title;
+        text-align: center;
+        color: white;
+        background: var(--swagelok-blue);
+    }
+    .dimension__static-container2 {
+        margin: 5vh 5vw;
+        border: 1px solid var(--swagelok-blue);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1;
+        grid-auto-rows: 1fr;
+        grid-template-areas:
+            "title"
+            "derailer"
+            "derailer"
+            "derailer"
+            "derailer";
+    }
+    .gauge2 {
+        grid-area: static-gauge;
+        align-self: center;
+        justify-self: center;
+    }
+    .dimension__definition2 {
+        grid-area: definition;
+        margin: 10px 25px;
+        text-align: justify;
+        align-self: center;
+        justify-self: center;
+    }
+    .derailer2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "static-gauge definition";
+            border-bottom: 1px solid grey;
+    }
+    .derailer2 :last-of-type {
+        border-bottom: none;
     }
     
 
