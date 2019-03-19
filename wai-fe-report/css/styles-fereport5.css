@@ -67,8 +67,7 @@ body {
         "dimension-sidebar"
         "dimension-interview-area";
 }
-.dimension__definition,
-.dimension__global-statement {
+.dimension__definition {
     margin: 10px;
     text-align: justify;
 }
@@ -91,6 +90,8 @@ body {
 .interview__extreme {
     margin: 10px;
 }
+
+.dimension__global-statement,
 .interview__qal-wrapper,
 .dimension__high,
 .dimension__low {
@@ -639,5 +640,4 @@ body {
     }
     
 }
-
-
+}
