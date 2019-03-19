@@ -246,7 +246,6 @@ body {
 }
 #summary {
     display: none;
-    
 }
 
 
@@ -386,7 +385,8 @@ body {
         text-align: justify;
         align-self: center;
         justify-self: center;
-    /* }
+    }
+    /*
     .derailer2 {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -514,64 +514,27 @@ body {
 /* Print */
 /***************************************************/
 @media print {
-    
-    .dimension__container,
-    .dimension__static-container,
-    #summary,
-    #instructions__hero {
-        min-height: auto;
+    @page{
+        size: letter;
+    }
+    #dimension__agility,
+    #dimension__resilience,
+    #dimension__intentional,
+    #dimension__self-starting,
+    #dimension__engaging,
+    #dimension__role-and-technical,
+    #dimension__derailers2 {
         page-break-before: always;
-    }
-    
-    .dimension__container {
-        min-height: 75vh;
-        margin: 10px;
-        border: 1px solid black;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 3;
-        grid-template-areas:
-            "title"
-            "dimension-sidebar"
-            "dimension-interview-area";
-    }
-    .accordion__wrapper {
-        display: table;
-        page-break-inside: avoid;
-        border: 1px solid black;
-
-    }
-    .dimension__static-container {
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 5px;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "title title"
-            "derailer derailer"
-            "derailer derailer";
-        grid-gap: 20px;
-        gap: 20px;
-    }
-    .derailer,
-    .technical {
-        border: 1px solid black;
-    }
-    .gauge {
-        max-width: 250px;
+        break-before: page;
     }
 
     #summary {
         display: block;
         border: 1px solid black;
         border-radius: 5px;
-        /* margin: 10px; */
         padding-bottom: 20px;
+        page-break-before: always;
+        break-before: page;
     }
 
     .summary__title {
@@ -609,6 +572,95 @@ body {
         border-top-right-radius: 5px;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
+    .dimension__gauge {
+        grid-area: gauge;
+        max-width: auto;
+        height: auto;
+        justify-self: center;
+        border: 1px solid red;
+        margin: 0px;
+        padding: 0px;
+    }
+    .dimension__definition {
+        grid-area: definition;
+    }
+    .dimension__global-statement {
+        grid-area: global;
+        margin: 0px;
+        padding: 0px;
+    }
+    .dimension__overview {
+        grid-area: dimension-sidebar;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "gauge definition definition"
+            "gauge global global";
+        grid-gap: 5px;
+        gap: 5px;
+        align-items: center;
+        place-items: center;
+    }
+    .dimension__container {
+        min-height: auto;
+        margin: 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 3;
+        grid-template-areas:
+            "title"
+            "dimension-sidebar"
+            "dimension-interview-area";
+    }
+    .accordion__wrapper {
+        display: table;
+        page-break-inside: avoid;
+        border: 1px solid black;
+
+    }
+    /* Derailers - Horizontal Layout */
+    .dimension__static-container-title2 {
+        grid-area: title;
+        text-align: center;
+        color: white;
+        background: var(--swagelok-blue);
+
+    }
+    .dimension__static-container2 {
+        margin: 0px;
+        border: 1px solid black;
+        box-shadow: none;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title title title title"
+            "static-gauge definition2 definition2 definition2"
+            "static-gauge definition2 definition2 definition2";
+    }
+    .gauge2 {
+        grid-area: static-gauge;
+        align-self: center;
+        justify-self: center;
+    }
+    .dimension__definition2 {
+        grid-area: definition2;
+        margin: 10px 25px;
+        text-align: justify;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .technical {
+        border: 1px solid black;
+    }
+    .gauge {
+        max-width: 250px;
+    }
     #instructions__hero {
         display: block;
         min-height: auto;
@@ -639,5 +691,4 @@ body {
         gap: 20px;
     }
     
-}
 }
