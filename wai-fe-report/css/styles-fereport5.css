@@ -92,7 +92,8 @@ body {
     margin: 10px;
 }
 .interview__qal-wrapper,
-.dimension__definition2 :last-of-type {
+.dimension__high,
+.dimension__low {
     margin: 10px;
     padding: 10px;
     background: whitesmoke;
@@ -140,6 +141,7 @@ body {
         text-align: center;
         color: white;
         background: var(--swagelok-blue);
+        padding: 10px 50px;
     }
     .dimension__static-container2 {
         margin: 10px;
@@ -359,16 +361,14 @@ body {
     .dimension__static-container2 {
         margin: 5vh 5vw;
         border: 1px solid var(--swagelok-blue);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         display: grid;
-        grid-template-columns: 1;
-        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
         grid-template-areas:
-            "title"
-            "derailer"
-            "derailer"
-            "derailer"
-            "derailer";
+            "title title title title"
+            "static-gauge definition2 definition2 definition2";
     }
     .gauge2 {
         grid-area: static-gauge;
@@ -376,12 +376,12 @@ body {
         justify-self: center;
     }
     .dimension__definition2 {
-        grid-area: definition;
+        grid-area: definition2;
         margin: 10px 25px;
         text-align: justify;
         align-self: center;
         justify-self: center;
-    }
+    /* }
     .derailer2 {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -392,7 +392,7 @@ body {
     }
     .derailer2 :last-of-type {
         border-bottom: none;
-    }
+    } */
     
 
     
