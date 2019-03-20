@@ -158,26 +158,29 @@ body {
         grid-template-areas:
             "title"
             "static-gauge"
-            "definition";
+            "general"
+            "high"
+            "low";
     }
     .gauge2 {
         grid-area: static-gauge;
+        align-self: center;
+        justify-self: center;
     }
-    .dimension__definition2 {
-        grid-area: definition;
+
+    .dimension__general {
+        grid-area: general;
+        text-align: justify;
         margin: 10px;
+    }
+    .dimension__high {
+        grid-area: high;
         text-align: justify;
     }
-    /* .derailer2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "static-gauge"
-            "definition";
-    } */
-
-
+    .dimension__low {
+        grid-area: low;
+        text-align: justify;
+    }    
 
 #instructions__hero {
     color: white;
@@ -365,6 +368,19 @@ body {
     .dimension__static-container2 {
         margin: 5vh 5vw;
         border: 1px solid var(--swagelok-blue);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title title"
+            "static-gauge general"
+            "static-gauge high"
+            "static-gauge low";
+    }
+    /* .dimension__static-container2 {
+        margin: 5vh 5vw;
+        border: 1px solid var(--swagelok-blue);
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         display: grid;
@@ -373,7 +389,21 @@ body {
         grid-template-areas:
             "title title"
             "static-gauge definition2";
+    } */
+
+    .dimension__general {
+        grid-area: general;
+        margin: 10px 25px 0px 0px;
     }
+    .dimension__high {
+        grid-area: high;
+        margin-right: 25px;
+    }
+    .dimension__low {
+        grid-area: low;
+        margin-right: 25px;
+    }    
+
     .gauge2 {
         grid-area: static-gauge;
         align-self: center;
@@ -511,7 +541,8 @@ body {
     #dimension__self-starting,
     #dimension__engaging,
     #dimension__role-and-technical,
-    #dimension__derailers2 {
+    #dimension__derailers2,
+    #instructions__hero {
         page-break-before: always;
         break-before: page;
     }
@@ -571,11 +602,13 @@ body {
     }
     .dimension__definition {
         grid-area: definition;
+        margin: 5px;
+        padding: 0 10px 0 0;
     }
     .dimension__global-statement {
         grid-area: global;
-        margin: 0px;
-        padding: 0px;
+        margin: 5px;
+        padding: 0 10px 0 0;
     }
     .dimension__overview {
         grid-area: dimension-sidebar;
@@ -590,9 +623,17 @@ body {
         align-items: center;
         place-items: center;
     }
+    .dimension__container--title {
+        grid-area: title;
+        max-height: 3em;
+        text-align: center;
+        background: var(--swagelok-blue);
+        color: white;
+        margin-bottom: 5px;
+    }
     .dimension__container {
         min-height: auto;
-        margin: 0px;
+        margin: 10px;
         border: 1px solid black;
         border-radius: 5px;
         display: grid;
@@ -618,7 +659,7 @@ body {
 
     }
     .dimension__static-container2 {
-        margin: 0px;
+        margin: 10px auto;
         border: 1px solid black;
         box-shadow: none;
         border-radius: 5px;
@@ -626,22 +667,33 @@ body {
         grid-template-columns: 1fr 3fr;
         grid-template-rows: auto;
         grid-template-areas:
-            "title title title title"
-            "static-gauge definition2 definition2 definition2"
-            "static-gauge definition2 definition2 definition2";
+            "title title"
+            "general general"
+            "static-gauge high"
+            "static-gauge low";
+        page-break-inside: avoid;
     }
+    
     .gauge2 {
         grid-area: static-gauge;
         align-self: center;
         justify-self: center;
     }
-    .dimension__definition2 {
-        grid-area: definition2;
-        margin: 10px 25px;
-        text-align: justify;
-        align-self: center;
-        justify-self: center;
+    .dimension__general {
+        grid-area: general;
+        margin: 5px 10px;
     }
+    .dimension__high {
+        grid-area: high;
+        margin: 0px;
+        padding: 5px;
+    }
+    .dimension__low {
+        grid-area: low;
+        margin: 0px;
+        padding: 5px;
+    }   
+
     
     .technical {
         border: 1px solid black;
@@ -668,7 +720,7 @@ body {
         border: 1px solid black;
     }
     .instructions__overview {
-        margin: 5vh 5vw;
+        margin: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2;
