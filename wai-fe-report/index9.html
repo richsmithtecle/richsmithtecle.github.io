@@ -46,7 +46,7 @@
               <li><a href="#dimension__intentional" data-toggle="collapse" data-target=".navbar-collapse">INTENTIONAL</a></li>
               <li><a href="#dimension__self-starting" data-toggle="collapse" data-target=".navbar-collapse">SELF-STARTING</a></li>
               <li><a href="#dimension__engaging" data-toggle="collapse" data-target=".navbar-collapse">ENGAGING</a></li>
-              <li><a href="#dimension__derailers" data-toggle="collapse" data-target=".navbar-collapse">DERAILERS</a></li>
+              <li><a href="#dimension__derailers2" data-toggle="collapse" data-target=".navbar-collapse">DERAILERS</a></li>
               <li><a href="#dimension__role-and-technical" data-toggle="collapse" data-target=".navbar-collapse">ROLE ALIGNMENT</a></li>
               <li><a href="#dimension__role-and-technical" data-toggle="collapse" data-target=".navbar-collapse">TECHNICAL COMPETENCE</a></li>
               <li><a href="#instructions__hero" data-toggle="collapse" data-target=".navbar-collapse">INSTRUCTIONS</a></li>
@@ -66,7 +66,17 @@
         </div>
 
         <!--COVER PAGE : PRINT VERSION ONLY-->
-
+        <section class="print__cover">
+            <header class="print__cover--header">
+                    <h1 class="text-center">ARISE<br>Field Engineer Report<br><small><span>Chris Sample &bull; March 19, 2019</span></small></h1>
+            </header>
+            <main class="print__cover--main"></main>
+            <footer class="print__cover--footer">
+                <h3>Prepared by:</h3>
+                <img class="print__cover--logo" src="img/wai-logo-color.png" alt="Watterson & Associates, Inc.">
+                <p>&copy;2019 by Watterson &amp; Associates, Inc., Chagrin Falls, Ohio. Allrights reserved.</p>
+            </footer>
+        </section>
 
         <!--SUMMARY REPORT SECTION-->
         <div id="summary">
@@ -97,12 +107,16 @@
                     <div id="summary__engaging"></div>
                 </div>
                 <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Cognitive Math</h5>
+                    <div id="summary__cognitiveMath"></div>
+                </div>
+                <div class="summary__gauge">
                     <h5 class="summary__gauge--title">Cognitive Verbal</h5>
                     <div id="summary__cognitiveVerbal"></div>
                 </div>
                 <div class="summary__gauge">
-                    <h5 class="summary__gauge--title">Cognitve Math</h5>
-                    <div id="summary__cognitiveMath"></div>
+                    <h5 class="summary__gauge--title">Cognitive Reasoning</h5>
+                    <div id="summary__cognitiveReasoning"></div>
                 </div>
                 <div class="summary__gauge">
                     <h5 class="summary__gauge--title">Role Alignment</h5>
@@ -149,7 +163,7 @@
                         <div id="AgilityExtreme1" class="interview__group interview-hide interview-show">
                     
                             <div class="interview__extreme">
-                                <p>Extereme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed
                                     autem fugit,
                                     voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit minima
                                     similique.
@@ -195,7 +209,7 @@
                             <div id="AgilityExtreme2" class="interview__group interview-hide interview-show">
                         
                                 <div class="interview__extreme">
-                                    <p>Extereme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed
+                                    <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque sed
                                         autem fugit,
                                         voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit minima
                                         similique.
@@ -353,13 +367,7 @@
                     <div id="ResilienceExtreme2" class="interview__group interview-hide interview-show">
         
                         <div class="interview__extreme">
-                            <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
-                                sed
-                                autem fugit,
-                                voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
-                                minima
-                                similique.
-                                A, optio ex.</p>
+                            <p>Extreme Kickout Statement : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vel rem, architecto accusantium facilis, ab eligendi esse tempora vero, officia quos nemo quasi assumenda magni dignissimos nobis. Commodi, aperiam omnis?.</p>
                         </div>
                         <div class="interview__qal-wrapper">
                             <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -792,40 +800,55 @@
         
         <!--ROLE ALIGNMENT & TECHNICAL COMPETENCE SECTION-->
         <div id="dimension__role-and-technical"></div>
-        
-        <div class="dimension__static-container2">
-            <div id="cognitiveVerbal" class="gauge2"></div>
-            <div class="dimension__static-container-title2">
-                <h4>Technical Competence : Cognitive Verbal</h4>
-            </div>
-                <p class="dimension__general">Comprising one's technical competence is their computational ability to perform the technical functions of
-                    Field Engineering. At the same time, Field Engineers also need necessary communication skills to articulate
-                    concepts for their internal and external customers.</p>
-                <p class="dimension__high">Higher scores tend to communicate in an articulate manner given an overall healthy
-                    verbal ability. Higher scores will share technical and non technical engineering information in a manner
-                    others can easily understand.</p>
-                <p class="dimension__low">Lower scores can find it challenging to convey complex conceptual information. Lower
-                    verbal skills can impact the way Field Engineers share technical customer information as well restrict their
-                    effectiveness communicating with other distributor and FE resources.</p>
-        </div>
-
+                            
+        <!--COGNITIVE MATH SECTION-->
         <div class="dimension__static-container2">
             <div id="cognitiveMath" class="gauge2"></div>
             <div class="dimension__static-container-title2">
                 <h4>Technical Competence : Cognitive Math</h4>
             </div>
-                <p class="dimension__general">Comprising one's technical competence is their computational ability to perform the technical functions of
-                    Field Engineering. At the same time, Field Engineers also need necessary communication skills to articulate
-                    concepts for their internal and external customers.</p>
-                <p class="dimension__high">Higher numerical reasoning supports the computational aspects of Field Engineering
-                    project work. Those with higher scores will typically gain credibility for their mathematical competence and
-                    ability to extend various technical conversations.</p>
-                <p class="dimension__low">Lower numerical reasoning can hinder the field support work and internal computational
-                    aspects of managing client projects and completing various audits, studies and business development
-                    activities. One's credibility can be compromised if in-the-moment mathematical computation is required to
-                    extend exploratory conversations. Credibility can also be restricted in failing to complete certain internal
-                    Field Engineering functions.</p>
+            <p class="dimension__general">Comprising one's technical competence is their computational ability to perform the
+                technical functions of
+                Field Engineering. At the same time, Field Engineers also need necessary communication skills to articulate
+                concepts for their internal and external customers.</p>
+            <p class="dimension__high">Higher numerical reasoning supports the computational aspects of Field Engineering
+                project work. Those with higher scores will typically gain credibility for their mathematical competence and
+                ability to extend various technical conversations.</p>
+            <p class="dimension__low">Lower numerical reasoning can hinder the field support work and internal computational
+                aspects of managing client projects and completing various audits, studies and business development
+                activities. One's credibility can be compromised if in-the-moment mathematical computation is required to
+                extend exploratory conversations. Credibility can also be restricted in failing to complete certain internal
+                Field Engineering functions.</p>
         </div>
+        <!--COGNITIVE VERBAL SECTION-->
+        <div class="dimension__static-container2">
+            <div id="cognitiveVerbal" class="gauge2"></div>
+            <div class="dimension__static-container-title2">
+                <h4>Technical Competence : Cognitive Verbal</h4>
+            </div>
+            <p class="dimension__general">Comprising one's technical competence is their computational ability to perform the
+                technical functions of
+                Field Engineering. At the same time, Field Engineers also need necessary communication skills to articulate
+                concepts for their internal and external customers.</p>
+            <p class="dimension__high">Higher scores tend to communicate in an articulate manner given an overall healthy
+                verbal ability. Higher scores will share technical and non technical engineering information in a manner
+                others can easily understand.</p>
+            <p class="dimension__low">Lower scores can find it challenging to convey complex conceptual information. Lower
+                verbal skills can impact the way Field Engineers share technical customer information as well restrict their
+                effectiveness communicating with other distributor and FE resources.</p>
+        </div>
+        <!--COGNITIVE REASONING SECTION-->
+        <div class="dimension__static-container2">
+            <div id="cognitiveReasoning" class="gauge2"></div>
+            <div class="dimension__static-container-title2">
+                <h4>Technical Competence : Cognitive Reasoning</h4>
+            </div>
+            <p class="dimension__general">Cognitive reasoning general statement : Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odit minus quos facere, ut illum laudantium necessitatibus dicta quo dolor!</p>
+            <p class="dimension__high">High : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum in cum, vel, vitae magnam reiciendis aliquam, nobis blanditiis beatae quis sapiente. Fugiat itaque sed eligendi?</p>
+            <p class="dimension__low">Low Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, nihil quae! Id fugit fuga dolores, ipsa odit tempora cum obcaecati incidunt? Iusto asperiores aliquid beatae.</p>
+        </div>
+
+        <!--ROLE ALIGNMENT SECTION-->
         <div class="dimension__static-container2">
             <div id="roleAlignment" class="gauge2"></div>
             <div class="dimension__static-container-title2">
@@ -1130,31 +1153,6 @@
                 gaugeWidthScale: .75,
             });
 
-            // Sales Interest (scale by itself)
-            // Removed "Sales Interest" title - felt redundant
-            var salesInterest = new JustGage({
-                id: "salesInterest",
-                value: 67,
-                min: 0,
-                max: 100,
-                //   title: "Sales Interest",
-                shadowOpacity: 1,
-                shadowSize: 7,
-                shadowVerticalOffset: 10,
-                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
-                gaugeWidthScale: .75,
-            });
-            var summarySalesInterest = new JustGage({
-                id: "summary__salesInterest",
-                value: 67,
-                min: 0,
-                max: 100,
-                shadowOpacity: 1,
-                shadowSize: 7,
-                shadowVerticalOffset: 10,
-                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
-                gaugeWidthScale: .75,
-            });
 
             // Derailers:
             // 1. Pessimism
@@ -1257,31 +1255,9 @@
 
 
             // Technical:
-            // 1. Cognitive - Verbal
-            // 2. Cognitive - Math
-            var cognitiveVerbal = new JustGage({
-                id: "cognitiveVerbal",
-                value: 90,
-                min: 0,
-                max: 100,
-                title: "Cognitive Verbal",
-                shadowOpacity: 1,
-                shadowSize: 7,
-                shadowVerticalOffset: 10,
-                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
-                gaugeWidthScale: .75,
-            });
-            var summaryCognitiveVerbal = new JustGage({
-                id: "summary__cognitiveVerbal",
-                value: 90,
-                min: 0,
-                max: 100,
-                shadowOpacity: 1,
-                shadowSize: 7,
-                shadowVerticalOffset: 10,
-                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
-                gaugeWidthScale: .75,
-            });
+            // 1. Cognitive - Math
+            // 2. Cognitive - Verbal
+            // 2. Cognitive - Reasoning
             var cognitiveMath = new JustGage({
                 id: "cognitiveMath",
                 value: 66,
@@ -1305,7 +1281,52 @@
                 levelColors: ["#FB8301", "#FB8301", "#FB8301"],
                 gaugeWidthScale: .75,
             });
-            
+            var cognitiveVerbal = new JustGage({
+                id: "cognitiveVerbal",
+                value: 90,
+                min: 0,
+                max: 100,
+                title: "Cognitive Verbal",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryCognitiveVerbal = new JustGage({
+                id: "summary__cognitiveVerbal",
+                value: 90,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var cognitiveReasoning = new JustGage({
+                id: "cognitiveReasoning",
+                value: 88,
+                min: 0,
+                max: 100,
+                title: "Cognitive Reasoning",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryCognitiveReasoning = new JustGage({
+                id: "summary__cognitiveReasoning",
+                value: 88,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
             // Role Alignemnt
             var roleAlignment = new JustGage({
                 id: "roleAlignment",

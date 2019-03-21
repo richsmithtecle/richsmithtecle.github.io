@@ -46,6 +46,10 @@ a.navbar-brand {
     width: 100%;
 }
 
+.print__cover {
+    display: none;
+}
+
 .dimension__container--title {
     grid-area: title;
     max-height: 3em;
@@ -564,6 +568,7 @@ a.navbar-brand {
     html, body {
         line-height: 1em;
         word-spacing: 1px;
+        padding: 0px;
     }
     #dimension__agility,
     #dimension__resilience,
@@ -777,6 +782,39 @@ a.navbar-brand {
             "before-interview after-interview";
         grid-gap: 20px;
         gap: 20px;
+    }
+    .jumbotron.report-hero {
+        display: none;
+    }
+    .print__cover {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        border: 1px solid #000000;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 250px auto 200px;
+        grid-template-areas:
+            "title"
+            "main"
+            "footer";
+            margin: 0px;
+            line-height: 1.25;
+    }
+    .print__cover--header {
+        grid-area: title;
+    }
+    .print__cover--main {
+        grid-area: main;
+    }
+    .print__cover--footer {
+        grid-area: footer;
+        text-align: left;
+        padding: 20px;
+    }
+    .print__cover--logo {
+        height: 80px;
+        width: auto;
     }
     
 }
