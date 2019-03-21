@@ -614,6 +614,7 @@ a.navbar-brand {
     }
     .summary__gauge {
         max-width: 250px;
+        height: auto;
         justify-self: center;
         border: 1px solid black;
         
