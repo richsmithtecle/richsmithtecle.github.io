@@ -1,8 +1,8 @@
 
 :root {
     --swagelok-blue: rgba(0, 77, 158, 1);
-    --theme-main: var(--swagelok-blue); 
-    /* --theme-main: rgb(75, 80, 90, 1);  */
+    /* --theme-main: var(--swagelok-blue);  */
+    --theme-main: rgb(75, 80, 90, 1); 
 }
 body {
     font-family: 'Roboto', sans-serif;
