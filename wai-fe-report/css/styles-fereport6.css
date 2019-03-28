@@ -23,7 +23,6 @@ a.navbar-brand {
 }
 
 .report-hero {
-    /* background-color: #004d9e; */
     color: white;
     min-height: 85vh;
     background:
@@ -130,40 +129,20 @@ a.navbar-brand {
 .interview-show {
     display:block!important;
 }
-.dimension__static-container-title {
-    grid-area: title;
-    text-align: center;
-    color: white;
-    background: var(--theme-main);
-}
-.dimension__static-container {
-    margin: 10px;
-    border: 1px solid var(--theme-main);
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2;
-    grid-template-areas:
-        "title"
-        "derailer"
-        "derailer"
-        "derailer"
-        "derailer";
-}
 
 /* Derailers - Horizontal Layout */
-    .dimension__static-container-title2 {
+    .dimension__static-container-title {
         grid-area: title;
         text-align: center;
         color: white;
         background: var(--theme-main);
         padding: 0px;
     }
-    .dimension__static-container-title2 h4 {
+    .dimension__static-container-title h4 {
         padding: 5px;
         margin: 5px auto;
     }
-    .dimension__static-container2 {
+    .dimension__static-container {
         margin: 10px;
         border: 1px solid var(--theme-main);
         border-radius: 5px;
@@ -314,17 +293,6 @@ a.navbar-brand {
         border-radius: 5px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     }
-    .dimension__static-container {
-        margin: 5vh 5vw;
-        border: 1px solid var(--theme-main);
-        border-radius: 5px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 2;
-        grid-template-areas:
-            "title title title title"
-            "derailer derailer derailer derailer";
-    }
 
     #summary {
         display: block;
@@ -356,6 +324,7 @@ a.navbar-brand {
         max-width: 1500px;
         margin: 10px auto;
         display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); */
         grid-template-columns: repeat(8, 1fr);
         grid-auto-rows: 1fr;
         grid-gap: 20px;
@@ -393,14 +362,14 @@ a.navbar-brand {
         gap: 20px;
     }
 
-    /* Derailers - Horizontal Layout */
-    .dimension__static-container-title2 {
+    .dimension__static-container-title {
         grid-area: title;
         text-align: center;
         color: white;
         background: var(--theme-main);
     }
-    .dimension__static-container2 {
+
+    .dimension__static-container {
         margin: 5vh 5vw;
         border: 1px solid var(--theme-main);
         border-radius: 5px;
@@ -413,18 +382,6 @@ a.navbar-brand {
             "static-gauge high"
             "static-gauge low";
     }
-    /* .dimension__static-container2 {
-        margin: 5vh 5vw;
-        border: 1px solid var(--theme-main);
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "title title"
-            "static-gauge definition2";
-    } */
 
     .dimension__general {
         grid-area: general;
@@ -722,14 +679,14 @@ a.navbar-brand {
         margin: 5px auto;
     }
     /* Derailers - Horizontal Layout */
-    .dimension__static-container-title2 {
+    .dimension__static-container-title {
         grid-area: title;
         text-align: center;
         color: white;
         background: var(--theme-main);
 
     }
-    .dimension__static-container2 {
+    .dimension__static-container {
         margin: 10px auto;
         border: 1px solid black;
         box-shadow: none;
