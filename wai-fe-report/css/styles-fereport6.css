@@ -655,7 +655,26 @@ a.navbar-brand {
         page-break-before: always;
         break-before: page;
     }
-    
+    #summary__agility,
+    #summary__resilience,
+    #summary__intentional,
+    #summary__self-starting,
+    #summary__engaging,
+    #summary__math,
+    #summary__verbal,
+    #summary__reasoning {
+        margin: auto;
+    }
+
+    .summary__gauge {
+        /* max-width: 250px; */
+        box-shadow: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .summary__title {
         padding: 10px 0px;
         margin: 0px 0px 20px 0px;
@@ -677,10 +696,10 @@ a.navbar-brand {
         padding: 10px;
     }
     .summary__gauges {
-        max-width: 1500px;
+        /* max-width: 1500px; */
         margin: 10px auto;
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 1fr;
         grid-gap: 10px;
         gap: 10px;
