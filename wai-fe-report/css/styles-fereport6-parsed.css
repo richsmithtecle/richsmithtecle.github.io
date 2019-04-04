@@ -908,72 +908,6 @@ a.navbar-brand {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1390px) {
-	.navbar-nav .open .dropdown-menu {
-		position: static;
-		float: none;
-		width: auto;
-		margin-top: 0;
-		background-color: transparent;
-		border: 0;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-	}
-	.navbar-nav .open .dropdown-menu > li > a {
-		line-height: 20px;
-	}
-	.navbar-nav .open .dropdown-menu > li > a,
-	.navbar-nav .open .dropdown-menu .dropdown-header {
-		padding: 5px 15px 5px 25px;
-	}
-	.dropdown-menu > li > a {
-		display: block;
-		padding: 3px 20px;
-		clear: both;
-		font-weight: normal;
-		line-height: 1.42857143;
-		color: #333;
-		white-space: nowrap;
-	}
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-                box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-        max-height: 100%!important;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        /*margin: 7.5px -15px;*/
-		margin: 7.5px 50px 7.5px -15px
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .navbar-text {
-        float: none;
-        margin: 15px 0;
-    }
-    /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
-        display: block!important;
-    }
-    .collapsing {
-        overflow: hidden!important;
-    }
-}
 
 /***************************************************/
 /* Print */
@@ -983,7 +917,7 @@ a.navbar-brand {
         size: letter;
 
     }
-    @page:left{
+    /* @page:left{
         @bottom-center {
             margin: 10pt 0 30pt 0;
             border-top: .25pt solid #000000;
@@ -991,7 +925,7 @@ a.navbar-brand {
             font-size: 9pt;
             color: #000000;
         }
-    }
+    } */
     html, body {
         line-height: 1em;
         word-spacing: 1px;
@@ -1019,17 +953,6 @@ a.navbar-brand {
         -webkit-column-break-before: page;
                 break-before: page;
     }
-    #summary__agility,
-    #summary__resilience,
-    #summary__intentional,
-    #summary__self-starting,
-    #summary__engaging,
-    #summary__math,
-    #summary__verbal,
-    #summary__reasoning {
-        margin: 1px auto;
-    }
-
     .summary__gauge {
         max-width: 250px;
         height: auto;
@@ -1037,16 +960,9 @@ a.navbar-brand {
                 box-shadow: none;
         border: 1px solid black;
         border-radius: 5px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
     }
     .summary__title {
         padding: 10px 0px;
@@ -1060,31 +976,19 @@ a.navbar-brand {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         -ms-grid-rows: 2;
         grid-template-rows: 2;
+            grid-template-areas:
+            "print-a print-r print-i"
+            "print-s print-e";
         grid-gap: 10px;
         gap: 10px;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
         /* place-items: center; */
         padding: 10px;
-    }
-    .summary__gauges--bigFive > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-    }
-    .summary__gauges--bigFive > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
-    }
-    .summary__gauges--bigFive > *:nth-child(3) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 5;
+
     }
     .summary__gauges {
         /* max-width: 1500px; */
@@ -1118,6 +1022,30 @@ a.navbar-brand {
         -ms-grid-row: 1;
         -ms-grid-column: 7;
     }
+
+    
+    #summary__agility {
+        grid-area: print-a;
+    }
+
+    #summary__resilience {
+        grid-area: print-r;
+    }
+    #summary__intentional {
+        grid-area: print-i;
+    }
+    #summary__self-starting {
+        grid-area: print-s;
+    }
+    #summary__engaging {
+        grid-area: print-e;
+    }
+    #summary__math,
+    #summary__verbal,
+    #summary__reasoning {
+        margin: 1px auto;
+    }
+
 
     .summary__gauge--title {
         padding: 10px 0px 10px 0px;
@@ -1363,8 +1291,8 @@ a.navbar-brand {
         display: grid;
         -ms-grid-columns: 1;
         grid-template-columns: 1;
-        -ms-grid-rows: 250px auto 200px;
-        grid-template-rows: 250px auto 200px;
+        -ms-grid-rows: 250px 1fr 200px;
+        grid-template-rows: 250px 1fr 200px;
             grid-template-areas:
             "title"
             "main"
@@ -1376,6 +1304,7 @@ a.navbar-brand {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
         grid-area: title;
+        text-align: center;
     }
     .dimension__static-container > .print__cover--header {
         -ms-grid-row: 1;
@@ -1550,6 +1479,33 @@ a.navbar-brand {
         -ms-grid-row: 3;
         -ms-grid-column: 3;
         -ms-grid-column-span: 3;
+    }
+}
+@media print {
+    #summary__agility {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+
+    }
+    #summary__resilience {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+
+    }
+    #summary__intentional {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+
+    }
+    #summary__self-starting {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+
+    }
+    #summary__engaging {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+
     }
 }
 @media only screen and (min-width : 576px) {
