@@ -1,5 +1,50 @@
 
+html, body {
+    line-height: 1em;
+    word-spacing: 1px;
+    padding: 0px;
+}
+#dimension__agility,
+#dimension__resilience,
+#dimension__intentional,
+#dimension__self-starting,
+#dimension__engaging,
+#dimension__role-and-technical,
+#dimension__derailers2,
+#instructions__hero {
+    page-break-before: always;
+    break-before: page;
+}
+
+.jumbotron.report-hero {
+    display: none;
+}
+
+.print__cover {
+    display: block;
+    width: 720px;
+    height: 950px;
+    margin: 10px auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.print__cover--header {
+    text-align: center;
+    height: 250px;
+}
+.print__cover--main {
+    height: 500px;
+
+}
+.print__cover--footer {
+    height: 200px;
+    padding-left: 20px;
+}
+
 #summary {
+    page-break-before: always;
+    break-before: page;
+    display: block;
     width: 700px;
     margin: 10px auto;
     border: 1px solid #000000;
@@ -34,3 +79,46 @@
 .summary__gauge--title {
     margin-bottom: -25px;
 }
+
+.dimension__container {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+}
+.dimension__container--title {
+    text-align: center;
+}
+
+.dimension__overview {
+    display: table;
+    width: 100%;
+}
+.dimension__gauge {
+    /* display: table-cell; */
+    width: 250px;
+    margin-left: -65px;
+    border: 1px solid yellow;
+    float: left;
+    clear: right;
+}
+
+.interview__wrapper {
+    margin: 10px;
+}
+.interview__group__button {
+    border: none;
+}
+.interview__group-title {
+    text-align: center;
+}
+.interview__qal-wrapper {
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #000000;
+}
+.interview__qal-wrapper:last-of-type {
+    border-bottom: none;
+}
+
+
+
