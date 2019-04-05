@@ -9,7 +9,7 @@ html, body {
 #dimension__intentional,
 #dimension__self-starting,
 #dimension__engaging,
-#dimension__role-and-technical,
+#dimension__technical,
 #dimension__derailers2,
 #instructions__hero {
     page-break-before: always;
@@ -22,8 +22,8 @@ html, body {
 
 .print__cover {
     display: block;
-    width: 720px;
-    height: 950px;
+    width: 100%;
+    height: 900px;
     margin: 10px auto;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -45,7 +45,7 @@ html, body {
     page-break-before: always;
     break-before: page;
     display: block;
-    width: 700px;
+    width: 100%;
     margin: 10px auto;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -94,10 +94,8 @@ html, body {
     width: 100%;
 }
 .dimension__gauge {
-    /* display: table-cell; */
     width: 250px;
     margin-left: -65px;
-    border: 1px solid yellow;
     float: left;
     clear: right;
 }
@@ -105,20 +103,87 @@ html, body {
 .interview__wrapper {
     margin: 10px;
 }
+.accordion__wrapper {
+    page-break-inside: avoid;
+}
 .interview__group__button {
     border: none;
+    width: 100%;
 }
-.interview__group-title {
+.interview__group__button .interview__group-title {
     text-align: center;
 }
 .interview__qal-wrapper {
     margin: 5px;
     padding: 5px;
     border-bottom: 1px solid #000000;
+    page-break-inside: avoid;
 }
 .interview__qal-wrapper:last-of-type {
     border-bottom: none;
 }
+
+
+.dimension__static-container {
+    display: table;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    page-break-inside: avoid;
+}
+.dimension__static-container-title {
+    text-align: center;
+}
+
+.gauge2 {
+    width: 250px;
+    margin-left: -65px;
+    float: left;
+    clear: right;
+}
+.dimension__general,
+.dimension__high,
+.dimension__low {
+    float: right;
+    clear: right;
+    width: 450px;
+}
+
+.instructions__hero__title {
+    text-align: center;
+}
+
+.instructions__overview {
+    display: table;
+    width: 100%;
+    height: 550px;
+    padding: 10px;
+}
+.instructions {
+    text-align: center;
+}
+
+.instructions__before,
+.instructions__after {
+    float: left;
+    clear: right;
+    width: calc(50% - 20px);
+    height: 500px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.instructions__title {
+    text-align: center;
+}
+.copyright {
+    text-align: center;
+    margin: 20px auto;
+}
+
 
 
 
