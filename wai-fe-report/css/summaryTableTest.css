@@ -1,0 +1,36 @@
+
+#summary {
+    width: 700px;
+    margin: 10px auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.summary__gauges--bigFive,
+.summary__gauges {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.summary__gauges--bigFive .summary__gauge {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: calc(33.333% - 20px);
+    float: left;
+    clear: right;
+    text-align: center;
+    margin: 10px;
+}
+.summary__gauges .summary__gauge {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: calc(25% - 20px);
+    float: left;
+    clear: right;
+    text-align: center;
+    margin: 10px;
+}
+.summary__gauge--title {
+    margin-bottom: -25px;
+}

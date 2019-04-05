@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARISE Field Engineering Report | Watterson &amp; Associates</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/styles-fereport6.css"> -->
+    <link rel="stylesheet" href="css/summaryTableTest.css">
+</head>
+
+<body>
+
+
+        <!--SUMMARY REPORT SECTION-->
+        <div id="summary">
+        
+            <div class="summary__title">
+                <h3>Profile Summary : Chris Sample</h3>
+            </div>
+            
+            <!--BIG FIVE DIMENSIONS-->
+            <div class="summary__gauges--bigFive">
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Agility</h5>
+                    <div id="summary__agility"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Resilience</h5>
+                    <div id="summary__resilience"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Intentional</h5>
+                    <div id="summary__intentional"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Self-Starting</h5>
+                    <div id="summary__selfStarting"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Engaging</h5>
+                    <div id="summary__engaging"></div>
+                </div>
+            </div>
+            <!--SECONDARY DIMENSIONS-->
+            <div class="summary__gauges">
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Math</h5>
+                    <div id="summary__math"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Verbal</h5>
+                    <div id="summary__verbal"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Reasoning</h5>
+                    <div id="summary__reasoning"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Pessimism</h5>
+                    <div id="summary__pessimism"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Overprep</h5>
+                    <div id="summary__overprep"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Critical</h5>
+                    <div id="summary__critical"></div>
+                </div>
+                <div class="summary__gauge">
+                    <h5 class="summary__gauge--title">Expert</h5>
+                    <div id="summary__expert"></div>
+                </div>
+                <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Role Alignment</h5>
+                        <div id="summary__roleAlignment"></div>
+                    </div>
+            </div>
+
+        </div>
+
+
+   
+
+
+
+
+
+
+
+
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JustGage PlugIn -->
+        <!-- // gauge colors
+        // WAI Blue
+        //levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+        //WAI Green = #92b642
+
+        //Random Blue1
+        // levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+
+        //WAI Orange / Brown
+        // levelColors: ["#e5a812", "#e5a812", "#e5a812"]
+
+        //WAI Website Background Orange
+        // levelColors: ["#be7533", "#be7533", "#be7533"] -->
+        <script>
+        function interviewAccordion(id) {
+            let x = document.getElementById(id);
+            if (x.className.indexOf("interview-show") == -1) {
+                x.className += " interview-show";
+            } else {
+                x.className = x.className.replace(" interview-show", "");
+            }
+        }
+        </script>
+        <script src="js/justgage.js"></script>
+        <script src="js/raphael-2.1.4.min.js"></script>
+        <script>
+            var agility = new JustGage({
+                id: "agility",
+                value: 72,
+                min: 0,
+                max: 100,
+                title: "Agility",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryAgility = new JustGage({
+                id: "summary__agility",
+                value: 72,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var resilience = new JustGage({
+                id: "resilience",
+                value: 32,
+                min: 0,
+                max: 100,
+                title: "Resilience",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryResilience = new JustGage({
+                id: "summary__resilience",
+                value: 32,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var intentional = new JustGage({
+                id: "intentional",
+                value: 57,
+                min: 0,
+                max: 100,
+                title: "Intentional",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryIntentional = new JustGage({
+                id: "summary__intentional",
+                value: 57,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+
+            });
+            var selfStarting = new JustGage({
+                id: "selfStarting",
+                value: 63,
+                min: 0,
+                max: 100,
+                title: "Self-Starting",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summarySelfStarting = new JustGage({
+                id: "summary__selfStarting",
+                value: 63,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var engaging = new JustGage({
+                id: "engaging",
+                value: 98,
+                min: 0,
+                max: 100,
+                title: "Engaging",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryEngaging = new JustGage({
+                id: "summary__engaging",
+                value: 98,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+
+
+            // Derailers:
+            // 1. Pessimism
+            // 2. Overprep
+            // 3. Critical
+            // 4. Expert
+            var pessimism = new JustGage({
+                id: "pessimism",
+                value: 82,
+                min: 0,
+                max: 100,
+                title: "Pessimism",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FF3333", "#FF0000", "#B30000"],
+                gaugeWidthScale: .75,
+            });
+            var summaryPessimism = new JustGage({
+                id: "summary__pessimism",
+                value: 82,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FF3333", "#FF0000", "#B30000"],
+                gaugeWidthScale: .75,
+            });
+            var overprep = new JustGage({
+                id: "overprep",
+                value: 76,
+                min: 0,
+                max: 100,
+                title: "Overprep",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FF3333", "#FF0000", "#B30000"],
+                gaugeWidthScale: .75,
+            });
+            var summaryOverprep = new JustGage({
+                id: "summary__overprep",
+                value: 76,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FF3333", "#FF0000", "#B30000"],
+                gaugeWidthScale: .75,
+            });
+            var critical = new JustGage({
+                id: "critical",
+                value: 49,
+                min: 0,
+                max: 100,
+                title: "Critical",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FF3333", "#FF0000", "#B30000"],
+                gaugeWidthScale: .75,
+            });
+            var summaryCritical = new JustGage({
+                id: "summary__critical",
+                value: 49,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FF3333", "#FF0000", "#B30000"],
+                gaugeWidthScale: .75,
+            });
+            var expert = new JustGage({
+                id: "expert",
+                value: 27,
+                min: 0,
+                max: 100,
+                title: "Expert",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FF3333", "#FF0000", "#B30000"],
+                gaugeWidthScale: .75,
+            });
+            var summaryExpert = new JustGage({
+                id: "summary__expert",
+                value: 27,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FF3333", "#FF0000", "#B30000"],
+                gaugeWidthScale: .75,
+            });
+
+
+
+            // Technical:
+            // 1. Math
+            // 2. Verbal
+            // 2. Reasoning
+            var math = new JustGage({
+                id: "math",
+                value: 66,
+                min: 0,
+                max: 100,
+                title: "Math",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryMath = new JustGage({
+                id: "summary__math",
+                value: 66,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var verbal = new JustGage({
+                id: "verbal",
+                value: 90,
+                min: 0,
+                max: 100,
+                title: "Verbal",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryVerbal = new JustGage({
+                id: "summary__verbal",
+                value: 90,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var reasoning = new JustGage({
+                id: "reasoning",
+                value: 88,
+                min: 0,
+                max: 100,
+                title: "Reasoning",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryReasoning = new JustGage({
+                id: "summary__reasoning",
+                value: 88,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            // Role Alignemnt
+            var roleAlignment = new JustGage({
+                id: "roleAlignment",
+                value: 80,
+                min: 0,
+                max: 100,
+                title: "Role Alignment",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryRoleAlignment = new JustGage({
+                id: "summary__roleAlignment",
+                value: 80,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+
+
+            // All scales are 0 to 100.
+
+            // var f = new JustGage({
+            //     id: "g12",
+            //     value: getRandomInt(0, 100),
+            //     min: 0,
+            //     max: 100,
+            //     title: "Custom Shadow",
+            //     label: "",
+            //     shadowOpacity: 1,
+            //     shadowSize: 0,
+            //     shadowVerticalOffset: 10
+            // });
+        </script>
+        
+</body>
+
+</html>
