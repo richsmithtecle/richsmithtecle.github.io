@@ -130,6 +130,51 @@ a.navbar-brand {
 	font-family: 'Roboto', sans-serif;
 }
 
+/* View Codes Dashboard */
+.codes-dashboard {
+	display: flex;
+}
+.card__dashboard--container {
+	flex: 1;
+	max-width: 50vw;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.card__dashboard--title {
+	text-align: center;
+	/* background-color: #894e13; */
+	background-color: black;
+	color: white;
+}
+.card__dashboard--main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.status {
+	display: flex;
+	flex-direction: row;
+}
+.status-wrapper {
+	flex: 1;
+	border-right: 1px solid grey;
+	margin: 5px;
+	padding-right: 10px;
+	align-items: center;
+	justify-content: center;
+
+}
+.status-wrapper:last-of-type {
+	border-right: none;
+	padding-right: 0px;
+}
+
 footer {
 	color: white;
 	background: #be7533;	/*website orange*/
