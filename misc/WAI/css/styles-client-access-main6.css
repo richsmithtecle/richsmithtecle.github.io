@@ -1,0 +1,571 @@
+/*WAI colors from main website:
+"background orange" = #be7533*/
+
+/*Colors from adacom logo project c. 2010*/
+
+/*Primary Colors*/
+/*blue  color="#1e4973"*/
+/*black color="#000000"*/
+/*grey	color="#999999"*/
+
+/*Secondary Colors*/
+/*orange/brown 	color="#e5a812"*/
+/*green			color="#546670"*/
+
+/*Fonts*/
+/*font-family: 'Permanent Marker', cursive;*/
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+
+body {
+	background: #be74330c;
+	
+}
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-brand img {
+	width: 125px;
+}
+
+a.navbar-brand {
+	padding-top: 8px;
+}
+
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:focus { 
+	color: white !important;
+	text-decoration: underline;
+}
+
+
+.main-hero {
+/*wooden desk with laptop background*/
+	background-image: url(../img/pexels-photo-96858.jpeg);
+	background-size: cover;
+	background-position: top;
+	height: 370px;
+	width: auto;
+	color: white;
+	margin-top: -70px;
+	box-shadow: 0px 1px 2px 1px #999999;
+}
+
+.main-hero h2 {
+	padding-top: 150px;
+}
+
+.cards-container {
+    padding: 1vh 5vw;
+}
+.feature-cards {
+    min-height: 50vh;
+}
+
+.test-card {
+	color: white;
+	margin: 5vh 0;
+}
+
+.test-card a,
+.test-card a:hover {
+	text-decoration: none;
+}
+.test-card h4,
+.test-card p {
+	color: white;
+	text-align: center;
+}
+.test-card h4,
+.test-card h5 {
+	background-color: #894e13;
+	padding: 15px;
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.test-card p {
+	padding: 15px;
+    margin: 0px;
+    color: black
+}
+.card {
+	margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    min-height: 35vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 275px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 105px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	padding-right: 125px;
+}
+
+.small-bites {
+	margin: 75px 0;
+}
+
+.bite {
+	margin-bottom: 50px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* View Codes Dashboard */
+.codes__dashboard--item {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.codes__dashboard--item h5 {
+    text-align: center;
+    color: #ffffff;
+    background: #894e13;
+    margin: 0px;
+    padding: 5px 2px;
+    border-radius: 4px 4px 0px 0px;
+}
+.codes__dashboard--status {
+    padding: 10px;
+    border-right: 1px solid grey;
+    margin: 5px auto;
+    text-align: center;
+}
+.codes__dashboard--status:last-of-type {
+    border-right: none;
+}
+.codes__dashboard--qty {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+
+/* Create Codes Page */
+.sub-hero {
+	/*wooden desk with laptop background*/
+		background-image: url(../img/pexels-photo-96858.jpeg);
+		background-size: cover;
+		background-position: top;
+		height: 200px;
+		width: auto;
+		color: white;
+		margin-top: -70px;
+		box-shadow: 0px 1px 2px 1px #999999;
+	}
+	
+	.sub-hero h2 {
+		padding-top: 70px;
+	}
+	.create-codes {
+		height: 70vh;
+		margin: 20px;
+	}
+	.hints {
+		text-align: center;
+		border-left: 1px solid black;
+		padding: 50px;
+	}
+
+	/* Create Codes Version 2 */
+.sub-hero-2 {
+	/*wooden desk with laptop background*/
+		background-image: url(../img/pexels-photo-96858.jpeg);
+		background-size: cover;
+		background-position: top;
+		height: 130px;
+		width: auto;
+		color: white;
+		margin-top: -70px;
+		box-shadow: 0px 1px 2px 1px #999999;
+	}
+	
+	
+	.create-codes-2 {
+		height: 75vh;
+		
+		
+		
+	}
+	.create-codes-2 h2 {
+		padding: 0 0 50px 0;
+	}
+	.hints-2 {
+		text-align: center;
+		border-left: 1px solid black;
+		padding: 50px;
+	}
+
+
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 275px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+		
+
+}
+
+
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+a.navbar-brand {
+	padding-top: 15px;
+}
+
+.main-hero {	
+	height: 470px;
+}
+
+.main-hero h2 {
+	padding-top: 225px;
+}
+
+
+.client-features {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.feature {
+	display: table; /*used to align the child element vertical center*/
+	color: white;
+	line-height: 24px;
+	height: 200px;
+	width: 200px;
+	text-align: center;
+	border-radius: 100%;
+	margin: 10px auto;
+	background: #be7533;	/*website orange*/
+}
+.feature .feature-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.feature .feature-content h2 {
+	font-size: 22px;
+	padding: 10px;
+}
+
+.note {
+	padding-top: 50px;
+}
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	padding-right: 0px;
+}
+
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+
+
+.client-features {
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+.feature {
+	display: table; /*used to align the child element vertical center*/
+	color: white;
+	line-height: 24px;
+	height: 250px;
+	width: 250px;
+	text-align: center;
+	border-radius: 100%;
+	margin: 10px auto;
+	background: #be7533;	/*website orange*/
+}
+.feature .feature-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.feature .feature-content h2 {
+	font-size: 30px;
+	padding: 10px;
+}
+
+.note {
+	padding-top: 50px;
+}
+
+
+}
+
+/***************************************************/
+/* 9.7-inch iPads * Landscape */
+/***************************************************/
+
+/*@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	padding-right: 0px;
+}
+
+}*/
+
+
+/***************************************************/
+/* Large Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 1024px) {
+
+.navbar-brand img {
+	width: 300px;
+}
+
+.main-hero {	
+	height: 570px;
+}
+
+.main-hero h2 {
+	padding-top: 300px;
+}
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	padding-right: 0px;
+}
+
+
+}
+
+
+/***************************************************/
+/* 10.5-inch iPad Pro - Landscape */
+
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/***************************************************/
+
+/*
+@media only screen 
+  and (min-width: 1112px) 
+  and (max-width: 1112px) {
+
+  	#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	padding-right: 0px;
+}
+
+}*/
+
+
+/***************************************************/
+/* Large Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+
+.navbar-brand img {
+	width: 300px;
+}
+
+.main-hero {	
+	height: 570px;
+}
+
+.main-hero h2 {
+	padding-top: 200px;
+}
+
+
+
+#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brain-bites .brain-bites-text {
+	margin-top: 125px;
+	color: black;
+}
+#brain-bites .brain-bites-text h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4em;
+	color: black;
+}
+#brain-bites .brain-bites-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+}
+
+}
+
+/***************************************************/
+/* 12.9-inch iPad Pro - Landscape */
+
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/***************************************************/
+/*@media only screen 
+  and (min-width: 1366px) 
+  and (max-width: 1366px) 
+  and (orientation: landscape) {
+
+  	#brain-bites {
+	background: url(../img/background-beverage-breakfast-414645.jpg);
+	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+}*/
+
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+
+
+
+.main-hero {
+/*wooden desk with laptop background*/
+	height: 700px;
+}
+
+.main-hero h2 {
+	font-size: 3.5em;
+}
+
+.client-features {
+	margin-top: 75px;
+	margin-bottom: 150px;
+}
+
+#brain-bites {
+	height: 500px;
+}
+
+}
+
+
+
+
+
+
+
