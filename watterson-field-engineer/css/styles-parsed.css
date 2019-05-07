@@ -378,6 +378,8 @@ a.navbar-brand {
 
     #summary {
         display: block;
+    }
+    .summary__container {
         border: 1px solid rgba(75, 80, 90, 1);
         border-radius: 5px;
         margin: 5vh 2.5vw;
@@ -763,6 +765,8 @@ a.navbar-brand {
     
     #summary {
         display: block;
+    }
+    .summary__container {
         border: 1px solid rgba(75, 80, 90, 1);
         border-radius: 5px;
         margin: 5vh 1vw;
@@ -825,6 +829,8 @@ a.navbar-brand {
 
     #summary {
         display: block;
+    }
+    .summary__container {
         border: 1px solid rgba(75, 80, 90, 1);
         border-radius: 5px;
         margin: 5vh 1vw;
@@ -889,7 +895,7 @@ a.navbar-brand {
 /***************************************************/
 @media only screen and (min-width : 1200px) {
 
-    #summary {
+    .summary__container {
         margin: 5vh 5vw;
         padding-bottom: 20px;
     }
@@ -930,6 +936,8 @@ a.navbar-brand {
 
     #summary {
         display: block;
+    }
+    .summary__container {
         border: 1px solid rgba(75, 80, 90, 1);
         border-radius: 5px;
         margin: 5vh 10vw;
