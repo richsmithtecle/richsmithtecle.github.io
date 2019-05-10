@@ -17,7 +17,7 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link media="screen" rel="stylesheet" href="css/styles.css">
+    <link media="screen" rel="stylesheet" href="css/styles-parsed.css">
     <link media="print" rel="stylesheet" href="css/print.css">
 </head>
 <body>
@@ -1088,6 +1088,27 @@
 
         //WAI Website Background Orange
         // levelColors: ["#be7533", "#be7533", "#be7533"] -->
+        <script>
+            let openAccordion = document.querySelectorAll(".interview-show");
+            console.log(openAccordion.length)
+            function closeAccordion() {
+                for (let i = 0; i < openAccordion.length; i++) {
+                    openAccordion[i].className =openAccordion[i].className.replace("interview-show", "")
+                }
+            }
+            function closeOnMobile(x) {
+                if (x.matches) {
+                    closeAccordion();
+                } else {
+                    console.log("I'm open!")
+                }
+            }
+            var x = window.matchMedia("(max-width: 425px)")
+            closeOnMobile(x)
+            x.addListener(closeOnMobile)
+            
+        </script>
+
         <script>
         function interviewAccordion(id) {
             let x = document.getElementById(id);
