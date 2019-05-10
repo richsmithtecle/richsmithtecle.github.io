@@ -1088,6 +1088,10 @@
 
         //WAI Website Background Orange
         // levelColors: ["#be7533", "#be7533", "#be7533"] -->
+        
+
+
+        <!--Close Interview Accordions for mobile view (425px and under-->
         <script>
             let openAccordion = document.querySelectorAll(".interview-show");
             console.log(openAccordion.length)
@@ -1106,9 +1110,9 @@
             var x = window.matchMedia("(max-width: 425px)")
             closeOnMobile(x)
             x.addListener(closeOnMobile)
-            
         </script>
 
+        <!--Toggle Interview Accordions open / closed-->
         <script>
         function interviewAccordion(id) {
             let x = document.getElementById(id);
