@@ -19,6 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
     </head>
     <body>
         <section class="header">
@@ -123,62 +125,79 @@
             </div>
             <hr>
         </section>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-          </div>
+        
         <section class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="">First Name</label>
-                            <input type="text"class="form-control" required>
+                <div class="well well-lg order col-sm-12">
+                    <form action="/Contact" method="post" autocomplete="on">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_FN">First Name</label>
+                                <input id="Text_FN" type="text" placeholder="First Name" class="form-control" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="">Last Name</label>
-                            <input type="text"class="form-control" required>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_LN">Last Name</label>
+                                <input id="Text_LN" type="text" placeholder="Last Name" class="form-control" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="">Company</label>
-                            <input type="text"class="form-control" required>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_Company">Company</label>
+                                <input id="Text_Company" type="text" placeholder="Comapny Name" class="form-control" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="">Divsion</label>
-                            <input type="text"class="form-control" required>
+                        <!--New input - not on currrent contact form-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_Division">Divsion</label>
+                                <input id="Text_Division" type="text" placeholder="Division / Location" class="form-control" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="">Email</label>
-                            <input type="email"class="form-control" required>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_Email">Email Address</label>
+                                <input id="Text_Email" type="email" placeholder="Email Address" class="form-control" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="">Phone</label>
-                            <input type="tel"class="form-control" required>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_Phone">Phone Number</label>
+                                <input id="Text_Phone" type="tel" placeholder="Phone Number" class="form-control" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for=""></label>
-                            <input type="text"class="form-control" required>
+                        <!--New input - not on currrent contact form-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_CodeQuantity">Number of codes</label>
+                                <input id="Text_CodeQuantity" type="text" placeholder="Maximum 25" class="form-control" required>
+                            </div>
                         </div>
-                    </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Text_Commentsws">Comments:</label>
+                                <textarea name="Text_Commentsws" id="Text_Commentsws" cols="30" rows="3" class="form-control" placeholder="Comments"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6Le0niUUAAAAAAkLbPxoKAtZUv7o8uY9M3-40UWJ"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button class="btn btn-lg btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
         <!-- <section class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="/Contact" method="post">
+                    <form action="/Contact" method="post" autocomplete="on">
                         
                         <div class="form-group">
                             <div class="col-md-6">First Name:<br /><input id="Text_FN" name="Text_FN" type="text" /></div>

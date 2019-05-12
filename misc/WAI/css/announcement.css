@@ -67,7 +67,7 @@ body {
     margin-top: 30px;
 }
 .cta {
-    min-height: 25vh;
+    /* min-height: 25vh; */
 }
 .client-portal__hero img {
     padding: 25px 15vw 0px;
