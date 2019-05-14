@@ -66,9 +66,10 @@ body {
 .dimensions__secondary {
     margin-top: 30px;
 }
-.cta {
-    /* min-height: 25vh; */
-}
+/* .cta {
+    min-height: 25vh;
+} */
+
 .client-portal__hero img {
     padding: 25px 15vw 0px;
 }
@@ -78,7 +79,14 @@ footer {
     margin: 0px;
     padding: 20px 20px 10px 20px;
 }
-
+.info-form--hidden,
+.order-form--hidden {
+    display: none;
+}
+.info-form--show,
+.order-form--show {
+    display: block;
+}
 footer a,
 footer a:hover,
 footer a:visited {

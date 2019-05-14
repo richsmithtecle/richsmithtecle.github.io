@@ -119,139 +119,164 @@
                     <h4 class="text-center">Ready to get started?</h4>
                     <div class="col-md-6 col-md-offset-3">
                         <button onclick="showOrderForm('order-form')" class="btn btn-lg btn-block btn-success">Order Codes</button> 
-                        
                     </div>
                     <!-- <div class="col-md-6 col-md-offset-3"><a href="mailto:info@wattersonassociates.com?subject=Codes%20For%20New%20Swagelok%20Field%20Engineer%20Report&body=I%20would%20like%20to%20order%20XX%20codes%20for%20the%20new%20Watterson%20%26%20Associates%20Swagelok%20ARISE%20Field%20Engineer%20Report.%0A%0A" class="btn btn-lg btn-block btn-success">Order Codes</a></div> -->
                 </div>
+                <!--ORDER CODES FORM-->
+                <section id="order-form" class="container order-form--hidden">
+                    <div class="row">
+                        <div class="well well-lg order col-sm-12">
+                            <form action="/Contact" method="post" autocomplete="on">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Text_FN">First Name</label>
+                                        <input id="Text_FN" type="text" placeholder="First Name" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Text_LN">Last Name</label>
+                                        <input id="Text_LN" type="text" placeholder="Last Name" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Text_Company">Company</label>
+                                        <input id="Text_Company" type="text" placeholder="Company Name" class="form-control" autocomplete="organization" required>
+                                    </div>
+                                </div>
+                                <!--New input - not on currrent contact form-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Text_Division">Divsion</label>
+                                        <input id="Text_Division" type="text" placeholder="Division / Location" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Text_Email">Email Address</label>
+                                        <input id="Text_Email" type="email" placeholder="Email Address" class="form-control" autocomplete="work email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Text_Phone">Phone Number</label>
+                                        <input id="Text_Phone" type="tel" placeholder="Phone Number" class="form-control" required>
+                                    </div>
+                                </div>
+                                <!--New input - not on currrent contact form-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Text_CodeQuantity">Number of codes ($150 each)</label>
+                                        <input id="Text_CodeQuantity" type="text" placeholder="Maximum 25" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="Text_Commentsws">Comments:</label>
+                                        <textarea name="Text_Commentsws" id="Text_Commentsws" cols="30" rows="3" class="form-control" placeholder="Comments"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="6Le0niUUAAAAAAkLbPxoKAtZUv7o8uY9M3-40UWJ"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button class="btn btn-lg btn-default">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
                 <div class="col-md-6">
                     <h4 class="text-center">Would you like to know more?</h4>
-                    <div class="col-md-6 col-md-offset-3"><a href="mailto:info@wattersonassociates.com?subject=New%20Swagelok%20ARISE%20Field%20Engineer%20Report&body=I%20would%20like%20more%20information%20about%20Watterson%20%26%20Associates'%20new%20ARISE%20Field%20Engineer%20Report." class="btn btn-lg btn-block btn-success">Request Information</a></div>
+                    <div class="col-md-6 col-md-offset-3">
+                        <button onclick="showRequestInfoForm('request-info-form')" class="btn btn-lg btn-block btn-success">Request Information</button>
+                    </div>
+                    <!-- <div class="col-md-6 col-md-offset-3"><a href="mailto:info@wattersonassociates.com?subject=New%20Swagelok%20ARISE%20Field%20Engineer%20Report&body=I%20would%20like%20more%20information%20about%20Watterson%20%26%20Associates'%20new%20ARISE%20Field%20Engineer%20Report." class="btn btn-lg btn-block btn-success">Request Information</a></div> -->
                 </div>
+                <!--ORDER CODES FORM-->
+                <section id="request-info-form" class="container info-form--hidden">
+                        <div class="row">
+                            <div class="well well-lg order col-sm-12">
+                                <form action="/Contact" method="post" autocomplete="on">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Text_FN">First Name</label>
+                                            <input id="Text_FN" type="text" placeholder="First Name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Text_LN">Last Name</label>
+                                            <input id="Text_LN" type="text" placeholder="Last Name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Text_Company">Company</label>
+                                            <input id="Text_Company" type="text" placeholder="Company Name" class="form-control" autocomplete="organization" required>
+                                        </div>
+                                    </div>
+                                    <!--New input - not on currrent contact form-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Text_Division">Divsion</label>
+                                            <input id="Text_Division" type="text" placeholder="Division / Location" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Text_Email">Email Address</label>
+                                            <input id="Text_Email" type="email" placeholder="Email Address" class="form-control" autocomplete="work email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Text_Phone">Phone Number</label>
+                                            <input id="Text_Phone" type="tel" placeholder="Phone Number" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="Text_Commentsws">Comments:</label>
+                                            <textarea name="Text_Commentsws" id="Text_Commentsws" cols="30" rows="3" class="form-control" placeholder="Comments / preferred method of contact?"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="g-recaptcha" data-sitekey="6Le0niUUAAAAAAkLbPxoKAtZUv7o8uY9M3-40UWJ"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button class="btn btn-lg btn-success">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
             </div>
             <hr>
         </section>
         
-        <section id="order-form" class="container">
-            <div class="row">
-                <div class="well well-lg order col-sm-12">
-                    <form action="/Contact" method="post" autocomplete="on">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="Text_FN">First Name</label>
-                                <input id="Text_FN" type="text" placeholder="First Name" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="Text_LN">Last Name</label>
-                                <input id="Text_LN" type="text" placeholder="Last Name" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="Text_Company">Company</label>
-                                <input id="Text_Company" type="text" placeholder="Company Name" class="form-control" autocomplete="organization" required>
-                            </div>
-                        </div>
-                        <!--New input - not on currrent contact form-->
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="Text_Division">Divsion</label>
-                                <input id="Text_Division" type="text" placeholder="Division / Location" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="Text_Email">Email Address</label>
-                                <input id="Text_Email" type="email" placeholder="Email Address" class="form-control" autocomplete="work email" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="Text_Phone">Phone Number</label>
-                                <input id="Text_Phone" type="tel" placeholder="Phone Number" class="form-control" required>
-                            </div>
-                        </div>
-                        <!--New input - not on currrent contact form-->
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="Text_CodeQuantity">Number of codes</label>
-                                <input id="Text_CodeQuantity" type="text" placeholder="Maximum 25" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="Text_Commentsws">Comments:</label>
-                                <textarea name="Text_Commentsws" id="Text_Commentsws" cols="30" rows="3" class="form-control" placeholder="Comments"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6Le0niUUAAAAAAkLbPxoKAtZUv7o8uY9M3-40UWJ"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <button class="btn btn-lg btn-default">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+
+        <!--CLIENT PORTAL TEASER-->
+        <div class="jumbotron client-portal__hero">
+            <div class="container">
+                <h1 class="text-center">Coming Soon</h1>
+                <p class="lead text-center">Watterson &amp; Associates Client Access Portal</p>
+                
+                <img src="img/wai-client-access-combo.png" class="img-responsive" alt="WAI Client Portal Images">
+                
             </div>
-        </section>
-        <!-- <section class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <form action="/Contact" method="post" autocomplete="on">
-                        
-                        <div class="form-group">
-                            <div class="col-md-6">First Name:<br /><input id="Text_FN" name="Text_FN" type="text" /></div>
-                            <div class="col-md-6">Last Name:<br /><input id="Text_LN" name="Text_LN" type="text" /></div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-6">Title:<br /><input id="Text_Title" name="Text_Title" type="text" /></div>
-                            <div class="col-md-6">Company:<br /><input id="Text_Company" name="Text_Company" type="text" /></div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-6">City:<br /><input id="Text_City" name="Text_City" type="text" /></div>
-                            <div class="col-md-6">State:<br /><input id="Text_State" name="Text_State" type="text" /></div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-6">Postal Code:<br /><input id="Text_Zip" name="Text_Zip" type="text" /></div>
-                            <div class="col-md-6">Phone Number:<br /><input id="Text_Phone" name="Text_Zip" type="text" /></div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-6">Email:<br /><input id="Text_Email" name="Text_Email" type="text" /></div>
-                            <div class="col-md-6">Type of Business:<br /><input id="Text_Type" name="Text_Type" type="text" /></div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-6">Number of Employees:<br /><input id="Text_Employees" name="Text_Employees" type="text" /></div>
-                            <div class="col-md-6">Location of Headquarters:<br /><input id="Text_Head" name="Text_Head" type="text" /></div>                        
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">Comments:<br /><textarea id="Text_Commentws" name="Text_Commentws"></textarea></div>
-    
-                        </div>
-                        
-    
-                        <div class="row">
-                            <div class="col-md-12"><input name="Submit" type="submit" value="Submit" /></div>
-                        </div>
-                    </form>
-    
-                </div>
-            </div>
-        </section> -->
-        
-            <div class="jumbotron client-portal__hero">
-                <div class="container">
-                    <h1 class="text-center">Coming Soon</h1>
-                    <p class="lead text-center">Watterson &amp; Associates Client Access Portal</p>
-                    
-                    <img src="img/wai-client-access-combo.png" class="img-responsive" alt="WAI Client Portal Images">
-                    
-                </div>
-            </div>
+        </div>
         
 
         <footer class="container-fluid">
@@ -279,12 +304,22 @@
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>
-            function interviewAccordion(id) {
+            function showOrderForm(id) {
                 let x = document.getElementById(id);
-                if (x.className.indexOf("interview-show") == -1) {
-                    x.className += " interview-show";
+                if (x.className.indexOf("order-form--show") == -1) {
+                    x.className += " order-form--show";
                 } else {
-                    x.className = x.className.replace(" interview-show", "");
+                    x.className = x.className.replace(" order-form--show", "");
+                }
+            }
+        </script>
+        <script>
+            function showRequestInfoForm(id) {
+                let x = document.getElementById(id);
+                if (x.className.indexOf("info-form--show") == -1) {
+                    x.className += " info-form--show";
+                } else {
+                    x.className = x.className.replace(" info-form--show", "");
                 }
             }
         </script>
