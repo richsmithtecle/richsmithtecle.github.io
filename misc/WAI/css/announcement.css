@@ -81,9 +81,25 @@ body {
 .order-form--show {
     display: block;
 }
-.client-portal__hero img {
+/* .client-portal__hero img {
     padding: 25px 15vw 0px;
+} */
+.client-portal {
+    background: whitesmoke;
+    /* padding-bottom: 10vh; */
+    margin: 10vh auto;
 }
+.client-portal h1 {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 5rem;
+}
+.client-portal--hero img {
+    padding: 0px 20px;
+}
+/* .client-portal li {
+    list-style-type: none;
+} */
 footer {
     color: white;
     background: var(--theme-main);
