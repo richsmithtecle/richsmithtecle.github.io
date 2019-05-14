@@ -66,18 +66,12 @@ body {
 .dimensions__secondary {
     margin-top: 30px;
 }
-/* .cta {
-    min-height: 25vh;
-} */
-
-.client-portal__hero img {
-    padding: 25px 15vw 0px;
+.cta {
+    margin-top: 50px;
 }
-footer {
-    color: white;
-    background: var(--theme-main);
-    margin: 0px;
-    padding: 20px 20px 10px 20px;
+#order-form,
+#request-info-form {
+    margin-top: 25px;
 }
 .info-form--hidden,
 .order-form--hidden {
@@ -87,6 +81,16 @@ footer {
 .order-form--show {
     display: block;
 }
+.client-portal__hero img {
+    padding: 25px 15vw 0px;
+}
+footer {
+    color: white;
+    background: var(--theme-main);
+    margin: 0px;
+    padding: 20px 20px 10px 20px;
+}
+
 footer a,
 footer a:hover,
 footer a:visited {
