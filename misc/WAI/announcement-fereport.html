@@ -113,10 +113,15 @@
         </section>
         <section class="container cta">
             <hr>
+            
             <div class="row">
                 <div class="col-md-6">
                     <h4 class="text-center">Ready to get started?</h4>
-                    <div class="col-md-6 col-md-offset-3"><a href="mailto:info@wattersonassociates.com?subject=Codes%20For%20New%20Swagelok%20Field%20Engineer%20Report&body=I%20would%20like%20to%20order%20XX%20codes%20for%20the%20new%20Watterson%20%26%20Associates%20Swagelok%20ARISE%20Field%20Engineer%20Report.%0A%0A" class="btn btn-lg btn-block btn-success">Order Codes</a></div>
+                    <div class="col-md-6 col-md-offset-3">
+                        <button onclick="showOrderForm('order-form')" class="btn btn-lg btn-block btn-success">Order Codes</button> 
+                        
+                    </div>
+                    <!-- <div class="col-md-6 col-md-offset-3"><a href="mailto:info@wattersonassociates.com?subject=Codes%20For%20New%20Swagelok%20Field%20Engineer%20Report&body=I%20would%20like%20to%20order%20XX%20codes%20for%20the%20new%20Watterson%20%26%20Associates%20Swagelok%20ARISE%20Field%20Engineer%20Report.%0A%0A" class="btn btn-lg btn-block btn-success">Order Codes</a></div> -->
                 </div>
                 <div class="col-md-6">
                     <h4 class="text-center">Would you like to know more?</h4>
@@ -126,7 +131,7 @@
             <hr>
         </section>
         
-        <section class="container">
+        <section id="order-form" class="container">
             <div class="row">
                 <div class="well well-lg order col-sm-12">
                     <form action="/Contact" method="post" autocomplete="on">
@@ -273,5 +278,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            function interviewAccordion(id) {
+                let x = document.getElementById(id);
+                if (x.className.indexOf("interview-show") == -1) {
+                    x.className += " interview-show";
+                } else {
+                    x.className = x.className.replace(" interview-show", "");
+                }
+            }
+        </script>
     </body>
 </html>
