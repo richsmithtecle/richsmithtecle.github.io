@@ -6,10 +6,41 @@
 body {
     font-family: 'Roboto', sans-serif; 
 }
-
+nav {
+    background: var(--theme-main);
+    border-bottom: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+}
+nav li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 15px;
+}
+nav li a,
+nav li a:visited {
+    color: #ffffff;
+}
+nav li a:hover {
+    text-decoration: underline;
+}
+li.navbar-wai-logo {
+    margin-left: 15px;
+    margin-right: auto;
+}
+.navbar-wai-logo img {
+    height: 30px;
+    width: auto;
+}
 .intro-hero {
     color: #ffffff;
-    min-height: 90vh;
+    height: calc(100vh - 50px);
     background:
         linear-gradient(
             rgba(0, 77, 158, 0.80),
@@ -67,13 +98,12 @@ body {
 /* Mobile screens view 2 */
 
 .mobile__hero--wrapper {
-    height: 25vh;
-    /* border: 1px solid red; */
-    background-image: url(../img/arise_mobile_screens_hero_clear_2.png);
-    background-size: 120%;
-	background-position: top;
-    background-repeat: no-repeat;
+    height: 75vh;
     margin: 0px;
+    background-image: url(../img/arise_mobile_screens_hero_clear_2.png);
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
     background-color: whitesmoke;
 }
 
@@ -166,8 +196,20 @@ footer p {
 /* Small Devices, Tablets */
 /***************************************************/
 @media only screen and (min-width : 576px) {
+
+    .mobile__hero--wrapper {
+        height: 25vh;
+        /* border: 1px solid red; */
+        background-image: url(../img/arise_mobile_screens_hero_clear_2.png);
+        background-size: 120%;
+        background-position: top;
+        background-repeat: no-repeat;
+        margin: 0px;
+        background-color: whitesmoke;
+    }
+
     .features {
-        margin: 50px;
+        margin: 50px 0px;
     }
     .feature:nth-of-type(2) {
         margin: auto;
@@ -190,15 +232,28 @@ footer p {
 /* Medium Devices, Desktops */
 /***************************************************/
 @media only screen and (min-width : 992px) {
+    .intro-hero {
+        color: #ffffff;
+        height: calc(60vh - 50px);
+        background:
+            linear-gradient(
+                rgba(0, 77, 158, 0.80),
+                rgba(0, 77, 158, 0.80)
+            ),
+            url(../img/customSolutions.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
 
     .mobile__hero--wrapper {
         min-height: 50vh;
-        /* border: 1px solid red; */
+        margin: 0px;
         background-image: url(../img/arise_mobile_screens_hero_clear_2.png);
-        background-size: 75%;
+        background-size: 120%;
         background-position: top;
         background-repeat: no-repeat;
-        margin: 0px;
         background-color: whitesmoke;
     }
     footer {
@@ -256,6 +311,30 @@ footer p {
 /* Large Devices, Wide Screens */
 /***************************************************/
 @media only screen and (min-width : 1200px) {
+
+    .intro-hero {
+        color: #ffffff;
+        height: calc(80vh - 50px);
+        background:
+            linear-gradient(
+                rgba(0, 77, 158, 0.80),
+                rgba(0, 77, 158, 0.80)
+            ),
+            url(../img/customSolutions.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .mobile__hero--wrapper {
+        height: 50vh;
+        margin: 0px;
+        background-image: url(../img/arise_mobile_screens_hero_clear_2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: whitesmoke;
+    }
     .dimensions__secondary {
         margin-top: auto;
     }
@@ -265,6 +344,29 @@ footer p {
 /* X-Large Devices, Wide Screens */
 /***************************************************/
 @media only screen and (min-width : 1900px) {
+    .intro-hero {
+        color: #ffffff;
+        height: calc(75vh - 50px);
+        background:
+            linear-gradient(
+                rgba(0, 77, 158, 0.80),
+                rgba(0, 77, 158, 0.80)
+            ),
+            url(../img/customSolutions.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .mobile__hero--wrapper {
+        min-height: 50vh;
+        margin: 0px;
+        background-image: url(../img/arise_mobile_screens_hero_clear_2.png);
+        background-size: 75%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: whitesmoke;
+    }
     .intro__hero img {
         padding: 25px 7.5vw 0px;
     }
