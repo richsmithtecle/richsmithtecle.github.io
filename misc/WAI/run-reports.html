@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Run Reports (Client) | Watterson &amp; Associates</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles-client-access-main2.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-transparent-nav.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i|Permanent+Marker|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <nav class="navbar navbar-transparent">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="img/8921_01_WATT-Logo-300w-white.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">           
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Create Codes</a></li>
+          <li><a href="#">Review Codes</a></li>
+          <li><a href="#">Run Reports</a></li>
+          <li><a href="#">Add Individual</a></li>
+          <li><a href="#">View Scores</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, Kristin <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Change Password</a></li>
+              <li><a href="#">Log Off</a></li>
+            </ul>
+          </li>          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- HERO IMAGE -->
+  <article class="jumbotron sub-hero-2"></article>
+  	
+  <!-- RUN REPORTS SECTION -->
+<section class="container create-codes-2">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center">Run Report(s) For Tech Elevator</h2>
+        </div>
+        
+        <div class="col-sm-8">
+            
+
+
+
+        <!--START HORIZONTAL FORM-->
+
+        <form action="" class="form-horizontal codes__form">
+
+            <!--SELECT CANDIDATE TO RUN-->
+            <div class="form-group">
+                <label for="selectCandidate" class="col-sm-4 control-label">Select Candidate</label>
+                <div class="col-sm-8">
+                    <select name="selectCandidate" id="selectCandidate" class="form-control">
+                        <option value="battery1">Candidate 1 Name</option>
+                        <option value="battery2">Candidate 2 Name</option>
+                        <option value="battery3">Candidate 3 Name</option>
+                        <option value="battery4">Candidate 4 Name</option>
+                        <option value="battery5">Candidate 5 Name</option>
+                    </select>
+                </div>
+            </div>
+            <!--SELECT PURCHASED REPORT ACCORDION-->
+            <div class="form-group">
+                <label for="reportSelector" class="col-sm-4 control-label">Select Report</label>
+            
+            <div class="col-sm-8">
+                    <div class="panel-group" id="reportSelector" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading1>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="reportRadios" id="reportRadios1" value="option1"> 
+                                        <label for="reportRadios1">
+                                            &nbsp;Report Option 1&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#optionDescription1" aria-expanded="true" aria-controls="optionDescription1"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="optionDescription1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading2>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="reportRadios" id="reportRadios2" value="option2"> 
+                                        <label for="reportRadios2">
+                                            &nbsp;Report Option 2&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#optionDescription2" aria-expanded="true" aria-controls="optionDescription2"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="optionDescription2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading3>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="reportRadios" id="reportRadios3" value="option3"> 
+                                        <label for="reportRadios3">
+                                            &nbsp;Report Option 3&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#optionDescription3" aria-expanded="true" aria-controls="optionDescription3"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="optionDescription3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+            </div>
+            <!--SUBMIT-->
+            <div class="form-group">
+                <div class="col-sm-offset-4">
+                <div class="col-sm-8">
+                    <button input type="submit" class="btn btn-success btn-md">Create Report</button> </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!--SELECT BONUS REPORT ACCORDION-->
+            <div class="form-group">
+                <label for="bonusReportSelector" class="col-sm-4 control-label">Select Bonus Report</label>
+            
+            <div class="col-sm-8">
+                    <div class="panel-group" id="bonusReportSelector" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading1>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="bonusRadios" id="bonusRadios1" value="option1"> 
+                                        <label for="bonusRadios1">
+                                            &nbsp;Bonus Report Option 1&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#bonusDescription1" aria-expanded="true" aria-controls="bonusDescription1"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="bonusDescription1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading2>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="bonusRadios" id="bonusRadios2" value="option2"> 
+                                        <label for="bonusRadios2">
+                                            &nbsp;Bonus Report Option 2&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#bonusDescription2" aria-expanded="true" aria-controls="bonusDescription2"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="bonusDescription2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading3>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="bonusRadios" id="bonusRadios3" value="option3"> 
+                                        <label for="bonusRadios3">
+                                            &nbsp;Bonus Report Option 3&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#bonusDescription3" aria-expanded="true" aria-controls="bonusDescription3"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="bonusDescription3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+            </div>
+            <!--SUBMIT-->
+            <div class="form-group">
+                <div class="col-sm-offset-4">
+                <div class="col-sm-8">
+                    <button input type="submit" class="btn btn-success btn-md">Create Bonus Report</button> </div>
+                </div>
+            </div>
+            <hr>
+            <!--SELECT ADDITIONAL REPORT ACCORDION-->
+            <div class="form-group">
+                <label for="additionalReportSelector" class="col-sm-4 control-label">Select Additional Report</label>
+            
+            <div class="col-sm-8">
+                    <div class="panel-group" id="additionalReportSelector" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading1>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="additionalRadios" id="additionalRadios1" value="option1"> 
+                                        <label for="additionalRadios1">
+                                            &nbsp;Additional Report Option 1&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#additionalDescription1" aria-expanded="true" aria-controls="additionalDescription1"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="additionalDescription1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading2>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="additionalRadios" id="additionalRadios2" value="option2"> 
+                                        <label for="additionalRadios2">
+                                            &nbsp;Additional Report Option 2&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#additionalDescription2" aria-expanded="true" aria-controls="additionalDescription2"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="additionalDescription2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id=heading3>
+                                    <h4 class="panel-title">
+                                        <input type="radio" name="additionalRadios" id="additionalRadios3" value="option3"> 
+                                        <label for="additionalRadios3">
+                                            &nbsp;Additional Report Option 3&nbsp;
+                                        </label>
+                                        <a class="pull-right" data-toggle="collapse" data-parent="reportSelector" href="#additionalDescription3" aria-expanded="true" aria-controls="additionalDescription3"><i class="far fa-question-circle fa-sm"></i></a>
+                                    </h4>
+                                </div>
+                                <div id="additionalDescription3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex ad provident veritatis dignissimos explicabo a error quae fugiat suscipit!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+            </div>
+            <!--CONFIRMATION OF ADDITIONAL REPORT CHARGE-->
+            <div class="form-group">
+                <label class="col-sm-4"></label>
+                    <div class="col-sm-8">
+                        <input type="checkbox"> I understand there will be a fee for any "Additional Reports" 
+                    </div>
+                
+            </div>
+            <!--SUBMIT-->
+            <div class="form-group">
+                <div class="col-sm-offset-4">
+                    <div class="col-sm-8">
+                        <button input type="submit" class="btn btn-default btn-md" disabled="disabled">Create Additional Report</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </form><!--END HORIZONTAL FORM-->
+            
+            
+    </div><!--END COL-SM-8 REPORTS CONTAINER-->
+            
+        <div class="col-sm-4 hints-3">
+            <h4>Helpful Hints:</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque vitae ab sapiente. Officia totam tenetur necessitatibus illum architecto facilis quos dolor modi laborum quisquam deserunt quidem dolore voluptatem, magnam facere, ab neque. Quisquam, hic ut esse dolore temporibus placeat voluptatum dignissimos tempora repellendus. Magnam, tempora quae nulla ut itaque unde?</p>
+        </div>
+        
+    </div>
+</section>
+
+
+
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+      <div class="col-xs-12">
+        <p class="text-center">Copyright © 2019 by Watterson &amp; Associates, Inc. All rights reserved.</p>
+      </div>
+    </div>
+    </div>
+    
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
