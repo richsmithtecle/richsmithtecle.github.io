@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>New Client Portal | Watterson &amp; Associates</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="css/announcement-wcp.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="navbar-wai-logo">
+                    <a href="https://www.wattersonassociates.com">
+                        <img src="img/wai-logo-white-300w.png" alt="Watterson & Associates">
+                    </a>
+                </li>
+                <!-- <li><a href="#">Home</a></li> -->
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!--HERO BANNER-->
+        <header>
+            <div class="jumbotron intro-hero">
+                <div class="container center">
+                    <h1 class="text-center">New Watterson &amp; Associates<br>Client Access Portal</h1>
+                </div>
+            </div>
+        </header>
+        
+        
+        <main class="container">
+            <div class="row">
+                <div class="col-sm-12 intro">
+                    <p class="lead text-center">We are excited to announce the arrival of the WAI Client Access Portal. </p>
+                </div>
+            </div>
+        
+            <div class="row features">
+                <div class="col-sm-3 feature">
+                    <p class="text-center"><i class="fas fa-users-cog fa-3x"></i></p>
+                    <h4 class="text-center">Create report codes in bulk or one at a time</h4>
+                    <p class="text-center">From the job analysis, five personality areas were targeted with updated language speaking specifically to the FE role. Eight brand new areas were also created highlighting development areas while accelerating the candidate selection | onboarding processs.
+                    </p>
+                </div>
+                <div class="col-sm-3 feature">
+                    <p class="text-center"><i class="fas fa-share-square fa-3x"></i></i></p>
+                    <h4 class="text-center">Send codes directly to your candidate</h4>
+                    <p class="text-center">Using the job analysis as the foundation, FE specific custom interview questions and listen for responses were created to assist interview teams in utilizing the ARISE hiring report.</p>
+                </div>
+                <div class="col-sm-3 feature">
+                    <p class="text-center"><i class="fas fa-tasks fa-3x"></i></p>
+                    <h4 class="text-center">View the status of your codes and candidate's progress</h4>
+                    <p class="text-center">New web-based report is accessed through your web browser on desktop and mobile devices. Easy to read graphics allow for quick interpretation </p>
+                </div>
+                <div class="col-sm-3 feature">
+                    <p class="text-center"><i class="fas fa-file-code fa-3x"></i></p>
+                    <h4 class="text-center">View the status of your codes and candidate's progress</h4>
+                    <p class="text-center">New web-based report is accessed through your web browser on desktop and mobile devices. Easy to read graphics allow for quick interpretation </p>
+                </div>
+                <div class="col-sm-12 mobile-friendly">
+                    <p class="lead text-center">...oh yeah, we also made it mobile friendly.</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="container-fluid">
+            <!--Mobile screens view 1-->
+            <!-- <div class="row mobile">
+                <div class="col-xs-12 mobile__hero-image">
+                    <img src="img/arise_mobile_screens_hero_clear_2.png" class="img-responsive" alt="Image">
+                </div>
+            </div> -->
+
+            <!-- Mobile screens view 2 -->
+            <div class="row">
+                <div class="mobile__hero--wrapper"></div> 
+            </div>
+        </div>
+
+        
+        <!--CALL TO ACTION BUTTONS-->
+        <section class="container">
+                <hr>
+                <!--ORDER CODES AREA-->
+                <div class="row cta">
+                    <!--ORDER CODES FORM-->
+                    <div id="order-form" class="col-sm-12 well well-lg">
+                            <div class="col-md-12">
+                                <h4 class="text-center">Ready to get started?</h4>
+                            </div>
+                        <form action="/Contact" method="post" autocomplete="on">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Text_FN">First Name</label>
+                                    <input id="Text_FN" type="text" placeholder="First Name" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Text_LN">Last Name</label>
+                                    <input id="Text_LN" type="text" placeholder="Last Name" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Text_Company">Company</label>
+                                    <input id="Text_Company" type="text" placeholder="Company Name" class="form-control" autocomplete="organization" required>
+                                </div>
+                            </div>
+                            <!--New input - not on currrent contact form-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Text_Division">Divsion</label>
+                                    <input id="Text_Division" type="text" placeholder="Division / Location" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Text_Email">Email Address</label>
+                                    <input id="Text_Email" type="email" placeholder="Email Address" class="form-control" autocomplete="work email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Text_Phone">Phone Number</label>
+                                    <input id="Text_Phone" type="tel" placeholder="Phone Number" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="Text_Commentsws">Comments:</label>
+                                    <textarea name="Text_Commentsws" id="Text_Commentsws" cols="30" rows="3" class="form-control" placeholder="Comments"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6Le0niUUAAAAAAkLbPxoKAtZUv7o8uY9M3-40UWJ"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button class="btn btn-lg btn-default">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+            </section>
+
+        <!--CLIENT PORTAL TEASER-->
+        <section class="container-fluid client-portal">
+            <div class="container">
+                <div class="row">
+                    <h1>Coming Soon</h1>
+                    
+                    <div class="col-md-6 client-portal--hero">
+                        <img class="img-responsive" src="img/wai-client-access-combo.png" alt="WAI Client Portal On Desktop and Mobile Device">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-center">Watterson &amp; Associates<br>Client Access Portal</h3>
+                        <p class="text-center">The new client portal puts your organization more in control of the WAI assessment process with 24-hour access to codes and reports. Features include:</p>
+                        <ul>
+                            <li>Create report codes in bulk or one at a time</li>
+                            <li>Send codes directly to your candidate</li>
+                            <li>View the status of your codes and candidate's progress</li>
+                            <li>Run candidate reports for up to 3-years</li>
+                            <li>Several user levels available from Administrator to Limited access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="jumbotron client-portal__hero">
+            <div class="container">
+                <h1 class="text-center">Coming Soon</h1>
+                <p class="lead text-center">Watterson &amp; Associates Client Access Portal</p>
+                
+                <img src="img/wai-client-access-combo.png" class="img-responsive" alt="WAI Client Portal Images">
+                
+            </div>
+        </div> -->
+        
+
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 footer__company">
+                    <img src="img/wai-logo-trans-200x49.png" alt="Watterson & Associates, Inc.">
+                </div>
+                <div class="col-sm-6 footer__contact">
+                    <p>info@wattersonassociates.com</p>
+                    <p>440.247.7976</p>
+                    <p>
+                        <a href="https://www.linkedin.com/company/watterson-&-associates-inc."><i class="fab fa-linkedin"></i></a> 
+                        <a href="https://www.facebook.com/Watterson-Associates-Inc-207508779421012/?fref=ts"><i class="fab fa-facebook-square"></i></a> 
+                    </p>
+                </div>
+                <div class="col-sm-12 privacy">
+                        <p><a href="https://wattersonassociates.com/Home/PrivacyPolicy">Privacy Policy</a></p>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            function showOrderForm(id) {
+                let x = document.getElementById(id);
+                if (x.className.indexOf("order-form--show") == -1) {
+                    x.className += " order-form--show";
+                } else {
+                    x.className = x.className.replace(" order-form--show", "");
+                }
+            }
+        </script>
+        <script>
+            function showRequestInfoForm(id) {
+                let x = document.getElementById(id);
+                if (x.className.indexOf("info-form--show") == -1) {
+                    x.className += " info-form--show";
+                } else {
+                    x.className = x.className.replace(" info-form--show", "");
+                }
+            }
+        </script>
+    </body>
+</html>
