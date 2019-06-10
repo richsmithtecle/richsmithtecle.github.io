@@ -55,7 +55,10 @@ li.navbar-wai-logo {
 .intro-hero span {
     color: #ffffff;
 }
-
+.intro {
+    text-align: justify;
+    text-align-last: center;
+}
 .center {
     margin: 0;
     position: absolute;
