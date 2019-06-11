@@ -87,17 +87,24 @@ li.navbar-wai-logo {
 .jumbotron {
     padding-bottom: 0;
 }
-/* .features {
+.features {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-} */
-/* .feature:nth-of-type(odd) {
-    padding: 35px 0px;
-} */
+    justify-content: space-around;
+    padding: 25px 10px;
+}
+.feature {
+    flex: 1 1 20%;
+    text-align: justify;
+    margin: 25px 10px;
+}
+.feature p,
+.feature h4 {
+    text-align: center;
+}
 
 .mobile-friendly {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 0px;
 }
 
@@ -244,6 +251,7 @@ footer p {
             display: block;
             margin: 25px 50px;
     }
+    
         
 }
 
@@ -265,6 +273,22 @@ footer p {
         background-size: cover;
         background-position: center;
         position: relative;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 50px;
+    }
+    .feature {
+        flex: 1 1 20%;
+        text-align: justify;
+        margin: 10px;
+    }
+    .feature p,
+    .feature h4 {
+        text-align: center;
     }
 
     .mobile__hero--wrapper {
@@ -346,20 +370,6 @@ footer p {
         background-size: cover;
         background-position: center;
         position: relative;
-    }
-    .features {
-        display: flex;
-        justify-content: space-around;
-        padding: 50px;
-    }
-    .feature {
-        flex: 1 1 20%;
-        text-align: justify;
-        margin: 10px;
-    }
-    .feature p,
-    .feature h4 {
-        text-align: center;
     }
 
     .mobile__hero--wrapper {
