@@ -87,11 +87,11 @@ li.navbar-wai-logo {
 .jumbotron {
     padding-bottom: 0;
 }
-.features {
+/* .features {
     display: flex;
     flex-direction: column;
     padding: 10px;
-}
+} */
 /* .feature:nth-of-type(odd) {
     padding: 35px 0px;
 } */
@@ -233,12 +233,6 @@ footer p {
         background-color: whitesmoke;
     }
 
-    .features {
-        margin: 50px 0px;
-    }
-    .feature:nth-of-type(2) {
-        margin: auto;
-    }
     
 }
 
@@ -355,19 +349,18 @@ footer p {
     }
     .features {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding: 0px 5vw;
+        justify-content: space-around;
+        padding: 50px;
     }
     .feature {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
+        flex: 1 1 20%;
+        text-align: justify;
+        margin: 10px;
+    }
+    .feature p,
+    .feature h4 {
         text-align: center;
     }
-    /* .feature:nth-of-type(odd) {
-        padding: 0px;
-    } */
 
     .mobile__hero--wrapper {
         height: 50vh;
