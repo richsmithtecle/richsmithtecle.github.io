@@ -61,7 +61,7 @@ li.navbar-wai-logo {
 .intro-hero {
     color: #ffffff;
     height: calc(100vh - 50px);
-    background-image: url(../img/pexels-photo-96858.jpeg);
+    background-image: url(../img/contemporary-desk-device-218863-425x900.png);
 
     /* background:
         linear-gradient(
@@ -86,6 +86,10 @@ li.navbar-wai-logo {
 }
 .jumbotron {
     padding-bottom: 0;
+}
+.jumbotron h1 {
+    font-size: 48px;
+    text-shadow: 1px 1px 15px #000000;
 }
 .features {
     display: flex;
@@ -122,14 +126,10 @@ li.navbar-wai-logo {
 .details {
     margin: 50px auto;
 }
-.dimensions__secondary {
-    margin-top: 30px;
-}
 .cta {
     margin-top: 50px;
 }
-#order-form,
-#request-info-form {
+#order-form {
     margin-top: 25px;
 }
 .info-form--hidden,
@@ -141,21 +141,30 @@ li.navbar-wai-logo {
     display: block;
 }
 
-.new-report-look {
-    /* margin: 0px;
-    background-image: url(../img/coming_soon_mockup.png);
-    background-size: cover;
-	background-position: center;
-    background-repeat: no-repeat; */
-    background-color: whitesmoke;
+/* NEW REPORTS TEASER */
+.teaser {
+    height: 100vh;
+    /* margin: 100px 0px; */
+    background:
+        linear-gradient(
+            rgba(245, 245, 245, 0.0),
+            rgba(245, 245, 245, 0.0)
+        ),
+        url(../img/coming_soon_mockup.png);
+    background-size: 300%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;   
 }
-.new-report-look h1 {
-    margin: 50px auto;
+.teaser__wrapper {
     text-align: center;
-    font-size: 5rem;
-}
-.client-portal--hero img {
-    padding: 0px 20px;
+    color: #ffffff;
+    background: rgba(0,0,0, 0.8);
+    padding: 10px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    width: 90%;
 }
 
 footer {
@@ -219,6 +228,7 @@ footer p {
         background-color: whitesmoke;
     }
 
+
     
 }
 
@@ -226,6 +236,66 @@ footer p {
 /* Small Devices, Tablets */
 /***************************************************/
 @media only screen and (min-width : 768px) {
+    .intro-hero {
+        color: #ffffff;
+        height: calc(75vh - 50px);
+        background-image: url(../img/pexels-photo-96858.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .jumbotron h1 {
+        font-size: 56px;
+        text-shadow: 1px 1px 15px #000000;
+    }
+
+    .features {
+        padding: 25px 100px;
+    }
+
+    .mobile__hero--wrapper {
+        min-height: 50vh;
+        margin: 0px;
+        background-image: url(../img/client_portal_screens_hero_clear.png);
+        background-size: 120%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: whitesmoke;
+    }
+
+    #order-form {
+        margin: 25px auto;
+        padding: 0px 100px;
+    }
+
+    /* NEW REPORTS TEASER */
+    .teaser {
+        height: 75vh;
+        margin: 50px 0px;
+        background:
+            linear-gradient(
+                rgba(245, 245, 245, 0.0),
+                rgba(245, 245, 245, 0.0)
+            ),
+            url(../img/coming_soon_mockup.png);
+        background-size: 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-color: whitesmoke; */
+        display: flex;   
+    }
+    .teaser__wrapper {
+        text-align: center;
+        color: #ffffff;
+        background: rgba(0,0,0, 0.8);
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        width: 90%;
+    }
+
     .footer__company img {
             display: block;
             margin: 25px 50px;
@@ -242,28 +312,31 @@ footer p {
         color: #ffffff;
         height: calc(60vh - 50px);
         background-image: url(../img/pexels-photo-96858.jpeg);
-        /* background:
-            linear-gradient(
-                rgba(0, 77, 158, 0.80),
-                rgba(0, 77, 158, 0.80)
-            ),
-            url(../img/customSolutions.gif); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: relative;
     }
+    .jumbotron h1 {
+        font-size: 56px;
+        text-shadow: none;
+    }
+    
 
     .features {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         padding: 50px;
     }
     .feature {
-        flex: 1 1 20%;
+        flex: 1 1 30%;
         text-align: justify;
-        margin: 10px;
+        margin: 20px;
+    }
+    .feature:last-of-type {
+        margin: 20px 100px;
     }
     .feature p,
     .feature h4 {
@@ -271,13 +344,26 @@ footer p {
     }
 
     .mobile__hero--wrapper {
-        min-height: 50vh;
+        height: 50vh;
         margin: 0px;
         background-image: url(../img/client_portal_screens_hero_clear.png);
         background-size: 120%;
         background-position: top;
         background-repeat: no-repeat;
         background-color: whitesmoke;
+    }
+
+    /* NEW REPORTS TEASER */
+    
+    .teaser__wrapper {
+        text-align: center;
+        color: #ffffff;
+        background: rgba(0,0,0, 0.8);
+        padding: 20px 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        width: 60%;
     }
     footer {
         color: white;
@@ -336,19 +422,26 @@ footer p {
 @media only screen and (min-width : 1200px) {
 
     .intro-hero {
-        color: #ffffff;
         height: calc(80vh - 50px);
-        background-image: url(../img/pexels-photo-96858.jpeg);
-        /* background:
-            linear-gradient(
-                rgba(0, 77, 158, 0.80),
-                rgba(0, 77, 158, 0.80)
-            ),
-            url(../img/customSolutions.gif); */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
+    }
+
+    .jumbotron h1 {
+        font-size: 63px;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 25px;
+    }
+    .feature {
+        flex: 1 1 20%;
+        text-align: justify;
+        margin: 25px 10px;
+    }
+    .feature:last-of-type {
+        margin: 25px 10px;        
     }
 
     .mobile__hero--wrapper {
@@ -360,35 +453,20 @@ footer p {
         background-repeat: no-repeat;
         background-color: whitesmoke;
     }
-    .dimensions__secondary {
-        margin-top: auto;
+    
+    /* NEW REPORTS TEASER */
+    .teaser {
+        height: 50vh;
     }
-    .new-report-look {
-        height: 75vh;
-        margin: 100px 0px;
-        background:
-            linear-gradient(
-                rgba(245, 245, 245, 0.60),
-                rgba(245, 245, 245, 0.60)
-            ),
-            url(../img/coming_soon_mockup.png);
-        /* background-image: url(../img/coming_soon_mockup.png); */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: whitesmoke;
-    }
-    .callout {
+    .teaser__wrapper {
+        text-align: center;
+        color: #ffffff;
+        background: rgba(0,0,0, 0.8);
         padding: 20px;
         border: 1px solid black;
         border-radius: 10px;
-        margin-top: 30%;
-        color: white;
-        background: rgba(0,0,0, 0.8)
-    }
-    .callout h1 {
-        margin: 0;
-        padding: 0;
+        margin: auto;
+        width: 50%;
     }
 }
 
@@ -400,16 +478,13 @@ footer p {
         color: #ffffff;
         height: calc(75vh - 50px);
         background-image: url(../img/pexels-photo-96858.jpeg);
-        /* background:
-            linear-gradient(
-                rgba(190, 117, 51, .5),
-                rgba(190, 117, 51, .5)
-            ),
-            url(../../img/pexels-photo-96858-bw.jpg); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: relative;
+    }
+    .features {
+        padding: 100px 50px;
     }
     .mobile__hero--wrapper {
         min-height: 50vh;
@@ -420,35 +495,12 @@ footer p {
         background-repeat: no-repeat;
         background-color: whitesmoke;
     }
-    .intro__hero img {
-        padding: 25px 7.5vw 0px;
+    .cta {
+        margin: 125px auto;
     }
-    .new-report-look {
-        height: 50vh;
-        margin: 100px 0px;
-        background:
-            linear-gradient(
-                rgba(245, 245, 245, 0.60),
-                rgba(245, 245, 245, 0.60)
-            ),
-            url(../img/coming_soon_mockup.png);
-        /* background-image: url(../img/coming_soon_mockup.png); */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: whitesmoke;
+    .teaser {
+        margin: 50px auto 175px auto;
     }
-    .callout {
-        padding: 20px;
-        border: 1px solid black;
-        border-radius: 10px;
-        margin-top: 30%;
-        color: white;
-        background: rgba(0,0,0, 0.8)
-    }
-    .callout h1 {
-        margin: 0;
-        padding: 0;
-    }
+    
 }
 
