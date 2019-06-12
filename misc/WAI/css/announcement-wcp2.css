@@ -163,12 +163,20 @@ li.navbar-wai-logo {
 /* .client-portal__hero img {
     padding: 25px 15vw 0px;
 } */
-.client-portal {
+/* .client-portal {
     background: whitesmoke;
-    /* padding-bottom: 10vh; */
     margin: 10vh auto;
+} */
+.new-report-look {
+    /* height: 75vh; */
+    margin: 0px;
+    background-image: url(../img/coming_soon_mockup.png);
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
 }
-.client-portal h1 {
+.new-report-look h1 {
     margin: 50px auto;
     text-align: center;
     font-size: 5rem;
@@ -383,6 +391,21 @@ footer p {
     }
     .dimensions__secondary {
         margin-top: auto;
+    }
+    .new-report-look {
+        /* height: 50vh; */
+        margin: 100px 0px;
+        background:
+            linear-gradient(
+                rgba(245, 245, 245, 0.70),
+                rgba(245, 245, 245, 0.70)
+            ),
+            url(../img/coming_soon_mockup.png);
+        /* background-image: url(../img/coming_soon_mockup.png); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: whitesmoke;
     }
 }
 
