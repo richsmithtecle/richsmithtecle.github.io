@@ -364,12 +364,12 @@ footer p {
         margin-top: auto;
     }
     .new-report-look {
-        /* height: 50vh; */
+        height: 75vh;
         margin: 100px 0px;
         background:
             linear-gradient(
-                rgba(245, 245, 245, 0.70),
-                rgba(245, 245, 245, 0.70)
+                rgba(245, 245, 245, 0.60),
+                rgba(245, 245, 245, 0.60)
             ),
             url(../img/coming_soon_mockup.png);
         /* background-image: url(../img/coming_soon_mockup.png); */
@@ -377,6 +377,18 @@ footer p {
         background-position: center;
         background-repeat: no-repeat;
         background-color: whitesmoke;
+    }
+    .callout {
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 30%;
+        color: white;
+        background: rgba(0,0,0, 0.8)
+    }
+    .callout h1 {
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -410,6 +422,33 @@ footer p {
     }
     .intro__hero img {
         padding: 25px 7.5vw 0px;
+    }
+    .new-report-look {
+        height: 50vh;
+        margin: 100px 0px;
+        background:
+            linear-gradient(
+                rgba(245, 245, 245, 0.60),
+                rgba(245, 245, 245, 0.60)
+            ),
+            url(../img/coming_soon_mockup.png);
+        /* background-image: url(../img/coming_soon_mockup.png); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: whitesmoke;
+    }
+    .callout {
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 30%;
+        color: white;
+        background: rgba(0,0,0, 0.8)
+    }
+    .callout h1 {
+        margin: 0;
+        padding: 0;
     }
 }
 
