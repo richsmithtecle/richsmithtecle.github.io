@@ -78,6 +78,17 @@ li.navbar-wai-logo {
     color: #ffffff;
 }
 
+#intro-hero__desktop {
+    display: none;
+}
+#intro-hero__mobile {
+    display: flex;
+}
+#intro-hero__mobile h1 {
+    text-align: center;
+    margin: 50vh auto 0vh auto;
+}
+
 .center {
     margin: 0;
     position: absolute;
@@ -228,8 +239,12 @@ footer p {
         background-color: whitesmoke;
     }
 
-
-    
+    #intro-hero__desktop {
+        display: none;
+    }
+    #intro-hero__mobile {
+        display: flex;
+    }    
 }
 
 /***************************************************/
@@ -244,6 +259,12 @@ footer p {
         background-size: cover;
         background-position: center;
         position: relative;
+    }
+    #intro-hero__desktop {
+        display: block;
+    }
+    #intro-hero__mobile {
+        display: none;
     }
     .jumbotron h1 {
         font-size: 56px;

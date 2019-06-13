@@ -37,59 +37,60 @@
         <!--HERO BANNER-->
         <header>
             <div class="jumbotron intro-hero">
-                <div class="container center">
+                <!--Tablet and Desktop View Only-->
+                <div id="intro-hero__desktop" class="container center">
                     <h1 class="text-center">New Watterson &amp; Associates<br>Client Access Portal</h1>
+                </div>
+                <!--Mobile View Only-->
+                <div id="intro-hero__mobile" class="container">
+                    <h1>New WAI Client Access Portal</h1>
                 </div>
             </div>
         </header>
         <section class="container">
             <div class="row">
-            <div class="col-sm-12 intro">
-                <p class="lead text-center">We are excited to announce the arrival of the WAI Client Access Portal. The client portal puts your organization more in control of the assessment process with 24-hour access to codes and reports.</p>
+                <div class="col-sm-12">
+                    <p class="lead text-center">We are excited to announce the arrival of the WAI Client Access Portal. The client portal puts your organization more in control of the assessment process with 24-hour access to codes and reports.</p>
+                </div>
             </div>
-        </div>
         </section>
         
         
-        <main>
-        
-            <div class="features">
-                <div class="feature">
-                    <p><i class="fas fa-users-cog fa-3x"></i></p>
-                    <h4>Create Assessment Codes</h4>
-                    <p>Whether you need one assessment or twenty-five, create the assessment codes directly in the portal to be used immediately, later, or both. Select the report you require, and the corresponding assessment is automatically populated.</p>
-                </div>
-                <div class="feature">
-                    <p><i class="fas fa-share-square fa-3x"></i></p>
-                    <h4>Send codes to Candidates</h4>
-                    <p>No separate email required! Send the assessment information directly to the candidate from the portal. All you need is the candidate name and email address. You can send the code directly after you create it or later.</p>
-                </div>
-                <div class="feature">
-                    <p><i class="fas fa-tasks fa-3x"></i></p>
-                    <h4>View Codes Status</h4>
-                    <p>The portal helps you to track the status of your assessment codes with three categories: Available, Sent, and In Progress. Each report has a separate section for easy viewing.</p>
-                </div>
-                <div class="feature">
-                    <p><i class="far fa-file-alt fa-3x"></i></p>
-                    <!-- <p><i class="far fa-copy fa-3x"></i></p> -->
-                    <!-- <p><i class="fas fa-file-code fa-3x"></i></p> -->
-                    <h4>Run Reports</h4>
-                    <p>Missing a report on someone? Want to see how a previous test-taker looks in a different job? You can run reports directly from the client portal. *Some reports may have an additional fee.</p>
-                </div>
-                <div class="feature">
-                    <p><i class="fas fa-users fa-3x"></i></p>
-                    <h4>User Control</h4>
-                    <p>Several user levels available from Administrator to Limited access. Allows multiple people within your organization to access the portal with full control or limited access for certain functions.</p>
-                </div>
+        <main class="features">
+            <div class="feature">
+                <p><i class="fas fa-users-cog fa-3x"></i></p>
+                <h4>Create Assessment Codes</h4>
+                <p>Whether you need one assessment or twenty-five, create the assessment codes directly in the portal to be used immediately, later, or both. Select the report you require, and the corresponding assessment is automatically populated.</p>
+            </div>
+            <div class="feature">
+                <p><i class="fas fa-share-square fa-3x"></i></p>
+                <h4>Send codes to Candidates</h4>
+                <p>No separate email required! Send the assessment information directly to the candidate from the portal. All you need is the candidate name and email address. You can send the code directly after you create it or later.</p>
+            </div>
+            <div class="feature">
+                <p><i class="fas fa-tasks fa-3x"></i></p>
+                <h4>View Codes Status</h4>
+                <p>The portal helps you to track the status of your assessment codes with three categories: Available, Sent, and In Progress. Each report has a separate section for easy viewing.</p>
+            </div>
+            <div class="feature">
+                <p><i class="far fa-file-alt fa-3x"></i></p>
+                <!-- <p><i class="far fa-copy fa-3x"></i></p> -->
+                <!-- <p><i class="fas fa-file-code fa-3x"></i></p> -->
+                <h4>Run Reports</h4>
+                <p>Missing a report on someone? Want to see how a previous test-taker looks in a different job? You can run reports directly from the client portal. *Some reports may have an additional fee.</p>
+            </div>
+            <div class="feature">
+                <p><i class="fas fa-users fa-3x"></i></p>
+                <h4>User Control</h4>
+                <p>Several user levels available from Administrator to Limited access. Allows multiple people within your organization to access the portal with full control or limited access for certain functions.</p>
             </div>
         </main>
+
         <div class="mobile-friendly">
             <p class="lead text-center">...oh yeah, we also made it mobile friendly.</p>
         </div>
 
         <div class="container-fluid">
-
-            <!-- Mobile screens view -->
             <div class="row">
                 <div class="mobile__hero--wrapper"></div> 
             </div>
@@ -98,71 +99,71 @@
         
         <!--CALL TO ACTION BUTTONS-->
         <section class="container">
-                <!--ORDER CODES AREA-->
-                <div class="row cta">
-                    <!--ORDER CODES FORM-->
-                    <div id="order-form" class="col-sm-12 well well-lg">
-                            <div class="col-md-12">
-                                <h3 class="text-center">Ready to get started?</h3>
-                            </div>
-                        <form action="/Contact" method="post" autocomplete="on">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="Text_FN">First Name</label>
-                                    <input id="Text_FN" type="text" placeholder="First Name" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="Text_LN">Last Name</label>
-                                    <input id="Text_LN" type="text" placeholder="Last Name" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="Text_Company">Company</label>
-                                    <input id="Text_Company" type="text" placeholder="Company Name" class="form-control" autocomplete="organization" required>
-                                </div>
-                            </div>
-                            <!--New input - not on currrent contact form-->
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="Text_Division">Divsion</label>
-                                    <input id="Text_Division" type="text" placeholder="Division / Location" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="Text_Email">Email Address</label>
-                                    <input id="Text_Email" type="email" placeholder="Email Address" class="form-control" autocomplete="work email" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="Text_Phone">Phone Number</label>
-                                    <input id="Text_Phone" type="tel" placeholder="Phone Number" class="form-control" required>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="Text_Commentsws">Comments:</label>
-                                    <textarea name="Text_Commentsws" id="Text_Commentsws" cols="30" rows="3" class="form-control" placeholder="Comments"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="g-recaptcha" data-sitekey="6Le0niUUAAAAAAkLbPxoKAtZUv7o8uY9M3-40UWJ"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <button class="btn btn-lg btn-default">Submit</button>
-                                </div>
-                            </div>
-                        </form>
+            <!--ORDER CODES AREA-->
+            <div class="row cta">
+                <!--ORDER CODES FORM-->
+                <div id="order-form" class="col-sm-12 well well-lg">
+                    <div class="col-md-12">
+                        <h3 class="text-center">Ready to get started?</h3>
                     </div>
+                    <form action="/Contact" method="post" autocomplete="on">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_FN">First Name</label>
+                                <input id="Text_FN" type="text" placeholder="First Name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_LN">Last Name</label>
+                                <input id="Text_LN" type="text" placeholder="Last Name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_Company">Company</label>
+                                <input id="Text_Company" type="text" placeholder="Company Name" class="form-control" autocomplete="organization" required>
+                            </div>
+                        </div>
+                        <!--New input - not on currrent contact form-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_Division">Divsion</label>
+                                <input id="Text_Division" type="text" placeholder="Division / Location" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_Email">Email Address</label>
+                                <input id="Text_Email" type="email" placeholder="Email Address" class="form-control" autocomplete="work email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Text_Phone">Phone Number</label>
+                                <input id="Text_Phone" type="tel" placeholder="Phone Number" class="form-control" required>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Text_Commentsws">Comments:</label>
+                                <textarea name="Text_Commentsws" id="Text_Commentsws" cols="30" rows="3" class="form-control" placeholder="Comments"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6Le0niUUAAAAAAkLbPxoKAtZUv7o8uY9M3-40UWJ"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button class="btn btn-lg btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+            </div>
                 
                 
             </section>
@@ -172,7 +173,7 @@
             <div class="teaser__wrapper">
                 <h1>Coming Soon</h1>
                 <h3>All-new look for our reports!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci, rerum alias assumenda officiis hic repellendus ipsa? Illo amet officiis ad voluptas, quo consectetur quaerat.</p>
+                <p>New and updated reports will provide a whole new way of learning about your candidates. Results and Interview Guides will now be delivered online in a mobile friendly format. Easy to read graphics allow for quick interpretation whether viewed on your phone, tablet, laptop or desktop.</p>
             </div>
         </section>
        
@@ -202,25 +203,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script>
-            function showOrderForm(id) {
-                let x = document.getElementById(id);
-                if (x.className.indexOf("order-form--show") == -1) {
-                    x.className += " order-form--show";
-                } else {
-                    x.className = x.className.replace(" order-form--show", "");
-                }
-            }
-        </script>
-        <script>
-            function showRequestInfoForm(id) {
-                let x = document.getElementById(id);
-                if (x.className.indexOf("info-form--show") == -1) {
-                    x.className += " info-form--show";
-                } else {
-                    x.className = x.className.replace(" info-form--show", "");
-                }
-            }
-        </script>
+        
     </body>
 </html>
