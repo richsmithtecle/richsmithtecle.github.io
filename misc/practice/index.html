@@ -127,14 +127,27 @@
             roleCall();
 
             //create function to sort heroes alpha
+            var sortCounter = 0;
             function sortHeroName() {
-                avengers.sort(function(a, b) {
+                if (sortCounter % 2 == 0) {
+                    avengers.sort(function(a, b) {
                     let x = a.name.toLowerCase();
                     let y = b.name.toLowerCase();
                     if (x < y) {return -1;}
                     if (x > y) {return 1;}
                     return 0;
-                });
+                })} else {
+                    avengers.sort(function(a, b) {
+                    let x = a.name.toLowerCase();
+                    let y = b.name.toLowerCase();
+                    if (x > y) {return -1;}
+                    if (x < y) {return 1;}
+                    return 0;
+                })
+                };
+                sortCounter++;
+                console.log("Sorted " +sortCounter + " times");
+                
                 roleCall();
             };
             
