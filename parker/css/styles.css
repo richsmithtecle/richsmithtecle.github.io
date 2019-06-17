@@ -63,38 +63,46 @@ h1.report-hero__slogan {
 .report-hero__title {
     width: 100%;
     padding: 0px 5px;
-    margin-top: 25vh;
+    margin-top: 35vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 .report-hero__title img {
-    /* flex: 0 1;
-    height: 7rem;
-    margin-right: auto; */
     display: none;
 }
 .report-hero__title h3 {
     /* flex: 1; */
     text-align: right;
-    font-size: 3rem;
+    font-size: 2rem;
+    width: 40%;
 }
 .logo-bracket {
     color: gold;
-    font-size: 14rem;
+    font-size: 9rem;
     margin: 0px 10px;
 }
 .report-hero__candidate {
     text-align: left;
+    font-size: 2rem;
+    width: 40%;
 }
-.center {
-    margin: 0;
-    position: absolute;
-    top: 35%;
-    width: 100%;
+.report-hero__footer {
+    background: #ffffff;
+    margin-top: 14.75vh;
+    
 }
+.footer-hero__logo {
+    width: 30vw;
+    padding: 20px;
+}
+.footer-hero__slogan {
+    width: 60vw;
+    padding: 35px 0px 30px 40px;
+}
+
 
 .print__cover {
     display: none;
@@ -234,16 +242,7 @@ h1.report-hero__slogan {
 .instructions__hero {
     color: #ffffff;
     min-height: 25vh;
-    background:
-        linear-gradient(
-            rgba(0, 77, 158, 0.80),
-            rgba(0, 77, 158, 0.80)
-        ),
-        url(../img/TubeFittingInstallTrainBanner3.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    position: relative;
+    background: var(--theme-main, grey);
 }
 
 .instructions {
@@ -314,6 +313,9 @@ h1.report-hero__slogan {
 /* Small Devices, Tablets */
 /***************************************************/
 @media only screen and (min-width : 576px) {
+    .report-hero__footer {
+        display: none;
+    }
 
     .summary__container {
         display: block;
@@ -565,15 +567,14 @@ h1.report-hero__slogan {
         align-items: center;
     }
     .report-hero__title img {
+        display: block;
         flex: 0 1;
         height: 7rem;
-        /* width: auto; */
         margin-right: auto;
     }
-    .report-hero__title {
-        /* flex: 1; */
+    .report-hero__title h3 {
         text-align: right;
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .logo-bracket {
         color: gold;
@@ -582,6 +583,12 @@ h1.report-hero__slogan {
     }
     .report-hero__candidate {
         text-align: left;
+        font-size: 3rem;
+        width: auto;
+        /* margin: auto; */
+    }
+    .report-hero__footer {
+        display: none;
     }
     .summary__container {
         margin: 5vh 5vw;
