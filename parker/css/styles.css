@@ -344,7 +344,7 @@ h1.report-hero__slogan {
         max-width: 1500px;
         margin: 10px auto;
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         grid-auto-rows: 1fr;
         grid-gap: 20px;
@@ -481,7 +481,7 @@ h1.report-hero__slogan {
         display: grid;
         grid-gap: 10px;
         gap: 10px;
-        padding: 10px;
+        padding: 10px 120px;
     }
 
     .dimension__container {
@@ -520,7 +520,7 @@ h1.report-hero__slogan {
         display: grid;
         grid-gap: 20px;
         gap: 20px;
-        padding: 10px;
+        padding: 10px 200px;
     }
 
     .dimension__container {
@@ -603,7 +603,7 @@ h1.report-hero__slogan {
         display: grid;
         grid-gap: 20px;
         gap: 20px;
-        padding: 10px;
+        padding: 10px 270px;
     }
 
     .dimension__container {
