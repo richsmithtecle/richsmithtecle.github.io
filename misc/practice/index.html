@@ -71,19 +71,19 @@
             let avengers = [
                 {
                     name: "Iron Man",
-                    indentity: "Tony Stark",
+                    identity: "Tony Stark",
                     weapon: "Armor",
                     quote: "I am Iron Man."
                 },
                 {
                     name: "Thor",
-                    indentity: "Odinson",
+                    identity: "Odinson",
                     weapon: "Hammer (Mjolnir)",
                     quote: "For Asgard!"
                 },
                 {
                     name: "Captain America",
-                    indentity: "Steve Rogers",
+                    identity: "Steve Rogers",
                     weapon: "Shield",
                     quote: "I can do this all day.."
                 }
@@ -114,7 +114,7 @@
                                 <h4>${avenger.name}</h4>
                             </header>
                             <ul class="hero__card--list">
-                                <li class="hero__card--listItem">Identity: ${avenger.indentity}</li>
+                                <li class="hero__card--listItem">Identity: ${avenger.identity}</li>
                                 <li class="hero__card--listItem">Weapon: ${avenger.weapon}</li>
                                 <li class="hero__card--listItem">Quote: <span class="quote">"${avenger.quote}"</span></li>
                             </ul>
@@ -152,17 +152,47 @@
             };
             
             //create function to sort identities alpha
+            let identitySorted = '';
+            // function sortIdentity() {
+            //     avengers.sort(function(a, b) {
+            //         let x = a.indentity.toLowerCase();
+            //         let y = b.indentity.toLowerCase();
+            //         if (x < y) {return -1;}
+            //         if (x > y) {return 1;}
+            //         return 0;
+            //     });
+            //     identitySorted = 'ascending';
+            //     console.log(identitySorted)
+            //     roleCall();
+            // };
+            
             function sortIdentity() {
-                avengers.sort(function(a, b) {
-                    let x = a.indentity.toLowerCase();
-                    let y = b.indentity.toLowerCase();
-                    if (x < y) {return -1;}
-                    if (x > y) {return 1;}
-                    return 0;
-                });
+                if (identitySorted != 'ascending') {
+                    avengers.sort(function(a, b) {
+                        let x = a.identity.toLowerCase();
+                        let y = b.identity.toLowerCase();
+                        if (x < y) {return -1;}
+                        if (x > y) {return 1;}
+                        return 0;
+                    });
+                    console.log("Sorted the list in Asending order");
+                    identitySorted = 'ascending';
+                    console.log("The array is now sorted in " + identitySorted + " order.");
+                } else {
+                    avengers.sort(function(a, b) {
+                        let x = a.identity.toLowerCase(),
+                            y = b.identity.toLowerCase();
+                            if (x > y) {return -1}
+                            if (x < y) {return +1}
+                            return 0;
+                    });
+                    console.log("Sorted the list in descending order");
+                    identitySorted = "descending";
+                    console.log("The array is now sorted in " + identitySorted + " order.")
+                }
+
                 roleCall();
             };
-            
 
         </script>
     </body>
