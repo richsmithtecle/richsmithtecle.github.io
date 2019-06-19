@@ -1,23 +1,4 @@
-/*WAI colors from main website:
-"background orange" = #be7533
-"background orange" = rgb(190, 117, 51)
 
-*/
-
-/*Colors from adacom logo project c. 2010*/
-
-/*Primary Colors*/
-/*blue  color="#1e4973"*/
-/*black color="#000000"*/
-/*grey	color="#999999"*/
-
-/*Secondary Colors*/
-/*orange/brown 	color="#e5a812"
-  orange/brown 	color="rgba(229, 168, 18, 1)"
-
-*/
-
-/*green			color="#546670"*/
 :root {
     --wai-background-orange: rgba(190, 117, 51, 1);
     --theme-main: var(--wai-background-orange); 
@@ -62,13 +43,6 @@ li.navbar-wai-logo {
     color: #ffffff;
     height: calc(100vh - 50px);
     background-image: url(../img/contemporary-desk-device-218863-425x900.png);
-
-    /* background:
-        linear-gradient(
-            rgba(0, 77, 158, 0.80),
-            rgba(0, 77, 158, 0.80)
-        ),
-        url(../img/customSolutions.gif); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -155,7 +129,6 @@ li.navbar-wai-logo {
 /* NEW REPORTS TEASER */
 .teaser {
     height: 100vh;
-    /* margin: 100px 0px; */
     background:
         linear-gradient(
             rgba(245, 245, 245, 0.0),
@@ -230,7 +203,6 @@ footer p {
 
     .mobile__hero--wrapper {
         height: 25vh;
-        /* border: 1px solid red; */
         background-image: url(../img/client_portal_screens_hero_clear.png);
         background-size: 120%;
         background-position: top;
