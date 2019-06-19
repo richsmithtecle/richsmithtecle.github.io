@@ -1,7 +1,6 @@
 :root {
     --swagelok-blue: rgba(0, 77, 158, 1);
     --theme-main: var(--swagelok-blue); 
-    /* --theme-main: rgba(75, 80, 90, 1);  */
 }
 body {
     font-family: 'Roboto', sans-serif; 
@@ -79,27 +78,6 @@ li.navbar-wai-logo {
     padding-bottom: 0px;
 }
 
-/* Mobile screens view 1 */
-
-/* .mobile {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    background: whitesmoke;
-    padding: 0 7.5vw;
-    height: 45vh;
-    overflow: hidden;
-}
-.mobile__hero-image {
-    margin-top: -100px;
-    margin-bottom: -150px;
-}
-.mobile__hero-image img {
-    border: 1px solid red;
-    width: 100%;
-    height: auto;
-} */
-
-/* Mobile screens view 2 */
-
 .mobile__hero--wrapper {
     height: 75vh;
     margin: 0px;
@@ -131,12 +109,9 @@ li.navbar-wai-logo {
 .order-form--show {
     display: block;
 }
-/* .client-portal__hero img {
-    padding: 25px 15vw 0px;
-} */
+
 .client-portal {
     background: whitesmoke;
-    /* padding-bottom: 10vh; */
     margin: 10vh auto;
 }
 .client-portal h1 {
@@ -147,9 +122,7 @@ li.navbar-wai-logo {
 .client-portal--hero img {
     padding: 0px 20px;
 }
-/* .client-portal li {
-    list-style-type: none;
-} */
+
 footer {
     color: white;
     background: var(--theme-main);
