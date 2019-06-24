@@ -1,0 +1,99 @@
+
+:root {
+    --wai-background-orange: rgba(190, 117, 51, 1);
+    --theme-main: var(--wai-background-orange); 
+    /* --theme-main: rgba(75, 80, 90, 1);  */
+}
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif; 
+}
+nav {
+    background: var(--theme-main);
+    border-bottom: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+}
+nav li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 15px;
+}
+nav li a,
+nav li a:visited {
+    color: #ffffff;
+}
+nav li a:hover {
+    text-decoration: underline;
+}
+li.navbar-wai-logo {
+    margin-left: 15px;
+    margin-right: auto;
+}
+.navbar-wai-logo img {
+    height: 30px;
+    width: auto;
+}
+.login {
+    height: calc(100vh - 96px);
+    background-image: url(../img/pexels-photo-459562.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+footer {
+    background: var(--theme-main);
+    padding: 0px;
+    margin: 0px;
+}
+footer p {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0px;
+
+}
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+
+}
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+
+}
+
+/***************************************************/
+/* Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+
+}
+
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+
+}
