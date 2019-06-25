@@ -22,11 +22,13 @@
     </nav>
     
     <section class="login-area">
-        <form class="form-inline login">
-            <input type="text" class="form-control input-lg" name="TextBox_userid" id="TextBox_userid" placeholder="User ID"/>
-            <input type="password" class="form-control input-lg" name="TextBox_password" id="TextBox_password" placeholder="Password"/>
-            <button type="submit" class="btn btn-lg btn-default" name="ImageButton1" id="ImageButton1">Go &rarr;</button>
-        </form>
+        <div class="check-login">
+            <h2>This login has already been assigned.</h2>
+            <p>The login credentials used to enter this site are already registered to Rich Test Smith.<br /><br />Is this you? If yes, please click on the "Continue" button. If no, click on the "Return to Login Page" button and contact the person who gave you the login.</p>
+            <button class="btn btn-default" type="submit" name="Button_login" value="Return to Login Page" id="Button_login">Return to Login Page</button>
+            <button class="btn btn-default" type="submit" name="Button_continue" value="Continue" id="Button_continue">Continue</button>
+    
+        </div>
     </section>
 
     <footer>

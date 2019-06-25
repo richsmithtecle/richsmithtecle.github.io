@@ -35,31 +35,98 @@ nav li a:hover {
     text-decoration: underline;
 }
 li.navbar-wai-logo {
-    margin-left: 15px;
-    margin-right: auto;
+    margin: 0px auto;
 }
 .navbar-wai-logo img {
-    height: 30px;
+    height: 50px;
     width: auto;
 }
-.login {
-    height: calc(100vh - 96px);
-    background-image: url(../img/pexels-photo-459562.jpeg);
+.login-area {
+    min-height: calc(100vh - 130px);
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url(../img/pexels-photo-459562.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#TextBox_userid,
+#TextBox_password {
+    width: 80vw;
+    margin: 10px auto;
+    border: 1px solid grey;
+}
+#ImageButton1 {
+    margin: auto;
+    border: 1px solid grey;
+}
+
+.check-login,
+.consent,
+.test-selection {
+    width: 75vw;
+    background: rgba(255, 255, 255, 1.0);
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;    
+}
+.check-login button,
+.consent button {
+    margin: 15px;
+}
+.consent a {
+    margin: 20px auto;
+}
+.test-list,
+.test-list a,
+.test-list a:visited {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.test-list__wrapper {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.test-list__wrapper > * {
+    flex: 1;
+}
+.test-list__wrapper h4 {
+    background: #000000;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 10px -10px;
+}
 
 footer {
     background: var(--theme-main);
     padding: 0px;
+    border-top: 1px solid #000000;
     margin: 0px;
 }
 footer p {
     text-align: center;
     color: #ffffff;
-    padding: 10px;
+    padding: 10px 50px;
     margin: 0px;
 
 }
@@ -67,6 +134,51 @@ footer p {
 /* Small Devices, Tablets */
 /***************************************************/
 @media only screen and (min-width : 576px) {
+    li.navbar-wai-logo {
+        margin-left: 15px;
+        margin-right: auto;
+    }
+    .navbar-wai-logo img {
+        height: 30px;
+        width: auto;
+    }
+    .login-area {
+        min-height: calc(100vh - 90px);
+        background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url(../img/pexels-photo-459562.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .login {
+        /* display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center; */
+    }
+    #TextBox_userid,
+    #TextBox_password {
+        width: 25vw;
+    }
+
+    .check-login,
+    .consent,
+    .test-selection {
+        width: 50vw;
+    }
+    .check-login button {
+        margin: 20px;
+    }
+    
+
 
 }
 
@@ -75,6 +187,11 @@ footer p {
 /***************************************************/
 @media only screen and (min-width : 768px) {
 
+    .check-login,
+    .consent,
+    .test-selection {
+        width: 75vw;  
+    }
 }
 
 /***************************************************/
@@ -82,13 +199,26 @@ footer p {
 /***************************************************/
 @media only screen and (min-width : 992px) {
 
+    .check-login,
+    .consent,
+    .test-selection {
+        width: 50vw;
+    }
+    
 }
 
 /***************************************************/
 /* Large Devices, Wide Screens */
 /***************************************************/
 @media only screen and (min-width : 1200px) {
-
+    .consent {
+        width: 65vw;
+        padding: 20px;
+    }
+    .test-selection {
+        width: 75vw;
+        padding: 20px;
+    }
 }
 
 /***************************************************/
