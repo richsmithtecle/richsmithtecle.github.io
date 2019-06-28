@@ -131,13 +131,21 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #000000;
     border-radius: 0px 0px 5px 5px;
 }
 .test p {
     flex: 1;
 }
+
+.test a {
+    padding: 1px;
+    margin: 20px 25px 5px 25px;
+    border: 1px solid black;
+}
+
+
 
 footer {
     background: var(--theme-main);

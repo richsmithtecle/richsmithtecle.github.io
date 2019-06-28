@@ -29,11 +29,11 @@
     
         <div id="test__list">
     
-            <div class="test__wrapper">
+            <!-- <div class="test__wrapper">
                 <div class="test__name"><h5>Cab-Mk (Mechanical Comprehension)</h5></div>
                 <div class="test">
                     <p>A measure of mechanical comprehension (18 questions, approximately 10 minutes)</p>
-                    <a class="btn btn-default" href="intro.aspx?test_id=9">Start</a>
+                    <a class="btn btn-default btn-success" href="intro.aspx?test_id=9">Start</a>
                 </div>
             </div>
     
@@ -41,7 +41,7 @@
                 <div class="test__name"><h5>General Knowledge Questionnaire - Leaders</h5></div> 
                 <div class="test">
                     <p>Contains math, language, and science-based questions (35 questions, 15 minute time limit)</p>
-                    <a class="btn btn-default" href="intro.aspx?test_id=4">Start</a>
+                    <a class="btn btn-default btn-success" href="intro.aspx?test_id=4">Start</a>
                 </div>
             </div>
     
@@ -49,7 +49,7 @@
                 <div class="test__name"><h5>Problem Solving Questionnaire</h5></div> 
                 <div class="test">
                     <p>A measure of general problem solving (20 questions, approximately 30 minutes)</p>
-                    <a class="btn btn-default" href="intro.aspx?test_id=8">Start</a>
+                    <a class="btn btn-default btn-success" href="intro.aspx?test_id=8">Start</a>
                 </div>
             </div>
     
@@ -57,7 +57,7 @@
                 <div class="test__name"><h5>Perceptual Speed and Accuracy Questionnaire</h5></div> 
                 <div class="test">
                     <p>A measure of speed and accuracy (3 minute time limit)</p>
-                    <a class="btn btn-default" href="intro.aspx?test_id=18">Start</a>
+                    <a class="btn btn-default btn-success" href="intro.aspx?test_id=18">Start</a>
                 </div>
             </div>
     
@@ -65,7 +65,7 @@
                 <div class="test__name"><h5>Mechanical Questionnaire</h5></div> 
                 <div class="test">
                     <p>A measure of mechanical comprehension (18 questions, approximately 20 minutes)</p>
-                    <a class="btn btn-default" href="intro.aspx?test_id=20">Start</a>
+                    <a class="btn btn-default btn-success" href="intro.aspx?test_id=20">Start</a>
                 </div>
             </div>
     
@@ -73,7 +73,7 @@
                 <div class="test__name"><h5>Technical Math Questionnaire</h5></div> 
                 <div class="test">
                     <p>Contains advanced math questions (75 questions, 45 minute time limit)</p>
-                    <a class="btn btn-default" href="intro.aspx?test_id=27">Start</a>
+                    <a class="btn btn-default btn-success" href="intro.aspx?test_id=27">Start</a>
                 </div>
             </div>
     
@@ -81,9 +81,9 @@
                 <div class="test__name"><h5>WPI Questionnaire</h5></div> 
                 <div class="test">
                     <p>A measure of general personality traits (291 questions, approximately 40 minutes)</p>
-                    <a class="btn btn-default" href="intro.aspx?test_id=16">Start</a>
+                    <a class="btn btn-default btn-success" href="intro.aspx?test_id=16">Start</a>
                 </div>
-            </div>
+            </div> -->
     
         </div>
     </main>
@@ -92,6 +92,71 @@
     <footer>
         <p>Copyright &copy; 2019 by Watterson &amp; Associates, Inc. All rights reserved.</p>
     </footer>
+    <script>
+    let tests = [
+        {
+            testName: "Cab-Mk (Mechanical Comprehension)",
+            testDesc: "A measure of mechanical comprehension (18 questions, approximately 10 minutes)",
+            testLink: "intro.aspx?test_id=9",
+            testComplete: true
+        },
+        {
+            testName: "General Knowledge Questionnaire - Leaders",
+            testDesc: "Contains math, language, and science-based questions (35 questions, 15 minute time limit)",
+            testLink: "intro.aspx?test_id=4",
+            testComplete: false
+        },
+        {
+            testName: "Problem Solving Questionnaire",
+            testDesc: "A measure of general problem solving (20 questions, approximately 30 minutes)",
+            testLink: "intro.aspx?test_id=8",
+            testComplete: false
+        },
+        {
+            testName: "Perceptual Speed and Accuracy Questionnaire",
+            testDesc: "A measure of speed and accuracy (3 minute time limit)",
+            testLink: "intro.aspx?test_id=18",
+            testComplete: false
+        },
+        {
+            testName: "Mechanical Questionnaire",
+            testDesc: "A measure of mechanical comprehension (18 questions, approximately 20 minutes)",
+            testLink: "intro.aspx?test_id=20",
+            testComplete: false
+        },
+        {
+            testName: "Technical Math Questionnaire",
+            testDesc: "Contains advanced math questions (75 questions, 45 minute time limit)",
+            testLink: "intro.aspx?test_id=27",
+            testComplete: false
+        },
+        {
+            testName: "WPI Questionnaire",
+            testDesc: "A measure of general personality traits (291 questions, approximately 40 minutes)",
+            testLink: "intro.aspx?test_id=16",
+            testComplete: false
+        }
+        
+    ]
+
+    function displayTests() {
+        let candidateTests = '';
+        tests.forEach(function(tests) {
+            candidateTests += `
+                <div class="test__wrapper">
+                    <div class="test__name"><h5>${tests.testName}</h5></div> 
+                    <div class="test">
+                        <p>${tests.testDesc}</p>
+                        ${tests.testComplete ? `<a class="btn btn-default disabled" href="${tests.testLink}">Completed</a>` : `<a class="btn btn-default btn-success" href="${tests.testLink}">Start</a>`}
+                    </div>
+                </div>
+            `
+        });
+        document.getElementById("test__list").innerHTML = candidateTests;
+    }
+    displayTests();
+   
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
