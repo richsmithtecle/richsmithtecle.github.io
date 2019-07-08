@@ -1,0 +1,22 @@
+#report__cover {
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+.report__cover--wrapper {
+    height: calc(100vh - 100px);
+    padding: 50px;
+    border: 1px solid #000000;
+    margin: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+}
+#report__dimensions {
+    border: 1px solid black;
+    height: 100vh;
+}
