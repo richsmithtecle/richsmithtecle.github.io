@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Professional Interview Guide For {FName LName} | Watterson &amp; Associates</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link media="screen" rel="stylesheet" href="pig.css">
+</head>
+<body>
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wai-report-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/wai-logo-white-300w.png" alt="Watterson & Associates">
+            </a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="wai-report-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#summary">PROFILE SUMMARY <span class="sr-only">(current)</span></a></li>   -->
+              <!--Summary view hidden from mobile devices-->
+              <li class="hidden-xs"><a href="#summary">SUMMARY</a></li>
+              <li><a href="#dimension__drive" data-toggle="collapse" data-target=".navbar-collapse">DRIVE</a></li>
+              <li><a href="#dimension__resilience" data-toggle="collapse" data-target=".navbar-collapse">RESILIENCE</a></li>
+              <li><a href="#dimension__self-control" data-toggle="collapse" data-target=".navbar-collapse">SELF-CONTROL</a></li>
+              <li><a href="#dimension__interpersonal" data-toggle="collapse" data-target=".navbar-collapse">INTERPERSONAL STYLE</a></li>
+              <li><a href="#dimension__practicality" data-toggle="collapse" data-target=".navbar-collapse">PRACTICALITY</a></li>
+              <li><a href="#dimension__thinking" data-toggle="collapse" data-target=".navbar-collapse">THINKING STYLES</a></li>
+              <li><a href="#dimension__ability" data-toggle="collapse" data-target=".navbar-collapse">ABILITY MEASURES</a></li>
+              <li><a href="#instructions__header" data-toggle="collapse" data-target=".navbar-collapse">INSTRUCTIONS</a></li>
+            </ul>
+           
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+        <!--HERO BANNER - HIDDEN FOR PRINT-->
+        <div class="jumbotron report-hero">
+            <div class="container center">
+                <h1 class="text-center">Professional Interview Guide<br><small><span>Chris Sample &bull; July 18, 2019</span></small></h1>
+            </div>
+        </div>
+
+        <!--COVER PAGE : PRINT VERSION ONLY-->
+        <section class="print__cover">
+            <header class="print__cover--header">
+                    <h1 class="text-center">Professional Interview Guide<br><small><span>Chris Sample &bull; July 18, 2019</span></small></h1>
+            </header>
+            <main class="print__cover--main"></main>
+            <footer class="print__cover--footer">
+                <h4>Prepared by:</h4>
+                <img class="print__cover--logo" src="img/wai-logo-color.png" alt="Watterson & Associates, Inc.">
+                <p>&copy;2019 by Watterson &amp; Associates, Inc., Chagrin Falls, Ohio. All rights reserved.</p>
+            </footer>
+        </section>
+           
+        
+        <!--SUMMARY REPORT SECTION-->
+        <div id="summary" class="anchor-offset">
+            <div class="summary__container">
+                    <div class="summary__title">
+                        <h3>Profile Summary : Chris Sample</h3>
+                    </div>
+                    
+                    <!--BIG FIVE DIMENSIONS-->
+                    <div class="summary__gauges--bigFive">
+                        <a href="#dimension__drive">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Drive / Influence</h5>
+                                <div id="summary__drive"></div>
+                            </div>
+                        </a>
+                        <a href="#dimension__resilience">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Emotional Resilience</h5>
+                                <div id="summary__resilience"></div>
+                            </div>
+                        </a>
+                        <a href="#dimension__self-control">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Self-Control</h5>
+                                <div id="summary__self-control"></div>
+                            </div>
+                        </a>
+                        <a href="#dimension__Interpersonal">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Interpersonal Style</h5>
+                                <div id="summary__interpersonal"></div>
+                            </div>
+                        </a>
+                        <a href="#dimension__practicality">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Practicality</h5>
+                                <div id="summary__practicality"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--SECONDARY DIMENSIONS-->
+                    <div class="summary__gauges">
+
+                        <a href="#dimension__logical">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Logical</h5>
+                                <div id="summary__logical"></div>
+                            </div>
+                        </a>
+
+                        <a href="#dimension__creativity">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Creativity / Innovation</h5>
+                                <div id="summary__creativity"></div>
+                            </div>
+                        </a>
+
+                        <a href="#dimension__detail">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Detail</h5>
+                                <div id="summary__detail"></div>
+                            </div>
+                        </a>
+
+                        <a href="#dimension__learning"> <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Learning</h5>
+                            <div id="summary__learning"></div>
+                        </div>
+                        </a>
+
+                        <a href="#dimension__intellectual"> <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Intellectual</h5>
+                            <div id="summary__intellectual"></div>
+                        </div>
+                        </a>
+
+                        <a href="#dimension__general-knowledge"> <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Critical</h5>
+                            <div id="summary__general-knowledge"></div>
+                        </div>
+                        </a>
+
+                        <a href="#dimension__mechanical"> <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Mechanical Comprehension</h5>
+                            <div id="summary__mechanical"></div>
+                        </div>
+                        </a>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+        
+        <!--DRIVE / INFLUENCE SECTION-->
+        <div id="dimension__drive" class="anchor-offset">
+            <div class="dimension__container">
+        
+                <div class="dimension__container--title">
+                    <h4>Drive / Influence Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="drive" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The quality that allows a person to respond quickly to change and be adaptable, flexible and
+                            resourceful. Continuously learns and quickly looks to apply it constructively moving forward. Can
+                            also be sensitive and innovative to new ideas and to others.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
+                            sequi omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro
+                            impedit. Eaque vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('DriveExtreme1')" class="interview__group__button interview__group-title">
+                            <h4>Drive / Influence Interview Questions 1</h4>
+                        </button>
+                        <div id="DriveExtreme1" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem minus nihil vel dignissimos quod placeat, ipsam praesentium ad quas veniam voluptate harum ratione laudantium blanditiis numquam fugit iste distinctio.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('DriveExtreme2')" class="interview__group__button interview__group-title">
+                            <h4>Drive / Influence Interview Questions 2</h4>
+                        </button>
+                        <div id="DriveExtreme2" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+                                    itaque sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt
+                                    velit minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('DriveExtreme3')" class="interview__group__button interview__group-title">
+                            <h4>Drive / Influence Interview Questions 3</h4>
+                        </button>
+                        <div id="DriveExtreme3" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+                                    itaque sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt
+                                    velit minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis
+                                    consequuntur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--RESILIENCE SECTION-->
+        <div id="dimension__resilience" class="anchor-offset">
+            <div class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Emotional Resilience Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="resilience" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The response to stress and change that is characterized by exhibiting a sense of confidence, composure and stability. Responds well to adversity and disappointment.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi
+                            omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque
+                            vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('ResilienceExtreme1')" class="interview__group__button interview__group-title">
+                            <h4>Emotional Resilience Interview Questions 1</h4>
+                        </button>
+                        <div id="ResilienceExtreme1" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('ResilienceExtreme2')" class="interview__group__button interview__group-title">
+                            <h4>Emotional Resilience Interview Questions 2</h4>
+                        </button>
+                        <div id="ResilienceExtreme2" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vel rem, architecto accusantium facilis, ab eligendi esse tempora vero, officia quos nemo quasi assumenda magni dignissimos nobis. Commodi, aperiam omnis?.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!--SELF-CONTROL SECTION-->
+        <div id="dimension__self-control" class="anchor-offset">
+            <div class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Self-Control Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="self-control" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The commitment, conviction and conscientious focus required of a person to successfully meet a given goal, often in the face of resistance, distraction and disagreement. Usually oriented to using processes, procedures and self-discipline.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi
+                            omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque
+                            vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('SelfControlExtreme1')" class="interview__group__button interview__group-title">
+                            <h4>Self-Control Interview Questions 1</h4>
+                        </button>
+                        <div id="SelfControlExtreme1" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('SelfControlExtreme2')" class="interview__group__button interview__group-title">
+                            <h4>Self-Control Interview Questions 2</h4>
+                        </button>
+                        <div id="SelfControlExtreme2" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!--INTERPERSONAL STYLE SECTION-->
+        <div id="dimension__interpersonal" class="anchor-offset">
+            <div class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Interpersonal Style Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="interpersonal" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The drive and personal motivation to initiate and to meet expectations without looking for much &dash; if any &dash; external direction. Will speak up and assertively address issues to push through resistance.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi
+                            omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque
+                            vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('InterpersonalExtreme1')" class="interview__group__button interview__group-title">
+                            <h4>Interpersonal Style Interview Questions 1</h4>
+                        </button>
+                        <div id="InterpersonalExtreme1" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat a reprehenderit sequi exercitationem fuga atque nesciunt eligendi laudantium inventore earum!</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis officia, cum inventore ratione quidem accusantium nulla dignissimos error quis eveniet nihil. Dolor, rerum quae!.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veniam eaque exercitationem perspiciatis excepturi deleniti accusantium aliquam quidem accusamus, quod cum at architecto iste aperiam quis consectetur commodi ipsam repellat?.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita repellat unde delectus, non voluptatem earum hic possimus quaerat nisi? Odit.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad unde, omnis nam asperiores neque impedit nostrum, odio quos incidunt sed illum exercitationem commodi iusto repudiandae optio necessitatibus ipsum fuga vero.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('InterpersonalExtreme2')" class="interview__group__button interview__group-title">
+                            <h4>Interpersonal Style Interview Questions 2</h4>
+                        </button>
+                        <div id="InterpersonalExtreme2" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ullam. Iure fuga soluta labore sed illum, explicabo dicta? Harum, sed!</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ratione veniam quae saepe corporis quo, libero vero molestiae harum! Quos corrupti quod animi excepturi fugiat.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ullam dolores quasi nemo excepturi omnis similique corporis doloribus provident, perferendis amet mollitia, ad ratione, dolorum maiores labore molestias voluptatibus! Consequatur?
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!--PRACTICALITY SECTION-->
+        <div id="dimension__practicality" class="anchor-offset">
+            <div class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Practicality Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="practicality" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The preference to engage with others and to interact in a collaborative manner. Is likely to be emotionally expressive and energetic. Initiates contact with new people, explores new opportunities and looks to be resourceful.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>Dimension Global Statement : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, sequi
+                            omnis! Veritatis, nobis tempora animi eaque excepturi ea maiores atque odio quasi porro impedit. Eaque
+                            vel, nihil molestiae suscipit repellendus nemo tenetur nesciunt. Fugit, rem.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('PracticalityExtreme1')" class="interview__group__button interview__group-title">
+                            <h4>Practicality Interview Questions 1</h4>
+                        </button>
+                        <div id="PracticalityExtreme1" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('PracticalityExtreme2')" class="interview__group__button interview__group-title">
+                            <h4>Practicality Interview Questions 2</h4>
+                        </button>
+                        <div id="PracticalityExtreme2" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Extreme Kickout Statement : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex itaque
+                                    sed
+                                    autem fugit,
+                                    voluptates provident natus. Quibusdam enim animi reiciendis error laborum quis nesciunt velit
+                                    minima
+                                    similique.
+                                    A, optio ex.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci
+                                    vitae
+                                    voluptatem eum sequi iusto saepe, placeat ratione atque dignissimos magnam.</p>
+                                <p class="interview__listen-for">Listen For : Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Soluta
+                                    eveniet ab pariatur esse repellat facilis voluptates quia ut quasi natus quas mollitia,
+                                    repellendus
+                                    ipsam
+                                    suscipit totam sapiente doloremque consectetur temporibus odit sed fugit debitis consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <!--***************************************************************************-->
+        <!-- dimension high and low statements are now combined into single div / area -->
+        <!--***************************************************************************-->
+        
+        <!--THINKING STYLE SECTION-->
+        <div id="dimension__thinking" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Thinking Styles : Chris Sample</h4>
+                    <p class="pad-25">These are four conceptual thinking styles relevant to work. They are based on an individual’s own statements about how they think. This is more about style than ability. It is our experience that people tend to overestimate their ability to think and learn. Particularly, make note of the score balance of Logical and Creativity/Innovation. Generally, a balance is preferred for most productive thought, often characterized as good judgment. <strong>Scores on these scales range from 2 to 9.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!--LOGICAL SECTION-->
+        <div id="dimension__logical" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Thinking Styles : Logical</h4>
+                </div>
+                <div id="logical" class="gauge2"></div>
+                <p class="dimension__general"></p>
+                <div class="dimension__high-low">
+                    <p>This scale reflects a person’s emphasis on using facts and logic to approach life choices. Persons high on this scale approach life keeping the big picture in view and solve problems with a systematic process. Persons lower on this scale are less structured in their approach and typically place more emphasis on feeling, emotion, and sentiment. As a thinking style, this is more relevant to the standard work expected in industries or parts of a business with a high component of processes, procedures and systems. This is typically in production, manufacturing, and administration enterprises where execution is the focus. Sample questions include: “Before I act, I consider the pros and cons” and “I go at things with logic regardless of my feelings.”</p>
+                </div>
+            </div>
+        </div>
+        <!--CREATIVITY / INNOVATION SECTION-->
+        <div id="dimension__creativity" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Thinking Styles : Creativity / Innovation</h4>
+                </div>
+                <div id="creativity" class="gauge2"></div>
+                <p class="dimension__general"></p>
+                <div class="dimension__high-low">
+                    <p>This scale speaks to a person’s preference for new ideas, different approaches, exploring, and creating. Those higher on this dimension have an urgency for change; like to experiment; are detailed about improvements but not routine. They are more comfortable with ambiguity and uncertainty. People lower like clear plans, specific instructions, tradition, and predictability. Within many professional roles, there are times to be practical, and times that call for a more unconventional solution to a common problem. Sample questions include: “I see new things to try before others do” and “I don’t manage lack of uncertainty very well.”</p>
+                </div>
+            </div>
+        </div>
+        <!--DETAIL SECTION-->
+        <div id="dimension__detail" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Thinking Styles : Detail</h4>
+                </div>
+                <div id="detail" class="gauge2"></div>
+                <p class="dimension__general"></p>
+                <div class="dimension__high-low">
+                    <p>This scale focuses on a person’s attention to detail and their capacity to remember the little things around them. People higher on this scale have detailed memories, are quick to spot little things out of place, and are quick to record these details. People lower on this scale are less mindful of details around them and are less likely to recall specifics, facts, and details. Sample questions include: “I notice details that others don’t” and People say that I have a memory that never fails.”</p>
+                </div>
+            </div>
+        </div>
+        <!--LEARNING-->
+        <div id="dimension__learning" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Thinking Styles : Learning</h4>
+                </div>
+                <div id="learning" class="gauge2"></div>
+                <p class="dimension__general"></p>
+                <div class="dimension__high-low">
+                    <p>This scale highlights aspects of “Learning Agility.” Speed and interest in learning is captured. People higher on this dimension focus on enjoyment in the challenge of learning new information, discovery, and the constant pursuit of gaining skills and knowledge to productively apply them in new or novel situations. People lower on this scale are less driven to pursue new learning as compared to being comfortable with their current level of acquired knowledge and understanding.</p>
+                
+                    <p>Generally higher scores are positively related to success; however, there is not as much emphasis on this dimension where there is a high demand for standard work with a high value on following processes and procedures. Here, execution of known information in a logical manner is of paramount value. If, however, bringing new ideas into a part of the business is critical, having a good balance of new learning with an appreciation for the existing processes is important. Sample questions include: “I keep up to date with all the new ideas” and I like to understand why something is the way it is.”</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--ABILITY MEASURES OVERVIEW-->
+        <div id="dimension__ability" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Ability Measures : Chris Sample</h4>
+                    <p class="pad-25">Do we want any descriptive text here? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora recusandae eaque, vel temporibus itaque quis repudiandae quisquam quaerat quia ex?.</p>
+            </div>
+
+            </div>
+        </div>
+        <!--BILITY MEASURES : INTELLECTUAL-->
+        <div id="dimension__intellectual" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Ability Measures : Intellectual Strength</h4>
+                </div>
+                <div id="intellectual" class="gauge2"></div>
+                <p class="dimension__general">Scores on this scale reflect the candidate's natural ability to solve problems of an abstract nature. Because these problems are language free and rely on simple figures, the ability to solve these questions/puzzles tends to be uninfluenced by exposure to formal education. Thus, candidates who may not have had much schooling may have score poorly on General Knowledge questions, and yet, may score quite well on this dimension.</p>
+                <div class="dimension__high-low">
+                    <p>Chris Sample scores higher on this dimension as compared to other successful professionals. This capacity to reason through and imagine solutions is critical to success.</p>
+                </div>
+            </div>
+        </div>
+        <!--ABILITY MEASURES : GENERAL KNOWLEDGE-->
+        <div id="dimension__general-knowledge" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Ability Measures : General Knowledge</h4>
+                </div>
+                <div id="general-knowledge" class="gauge2"></div>
+                <p class="dimension__general">Scores on this scale reflect the applicant’s General Ability to solve common verbal and mathematical problems typically learned in high school. There is a technical, applied aspect to these problems so that a review of the high school subject matter may help if scores are lower than expected. These scores are based on what a person has learned either from formal schooling or life experience. Low scores may indicate difficulty in solving common problems and a lower level of skill in material usually learned in high school. Inquiring into school and formal learning may be useful here. Be alert for low study skills, poor discipline and/or low school motivation.</p>
+                <div class="dimension__high-low">
+                    <p>Chris Sample most likely has applied himself diligently in school and other learning environments which results in a high score on this measure. He is very capable when working with vocabulary, mathematical and abstract learning which will help him to quickly learn new concepts and ideas, understand complex systems and processes, and communicate his thoughts to others.</p>
+                </div>
+            </div>
+        </div>
+        <!--ABILITY MEASURES : MECHANICAL COMPREHENSION-->
+        <div id="dimension__mechanical" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Ability Measures : Mechanical Comprehension</h4>
+                </div>
+                <div id="mechanical" class="gauge2"></div>
+                <p class="dimension__general">Scores on this scale are related to general thinking skills; however, they concentrate more on the practical, mechanical elements and physical forces. Scores can be influenced by the amount of real life exposure to these elements. It might be helpful to explore past exposure to mechanical issues.</p>
+                <div class="dimension__high-low">
+                    <p>Chris Sample possesses a strong ability to work with mechanical concepts and devices. This ability will help him to quickly learn and appreciate the information related to technology, particularly as it relates to the physical world. Depending on his educational background, he may have extensive, specific knowledge within a particular technical area. As such, he is comfortable working in and around these types of environments.</p>
+                </div>
+            </div>
+        </div>        
+        
+
+
+        <!--INSTRUCTIONS HERO IMAGE-->
+        <div id="instructions__header" class="anchor-offset">
+            <div class="jumbotron instructions__hero">
+                <div class="container">
+                    <h1 class="instructions__hero__title">Interpreting The Results</h1>
+                </div>
+            </div>
+        </div>
+            
+        
+        <!--INSTRUCTIONS-->
+        <div class="instructions__overview">
+            <div class="instructions">
+                <p class="instructions__intro">All information in this report is confidential and should be treated responsibly.</p>
+                <p>This report is based on computerized comparisons between individual responses and the field engineering norm on the
+                    Watterson Personality Inventory. It is prone to various sources of error and should be interpreted with
+                    caution. This report is intended to assist in the interview process, not to substitute for it or for other
+                    data. The candidate's scores for each scale are discussed on individual pages.</p>
+            </div>
+            
+            <div class="instructions__before">
+                <h4 class="instructions__title">BEFORE YOU INTERVIEW</h4>
+                <P>This report will tell you how well your candidate fits with the five ARISE characteristics that help
+                    predict success in Field Engineers:</P>
+                <ul class="instructions__big-five">
+                    <li><span>A</span>gility</li>
+                    <li><span>R</span>esilient</li>
+                    <li><span>I</span>ntentional</li>
+                    <li><span>S</span>elf-Starting</li>
+                    <li><span>E</span>ngaging</li>
+                </ul>
+                <p>Note where your candidate stands on these characteristics and then consider the suggested follow-up
+                    interview questions and accompanying “listen for” statements. Keep in mind that (with the exception of
+                    the derailers) while it is better to be higher than lower on these dimensions, sometimes a candidate can
+                    have “too much of a good thing.” Don’t be afraid to supplement the questions provided with some of your
+                    own.</p>
+            </div>
+        
+            <div class="instructions__after">
+                <h4 class="instructions__title">AFTER YOU INTERVIEW</h4>
+                <p>In order to make a final decision on a candidate, consider what you learned from this report and the
+                    follow-up interview, along with other factors like experience, education, references, etc. Match what
+                    you have learned to what is important in the job and then make a hiring decision that you can explain in
+                    an objective manner. Be ready to answer this question: Why is this person a good fit - or not - for the
+                    job?</p>
+                <p>If you hire this person, be sure to come back to this assessment afterwards to think about what the
+                    individual needs to do in order grow professionally and be successful as a Field Engineer. Use this
+                    information as a management tool and as the start of their individual development plan that you put
+                    together as their manager.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="intro">&copy;2019 by Watterson &amp; Associates, Inc., Chagrin Falls, Ohio. All rights reserved.</p>
+        </div>
+   
+
+
+
+
+
+
+
+
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JustGage PlugIn -->
+        <!-- // gauge colors
+        // WAI Blue
+        //levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+        //WAI Green = #92b642
+
+        //Random Blue1
+        // levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+
+        //WAI Orange / Brown
+        // levelColors: ["#e5a812", "#e5a812", "#e5a812"]
+
+        //WAI Website Background Orange
+        // levelColors: ["#be7533", "#be7533", "#be7533"] -->
+        
+
+
+        <!--Close Interview Accordions for mobile view (425px and under-->
+        <script>
+            let openAccordion = document.querySelectorAll(".interview-show");
+            console.log(openAccordion.length)
+            function closeAccordion() {
+                for (let i = 0; i < openAccordion.length; i++) {
+                    openAccordion[i].className =openAccordion[i].className.replace("interview-show", "")
+                }
+            }
+            function closeOnMobile(x) {
+                if (x.matches) {
+                    closeAccordion();
+                } else {
+                    console.log("I'm open!")
+                }
+            }
+            var x = window.matchMedia("(max-width: 425px)")
+            closeOnMobile(x)
+            x.addListener(closeOnMobile)
+        </script>
+
+        <!--Toggle Interview Accordions open / closed-->
+        <script>
+        function interviewAccordion(id) {
+            let x = document.getElementById(id);
+            if (x.className.indexOf("interview-show") == -1) {
+                x.className += " interview-show";
+            } else {
+                x.className = x.className.replace(" interview-show", "");
+            }
+        }
+        </script>
+        <script src="js/justgage.js"></script>
+        <script src="js/raphael-2.1.4.min.js"></script>
+        <script>
+            var drive = new JustGage({
+                id: "drive",
+                value: 72,
+                min: 0,
+                max: 100,
+                title: "Drive / Influence",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryDrive = new JustGage({
+                id: "summary__drive",
+                value: 72,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var resilience = new JustGage({
+                id: "resilience",
+                value: 32,
+                min: 0,
+                max: 100,
+                title: "Emotional Resilience",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryResilience = new JustGage({
+                id: "summary__resilience",
+                value: 32,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var selfControl = new JustGage({
+                id: "self-control",
+                value: 57,
+                min: 0,
+                max: 100,
+                title: "Self-Control",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summarySelfControl = new JustGage({
+                id: "summary__self-control",
+                value: 57,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+
+            });
+            var interpersonal = new JustGage({
+                id: "interpersonal",
+                value: 63,
+                min: 0,
+                max: 100,
+                title: "Interpersonal Style",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryInterpersonal = new JustGage({
+                id: "summary__interpersonal",
+                value: 63,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var practicality = new JustGage({
+                id: "practicality",
+                value: 98,
+                min: 0,
+                max: 100,
+                title: "Practicality",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryPracticality = new JustGage({
+                id: "summary__practicality",
+                value: 98,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+
+            //THINKING STYLES
+            var logical = new JustGage({
+                id: "logical",
+                value: 4,
+                min: 2,
+                max: 9,
+                title: "Logical",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryLogical = new JustGage({
+                id: "summary__logical",
+                value: 4,
+                min: 2,
+                max: 9,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var creativity = new JustGage({
+                id: "creativity",
+                value: 6,
+                min: 2,
+                max: 9,
+                title: "Creativity / Innovation",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryCreativity = new JustGage({
+                id: "summary__creativity",
+                value: 6,
+                min: 2,
+                max: 9,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var detail = new JustGage({
+                id: "detail",
+                value: 6,
+                min: 2,
+                max: 9,
+                title: "Detail",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryDetail = new JustGage({
+                id: "summary__detail",
+                value: 6,
+                min: 2,
+                max: 9,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var learning = new JustGage({
+                id: "learning",
+                value: 8,
+                min: 2,
+                max: 9,
+                title: "Learning",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryLearning = new JustGage({
+                id: "summary__learning",
+                value: 8,
+                min: 2,
+                max: 9,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+
+
+            
+            
+            var intellectual = new JustGage({
+                id: "intellectual",
+                value: 82,
+                min: 0,
+                max: 100,
+                title: "Intellectual Strength",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryIntellectual = new JustGage({
+                id: "summary__intellectual",
+                value: 82,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var generalKnowledge = new JustGage({
+                id: "general-knowledge",
+                value: 91,
+                min: 0,
+                max: 100,
+                title: "General Knowledge",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryGeneralKnowledge = new JustGage({
+                id: "summary__general-knowledge",
+                value: 91,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var mechanical = new JustGage({
+                id: "mechanical",
+                value: 85,
+                min: 0,
+                max: 100,
+                title: "Mechanical Comprehension",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryMechanical = new JustGage({
+                id: "summary__mechanical",
+                value: 85,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+
+
+
+            // Technical:
+            // 1. logical
+            // 2. Creativity / Innovation
+            // 2. detail
+            
+            // Role Alignemnt
+            var roleAlignment = new JustGage({
+                id: "roleAlignment",
+                value: 80,
+                min: 0,
+                max: 100,
+                title: "Role Alignment",
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+            var summaryRoleAlignment = new JustGage({
+                id: "summary__roleAlignment",
+                value: 80,
+                min: 0,
+                max: 100,
+                shadowOpacity: 1,
+                shadowSize: 7,
+                shadowVerticalOffset: 10,
+                levelColors: ["#FB8301", "#FB8301", "#FB8301"],
+                gaugeWidthScale: .75,
+            });
+
+
+            // All scales are 0 to 100.
+
+            // var f = new JustGage({
+            //     id: "g12",
+            //     value: getRandomInt(0, 100),
+            //     min: 0,
+            //     max: 100,
+            //     title: "Custom Shadow",
+            //     label: "",
+            //     shadowOpacity: 1,
+            //     shadowSize: 0,
+            //     shadowVerticalOffset: 10
+            // });
+        </script>
+        
+</body>
+
+</html>
