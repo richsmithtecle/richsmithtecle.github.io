@@ -296,7 +296,7 @@ a.navbar-brand {
         max-width: 1500px;
         margin: 10px auto;
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-template-rows: auto;
         grid-auto-rows: 1fr;
         grid-gap: 20px;
@@ -306,6 +306,9 @@ a.navbar-brand {
     }
     .summary__gauge {
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
     .summary__gauge--title {
         width: auto;
