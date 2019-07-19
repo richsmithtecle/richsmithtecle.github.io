@@ -83,17 +83,38 @@ a.navbar-brand {
 }
 .dimension__overview {
     grid-area: dimension-sidebar;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "dim-gauge"
+        "dim-def"
+        "dim-gs";
+    align-content: start;
 }
+.dimension__definition {
+    grid-area: dim-def;
+    margin: 10px;
+    text-align: justify;
+}
+.dimension__gauge {
+    grid-area: dim-gauge;
+    height: 165px;
+    width: 300px;
+}
+.dimension__gauge > * {
+    height: 165px;
+    width: 300px;
+}
+.dimension__global-statement {
+    grid-area: dim-gs;
+}
+
 .interview__wrapper {
     grid-area: dimension-interview-area;
     border-radius: 5px;
     margin: 10px;
 }
-.dimension__definition {
-    margin: 10px;
-    text-align: justify;
-}
-
 .accordion__wrapper {
     border: 1px solid rgba(75, 80, 90, 1);
     border-radius: 5px;
@@ -329,16 +350,26 @@ a.navbar-brand {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1;
+        grid-template-rows: 3;
+        grid-template-areas:
+            "title"
+            "dimension-sidebar"
+            "dimension-interview-area";
+    }
+    .dimension__overview {
+        grid-area: dimension-sidebar;
+        display: grid;
+        grid-template-columns: 2.5vw 1fr 3fr 2.5vw;
         grid-template-rows: 2;
         grid-template-areas:
-            "title title"
-            "dimension-sidebar dimension-interview-area";
+            ". dim-gauge dim-def ."
+            ". dim-gauge dim-gs .";
+        align-content: space-between;
     }
-
     .dimension__definition,
     .dimension__global-statement {
-        margin: 10px 25px;
+        /* margin: 10px 25px; */
         text-align: justify;
     }
     .accordion__wrapper {
