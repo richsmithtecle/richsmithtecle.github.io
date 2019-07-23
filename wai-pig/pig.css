@@ -1,9 +1,32 @@
 
-/* :root {
-    --swagelok-blue: rgba(0, 77, 158, 1);
-    --theme-main: var(--swagelok-blue); 
-    --theme-main: rgba(75, 80, 90, 1); 
-} */
+:root {
+    /* --swagelok-blue: rgba(0, 77, 158, 1); */
+    /* --theme-main: var(--swagelok-blue);  */
+    --theme-main: rgba(75, 80, 90, 1);
+    --wai-website-blue: rgba(51, 102, 153, 1);
+    /* --wai-website-blue: rgba(70, 115, 148, 1); */
+    --wai-website-brown: rgba(190, 117, 51, 1);
+    --wai-website-green: rgba(146, 182, 66, 1);
+    --wai-report-blue: rgba(51, 51, 102, 1);
+    --wai-report-brown: rgba(204, 102, 0, 1); 
+}
+/* // WAI Blue
+//levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+//WAI Green = #92b642
+
+//Random Blue1
+// levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+
+// WAI Blue from website: #467394;
+//WAI Blue from PIG PDF : #333366
+//WAI Orange / brown from PIG PDF #cc6600
+
+//WAI Orange / Brown
+// levelColors: ["#e5a812", "#e5a812", "#e5a812"]
+
+//WAI Website Background Orange
+// levelColors: ["#be7533", "#be7533", "#be7533"] */
+        
 body {
     font-family: 'Roboto', sans-serif;
     padding-top: 50px;
@@ -209,16 +232,7 @@ a.navbar-brand {
 .instructions__hero {
     color: #ffffff;
     min-height: 25vh;
-    background:
-        linear-gradient(
-            rgba(0, 77, 158, 0.80),
-            rgba(0, 77, 158, 0.80)
-        ),
-        url(../img/TubeFittingInstallTrainBanner3.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    position: relative;
+    background:rgba(0, 77, 158, 0.80);
 }
 
 .instructions {
@@ -233,35 +247,22 @@ a.navbar-brand {
     margin: 0px;
     border-radius: 5px 5px 0 0;
 }
-
-.instructions__intro {
+.instructions__hero--title {
     text-align: center;
 }
-.instructions__before {
-    border: 1px solid rgba(75, 80, 90, 1);
-    border-radius: 5px;
-    grid-area: before-interview;
-}
-
-.instructions__after {
-    border: 1px solid rgba(75, 80, 90, 1);
-    border-radius: 5px;
-    grid-area: after-interview;
-}
-.instructions__before p,
-.instructions__after p {
-    margin: 20px;
+.instructions__intro {
+    text-align: center;
 }
 
 .instructions__overview {
     margin: 5vh 5vw;
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 3;
-    grid-template-areas:
+    grid-template-rows: 1;
+    /* grid-template-areas:
         "title"
         "before-interview"
-        "after-interview";
+        "after-interview"; */
     grid-gap: 20px;
     gap: 20px;
 }
@@ -343,6 +344,18 @@ a.navbar-brand {
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
 
+    .thinking-styles .summary__gauge--title {
+        background: var(--wai-website-blue, blue);
+        /* background: var(--wai-report-blue, blue); */
+    }
+    .ability-measures .summary__gauge--title,
+    .ability-measures .dimension__container--title,
+    .ability-measures .interview__group-title {
+        background: var(--wai-website-brown);
+        /* background: var(--wai-report-brown); */
+        /* background: var(--wai-website-green); */
+    }
+
 
     .dimension__container {
         margin: 5vh 2.5vw;
@@ -393,6 +406,16 @@ a.navbar-brand {
         color: #ffffff;
         background: rgba(75, 80, 90, 1);
     }
+    .thinking-styles .dimension__static-container-title {
+        /* background: var(--wai-report-blue, blue); */
+        background: var(--wai-website-blue, blue);
+    }
+    .ability-measures .dimension__static-container-title {
+        background: var(--wai-website-brown);
+        /* background: var(--wai-report-brown); */
+        /* background: var(--wai-website-green); */
+    }
+
 
     .dimension__static-container {
         margin: 5vh 2.5vw;
@@ -428,13 +451,13 @@ a.navbar-brand {
     }
 
     .instructions__overview {
-        margin: 5vh 5vw;
+        margin: 10vh 10vw;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2;
-        grid-template-areas:
+        grid-template-columns: 1fr;
+        grid-template-rows: 1;
+        /* grid-template-areas:
             "title title"
-            "before-interview after-interview";
+            "before-interview after-interview"; */
         grid-gap: 20px;
         gap: 20px;
     }
