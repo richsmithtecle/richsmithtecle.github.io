@@ -10,23 +10,7 @@
     --wai-report-blue: rgba(51, 51, 102, 1);
     --wai-report-brown: rgba(204, 102, 0, 1); 
 }
-/* // WAI Blue
-//levelColors: ["#1e4973", "#1e4973", "#1e4973"]
-//WAI Green = #92b642
 
-//Random Blue1
-// levelColors: ["#346ac1", "#346ac1", "#346ac1"]
-
-// WAI Blue from website: #467394;
-//WAI Blue from PIG PDF : #333366
-//WAI Orange / brown from PIG PDF #cc6600
-
-//WAI Orange / Brown
-// levelColors: ["#e5a812", "#e5a812", "#e5a812"]
-
-//WAI Website Background Orange
-// levelColors: ["#be7533", "#be7533", "#be7533"] */
-        
 body {
     font-family: 'Roboto', sans-serif;
     padding-top: 50px;
@@ -122,13 +106,13 @@ a.navbar-brand {
 }
 .dimension__gauge {
     grid-area: dim-gauge;
+    /* height: 165px;
+    width: 300px; */
+}
+/* .dimension__gauge > * {
     height: 165px;
     width: 300px;
-}
-.dimension__gauge > * {
-    height: 165px;
-    width: 300px;
-}
+} */
 .dimension__global-statement {
     grid-area: dim-gs;
 }
@@ -215,6 +199,15 @@ a.navbar-brand {
     justify-self: center;
 }
 
+.thinking-styles .dimension__static-container-title {
+    /* background: var(--wai-report-blue, blue); */
+    background: var(--wai-website-blue, blue);
+}
+.ability-measures .dimension__static-container-title {
+    background: var(--wai-website-brown);
+    /* background: var(--wai-report-brown); */
+    /* background: var(--wai-website-green); */
+}
 .dimension__general {
     grid-area: general;
     text-align: justify;
@@ -363,12 +356,12 @@ a.navbar-brand {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         display: grid;
-        grid-template-columns: 1;
+        grid-template-columns: 2.5vw 1fr 3fr 2.5vw;
         grid-template-rows: 3;
         grid-template-areas:
-            "title"
-            "dimension-sidebar"
-            "dimension-interview-area";
+            "title title title title"
+            "dimension-sidebar dimension-sidebar dimension-sidebar dimension-sidebar"
+            ". . dimension-interview-area .";
     }
     .dimension__overview {
         grid-area: dimension-sidebar;
@@ -384,6 +377,15 @@ a.navbar-brand {
     .dimension__global-statement {
         /* margin: 10px 25px; */
         text-align: justify;
+    }
+    .dimension__gauge {
+        grid-area: dim-gauge;
+        height: 165px;
+        width: 300px;
+    }
+    .dimension__gauge > * {
+        height: 165px;
+        width: 300px;
     }
     .accordion__wrapper {
         border: 1px solid rgba(75, 80, 90, 1);
