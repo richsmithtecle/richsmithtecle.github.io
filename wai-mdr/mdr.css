@@ -96,7 +96,8 @@ a.navbar-brand {
     grid-template-areas:
         "dim-gauge"
         "dim-def"
-        "dim-gs";
+        "dim-gs"
+        "dim-ss";
     align-content: start;
 }
 .dimension__definition {
@@ -116,7 +117,9 @@ a.navbar-brand {
 .dimension__global-statement {
     grid-area: dim-gs;
 }
-
+.dimension__specific-statement {
+    grid-area: dim-ss;
+}
 .interview__wrapper {
     grid-area: dimension-interview-area;
     border-radius: 5px;
@@ -142,6 +145,7 @@ a.navbar-brand {
 }
 
 .dimension__global-statement,
+.dimension__specific-statement,
 .interview__qal-wrapper,
 .dimension__high,
 .dimension__low,
@@ -366,7 +370,8 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gauge dim-gs .";
+            ". dim-gauge dim-gs ."
+            ". dim-gauge dim-ss .";
         align-content: space-between;
     }
     .dimension__definition,
@@ -504,12 +509,14 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gs dim-gs .";
+            ". dim-gs dim-gs ."
+            ". dim-gs dim-ss .";
         align-content: space-between;
         align-items: center;
     }
     .dimension__gauge {
         grid-area: dim-gauge;
+        align-self: start;
         height: 150px;
         width: 235px;
     }
@@ -572,7 +579,8 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gauge dim-gs .";
+            ". dim-gauge dim-gs ."
+            ". dim-gauge dim-ss .";
         align-content: space-between;
         align-items: center;
     }
@@ -679,6 +687,7 @@ a.navbar-brand {
     }
     .dimension__gauge {
         grid-area: dim-gauge;
+        align-self: start;
         height: 165px;
         width: 300px;
     }
