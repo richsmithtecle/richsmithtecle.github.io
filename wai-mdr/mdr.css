@@ -100,6 +100,20 @@ a.navbar-brand {
         "dim-ss";
     align-content: start;
 }
+
+.dimension__overview--option2 {
+    grid-area: dimension-sidebar;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "dim-gauge"
+        "dim-def"
+        "dim-gs"
+        "dim-ss"
+        "dim-tc";
+    align-content: start;
+}
 .dimension__definition {
     grid-area: dim-def;
     margin: 10px;
@@ -119,6 +133,9 @@ a.navbar-brand {
 }
 .dimension__specific-statement {
     grid-area: dim-ss;
+}
+.dimension__three-color-exercise {
+    grid-area: dim-tc;
 }
 .interview__wrapper {
     grid-area: dimension-interview-area;
@@ -427,6 +444,19 @@ a.navbar-brand {
             ". dim-gauge dim-ss .";
         align-content: space-between;
     }
+    }
+    .dimension__overview--option2 {
+        grid-area: dimension-sidebar;
+        display: grid;
+        grid-template-columns: 2.5vw 1fr 3fr 2.5vw;
+        grid-template-rows: 2;
+        grid-template-areas:
+            ". dim-gauge dim-def ."
+            ". dim-gauge dim-gs ."
+            ". dim-gauge dim-ss ."
+            ". dim-gauge dim-tc .";
+        align-content: space-between;
+    }
     .dimension__definition,
     .dimension__global-statement {
         /* margin: 10px 25px; */
@@ -508,10 +538,9 @@ a.navbar-brand {
     .instructions__overview {
         margin: 10vh 10vw;
     }
-
-
     
 }
+
 /***************************************************/
 /* Small Devices, Tablets */
 /***************************************************/
@@ -564,6 +593,20 @@ a.navbar-brand {
             ". dim-gauge dim-def ."
             ". dim-gs dim-gs ."
             ". dim-gs dim-ss .";
+        align-content: space-between;
+        align-items: center;
+    }
+    
+    .dimension__overview--option2 {
+        grid-area: dimension-sidebar;
+        display: grid;
+        grid-template-columns: 2.5vw 1fr 3fr 2.5vw;
+        grid-template-rows: 2;
+        grid-template-areas:
+            ". dim-gauge dim-def ."
+            ". dim-gs dim-gs ."
+            ". dim-gs dim-ss ."
+            ". dim-tc dim-tc .";
         align-content: space-between;
         align-items: center;
     }
@@ -637,6 +680,33 @@ a.navbar-brand {
         align-content: space-between;
         align-items: center;
     }
+    
+    .dimension__overview--option2 {
+        grid-area: dimension-sidebar;
+        display: grid;
+        grid-template-columns: 2.5vw 1fr 3fr 2.5vw;
+        grid-template-rows: 2;
+        grid-template-areas:
+            ". dim-gauge dim-def ."
+            ". dim-gauge dim-gs ."
+            ". dim-gauge dim-ss ."
+            ". dim-gauge dim-tc";
+        align-content: space-between;
+        align-items: center;
+    }
+
+    .dimension__three-color-exercise {
+        grid-area: dim-tc;
+    }
+    .feedback {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1;
+        grid-gap: 20px 40px;
+        padding: 10px;
+    }
+    
+    
     .dimension__static-container {
         margin: 2.5vh 1vw;
     }
