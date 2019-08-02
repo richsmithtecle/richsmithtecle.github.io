@@ -1,0 +1,247 @@
+
+:root {
+    /* --swagelok-blue: rgba(0, 77, 158, 1); */
+    /* --theme-main: var(--swagelok-blue);  */
+    --theme-main: rgba(75, 80, 90, 1);
+    --wai-website-blue: rgba(51, 102, 153, 1);
+    /* --wai-website-blue: rgba(70, 115, 148, 1); */
+    --wai-website-brown: rgba(190, 117, 51, 1);
+    --wai-website-green: rgba(146, 182, 66, 1);
+    --wai-report-blue: rgba(51, 51, 102, 1);
+    --wai-report-brown: rgba(204, 102, 0, 1); 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+}
+.pad-25 {
+    padding-left: 25px;
+    padding-right: 25px; 
+}
+.navbar-collapse {
+    max-height: 100%!important;
+}
+.navbar-brand img {
+    width: 125px;
+    height: auto;
+}
+a.navbar-brand {
+    padding-top: 10px;
+}
+.anchor-offset {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+.report-hero {
+    color: #ffffff;
+    min-height: 90vh;
+    background:
+        linear-gradient(
+            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.80)
+        );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.report-hero span {
+    color: #ffffff;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.print__cover {
+    display: none;
+}
+
+.summary__container {
+    display: none;
+}
+
+.dimension__container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2.5vw;
+    grid-template-areas:
+    "dim-title dim-title dim-title"
+    "dim-gauge dim-def ."
+    ". dim-gs ."
+    ". dim-ss ."
+    ". dev .";
+    gap: 50px 20px;
+    padding-bottom: 50px;
+    border: 1px solid var(--theme-main);
+    border-radius: 5px;
+    margin: 1.5vh 5vw;
+}
+
+.dimension__container--title {
+    grid-area: dim-title;
+    text-align: center;
+    color: white;
+    background: var(--theme-main);
+    padding: 2.5px 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+.dimension__gauge {
+    grid-area: dim-gauge;
+}
+.dimension__definition {
+    grid-area: dim-def;
+}
+.dimension__global-statements {
+    grid-area: dim-gs;
+}
+.dimension__specific-statements {
+    grid-area: dim-ss;
+}
+.dimension__specific-statements p {
+    text-align: justify;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+.dimension__development {
+    grid-area: dev;
+}
+.dimension__area {
+    padding: 0px;
+    border: 1px solid var(--theme-main);
+    border-radius: 5px;
+}
+.dimension__area--title {
+    text-align: center;
+    color: white;
+    background: var(--theme-main);
+    padding: 5px 0px;
+    border-radius: 4px 4px 0px 0px;
+    margin: 0px;
+}
+
+
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 576px) {
+
+    
+}
+
+/***************************************************/
+/* Small Devices, Tablets */
+/***************************************************/
+@media only screen and (min-width : 768px) {
+    
+
+}
+
+/***************************************************/
+/* Medium Devices, Desktops */
+/***************************************************/
+@media only screen and (min-width : 992px) {
+
+
+}
+
+
+
+/***************************************************/
+/* Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1200px) {
+
+
+    
+}
+/***************************************************/
+/* X-Large Devices, Wide Screens */
+/***************************************************/
+@media only screen and (min-width : 1900px) {
+
+    /* Center Align Menu in BS Navigation */
+    .nav.navbar-nav.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    
+}
+
+
+/***************************************************/
+/* Bootstrap Navbar collapse override */
+/***************************************************/
+@media only screen and (min-width: 768px) and (max-width: 1390px) {
+	.navbar-nav .open .dropdown-menu {
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: transparent;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	.navbar-nav .open .dropdown-menu > li > a {
+		line-height: 20px;
+	}
+	.navbar-nav .open .dropdown-menu > li > a,
+	.navbar-nav .open .dropdown-menu .dropdown-header {
+		padding: 5px 15px 5px 25px;
+	}
+	.dropdown-menu > li > a {
+		display: block;
+		padding: 3px 20px;
+		clear: both;
+		font-weight: normal;
+		line-height: 1.42857143;
+		color: #333;
+		white-space: nowrap;
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        max-height: 100%!important;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        /*margin: 7.5px -15px;*/
+		margin: 7.5px 50px 7.5px -15px
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
