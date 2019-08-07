@@ -1,0 +1,8 @@
+/* CSS Class names in React are typically the same as the compnent name */
+.Machine {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    background: whitesmoke;
+}
