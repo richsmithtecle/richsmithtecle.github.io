@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import Pokecard from './Pokecard';
 import './Pokedex.css';
-
+/*
+//Original solution to enhanced images bonus(refactored and moved to Pokecard):
+// update pokemon.id to 3-digits for "improved image quality" image links
 function leftFillNum(num) {
     return num.toString().padStart(3, 0);
 }
-
 console.log(leftFillNum(65));
-
+ */
 
 class Pokedex extends Component {
     static defaultProps = {
@@ -27,8 +28,14 @@ class Pokedex extends Component {
             <div className="Pokedex">
                 <h1 className="Pokedex-title">Pokedex</h1>
                 <div className="Pokedex-cards">
+                    {/* 
+                    //Original solution to enhanced images bonus(refactored and moved to Pokecard):
                     {this.props.pokemon.map((p) => (
                         <Pokecard id={p.id.toString().padStart(3, 0)} name={p.name} type={p.type} base_experience={p.base_experience} />
+                    ))}
+                    */}
+                    {this.props.pokemon.map((p) => (
+                        <Pokecard id={p.id} name={p.name} type={p.type} base_experience={p.base_experience} />
                     ))}
                 </div>
             </div>
