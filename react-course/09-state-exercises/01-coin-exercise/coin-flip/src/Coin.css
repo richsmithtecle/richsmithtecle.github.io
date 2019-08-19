@@ -1,0 +1,7 @@
+.Coin {
+    border: 1px solid black;
+    padding: 2rem;
+}
+.Coin img {
+    height: 20vh;
+}
