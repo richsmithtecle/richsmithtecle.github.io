@@ -1,38 +1,45 @@
 import React, {Component} from 'react';
 import Coin from './Coin';
+import { choice } from './helper';
 
 class FlipCoin extends Component {
-    static defaultProps = [
-        
-    ];
+    static defaultProps = {
+        coins: [
+            { side: 'heads', imgSrc: 'https://tinyurl.com/react-coin-heads-jpg' },
+            { side: 'tails', imgSrc: 'https://tinyurl.com/react-coin-tails-jpg' }
+        ]
+    }
     constructor(props) {
         super(props);
         this.state= {
-            coinFace: 0,
-            countFlips: 0,
-            countHeads: 0,
-            countTails: 0
+            currCoin: null,
+            numFlips: 0,
+            numHeads: 0,
+            numTails: 0
         };
-        const val = this.state.coinFace;
-        const headsPic = '<img src="https://tinyurl.com/react-coin-heads-jpg" />'
-        const tailsPic = '<img src="https://tinyurl.com/react-coin-tails-jpg" />'
         this.handleClick = this.handleClick.bind(this);
     }
-    handleClick() {
+    handleClick(e) {
         this.flip()   
     }
     flip() {
-        const rand = Math.round(Math.random() * 1);
-        const updateFlips = this.state.countFlips + 1;
-        this.setState({coinFace: rand, countFlips: updateFlips});
+        const newCoin = choice(this.props.coins);
+        this.setState(st => {
+            return {
+                currCoin: newCoin,
+                numFlips: st.numFlips + 1,
+                numHeads: st.numHeads + ( newCoin.side === 'heads' ? 1: 0 ),
+                numTails: st.numTails + ( newCoin.side === 'tails' ? 1: 0 )
+            };
+        });
     }
     render() {
         return(
             <div className="FlipCoin">
                 <h1>Let's Flip A Coin!</h1>
-                <Coin face={this.state.coinFace}/>
+                {this.state.currCoin && <Coin info={ this.state.currCoin } />}
                 <button onClick={this.handleClick}>Click Here To Flip The Coin</button>
-                <p>Out of {this.state.countFlips} flips, there have been {this.state.countTails} heads and {this.state.countTails} tails.</p>
+                <p>Out of {this.state.numFlips} flips, there have been {this.state.numHeads} heads and {this.state.numTails} tails.</p>
             </div>
         );
     }
