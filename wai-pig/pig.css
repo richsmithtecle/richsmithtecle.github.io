@@ -238,8 +238,10 @@ a.navbar-brand {
     background:rgba(0, 77, 158, 0.80);
 }
 
+
 .instructions {
     text-align: justify;
+    grid-area: title;
 }
 .instructions__title {
     text-align: center;
@@ -249,24 +251,51 @@ a.navbar-brand {
     margin: 0px;
     border-radius: 5px 5px 0 0;
 }
-.instructions__hero--title {
-    text-align: center;
-}
+
 .instructions__intro {
     text-align: center;
+}
+.instructions__before {
+    border: 1px solid rgba(75, 80, 90, 1);
+    border-radius: 5px;
+    grid-area: before-interview;
+}
+
+.instructions__after {
+    border: 1px solid rgba(75, 80, 90, 1);
+    border-radius: 5px;
+    grid-area: after-interview;
+}
+.instructions__before p,
+.instructions__after p {
+    margin: 20px;
 }
 
 .instructions__overview {
     margin: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-template-areas:
+        "title"
+        "before-interview"
+        "after-interview";
+    grid-gap: 20px;
+    gap: 20px;
 }
 
+.instructions__big-five {
+    list-style-type: none;
+}
+.instructions__big-five span {
+    font-weight: bolder;
+}
 
 .copyright {
     text-align: center;
     margin: 10px;
     padding: 10px;
 }
-
 
 
 
@@ -448,7 +477,15 @@ a.navbar-brand {
     }
 
     .instructions__overview {
-        margin: 10vh 10vw;
+        margin: 5vh 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas:
+            "title title"
+            "before-interview after-interview";
+        grid-gap: 20px;
+        gap: 20px;
     }
 
 
@@ -524,6 +561,7 @@ a.navbar-brand {
     .dimension__general.ability-measures {
         margin: 10px 10px 20px 10px;
     }
+    
 }
 
 /***************************************************/

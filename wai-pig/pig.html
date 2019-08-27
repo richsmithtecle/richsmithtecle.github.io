@@ -730,18 +730,42 @@
         <div class="instructions__overview">
             <div class="instructions">
                 <p class="instructions__intro">All information in this report is confidential and should be treated responsibly.</p>
-                <p>This report is based on computerized comparisons between individual responses and the professional norm on the Watterson Personality Inventory. It is prone to various sources of error and should be interpreted with caution. This report is intended to assist in the interview process, not to substitute for it or for other data. The candidate's scores for each scale are discussed on individual pages.</p>
-                <p>For each section on the following pages, you will find a GREY SHADED BOX. This box indicates the average score for a successful professional. A score within this range indicates that the candidate reports similarly on that dimension as compared to the successful professional.</p>
-                <p><strong>CANDIDATE SCORE</strong> is represented by a graphic shown below:</p>
-                <p><strong>HIGHER AND LOWER SCORES</strong> are deviations from the typical score of the profile of professionals in the report. If a candidate describes himself differently as compared to the typical profile, an explanation of the differences will appear in a separate statement. In addition, there will often be interview questions related to the difference to help the interviewer explore a particular area.
-                <br><br>
-                The graphic indicates a suggested confidence interval around the blue dot, which identifies the applicant’s exact score. The graphic is a reminder that variations in the measurement process can give more range to these scores than just the dot.</p>
-                <p><strong>Target range scores</strong> are those where either a portion or the entire graphic (blue dot flanked by orange arrows) falls within the grey shaded area. Achieving a target range score can happen in two ways. To help explain, it is worth mentioning that each key dimension in consideration (Emotional Resilience, Interpersonal Style, etc.) is made up of four to five separate facets e.g. Emotional Resilience is composed of emotional stability, trust, apprehension, and tension.
-                <br><br>
-                Being in the target range can happen with moderately strong scores on all or most of these dimensions. A second way the target range can be reported is with a couple of very strong scores in the high direction and one low score, averaging out to be within the target range.</p>
+                <p>This report is based on computerized comparisons between individual responses and the field engineering norm on the
+                    Watterson Personality Inventory. It is prone to various sources of error and should be interpreted with
+                    caution. This report is intended to assist in the interview process, not to substitute for it or for other
+                    data. The candidate's scores for each scale are discussed on individual pages.</p>
+            </div>
+            
+            <div class="instructions__before">
+                <h4 class="instructions__title">BEFORE YOU INTERVIEW</h4>
+                <P>This report will tell you how well your candidate fits with the five ARISE characteristics that help
+                    predict success in Field Engineers:</P>
+                <ul class="instructions__big-five">
+                    <li><span>A</span>gility</li>
+                    <li><span>R</span>esilient</li>
+                    <li><span>I</span>ntentional</li>
+                    <li><span>S</span>elf-Starting</li>
+                    <li><span>E</span>ngaging</li>
+                </ul>
+                <p>Note where your candidate stands on these characteristics and then consider the suggested follow-up
+                    interview questions and accompanying “listen for” statements. Keep in mind that (with the exception of
+                    the derailers) while it is better to be higher than lower on these dimensions, sometimes a candidate can
+                    have “too much of a good thing.” Don’t be afraid to supplement the questions provided with some of your
+                    own.</p>
             </div>
         
-        
+            <div class="instructions__after">
+                <h4 class="instructions__title">AFTER YOU INTERVIEW</h4>
+                <p>In order to make a final decision on a candidate, consider what you learned from this report and the
+                    follow-up interview, along with other factors like experience, education, references, etc. Match what
+                    you have learned to what is important in the job and then make a hiring decision that you can explain in
+                    an objective manner. Be ready to answer this question: Why is this person a good fit - or not - for the
+                    job?</p>
+                <p>If you hire this person, be sure to come back to this assessment afterwards to think about what the
+                    individual needs to do in order grow professionally and be successful as a Field Engineer. Use this
+                    information as a management tool and as the start of their individual development plan that you put
+                    together as their manager.</p>
+            </div>
         </div>
         <div class="copyright">
             <p class="intro">&copy;2019 by Watterson &amp; Associates, Inc., Chagrin Falls, Ohio. All rights reserved.</p>
@@ -820,7 +844,9 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 title: "Drive / Influence",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -833,6 +859,7 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -845,7 +872,9 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 title: "Emotional Resilience",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -858,11 +887,12 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 shadowOpacity: .5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
                 levelColors: ["#FB8301", "#FB8301", "#FB8301"],
-                gaugeWidthScale: .5,
+                gaugeWidthScale: .45,
             });
             var selfControl = new JustGage({
                 id: "self-control",
@@ -870,7 +900,9 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 title: "Self-Control",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -883,6 +915,7 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -896,7 +929,9 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 title: "Interpersonal Style",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -909,6 +944,7 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -921,7 +957,9 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 title: "Practicality",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -934,6 +972,7 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -948,6 +987,7 @@
                 min: 2,
                 max: 9,
                 title: "Logical",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -971,6 +1011,7 @@
                 min: 2,
                 max: 9,
                 title: "Creativity / Innovation",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -994,6 +1035,7 @@
                 min: 2,
                 max: 9,
                 title: "Detail",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -1017,6 +1059,7 @@
                 min: 2,
                 max: 9,
                 title: "Learning",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -1044,7 +1087,9 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 title: "Intellectual Strength",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -1057,6 +1102,7 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -1069,6 +1115,7 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 title: "General Knowledge",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
@@ -1082,6 +1129,7 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -1094,7 +1142,9 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 title: "Mechanical Comprehension",
+                titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
@@ -1107,6 +1157,7 @@
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
+                labelFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
                 shadowVerticalOffset: 0,
