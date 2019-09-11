@@ -38,18 +38,21 @@ a.navbar-brand {
     min-height: 90vh;
     background:
         linear-gradient(
-            rgba(0, 77, 158, 0.80),
+            rgba(0, 77, 158, 0.50),
             rgba(0, 77, 158, 0.80)
-        );
+        ),
+        url(img/report-hero-1920x1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     position: relative;
 }
 .report-hero span {
     color: #ffffff;
 }
-
+.report-hero h1 {
+    padding-left: 5vw;
+}
 .center {
     margin: 0;
     position: absolute;
