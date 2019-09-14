@@ -84,13 +84,13 @@
                 gaugeWidthScale: .45,
             });
             var people = new JustGage({
-                id: "people",
+                id: "execution",
                 value: 78,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
                 labelFontColor: "#000000",
-                title: "People Orientation",
+                title: "Execution",
                 titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
@@ -99,7 +99,7 @@
                 gaugeWidthScale: .45,
             });
             var summaryPeople = new JustGage({
-                id: "summary__people",
+                id: "summary__execution",
                 value: 78,
                 min: 0,
                 max: 100,
@@ -113,13 +113,13 @@
 
             });
             var practicality = new JustGage({
-                id: "practicality",
+                id: "interpersonal",
                 value: 98,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
                 labelFontColor: "#000000",
-                title: "Practicality",
+                title: "Interpersonal Style",
                 titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
@@ -128,7 +128,7 @@
                 gaugeWidthScale: .45,
             });
             var summaryPracticality = new JustGage({
-                id: "summary__practicality",
+                id: "summary__interpersonal",
                 value: 98,
                 min: 0,
                 max: 100,
@@ -141,13 +141,13 @@
                 gaugeWidthScale: .45,
             });
             var conscientiousness = new JustGage({
-                id: "conscientiousness",
+                id: "innovation",
                 value: 74,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
                 labelFontColor: "#000000",
-                title: "Conscientiousness",
+                title: "Innovation & Change Orientation",
                 titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
@@ -156,7 +156,7 @@
                 gaugeWidthScale: .45,
             });
             var summaryConscientiousness = new JustGage({
-                id: "summary__conscientiousness",
+                id: "summary__innovation",
                 value: 74,
                 min: 0,
                 max: 100,
