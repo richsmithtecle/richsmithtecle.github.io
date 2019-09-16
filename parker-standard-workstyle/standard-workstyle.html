@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Standard Workstyle Report For {FName LName} | Advanced Insights</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link media="screen" rel="stylesheet" href="standard-workstyle.css">
+</head>
+<body>
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wai-report-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/ai-logo-h.png" alt="Advanced Insights">
+            </a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="wai-report-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#summary">PROFILE SUMMARY <span class="sr-only">(current)</span></a></li>   -->
+              <!--Summary view hidden from mobile devices-->
+              <li class="hidden-xs"><a href="#summary">SUMMARY</a></li>
+              <li><a href="#dimension__interpersonal" data-toggle="collapse" data-target=".navbar-collapse">PEOPLE-ORIENTATION</a></li>
+              <li><a href="#dimension__stress" data-toggle="collapse" data-target=".navbar-collapse">STRESS TOLERANCE</a></li>
+              <li><a href="#dimension__execution" data-toggle="collapse" data-target=".navbar-collapse">PRACTICALITY</a></li>
+              <li><a href="#dimension__drive" data-toggle="collapse" data-target=".navbar-collapse">DRIVE</a></li>
+              <li><a href="#dimension__innovation" data-toggle="collapse" data-target=".navbar-collapse">CONSCIENTIOUSNESS</a></li>
+              <li><a href="#instructions__header" data-toggle="collapse" data-target=".navbar-collapse">INSTRUCTIONS</a></li>
+            </ul>
+           
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+        <!--HERO BANNER - HIDDEN FOR PRINT-->
+        <div class="jumbotron report-hero">
+            <div class="container center">
+                <h1>Standard Workstyle Report <br><small><span>Chris Sample &bull; September 16, 2019</span></small></h1>
+            </div>
+        </div>
+
+        <!--COVER PAGE : PRINT VERSION ONLY-->
+        <section class="print__cover">
+            <header class="print__cover--header">
+                    <h1 class="text-center">Standard Workstyle Report <br><small><span>Chris Sample &bull; September 16, 2019</span></small></h1>
+            </header>
+            <main class="print__cover--main"></main>
+            <footer class="print__cover--footer">
+                <h4>Prepared by:</h4>
+                <img class="print__cover--logo" src="img/ai-logo-h.png" alt="Advanced Insights">
+                <p>&copy;2019 by Advanced Insights. All rights reserved.</p>
+            </footer>
+        </section>
+           
+        
+        <!--SUMMARY REPORT SECTION-->
+        <div id="summary" class="anchor-offset">
+            <div class="summary__container">
+                    <div class="summary__title">
+                        <h3>Profile Summary : Chris Sample</h3>
+                    </div>
+                    
+                    <!--BIG FIVE DIMENSIONS-->
+                    <div class="summary__gauges--bigFive">
+                        <a href="#dimension__people">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">People-Orientation</h5>
+                                <div id="summary__people"></div>
+                            </div>
+                        </a>
+                        
+                        <a href="#dimension__stress">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Stress Tolerance</h5>
+                                <div id="summary__stress"></div>
+                            </div>
+                        </a>
+                        <a href="#dimension__practicality">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Practicality</h5>
+                                <div id="summary__practicality"></div>
+                            </div>
+                        </a>
+                        <a href="#dimension__drive">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Drive</h5>
+                                <div id="summary__drive"></div>
+                            </div>
+                        </a>
+    
+                        <a href="#dimension__conscientiousness">
+                            <div class="summary__gauge">
+                                <h5 class="summary__gauge--title">Conscientiousness</h5>
+                                <div id="summary__conscientiousness"></div>
+                            </div>
+                        </a>
+                    </div>
+
+            </div>
+
+        </div>
+        <!--PEOPLE ORIENTATION SECTION-->
+        <div id="dimension__people" class="anchor-offset">
+            <div class="dimension__container">
+
+                <div class="dimension__container--title">
+                    <h4>People-Orientation Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="people" class="dimension__gauge"></div>
+                    <div class="dimension__global-statement">
+                        <p>He generally has lower interest with people. He tends to be more introverted and/or quiet. In some jobs (i.e. programming, engineering, etc.) where working more self- sufficiently is necessary, his score may not detract from his performance. But in jobs that are highly team-oriented, he may not be as effective as required. Has he learned to compensate for his slightly introverted personality? If so, how does he do so? If not, is his more introverted style going to restrict his effectiveness?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--STRESS TOLERANCE SECTION-->
+        <div id="dimension__stress" class="anchor-offset">
+                <div class="dimension__container">
+            
+                    <div class="dimension__container--title">
+                        <h4>Stress Tolerance Results : Chris Sample</h4>
+                    </div>
+                    <div class="dimension__overview">
+                        <div id="stress" class="dimension__gauge"></div>
+                        <div class="dimension__global-statement">
+                            <p>He reports himself as being very calm, and highly confident; little upsets this person. If this is an accurate assessment, it suggests that he can effectively deal with the stress and pressure of a fast-paced and determined work environment. Yet, it may also suggest that he is less motivated to change, as he tends to be comfortable and unworried- perhaps he’s overly confident? During the interview, listen for the difference between being appropriately self-assured versus being too comfortable, perhaps lacking a sense of urgency and interest in continuous improvement. Is he cocky?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--PRACTICALITY SECTION-->
+        <div id="dimension__practicality" class="anchor-offset">
+                <div class="dimension__container">
+            
+                    <div class="dimension__container--title">
+                        <h4>Practicality Results : Chris Sample</h4>
+                    </div>
+                    <div class="dimension__overview">
+                        <div id="practicality" class="dimension__gauge"></div>
+                        <div class="dimension__global-statement">
+                            <p>His balanced style on this dimension allows him to respond effectively to tough business challenges as well as to more delicate teammate relationships. This candidate appears to appropriately manage being tough and practical when needed, while being open to exploring other's thoughts and opinions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--DRIVE SECTION-->
+        <div id="dimension__drive" class="anchor-offset">
+            <div class="dimension__container">
+
+                <div class="dimension__container--title">
+                    <h4>Drive Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="drive" class="dimension__gauge"></div>
+                    <div class="dimension__global-statement">
+                        <p>This score is in the desired range as compared to the Parker population, which suggests that he typically takes active steps to achieve goals. His ability to take an independent stand and make decisions is where we would expect it to be. How well he is received by others will depend on his level of self-awareness regarding his interpersonal skills, as well as his capacity to monitor and regulate his drive and emotion. Listen for obstacles that have hindered progress. How does this compare to the expectations of Parker?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CONSCIENTIOUSNESS SECTION-->
+        <div id="dimension__conscientiousness" class="anchor-offset">
+                <div class="dimension__container">
+            
+                    <div class="dimension__container--title">
+                        <h4>Conscientiousness Results : Chris Sample</h4>
+                    </div>
+                    <div class="dimension__overview">
+                        <div id="conscientiousness" class="dimension__gauge"></div>
+                        <div class="dimension__global-statement">
+                            <p>He is reporting a very high degree of self-control, which is most likely representative of a very conscientious and self- disciplined approach to work. His structured approach is so high that there is anticipated to be rigidity, inflexibility, or perfectionism negatively impacting his style. While there are aspects of his work approach that are productive in a technical environment, his highly systematic approach may diminish his ability to flexibly adjust to different courses of action and shifting needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--INSTRUCTIONS HERO IMAGE-->
+        <div id="instructions__header" class="anchor-offset">
+            <div class="jumbotron instructions__hero">
+                <div class="container">
+                    <h1 class="instructions__hero--title">Interpreting The Results</h1>
+                </div>
+            </div>
+        </div>
+            
+        
+        <!--INSTRUCTIONS-->
+        <div class="instructions__overview">
+            <div class="instructions">
+                <p class="instructions__intro">All information in this report is confidential and should be treated responsibly.</p>
+                <p>This report is based on computerized comparisons between individual responses and the professional norm on the 16pf® Questionnaire. It is prone to various sources of error and should be interpreted with caution. This report is intended to assist in the interview process, not to substitute for it or for other data. The candidate's scores for each scale are discussed on individual pages.</p>
+            </div>
+            
+            <div class="instructions__before">
+                <h4 class="instructions__title">BEFORE YOU INTERVIEW</h4>
+                <P>This report will tell you how well your candidate fits with the following personality characteristics that help predict success in professionals:</P>
+                <ul class="instructions__big-five">
+                    <li><span>People-Orientation</span></li>
+                    <li><span>Stress Tolerance</span></li>
+                    <li><span>Practicality</span></li>
+                    <li><span>Drive</span></li>
+                    <li><span>Conscientiousness</span></li>
+                </ul>
+                <p>Note where your candidate stands on these characteristics and then consider the suggested follow-up interview questions and accompanying “listen for” statements. Keep in mind that while it is better to be higher than lower on these dimensions, sometimes a candidate can have “too much of a good thing.” Don’t be afraid to supplement the questions provided with some of your own.</p>
+            </div>
+        
+            <div class="instructions__after">
+                <h4 class="instructions__title">AFTER YOU INTERVIEW</h4>
+                <p>To make a final decision on a candidate, consider what you learned from this report and the follow-up interview, along with other factors like experience, education, references, etc. Match what you have learned to what is important in the job and then make a hiring decision that you can explain in an objective manner. Be ready to answer this question: Why is this person a good fit - or not - for the job?</p>
+                <p>If you hire this person, be sure to come back to this assessment afterwards to think about what the individual needs to do in order grow professionally and be successful in their role. Use this information as a management tool and as the start of their individual development plan that you put together as their HR representative or manager.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="intro">&copy;2019 by Watterson &amp; Associates, Inc., Chagrin Falls, Ohio. All rights reserved.</p>
+        </div>
+   
+
+
+
+
+
+
+
+
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JustGage PlugIn -->
+        <!-- // gauge colors
+        // WAI Blue
+        //levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+        //WAI Green = #92b642
+
+        //Random Blue1
+        // levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+
+        //WAI Orange / Brown
+        // levelColors: ["#e5a812", "#e5a812", "#e5a812"]
+
+        //WAI Website Background Orange
+        // levelColors: ["#be7533", "#be7533", "#be7533"] -->
+        
+
+
+        <!--Close Interview Accordions for mobile view (425px and under-->
+        <script>
+            let openAccordion = document.querySelectorAll(".interview-show");
+            console.log(openAccordion.length)
+            function closeAccordion() {
+                for (let i = 0; i < openAccordion.length; i++) {
+                    openAccordion[i].className =openAccordion[i].className.replace("interview-show", "")
+                }
+            }
+            function closeOnMobile(x) {
+                if (x.matches) {
+                    closeAccordion();
+                } else {
+                    console.log("I'm open!")
+                }
+            }
+            var x = window.matchMedia("(max-width: 3840px)")
+            // var x = window.matchMedia("(max-width: 425px)")
+            closeOnMobile(x)
+            x.addListener(closeOnMobile)
+        </script>
+
+        <!--Toggle Interview Accordions open / closed-->
+        <script>
+        function interviewAccordion(id) {
+            let x = document.getElementById(id);
+            if (x.className.indexOf("interview-show") == -1) {
+                x.className += " interview-show";
+            } else {
+                x.className = x.className.replace(" interview-show", "");
+            }
+        }
+        </script>
+        <script src="js/justgage.js"></script>
+        <script src="js/raphael-2.1.4.min.js"></script>
+        <script src="js/temp.js"></script>
+        
+        
+</body>
+
+</html>
