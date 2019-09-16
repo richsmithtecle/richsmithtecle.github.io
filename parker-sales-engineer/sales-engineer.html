@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales Engineer Interview Guide For {FName LName} | Advanced Insights</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link media="screen" rel="stylesheet" href="sales-engineer.css">
+</head>
+<body>
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wai-report-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/ai-logo-h.png" alt="Advanced Insights">
+            </a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="wai-report-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!-- <li class="active"><a href="#summary">PROFILE SUMMARY <span class="sr-only">(current)</span></a></li>   -->
+                <!--Summary view hidden from mobile devices-->
+                <li class="hidden-xs"><a href="#summary">SUMMARY</a></li>
+                <li><a href="#dimension__practicality" data-toggle="collapse" data-target=".navbar-collapse">PRACTICALITY</a></li>
+                <li><a href="#dimension__resilience" data-toggle="collapse" data-target=".navbar-collapse">RESILIENCE</a></li>
+                <li><a href="#dimension__self-control" data-toggle="collapse" data-target=".navbar-collapse">SELF-CONTROL</a></li>
+                <li><a href="#dimension__drive" data-toggle="collapse" data-target=".navbar-collapse">DRIVE</a></li>
+                <li><a href="#dimension__interpersonal" data-toggle="collapse" data-target=".navbar-collapse">INTERPERSONAL STYLE</a></li>
+                <li><a href="#dimension__technical" data-toggle="collapse" data-target=".navbar-collapse">TECHNICAL COMPETENCE</a></li>
+                <li><a href="#dimension__role" data-toggle="collapse" data-target=".navbar-collapse">ROLE ALIGNMENT</a></li>
+                <li><a href="#instructions__header" data-toggle="collapse" data-target=".navbar-collapse">INSTRUCTIONS</a></li>
+              </ul>
+           
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+        <!--HERO BANNER - HIDDEN FOR PRINT-->
+        <div class="jumbotron report-hero">
+            <div class="container center">
+                <h1>Sales Engineer<br> Interview Guide<br><small><span>Chris Sample &bull; September 16, 2019</span></small></h1>
+            </div>
+        </div>
+
+        <!--COVER PAGE : PRINT VERSION ONLY-->
+        <section class="print__cover">
+            <header class="print__cover--header">
+                    <h1 class="text-center">Sales Engineer<br> Interview Guide<br><small><span>Chris Sample &bull; September 16, 2019</span></small></h1>
+            </header>
+            <main class="print__cover--main"></main>
+            <footer class="print__cover--footer">
+                <h4>Prepared by:</h4>
+                <img class="print__cover--logo" src="img/ai-logo-h.png" alt="Advanced Insights">
+                <p>&copy;2019 by Advanced Insights. All rights reserved.</p>
+            </footer>
+        </section>
+           
+        
+        <!--SUMMARY REPORT SECTION-->
+        <div id="summary" class="anchor-offset">
+            <div class="summary__container">
+                <div class="summary__title">
+                    <h3>Profile Summary : Chris Sample</h3>
+                </div>
+        
+                <!--BIG FIVE DIMENSIONS-->
+                <div class="summary__gauges--bigFive">
+                    <a href="#dimension__practicality">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Practicality</h5>
+                            <div id="summary__practicality"></div>
+                        </div>
+                    </a>
+                    <a href="#dimension__resilience">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Resilience</h5>
+                            <div id="summary__resilience"></div>
+                        </div>
+                    </a>
+                    <a href="#dimension__self-control">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Self-Control</h5>
+                            <div id="summary__self-control"></div>
+                        </div>
+                    </a>
+                    <a href="#dimension__drive">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Drive</h5>
+                            <div id="summary__drive"></div>
+                        </div>
+                    </a>
+                    <a href="#dimension__interpersonal">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Interpersonal Style</h5>
+                            <div id="summary__interpersonal"></div>
+                        </div>
+                    </a>
+                </div>
+                <!--SECONDARY DIMENSIONS-->
+                <div class="summary__gauges">
+        
+                    <a href="#dimension__math">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Math</h5>
+                            <div id="summary__math"></div>
+                        </div>
+                    </a>
+        
+                    <a href="#dimension__verbal">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Verbal</h5>
+                            <div id="summary__verbal"></div>
+                        </div>
+                    </a>
+        
+                    <a href="#dimension__reasoning">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Reasoning</h5>
+                            <div id="summary__reasoning"></div>
+                        </div>
+                    </a>
+
+                    <a href="#dimension__pessimism"> <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Pessimism</h5>
+                        <div id="summary__pessimism"></div>
+                    </div>
+                    </a>
+
+                    <a href="#dimension__overprep"> <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Overprep</h5>
+                        <div id="summary__overprep"></div>
+                    </div>
+                    </a>
+
+                    <a href="#dimension__critical"> <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Critical</h5>
+                        <div id="summary__critical"></div>
+                    </div>
+                    </a>
+
+                    <a href="#dimension__expert"> <div class="summary__gauge">
+                        <h5 class="summary__gauge--title">Expert</h5>
+                        <div id="summary__expert"></div>
+                    </div>
+                    </a>
+                    <a href="#dimension__role">
+                        <div class="summary__gauge">
+                            <h5 class="summary__gauge--title">Role Alignment</h5>
+                            <div id="summary__roleAlignment"></div>
+                        </div>
+                    </a>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+        <!--PRACTICALITY SECTION-->
+        <div id="dimension__practicality" class="anchor-offset">
+            <div class="dimension__container">
+        
+                <div class="dimension__container--title">
+                    <h4>Practicality Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="practicality" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The quality that allows a person to respond quickly to change and be adaptable, flexible and
+                            resourceful. Continuously learns and quickly looks to apply it constructively moving forward. Can
+                            also be sensitive and innovative to new ideas and to others.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>This candidate scores below average in their openness to change and in imagining engineering solutions. More task-focused, practical, and analytical, they remain grounded in the day-to-day engineering functions. Initiating and building relationships requiring compassion, empathy, and intuitive communication may require extra effort. Veering off script to creatively explore commercial opportunities can be challenging.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('PracticalityExtreme1')" class="interview__group__button interview__group-title">
+                            <h5>Practicality Interview Questions 1</h5>
+                        </button>
+                        <div id="PracticalityExtreme1" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Being highly imaginative, this person may possess the capacity to be innovative and resourceful when envisioning unique customer solutions. They will readily shift focus when engaged in conversation, enjoying the stimulation of new ideas. However, they may find it difficult to focus on lengthy customer research and stay concentrated on intricate commercial projects for extended periods. They may also have difficulty with routine reports, procedures, and systems. These tendencies can interfere with credibility and the confidence of others who depend on these processes.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Tell me about a time when you envisioned a unique customer solution that required extensive follow through in order to see it through to completion. How did you implement your idea? What was the outcome?</p>
+                                <p class="interview__listen-for">Listen For : Notice if they describes a relevant customer idea and tangible details regarding their follow-through leading to a desirable outcome.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : What was a success you have had influencing an internal or external customer who considers most ideas too impractical or risky?</p>
+                                <p class="interview__listen-for">Listen For : Listen for their example of influencing an unimaginative customer and whether they have enough awareness and social skill to appeal to a broad range of stakeholders.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('PracticalityExtreme2')" class="interview__group__button interview__group-title">
+                            <h5>Practicality Interview Questions 2</h5>
+                        </button>
+                        <div id="PracticalityExtreme2" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Reporting as a person who is more low-risk, they honor tradition and appreciate existing systems. Venturing out and uncovering technical solutions can be uncomfortable. They will be more at ease being in a less exploratory, technical role. With a tendency to overly rely on time-tested approaches with which they have grown comfortable, it will require extra effort for them to consider alternative ways to challenge a customer's thinking to arrive at a meaningful solution.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : What is the riskiest thing you have done at work related to business development? How did you make a decision to act?</p>
+                                <p class="interview__listen-for">Listen For : Observe if their risky business development example aligns with the type of risk necessary for Sales Engineer results.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Tell me about a time when you balanced honoring an existing standard or process, while at the same time exploring a tailored customer solution.</p>
+                                <p class="interview__listen-for">Listen For : Notice if they are aware of balancing their tendency to honor existing systems with enough technical exploration that helps challenge customers to think differently.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--RESILIENCE SECTION-->
+        <div id="dimension__resilience" class="anchor-offset">
+            <div class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Resilience Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="resilience" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The response to stress and change that is characterized by exhibiting a sense of confidence, composure and stability. Responds well to adversity and disappointment.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>This candidate scores below average in their efforts to respond to stress. They express a heightened level of worry, tension, and/or skepticism that can impact their working relationships. Their urgency and skepticism can assist them in initiating activity, yet their restricted composure and limited internal sense of control can undermine the levelheadedness necessary for delivering engineering solutions.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('ResilienceExtreme1')" class="interview__group__button interview__group-title">
+                            <h5>Resilience Interview Questions 1</h5>
+                        </button>
+                        <div id="ResilienceExtreme1" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>This candidate reports that they are more easily upset and that their emotions can get the better of them. They may be more easily shaken, and they do not usually bounce back quickly from customer objections and technical disappointments. This characteristic can interfere with their ability to listen well to an upset customer or peer. It is unusual for business development technical experts to describe themselves in this manner.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : What was the last difficult customer or coworker you were faced with? How did you respond?</p>
+                                <p class="interview__listen-for">Listen For : Listen for how they manages upset. Does the example of navigating a difficult situation resonate with the composure needed?</p>
+                            </div>                            
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('ResilienceExtreme2')" class="interview__group__button interview__group-title">
+                            <h5>Resilience Interview Questions 2</h5>
+                        </button>
+                        <div id="ResilienceExtreme2" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>This candidate prefers to question circumstances and individuals as a means to learning, as well as, a way to manage relationships. While typically an asset within a technical role, being skeptical of others (when taken to an extreme) can work against certain customer and internal team relationships. This same skepticism can restrict their readiness to reach out and to engage in collaborative learning within the broader Sales Engineering community as well. Consistently questioning others' motives can detract from their own personal resilience and a growth mindset.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : When was the last time you shared a worry or concern that helped you establish greater trust with a peer or customer? What was the situation and outcome?</p>
+                                <p class="interview__listen-for">Listen For : Do they describe the type of vulnerability-based trust that will help them humbly learn and build peer and customer relationships? Does the example include significant progress made on the relationship that allowed for a key breakthrough?</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('ResilienceExtreme3')" class="interview__group__button interview__group-title">
+                            <h5>Resilience Interview Questions 3</h5>
+                        </button>
+                        <div id="ResilienceExtreme3" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>This candidate reports a higher degree of apprehension and doubt which, when properly focused, can translate into productive energy required to persist in the face of difficult customers and challenging technical solutions. However, when overdone, it can erode the energy and self-confidence needed to be a technical subject matter expert. Worrying about the past or future is most often time and energy-consuming. They may not have the confidence to deal with challenging customer situations, learn difficult product literature, or to persist in the face of rejection and adversity. They may be overly self-critical, and they can better learn how to balance what is truly in and out of their control.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : When has nervous energy helped you solve a technical problem? What was the situation and outcome? Tell me about a time when nervous energy interfered with solving a technical problem. What was the situation and outcome?</p>
+                                <p class="interview__listen-for">Listen For : Listen for their awareness of the gifts and limits of their worry, and whether they have leveraged it for productive results.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Please pick one of the following two statements that best describes you: 'I am highly critical of myself'; or 'I am very forgiving of my limitations'. Based on the statement you chose, what are the implications of this to your work?</p>
+                                <p class="interview__listen-for">Listen For : Listen for confirmation of how they describe themselves and if their answer demonstrates adequate self-awareness.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('ResilienceExtreme4')" class="interview__group__button interview__group-title">
+                            <h5>Resilience Interview Questions 4</h5>
+                        </button>
+                        <div id="ResilienceExtreme4" class="interview__group interview-hide interview-show">
+        
+                            <div class="interview__extreme">
+                                <p>Sometimes high tension can be productively channeled toward achieving business development goals such as propelling more technical engineers to initiate valuable customer engagement. Those with elevated tension can also be competitive and urgent in their activities. However, the high level they are reporting can also negatively impact peer relationships across the FE community and within the distributorship as people can find them to be too competitive, argumentative, and unwilling to slow down enough to actively listen to conflicting ideas. Beyond this, their nervous energy will elevate stress if not moderated with self-awareness, humility, and openness to feedback.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : With the pressures and challenges of work and life, what are techniques you use to channel your energy at work? Give me an example of how this helped you in your previous job. Does it ever interfere?</p>
+                                <p class="interview__listen-for">Listen For : Listen for strategies for leveraging and counterbalancing their urgency and competitiveness. Do you suppose their energy will be used well with the outward facing aspects of the FE role?</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!--SELF-CONTROL SECTION-->
+        <div id="dimension__self-control" class="anchor-offset">
+            <div class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Self-Control Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="self-control" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The commitment, conviction and conscientious focus required of a person to successfully meet a given goal, often in the face of resistance, distraction and disagreement. Usually oriented to using processes, procedures and self-discipline.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>This candidate is someone who is intentional in most everything they do. They exhibit good organization skills, are prepared to do their job, and operate in a fairly systematic and consistent manner. They are attentive to details and focus on what needs to be done to execute a commonsense solution with precision and accuracy. That said, they are not so concerned about things being done "their way" that they can't bend when needed. In this regard, they will likely come across as the kind of individual who brings focus and discipline to their work but does not allow it to get in the way of what they are truly trying to accomplish at the end of the day.</p>
+                    </div>
+                </div>
+                
+                <div class="interview__wrapper">
+                    
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('self-controlExtreme1')" class="interview__group__button interview__group-title">
+                            <h5>Self-Control Interview Questions 1</h5>
+                        </button>
+                        <div id="self-controlExtreme1" class="interview__group interview-hide interview-show">
+                        
+                            <div class="interview__extreme">
+                                <p>Overall, they report as being serious and reserved in their approach to work. As a Sales Engineer, this more serious nature will go a long way toward others seeing them as professional and competent.  However, it is important to be able to also engage with customers in a meaningful way that demonstrates a passion for what the company offers.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : How does your demeanor change between your professional life and your personal life?</p>
+                                <p class="interview__listen-for">Listen For : Listen for their ability to change up their mood or affect depending on the situation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('self-controlExtreme2')" class="interview__group__button interview__group-title">
+                            <h5>Self-Control Interview Questions 2</h5>
+                        </button>
+                        <div id="self-controlExtreme2" class="interview__group interview-hide interview-show">
+                        
+                            <div class="interview__extreme">
+                                <p>Being somewhat flexible and adaptable are important traits for Sales Engineers. However, being unconcerned about rules and ignoring authority are traits that are much more likely to get them into trouble. This person is likely to be unconventional and will have less concern for how things are done. Being this way, they find it hard to manage times when imperative to stay within the boundaries and will struggle when following through on commitments.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : What methods do you use to stay goal-focused and on top of things?</p>
+                                <p class="interview__listen-for">Listen For : Listen for a comfort with changing circumstances and ambiguity.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : What past job had the most structure to it? What did you like and dislike about it?</p>
+                                <p class="interview__listen-for">Listen For : Listen for an awareness that they may be too tolerant or flexible. Are they able to give actual strategies for how they deal with it?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('self-controlExtreme3')" class="interview__group__button interview__group-title">
+                            <h5>Self-Control Interview Questions 3</h5>
+                        </button>
+                        <div id="self-controlExtreme3" class="interview__group interview-hide interview-show">
+                        
+                            <div class="interview__extreme">
+                                <p>This person is a creative and imaginative person who can often come up with unique solutions to difficult problems. As a Sales Engineer, they will be better than many at finding opportunities with customers. However, they may also find it difficult to stay focused on what needs to be done at the moment. They can easily distracted from their goals and can have a habit of starting things but not finishing.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : What methods work best for keeping you engaged with projects or tasks that require more concentrated attention?</p>
+                                <p class="interview__listen-for">Listen For : Listen for how they have managed a loss of focus.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : What was the last project or task that you left unfinished at work? What are you doing about it?</p>
+                                <p class="interview__listen-for">Listen For : Listen for the awareness that there is a downside to being imaginative that they can manage.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <!--DRIVE SECTION-->
+        <div id="dimension__drive" class="anchor-offset">
+            <div class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Drive Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="drive" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The personal motivation to initiate and to meet expectations without looking for much &dash; if any &dash; external direction. Will speak up and assertively address issues to push through resistance.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>This candidate exhibits the interest to take initiative when required. Their drive tends to be focused on meeting their targets and the expectations of the Sales Engineering role. They will tend to push through resistance and overcome obstacles to achieve their goals. They have a willingness to meet the customer's needs as well as the business needs. They can be assertive without being aggressive when they are also accepting of others. They will generally balance their own drive to be successful with the interest of the customer that is the result of more active listening. Occasionally, with certain commercial exploration requiring added conviction, boldness, and assertiveness, they may defer to meeting the predetermined goal versus striving for an unexplored solution.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('driveExtreme1')" class="interview__group__button interview__group-title">
+                            <h5>Drive Interview Questions 1</h5>
+                        </button>
+                        <div id="driveExtreme1" class="interview__group interview-hide interview-show">
+                        
+                            <div class="interview__extreme">
+                                <p>This person is reporting a very high degree of curiosity, inquisitiveness, and possibly, suspicion. They readily look beyond the surface and are quick to question the motives of others. This can be helpful in technical research settings and in circumstances requiring anticipation, caution, and healthy skepticism. However, if overused, it can limit their readiness to lower their guard and build critical key relationships with a degree of openness, trust, and candor.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Tell me about a time when you employed a questioning approach to uncover an opportunity or make a significant breakthrough. What did you do and what was the outcome? When has this same questioning approach created difficulty in a peer work relationship. Please provide an example. </p>
+                                <p class="interview__listen-for">Listen For : Listen for awareness of how a questioning approach helps in their previous research. Is this aligned with the type of scientific research necessary of an exceptional Sales Engineer? Do they have awareness of the limits of skepticism and suspicion when interacting with peers? Do they have the emotional awareness to build sound work relationships within your orginization?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('driveExtreme2')" class="interview__group__button interview__group-title">
+                            <h5>Drive Interview Questions 2</h5>
+                        </button>
+                        <div id="driveExtreme2" class="interview__group interview-hide interview-show">
+                    
+                            <div class="interview__extreme">
+                                <p>This candidate tends to be highly conservative and relies on traditional approaches for creating tailored engineering solutions. They count on the tried-and-true and hesitate to experiment with new ideas. They think that their cautious style will allow them to stay safe and not cause disruption; however, their rather elevated risk-aversion will make it difficult to challenge the customer's thinking and to be innovative with a unique solutions which could have substantial payoffs. They are more conservative than most Sales Engineers and may prefer reverting back to existing products and services than consider tinkering with new ones.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : When was the last time you took a risk and seized an opportunity, either on the job or off? What was the circumstance and how did you arrive at the decision to act?</p>
+                                <p class="interview__listen-for">Listen For : Listen for their tendency to look to avoid mistakes or be more conservative thus missing an opportunity.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : Tell me about a time when you used a creative and innovative approach to solve a customer's problem?</p>
+                                <p class="interview__listen-for">Listen For : Listen for examples of risk taking and creativity consistent with the proactive exploration necessary of a Sales Engineer.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!--INTERPERSONAL SECTION-->
+        <div id="dimension__interpersonal" class="anchor-offset">
+            <div class="dimension__container">
+                <div class="dimension__container--title">
+                    <h4>Interpersonal Style Results : Chris Sample</h4>
+                </div>
+                <div class="dimension__overview">
+                    <div id="interpersonal" class="dimension__gauge"></div>
+                    <div class="dimension__definition">
+                        <p>The preference to engage with others and to interact in a collaborative manner. Is likely to be emotionally expressive and energetic. Initiates contact with new people, explores new opportunities and looks to be resourceful.</p>
+                    </div>
+                    <div class="dimension__global-statement">
+                        <p>This candidate is generally effective in their ability to develop relationships and make people feel comfortable around them. They usually take the time to get to know customers and coworkers and will look to be cooperative and helpful. However, they are not always as open and direct as they could be and may not find it easy to make those personal connections with others that lead to more meaningful business relationships.</p>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('interpersonalExtreme1')" class="interview__group__button interview__group-title">
+                            <h5>Interpersonal Style Interview Questions 1</h5>
+                        </button>
+                        <div id="interpersonalExtreme1" class="interview__group interview-hide interview-show">
+                            <div class="interview__extreme">
+                                <p>This person is characterized by a more serious and quiet nature. They tend to be more reserved even in situations that are more lively and energizing. They also don't exhibit too much enthusiasm in most instances and others may even perceive them to be uninterested or bored by what is going on around them. As a Sales Engineer, this can make it difficult for them in their efforts to inspire and excite customers and coworkers.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : How do you show enthusiasm and excitement when speaking or presenting to customers?</p>
+                                <p class="interview__listen-for">Listen For : Listen to the ability to overcome their generally reserved manner to present to customers with energy and enthusiasm.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__wrapper">
+                        <button onclick="interviewAccordion('interpersonalExtreme2')" class="interview__group__button interview__group-title">
+                            <h5>Interpersonal Style Interview Questions 2</h5>
+                        </button>
+                        <div id="interpersonalExtreme2" class="interview__group interview-hide interview-show">
+                            <div class="interview__extreme">
+                                <p>This person is rather private, by nature, and will be slower to reveal to others what they think or feel. They tend to be careful in what they say and who they say it to. While possibly being more diplomatic, which can be helpful to a Sales Engineer, the tendency to avoid disclosing what they really think can also create some distance between them and their customers and coworkers. </p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : How much about yourself do you share with others at work?</p>
+                                <p class="interview__listen-for">Listen For : Listen for an awareness that there are advantages as well as disadvantages to their shrewdness.</p>
+                            </div>
+                            <div class="interview__qal-wrapper">
+                                <p class="interview__question">Question : In a Sales Engineer role, how do you think keeping your own thoughts and feelings to yourself help, or not help?</p>
+                                <p class="interview__listen-for">Listen For : Listen for their level of insight into their personal style and how it impacts their work.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+
+        <!--TECHNICAL COMPETENCE SECTION-->
+        <div id="dimension__technical" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Technical Competence : Chris Sample</h4>
+                    <p class="pad-25">Technical competence refers to the person's ability to perform the technical functions of Sales Engineering as it relates to math, verbal and general reasoning.</p>
+                </div>
+            </div>
+        </div>
+            
+        <!--MATH SECTION-->
+        <div id="dimension__math" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Technical Competence : Math</h4>
+                </div>
+                <div id="math" class="gauge2"></div>
+                <p class="dimension__general">This measures the person's ability to solve math problems that include basic math, as well as algebra and geometry.</p>
+                <div class="dimension__high-low">
+                    <p>Higher numerical reasoning supports the computational aspects of Sales Engineering project work. Those with higher scores will typically gain credibility for their mathematical competence and ability to extend various technical conversations.</p>
+                    <p>Lower numerical reasoning can hinder the field support work and internal computational aspects of managing client projects and completing various audits, studies and business development activities. One's credibility can be compromised if in-the-moment mathematical computation is required to extend exploratory conversations. Credibility can also be restricted in failing to complete certain internal Sales Engineering functions.</p>
+                </div>
+            </div>
+        </div>
+        <!--VERBAL SECTION-->
+        <div id="dimension__verbal" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Technical Competence : Verbal</h4>
+                </div>
+                <div id="verbal" class="gauge2"></div>
+                <p class="dimension__general">This measures the person's ability to understand and utilize written language through the use of grammar, analogies, and comprehension.</p>
+                <div class="dimension__high-low">
+                    <p>Higher scores tend to communicate in an articulate manner given an overall healthy
+                        verbal ability. Higher scores will share technical and non technical engineering information in a manner
+                        others can easily understand.</p>
+                    <p>Lower scores can find it challenging to convey complex conceptual information. Lower
+                        verbal skills can impact the way Sales Engineers share technical customer information as well restrict their
+                        effectiveness communicating with other distributor and FE resources.</p>
+                </div>
+            </div>
+        </div>
+        <!--REASONING SECTION-->
+        <div id="dimension__reasoning" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Technical Competence : Reasoning</h4>
+                </div>
+                <div id="reasoning" class="gauge2"></div>
+                <p class="dimension__general">This measures the person's abilty to understand and analyze information that is presented visually and solve problems using logic.</p>
+                <div class="dimension__high-low">
+                    <p>Higher scores indicate the ability to recognize underlying patterns and use deductive reasoning to determine the ways in which informations is being presented. People like this tend to apply a more creative or flexible in their thinking which can be particularly helpful in their efforts to work with customers.</p>
+                    <p>Lower scores suggest that the person's ability may be limited when faced with problems that require a more logical approach that involves pattern recognition and deductive reasoning. People who score like this tend to stick to decision rules that have worked for them in the past, regardless of their appropriateness for the problem at hand, and can have difficulty coming up with more creative approaches.</p>
+                </div>
+            </div>
+        </div>
+        <!--DERAILERS OVERVIEW-->
+        <div id="dimension__derailers2" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Derailers : Chris Sample</h4>
+                    <p class="pad-25">The Derailers section reflects the uniqueness of the Sales Engineer role. The combination of teamwork, intellect, persistence, social skills, and field exploration mixed with various job demands makes the role particularly special. As a result, there are a few critical aspects of behavior that can undermine successful performance.</p>
+                </div>
+            </div>
+        </div>
+        <!--DERAILER : PESSIMISM-->
+        <div id="dimension__pessimism" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Derailer : Pessimism</h4>
+                </div>
+                <div id="pessimism" class="gauge2"></div>
+                <p class="dimension__general">This scale measures the degree to which a Sales Engineer may react to change, surprise or ideas that are not part of an original plan. This could accompany cynicism and a reluctance to embrace change and an unwillingness to explore possibilities limiting customer conversation and restricting willingness to extend collaboration efforts.</p>
+                <div class="dimension__high-low">
+                    <p>Higher scores have a pronounced reflex to respond to change, surprise and exploration
+                        in a negative way. Those higher on this scale can find it challenging to trust themselves and others when
+                        veering off of a pre-determined script when exploring ideas in the office and in front of customers.</p>
+                    <p>Lower scores tend to embrace change, surprise and exploratory conversation in a
+                        trusting, flexible manner. Higher scorers typically trust themselves and peers when plans change and things
+                        become ambiguous.</p>
+                </div>
+            </div>
+        </div>
+        <!--DERAILER : OVERPREP-->
+        <div id="dimension__overprep" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Derailer : Overprep</h4>
+                </div>
+                <div id="overprep" class="gauge2"></div>
+                <p class="dimension__general">Some preparation is necessary to research customers, anticipate objections, and resourcefully challenge assumptions. However, too much preparation can restrict the flexibility to initiate dialogue and experiment with various technical solutions. This scale measures the degree of preparation one prefers when engaging in various types of Sales Engineering work.</p>
+                <div class="dimension__high-low">
+                    <p>Higher scores often find it necessary to thoroughly prepare ahead of time. They often
+                        gain confidence in their preparation and find it difficult in placing practical limits on having enough data
+                        before initiating action. In conversation, they can revert to over-talking and sharing too much of the
+                        intricacies of an engineering solution, restricting their customer focus to solving a broader need.</p>
+                    <p>Lower scores tend to be more fluid and dynamic in their preparation ahead of various
+                        customer engagements and engineering projects. They will not tend to become flustered when faced with
+                        ambiguity, interruptions and customer questions.</p>
+                </div>
+            </div>
+        </div>
+        <!--DERAILER : CRITICAL-->
+        <div id="dimension__critical" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Derailer : Critical</h4>
+                </div>
+                <div id="critical" class="gauge2"></div>
+                <p class="dimension__general">This scale measures the degree of criticality expressed. Being particular and finicky about certain details
+                    often accompanies progressiveness and high standards -aspects that many successful Sales Engineers possess.
+                    However, the limits of being too critical can undermine collaboration and teamwork necessary to meet
+                    challenging customer requests.</p>
+                <div class="dimension__high-low">
+                    <p>Higher scores often are rather progressive and energized by exploring new and
+                        unchartered territory. Often accompanying their thirst for newness is a highly refined level of detail. Some
+                        can describe high scorers as picky, finicky and difficult to please.</p>
+                    <p>Lower scores can be more forgiving with some of the details not being perfect. They
+                        can be more fluid and okay when working collaboratively with peers within the distributorship as their
+                        standards will tend to not be overly inflated.</p>
+                </div>
+            </div>
+        </div>
+        <!--DERAILER : EXPERT-->
+        <div id="dimension__expert" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Derailer : Expert</h4>
+                </div>
+                <div id="expert" class="gauge2"></div>
+                <p class="dimension__general">Many Sales Engineers are viewed as a local subject matter expert and are relied upon for the technical skillset and access to a broader community that can provide sound insight in helping solve substantial customer challenges. This scale measures the sense of importance one gains when being relied upon for a particular knowledge, skill, and experience.</p>
+                <div class="dimension__high-low">
+                    <p>Higher scores tend to relish the prominence that goes along with being relied upon in
+                        a technical setting. Their sense of importance is reinforced by their engineering acumen. If this is not
+                        accompanied by good humility and awareness to place team accomplishment over individual accolades, they can
+                        be ineffective. If taken to an extreme, their craving for recognition and the need to chase a particular
+                        trophy can outweigh the necessity to honor existing systems and teamwork.</p>
+                    <p>Lower scores tend to not seek the limelight and are more comfortable promoting team
+                        over self accomplishment. They can enjoy working collaboratively and may over defer to others when showing
+                        stronger personal conviction could be necessary. In particular, a certain level of ego and confidence is
+                        typically required to comfortably step in as an expert. If underdone, the Sales Engineer can fail to speak
+                        with conviction and authority in key situations.</p>
+                </div>
+            </div>
+        </div>
+                
+        <!--ROLE ALIGNMENT SECTION-->
+        <div id="dimension__role" class="anchor-offset">
+            <div class="dimension__static-container">
+                <div class="dimension__static-container-title">
+                    <h4>Role Alignment</h4>
+                </div>
+                <div id="roleAlignment" class="gauge2"></div>
+                <p class="dimension__general">The Role Alignment section reflects how in tune a candidate's work interests are to that of a Sales Engineer. For those whose interests align well with this job, they prefer to spend a fair amount of time in the field helping customers solve problems, as well as conducting audits, providing training and presenting product information. At the same time they also show interest in researching ideas, analyzing data, and following up on various projects or work completed within the distributorship.</p>
+                <div class="dimension__high-low">
+                    <p>Higher scores enjoy work that includes a fair amount of a hands-on, resourcefulness
+                        that yields practical results supporting the bottom line goals of the business.</p>
+                    <p>Lower scores may not enjoy the field aspects of helping customers solve real-world technical problems research over venturing out and spending time with various customers.</p>
+                </div>
+            </div>
+        </div>
+            
+            
+
+        <!--INSTRUCTIONS HERO IMAGE-->
+        <div id="instructions__header" class="anchor-offset">
+            <div class="jumbotron instructions__hero">
+                <div class="container">
+                    <h1 class="instructions__hero--title">Interpreting The Results</h1>
+                </div>
+            </div>
+        </div>
+            
+        
+        <!--INSTRUCTIONS-->
+        <div class="instructions__overview">
+            <div class="instructions">
+                <p class="instructions__intro">All information in this report is confidential and should be treated responsibly.</p>
+                <p>This report is based on computerized comparisons between individual responses and the Sales Engineering norm on the Watterson Personality Inventory. It is prone to various sources of error and should be interpreted with caution. This report is intended to assist in the interview process, not to substitute for it or for other data. The candidate's scores for each scale are discussed on individual pages.</p>
+            </div>
+            
+            <div class="instructions__before">
+                <h4 class="instructions__title">BEFORE YOU INTERVIEW</h4>
+                <P>This report will tell you how well your candidate fits with the foloowing personality characteristics that help predict success in Sales Engineers:</P>
+                <ul class="instructions__big-five">
+                    <li><span>Practicality</span></li>
+                    <li><span>Resilience</span></li>
+                    <li><span>Self-Control</span></li>
+                    <li><span>Drive</span></li>
+                    <li><span>Interpersonal Style</span></li>
+                </ul>
+                <p>Note where your candidate stands on these characteristics and then consider the suggested follow-up interview questions and accompanying “listen for” statements. Keep in mind that while it is better to be higher than lower on these dimensions, sometimes a candidate can have “too much of a good thing.” Don’t be afraid to supplement the questions provided with some of your own.</p>
+            </div>
+        
+            <div class="instructions__after">
+                <h4 class="instructions__title">AFTER YOU INTERVIEW</h4>
+                <p>To make a final decision on a candidate, consider what you learned from this report and the follow-up interview, along with other factors like experience, education, references, etc. Match what you have learned to what is important in the job and then make a hiring decision that you can explain in an objective manner. Be ready to answer this question: Why is this person a good fit - or not - for the job?</p>
+                <p>If you hire this person, be sure to come back to this assessment afterwards to think about what the individual needs to do in order grow professionally and be successful in their role. Use this information as a management tool and as the start of their individual development plan that you put together as their HR representative or manager.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="intro">&copy;2019 by Watterson &amp; Associates, Inc., Chagrin Falls, Ohio. All rights reserved.</p>
+        </div>
+   
+
+
+
+
+
+
+
+
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JustGage PlugIn -->
+        <!-- // gauge colors
+        // WAI Blue
+        //levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+        //WAI Green = #92b642
+
+        //Random Blue1
+        // levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+
+        //WAI Orange / Brown
+        // levelColors: ["#e5a812", "#e5a812", "#e5a812"]
+
+        //WAI Website Background Orange
+        // levelColors: ["#be7533", "#be7533", "#be7533"] -->
+        
+
+
+        <!--Close Interview Accordions for mobile view (425px and under-->
+        <script>
+            let openAccordion = document.querySelectorAll(".interview-show");
+            console.log(openAccordion.length)
+            function closeAccordion() {
+                for (let i = 0; i < openAccordion.length; i++) {
+                    openAccordion[i].className =openAccordion[i].className.replace("interview-show", "")
+                }
+            }
+            function closeOnMobile(x) {
+                if (x.matches) {
+                    closeAccordion();
+                } else {
+                    console.log("I'm open!")
+                }
+            }
+            var x = window.matchMedia("(max-width: 3840px)")
+            // var x = window.matchMedia("(max-width: 425px)")
+            closeOnMobile(x)
+            x.addListener(closeOnMobile)
+        </script>
+
+        <!--Toggle Interview Accordions open / closed-->
+        <script>
+        function interviewAccordion(id) {
+            let x = document.getElementById(id);
+            if (x.className.indexOf("interview-show") == -1) {
+                x.className += " interview-show";
+            } else {
+                x.className = x.className.replace(" interview-show", "");
+            }
+        }
+        </script>
+        <script src="js/justgage.js"></script>
+        <script src="js/raphael-2.1.4.min.js"></script>
+        <script src="js/temp.js"></script>
+        
+        
+</body>
+
+</html>
