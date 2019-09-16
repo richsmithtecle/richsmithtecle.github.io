@@ -89,7 +89,7 @@ a.navbar-brand {
     text-align: center;
     background: rgba(75, 80, 90, 1);
     color: #ffffff;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
 }
 .dimension__overview {
     grid-area: dimension-sidebar;
@@ -98,7 +98,6 @@ a.navbar-brand {
     grid-template-rows: auto;
     grid-template-areas:
         "dim-gauge"
-        "dim-def"
         "dim-gs";
     align-content: start;
 }
@@ -347,11 +346,6 @@ a.navbar-brand {
     }
     .summary__gauge {
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-        display: grid;
-        grid-template-columns: 1fr;
-        /* grid-template-rows: auto; */
-        grid-auto-rows: 1fr 3fr;
-        align-content: center;
     }
     .summary__gauge--title {
         width: auto;
@@ -395,9 +389,8 @@ a.navbar-brand {
         grid-area: dimension-sidebar;
         display: grid;
         grid-template-columns: 2.5vw 1fr 3fr 2.5vw;
-        grid-template-rows: 2;
+        grid-template-rows: 1;
         grid-template-areas:
-            ". dim-gauge dim-def ."
             ". dim-gauge dim-gs .";
         align-content: space-between;
     }
@@ -541,9 +534,8 @@ a.navbar-brand {
         grid-area: dimension-sidebar;
         display: grid;
         grid-template-columns: 2.5vw 1fr 3fr 2.5vw;
-        grid-template-rows: 2;
+        grid-template-rows: 1;
         grid-template-areas:
-            ". dim-gauge dim-def ."
             ". dim-gs dim-gs .";
         align-content: space-between;
         align-items: center;
@@ -610,9 +602,8 @@ a.navbar-brand {
         grid-area: dimension-sidebar;
         display: grid;
         grid-template-columns: 2.5vw 1fr 3fr 2.5vw;
-        grid-template-rows: 2;
+        grid-template-rows: 1;
         grid-template-areas:
-            ". dim-gauge dim-def ."
             ". dim-gauge dim-gs .";
         align-content: space-between;
         align-items: center;
