@@ -99,7 +99,9 @@ a.navbar-brand {
     grid-template-areas:
         "dim-gauge"
         "dim-def"
-        "dim-gs";
+        "dim-gs"
+        "dim-cws"
+        "dim-ap";
     align-content: start;
 }
 .dimension__definition {
@@ -118,6 +120,12 @@ a.navbar-brand {
 } */
 .dimension__global-statement {
     grid-area: dim-gs;
+}
+.dimension__contributing-work-style {
+    grid-area: dim-cws;
+}
+.dimension__associated-parker {
+    grid-area: dim-ap;
 }
 
 .interview__wrapper {
@@ -145,6 +153,8 @@ a.navbar-brand {
 }
 
 .dimension__global-statement,
+.dimension__contributing-work-style,
+.dimension__associated-parker,
 .interview__qal-wrapper,
 .dimension__high,
 .dimension__low,
@@ -398,7 +408,9 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gauge dim-gs .";
+            ". dim-gauge dim-gs ."
+            ". dim-gauge dim-cws ."
+            ". dim-gauge dim-ap .";
         align-content: space-between;
     }
     .dimension__definition,
@@ -408,6 +420,7 @@ a.navbar-brand {
     }
     .dimension__gauge {
         grid-area: dim-gauge;
+        align-self: start;
         height: 165px;
         width: 300px;
     }
@@ -544,12 +557,15 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gs dim-gs .";
+            ". dim-gs dim-gs ."
+            ". dim-gauge dim-cws ."
+            ". dim-gauge dim-ap .";
         align-content: space-between;
         align-items: center;
     }
     .dimension__gauge {
         grid-area: dim-gauge;
+        align-self: start;
         height: 150px;
         width: 235px;
     }
@@ -613,7 +629,9 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gauge dim-gs .";
+            ". dim-gauge dim-gs ."
+            ". dim-gauge dim-cws ."
+            ". dim-gauge dim-ap .";
         align-content: space-between;
         align-items: center;
     }
@@ -677,6 +695,7 @@ a.navbar-brand {
     }
     .dimension__gauge {
         grid-area: dim-gauge;
+        align-self: start;
         height: 165px;
         width: 300px;
     }
