@@ -99,9 +99,7 @@ a.navbar-brand {
     grid-template-areas:
         "dim-gauge"
         "dim-def"
-        "dim-gs"
-        "dim-cws"
-        "dim-ap";
+        "dim-gs";
     align-content: start;
 }
 .dimension__definition {
@@ -120,12 +118,6 @@ a.navbar-brand {
 } */
 .dimension__global-statement {
     grid-area: dim-gs;
-}
-.dimension__contributing-work-style {
-    grid-area: dim-cws;
-}
-.dimension__associated-parker {
-    grid-area: dim-ap;
 }
 
 .interview__wrapper {
@@ -153,8 +145,6 @@ a.navbar-brand {
 }
 
 .dimension__global-statement,
-.dimension__contributing-work-style,
-.dimension__associated-parker,
 .interview__qal-wrapper,
 .dimension__high,
 .dimension__low,
@@ -408,9 +398,7 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gauge dim-gs ."
-            ". dim-gauge dim-cws ."
-            ". dim-gauge dim-ap .";
+            ". dim-gauge dim-gs .";
         align-content: space-between;
     }
     .dimension__definition,
@@ -557,9 +545,7 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gs dim-gs ."
-            ". dim-gauge dim-cws ."
-            ". dim-gauge dim-ap .";
+            ". dim-gs dim-gs .";
         align-content: space-between;
         align-items: center;
     }
@@ -629,9 +615,7 @@ a.navbar-brand {
         grid-template-rows: 2;
         grid-template-areas:
             ". dim-gauge dim-def ."
-            ". dim-gauge dim-gs ."
-            ". dim-gauge dim-cws ."
-            ". dim-gauge dim-ap .";
+            ". dim-gauge dim-gs .";
         align-content: space-between;
         align-items: center;
     }
