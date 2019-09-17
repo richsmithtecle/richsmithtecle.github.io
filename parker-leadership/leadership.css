@@ -295,7 +295,6 @@ a.navbar-brand {
 }
 
 .copyright {
-    text-align: center;
     margin: 10px;
     padding: 10px;
 }
@@ -697,7 +696,7 @@ a.navbar-brand {
 /***************************************************/
 /* Bootstrap Navbar collapse override */
 /***************************************************/
-@media only screen and (min-width: 768px) and (max-width: 1390px) {
+@media only screen and (min-width: 768px) and (max-width: 1450px) {
 	.navbar-nav .open .dropdown-menu {
 		position: static;
 		float: none;

@@ -6,7 +6,7 @@
                 max: 100,
                 label: "Target 60 - 80",
                 labelFontColor: "#000000",
-                title: "Intellectual",
+                title: "Intellectual Capability",
                 titleFontColor: "#000000",
                 shadowOpacity: 0.5,
                 shadowSize: 7,
