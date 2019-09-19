@@ -1,7 +1,7 @@
 
             var drive = new JustGage({
                 id: "intellectual",
-                value: 72,
+                value: 50,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -16,7 +16,7 @@
             });
             var summaryIntellectual = new JustGage({
                 id: "summary__intellectual",
-                value: 72,
+                value: 50,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -29,7 +29,7 @@
             });
             var drive = new JustGage({
                 id: "drive",
-                value: 72,
+                value: 80,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -44,7 +44,7 @@
             });
             var summaryDrive = new JustGage({
                 id: "summary__drive",
-                value: 72,
+                value: 80,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -57,7 +57,7 @@
             });
             var stress = new JustGage({
                 id: "stress",
-                value: 82,
+                value: 93,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -72,7 +72,7 @@
             });
             var summaryStress = new JustGage({
                 id: "summary__stress",
-                value: 82,
+                value: 93,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -83,9 +83,9 @@
                 levelColors: ["#FB8301", "#FB8301", "#FB8301"],
                 gaugeWidthScale: .45,
             });
-            var people = new JustGage({
+            var execution = new JustGage({
                 id: "execution",
-                value: 78,
+                value: 81,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -98,9 +98,9 @@
                 levelColors: ["#FB8301", "#FB8301", "#FB8301"],
                 gaugeWidthScale: .45,
             });
-            var summaryPeople = new JustGage({
+            var summaryExecution = new JustGage({
                 id: "summary__execution",
-                value: 78,
+                value: 81,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -114,7 +114,7 @@
             });
             var practicality = new JustGage({
                 id: "interpersonal",
-                value: 98,
+                value: 65,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -129,7 +129,7 @@
             });
             var summaryPracticality = new JustGage({
                 id: "summary__interpersonal",
-                value: 98,
+                value: 65,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -140,9 +140,9 @@
                 levelColors: ["#FB8301", "#FB8301", "#FB8301"],
                 gaugeWidthScale: .45,
             });
-            var conscientiousness = new JustGage({
+            var innovation = new JustGage({
                 id: "innovation",
-                value: 74,
+                value: 64,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
@@ -155,9 +155,9 @@
                 levelColors: ["#FB8301", "#FB8301", "#FB8301"],
                 gaugeWidthScale: .45,
             });
-            var summaryConscientiousness = new JustGage({
+            var summaryInnovation = new JustGage({
                 id: "summary__innovation",
-                value: 74,
+                value: 64,
                 min: 0,
                 max: 100,
                 label: "Target 60 - 80",
