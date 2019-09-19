@@ -1,10 +1,10 @@
 
 var people = new JustGage({
     id: "people",
-    value: 5,
+    value: 53,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     title: "People-Orientation",
     titleFontColor: "#000000",
@@ -16,10 +16,10 @@ var people = new JustGage({
 });
 var summaryPeople = new JustGage({
     id: "summary__people",
-    value: 5,
+    value: 53,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     shadowOpacity: 0.5,
     shadowSize: 7,
@@ -30,10 +30,10 @@ var summaryPeople = new JustGage({
 });
 var stress = new JustGage({
     id: "stress",
-    value: 9,
+    value: 95,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     title: "Stress Tolerance",
     titleFontColor: "#000000",
@@ -45,10 +45,10 @@ var stress = new JustGage({
 });
 var summaryStress = new JustGage({
     id: "summary__stress",
-    value: 9,
+    value: 95,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     shadowOpacity: .5,
     shadowSize: 7,
@@ -58,10 +58,10 @@ var summaryStress = new JustGage({
 });
 var practicality = new JustGage({
     id: "practicality",
-    value: 8,
+    value: 73,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     title: "Practicality",
     titleFontColor: "#000000",
@@ -73,10 +73,10 @@ var practicality = new JustGage({
 });
 var summaryPracticality = new JustGage({
     id: "summary__practicality",
-    value: 7,
+    value: 73,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     shadowOpacity: 0.5,
     shadowSize: 7,
@@ -86,10 +86,10 @@ var summaryPracticality = new JustGage({
 });
 var drive = new JustGage({
     id: "drive",
-    value: 6,
+    value: 60,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     title: "Drive / Influence",
     titleFontColor: "#000000",
@@ -101,10 +101,10 @@ var drive = new JustGage({
 });
 var summaryDrive = new JustGage({
     id: "summary__drive",
-    value: 6,
+    value: 60,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     shadowOpacity: 0.5,
     shadowSize: 7,
@@ -114,10 +114,10 @@ var summaryDrive = new JustGage({
 });
 var conscientiousness = new JustGage({
     id: "conscientiousness",
-    value: 9,
+    value: 94,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     title: "Conscientiousness",
     titleFontColor: "#000000",
@@ -129,10 +129,10 @@ var conscientiousness = new JustGage({
 });
 var summaryConscientiousness = new JustGage({
     id: "summary__conscientiousness",
-    value: 9,
+    value: 94,
     min: 0,
-    max: 10,
-    label: "Target 6 - 8",
+    max: 100,
+    label: "Target 60 - 80",
     labelFontColor: "#000000",
     shadowOpacity: 0.5,
     shadowSize: 7,
