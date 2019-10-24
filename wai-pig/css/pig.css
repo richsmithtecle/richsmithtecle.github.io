@@ -408,7 +408,9 @@ a.navbar-brand {
         border-radius: 5px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     }
-
+    .interview__question {
+        font-style: italic;
+    }
 
     .dimension__static-container-title {
         grid-area: title;

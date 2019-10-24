@@ -96,13 +96,22 @@ html, body {
     width: 100%;
 }
 .dimension__gauge {
-    width: 275px;
+    width: 200px;
     float: left;
-    /* clear: right; */
-    margin-left: -25px;
+    clear: right;
+    margin-left: -30px;
 }
 .dimension__definition {
+    width: 300px;
+    margin: 0px;
     float: left;
+    clear: right;
+}
+.dimension__global-statement {
+    width: 300px;
+    margin: 0px;
+    float: left;
+    clear: right;
 }
 .interview__wrapper {
     margin: 10px;
@@ -130,7 +139,9 @@ html, body {
 .interview__qal-wrapper:last-of-type {
     border-bottom: none;
 }
-
+.interview__question {
+    font-style: italic;
+}
 
 .dimension__static-container {
     display: table;
@@ -146,8 +157,8 @@ html, body {
 }
 
 .gauge2 {
-    width: 250px;
-    margin-left: -65px;
+    width: 200px;
+    margin-left: -30px;
     float: left;
     clear: right;
 }
@@ -159,7 +170,9 @@ html, body {
     clear: right;
     width: 525px;
 }
-
+.ability-measures {
+    margin: 10px auto;
+}
 .instructions__hero__title {
     text-align: center;
 }
